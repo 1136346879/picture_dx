@@ -1,6 +1,0 @@
-
-[squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8Õ¸›Ðñ,
-Rsquid:S1068"1Remove this unused "currentStatus" private field.(â€õëùÿÿÿÿ8Ô¸›Ðñ,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ŽÈâØüÿÿÿÿ8Õ¸›Ðñ,
-csquid:UselessImportCheck"5Remove this unused import 'android.view.MotionEvent'.(˜šËÞúÿÿÿÿ8Õ¸›Ðñ,
-Xsquid:S2589"7Remove this expression which always evaluates to "true"(ÊØµùûÿÿÿÿ8Õ¸›Ðñ,

@@ -45,11 +45,11 @@ class MainActivity : AppCompatActivity() {
 
         }
         tv4.setOnClickListener {
-
+//打开相册
             pickPhoto()
         }
         tv5.setOnClickListener {
-
+//打开相册
             pickPhoto()
         }
         tv1.setOnClickListener {
@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+                //view拖拽功能
         dragview.setImageResource(R.drawable.ic_launcher)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
         dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
@@ -128,6 +129,7 @@ class MainActivity : AppCompatActivity() {
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
 
+                    //打开裁剪页面
                     startActivity(intentFor<CropImageActivity>()
                             .putExtra("image_path",selectPhoto))
 
@@ -139,7 +141,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
-
+//系统裁剪
 //                startPhotoZoom(data.data,picWith,picHeight)
 
             }else{
@@ -152,9 +154,12 @@ class MainActivity : AppCompatActivity() {
                     val imageUri = data.data
                     val selectPhoto = getRealPathFromUri(this,imageUri)
                     Log.e("selectPhoto:",selectPhoto)
+                    //图片识别上传至服务器
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
 
+
+                    //自定义的图片裁剪，正方形裁剪
 //                    startActivity(intentFor<CropImageActivity>()
 //                            .putExtra("image_path",selectPhoto))
 
@@ -168,7 +173,7 @@ class MainActivity : AppCompatActivity() {
 //                activity?.finish()
             }
 
-            //裁剪图片
+            //系统裁剪之后--裁剪图片--上传图片
             CROP_PHOTO -> if (resultCode == Activity.RESULT_OK) {
                 intent.putExtra(KEY_PHOTO_PATH, photoUri?.path)
                setResult(Activity.RESULT_OK, intent)
@@ -297,6 +302,11 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    /**
+     * 图片路径传过来
+     *
+     *
+     */
     private fun loadUpImg(path:String) {
         val httpManger = HttpManager.instance()
 //        val file = File(BitmapUtils.compressImageUpload(path))
@@ -315,6 +325,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 },false)
     }
+
+    /**
+     * 系统裁剪
+     * uri
+     * 宽 本地写死
+     * 高 本地写死
+     *
+     */
     private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
 
         val intent = Intent("com.android.camera.action.CROP")

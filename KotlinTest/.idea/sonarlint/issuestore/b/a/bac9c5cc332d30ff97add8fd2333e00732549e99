@@ -1,32 +1,0 @@
-
-_squid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(¤½Óö
-_squid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(í¾Ùñ
-_squid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(í¾Ùñ
-dsquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ú–Ùúúÿÿÿÿ
-S"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(§Ñ×Ðÿÿÿÿÿ
-S"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(§Ñ×Ðÿÿÿÿÿ
-hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‡ýäÀ
-msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ò÷í°ýÿÿÿÿ
-Dsquid:S1066"/Merge this if statement with the enclosing one.(†Ë“Ñ
-esquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(§Ñ×Ðÿÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÃªÚ‡
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½Ðå¯
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(òü»
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²Ÿ‹ûÿÿÿÿ
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™›“
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»ç™”úÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›Îíçøÿÿÿÿ
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éÙÍw
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(üšÂ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªÛí
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ç®ÂŸûÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ëÀæ¼ûÿÿÿÿ
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÌŸ•
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ç®ÂŸûÿÿÿÿ
-Osquid:S1118":Add a private constructor to hide the implicit public one.(«ãßá
-@squid:S1172"&Remove these unused method parameters.(“†«…ÿÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

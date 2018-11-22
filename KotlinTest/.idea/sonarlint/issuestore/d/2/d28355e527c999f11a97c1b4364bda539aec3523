@@ -1,33 +1,0 @@
-
-Zsquid:UnusedPrivateMethod"2Remove this unused private "copyOrMoveDir" method.(ö»ÐÌûÿÿÿÿ
-[squid:UnusedPrivateMethod"3Remove this unused private "copyOrMoveFile" method.(¾‡‰‘þÿÿÿÿ
-‚ squid:ForLoopCounterChangedCheck"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÑŽ©¾
-‡ squid:ForLoopCounterChangedCheck"XRefactor the code in order to not assign to this loop counter from within the loop body.(¸±‹Åÿÿÿÿÿ
-Isquid:S1066"/Merge this if statement with the enclosing one.(›¬ì˜ûÿÿÿÿ
-Dsquid:S1066"/Merge this if statement with the enclosing one.(Êœé
-Dsquid:S1066"/Merge this if statement with the enclosing one.(Êœé
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(‘œ›âüÿÿÿÿ
-^squid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(£­õ—
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(ºèêŒüÿÿÿÿ
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(áùˆ«ûÿÿÿÿ
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(¦­÷›úÿÿÿÿ
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(ºèêŒüÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-gsquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¾¡½ßÿÿÿÿÿ
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ºÕ¦Î
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¨¿¶×
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‹É°ˆ
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ØØ›ÿ
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¬Ä¨«úÿÿÿÿ
-@squid:S1168"+Return an empty collection instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
->squid:S1940")Use the opposite operator ("<=") instead.(”†âä
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

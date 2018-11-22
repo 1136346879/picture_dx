@@ -1,13 +1,0 @@
-
-›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­×›üüÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶¥ù€8è‹Ýöá,
-›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŠÏò¢ùÿÿÿÿ
-`squid:UselessImportCheck"8Remove this unused import 'android.app.ActivityManager'.(•è‡`8…×Ýöá,
-–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ðè¸…
-Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8…×Ýöá,
-[squid:UselessImportCheck"-Remove this unused import 'android.os.Build'.(ãÇ¤Úýÿÿÿÿ8…×Ýöá,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ðÀÔŒ8¨ïÜöá,
-–squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(±½ï½
-›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¾Õýýÿÿÿÿ
-hsquid:S3008"SRename this field "INSTANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ñúÃ
-]squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8…×Ýöá,

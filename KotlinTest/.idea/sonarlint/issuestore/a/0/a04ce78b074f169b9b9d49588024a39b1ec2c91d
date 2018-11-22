@@ -1,17 +1,0 @@
-
-_squid:S3027"JPut single-quotes around '/' to use the faster "lastIndexOf(char)" method.(ª óù
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
-csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
-xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "bitmap".(¤ĞÃùÿÿÿÿ
-Tsquid:S1118":Add a private constructor to hide the implicit public one.(åÏâ¿øÿÿÿÿ
-isquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÆ€æøÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ
-[
-squid:S899"BDo something with the "boolean" value returned by "createNewFile".(ôü¿Ÿÿÿÿÿÿ
-T
-squid:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
-T
-squid:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
-T
-squid:S899";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ

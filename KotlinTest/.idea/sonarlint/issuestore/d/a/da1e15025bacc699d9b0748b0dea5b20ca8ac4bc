@@ -1,33 +1,0 @@
-
-dsquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ú–Ùúúÿÿÿÿ
-Tsquid:S3398"?Move this method into the anonymous class declared at line 411.(æŞúØ
-Ysquid:S3398"?Move this method into the anonymous class declared at line 411.(¸ıõÈøÿÿÿÿ
-Ksquid:S1659"1Declare "mWrapperStateRotate" on a separate line.(Ş‹‰Ÿüÿÿÿÿ
-Jsquid:S1659"0Declare "mWrapperStateScale" on a separate line.(Ş‹‰Ÿüÿÿÿÿ
-@squid:S1659"+Declare "mLayoutRotate" on a separate line.(Úù†’
-?squid:S1659"*Declare "mLayoutScale" on a separate line.(Úù†’
-Msquid:S1659"3Declare "mTextViewScalePercent" on a separate line.(Ãç–ûÿÿÿÿ
-@squid:S1659"+Declare "rotateEnabled" on a separate line.(ú”Ö€
-Csquid:S1068".Remove this unused "mLogoColor" private field.(›‹Œ
-Isquid:S1068"4Remove this unused "mAllowedGestures" private field.(ã¬÷·
-Esquid:S1068"0Remove this unused "scaleEnabled" private field.(ú”Ö€
-Fsquid:S1068"1Remove this unused "rotateEnabled" private field.(ú”Ö€
-usquid:S3923"[Remove this conditional structure or edit its code blocks so that they're not all the same.(‘Ë¸¯úÿÿÿÿ
-ksquid:S1450"VRemove the "adapter" field and declare it as a local variable in the relevant methods.(Ïç¨Ó
-msquid:S1450"SRemove the "list" field and declare it as a local variable in the relevant methods.(ç“¿ğûÿÿÿÿ
-nsquid:S1450"YRemove the "mLogoColor" field and declare it as a local variable in the relevant methods.(›‹Œ
-zsquid:S1450"`Remove the "circleDimmedLayer" field and declare it as a local variable in the relevant methods.(‰¡›èúÿÿÿÿ
-tsquid:S1450"_Remove the "mAllowedGestures" field and declare it as a local variable in the relevant methods.(ã¬÷·
-psquid:S1450"[Remove the "scaleEnabled" field and declare it as a local variable in the relevant methods.(ú”Ö€
-qsquid:S1450"\Remove the "rotateEnabled" field and declare it as a local variable in the relevant methods.(ú”Ö€
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ëäİ«
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ»­˜
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ë¬¹?
-Isquid:S1905"/Remove this unnecessary cast to "RecyclerView".(àˆÓ¬úÿÿÿÿ
-Dsquid:S1905"*Remove this unnecessary cast to "Toolbar".(òé²Äüÿÿÿÿ
-Asquid:S1905",Remove this unnecessary cast to "UCropView".(¢ãêŠ
-Dsquid:S1172"*Remove this unused method parameter "tab".(Áüİ²ùÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Ssquid:S1155">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À
-hsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(õ‹­™ûÿÿÿÿ

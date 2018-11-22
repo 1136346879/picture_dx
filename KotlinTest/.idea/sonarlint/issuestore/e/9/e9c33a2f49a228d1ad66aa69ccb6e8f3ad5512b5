@@ -1,38 +1,0 @@
-
-_squid:UnusedPrivateMethod"7Remove this unused private "createOrExistsFile" method.(øë¤Úùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-csquid:S2095"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(¥ÚšŽ
-csquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(®°›õ
-csquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(®°›õ
-csquid:S2095"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(¥ÚšŽ
-Lsquid:S2589"7Remove this expression which always evaluates to "true"(Óì
-@squid:S1168"+Return an empty collection instead of null.(¥¹ï
-@squid:S1168"+Return an empty collection instead of null.(¥¹ï
-@squid:S1168"+Return an empty collection instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
-;squid:S1168"&Return an empty array instead of null.(¥¹ï
->squid:S1940")Use the opposite operator ("<=") instead.(ó‚òÕ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

@@ -1,20 +1,0 @@
-
-jsquid:CommentedOutCodeLineý"<This block of commented-out lines of code should be removed.(ÿ»­˜8±ñæùò,
-osquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(Àµ®ãüÿÿÿÿ8åªçùò,
-Ssquid:S1659h"0Declare "mWrapperStateScale" on a separate line.(Þ‹‰Ÿüÿÿÿÿ8±ñæùò,
-Isquid:S1659i"+Declare "mLayoutRotate" on a separate line.(Úù†’8±ñæùò,
-Isquid:S1659y"+Declare "rotateEnabled" on a separate line.(ú”Ö€8±ñæùò,
-Hsquid:S1481¦")Remove this unused "file" local variable.(Š×÷¡8±ñæùò,
-Hsquid:S1659i"*Declare "mLayoutScale" on a separate line.(Úù†’8±ñæùò,
-osquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(Õ†¤×ÿÿÿÿÿ8±ñæùò,
-^squid:S3398¯"?Move this method into the anonymous class declared at line 384.(æÞúØ8±ñæùò,
-Ksquid:S1905õ",Remove this unnecessary cast to "UCropView".(¢ãêŠ8±ñæùò,
-Vsquid:S1659k"3Declare "mTextViewScalePercent" on a separate line.(Ãç–ûÿÿÿÿ8±ñæùò,
-wsquid:S1450`"YRemove the "mLogoColor" field and declare it as a local variable in the relevant methods.(›‹ŒŽ8±ñæùò,
-Rsquid:S1481¤".Remove this unused "imageType" local variable.(µÒ²Ñùÿÿÿÿ8±ñæùò,
-Nsquid:S1905Þ"*Remove this unnecessary cast to "Toolbar".(òé²Äüÿÿÿÿ8±ñæùò,
-Tsquid:S1659h"1Declare "mWrapperStateRotate" on a separate line.(Þ‹‰Ÿüÿÿÿÿ8±ñæùò,
-Lsquid:S1068`".Remove this unused "mLogoColor" private field.(›‹ŒŽ8±ñæùò,
-qsquid:MaximumInheritanceDepth="<This class has 7 parents which is greater than 5 authorized.(©¦×îøÿÿÿÿ8±ñæùò,
-csquid:S3398µ"?Move this method into the anonymous class declared at line 384.(¸ýõÈøÿÿÿÿ8±ñæùò,
-jsquid:CommentedOutCodeLineû"<This block of commented-out lines of code should be removed.(ëäÝ«8±ñæùò,

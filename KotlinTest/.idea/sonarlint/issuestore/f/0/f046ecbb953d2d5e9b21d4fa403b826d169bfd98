@@ -1,15 +1,0 @@
-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€—ªá8âïëÒò,
-Ssquid:S1197"8Move the array designator from the variable to the type.(£Î†T8âïëÒò,
-ƒsquid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "maskNumber".(éØÜúÿÿÿÿ8âïëÒò,
-wsquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "map".(£·Ìý8âïëÒò,
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Æ·úùÿÿÿÿ8âïëÒò,
-[squid:S1118":Add a private constructor to hide the implicit public one.(Íë¹’ûÿÿÿÿ8âïëÒò,
-xsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "gson".(–¹ð8âïëÒò,
-¬%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.util.regex.PatternSyntaxException' which is a runtime exception.(ßØò“þÿÿÿÿ8âïëÒò,
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÃŒÈùÿÿÿÿ8âïëÒò,
-§%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.util.regex.PatternSyntaxException' which is a runtime exception.(æÏ”®8âïëÒò,
-¬%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.util.regex.PatternSyntaxException' which is a runtime exception.(øãï÷ÿÿÿÿÿ8âïëÒò,
-‰squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(óµí½8âïëÒò,
-Ysquid:S2130"8Use "Long.parseLong" for this string-to-long conversion.(›…â†üÿÿÿÿ8âïëÒò,
-]squid:S1126"AReplace this if-then-else statement by a single return statement.(¨Àë·8âïëÒò,

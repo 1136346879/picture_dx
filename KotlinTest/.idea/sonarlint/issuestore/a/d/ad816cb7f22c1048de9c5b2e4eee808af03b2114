@@ -1,23 +1,0 @@
-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬‡Ÿ¿þÿÿÿÿ8¸åÔ“ï,
-Csquid:S3010""Remove this assignment of "paint".(‹âüÿÿÿÿ8¸åÔ“ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¸åÔ“ï,
-Fsquid:S1068"*Remove this unused "imgUrl" private field.(˜÷ÕÓ8¸åÔ“ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÑÏ†Ôýÿÿÿÿ8¸åÔ“ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦…ïÛøÿÿÿÿ8¸åÔ“ï,
->squid:S1659"#Declare "width" on a separate line.(Â’ e8¸åÔ“ï,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ¤ÍÙ8¸åÔ“ï,
-|squid:S1845"aRename field "width" to prevent any misunderstanding/clash with field "WIDTH" defined on line 29.(Â’ e8¸åÔ“ï,
-Fsquid:S1659"%Declare "mStartY" on a separate line.(Ôž‡¬þÿÿÿÿ8¸åÔ“ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¸åÔ“ï,
-rsquid:S00116"PRename this field "WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦›Ç›ÿÿÿÿÿ8¸åÔ“ï,
-Psquid:S1066"/Merge this if statement with the enclosing one.(Ïûêõúÿÿÿÿ8¸åÔ“ï,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Â¨€Ñ8¸åÔ“ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¸åÔ“ï,
-Esquid:S1659"$Declare "deltaY" on a separate line.(£„”ýúÿÿÿÿ8¸åÔ“ï,
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ôó§è8¸åÔ“ï,
-@squid:S1659"Declare "h" on a separate line.(ÙÐÜåüÿÿÿÿ8ìá‡°ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(®ªöþÿÿÿÿ8¸åÔ“ï,
-Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãÁð™øÿÿÿÿ8¸åÔ“ï,
-<squid:S1659" Declare "bh" on a separate line.(ÒÒ•Ï8ìá‡°ï,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÒôÊúÿÿÿÿ8¸åÔ“ï,

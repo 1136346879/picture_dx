@@ -1,14 +1,0 @@
-
-_squid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(í¾Ùñ
-N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ðýË§
-N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ðýË§
-Dsquid:S1066"/Merge this if statement with the enclosing one.(†Ë“Ñ
-`squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ðýË§
-`squid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ðýË§
-Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-gsquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ýúýºùÿÿÿÿ
-hsquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¸’ÜÓùÿÿÿÿ
-Fsquid:S1135"2Complete the task associated to this TODO comment.(›½Ÿ2
-fsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¢‰é[
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
