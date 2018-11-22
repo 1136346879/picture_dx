@@ -1,0 +1,46 @@
+
+osquid:S1845"ZRename method "v" to prevent any misunderstanding/clash with field "V" defined on line 45.(ãşòˆ
+osquid:S1845"ZRename method "i" to prevent any misunderstanding/clash with field "I" defined on line 47.(Çò€§
+nsquid:S1845"ZRename method "v" to prevent any misunderstanding/clash with field "V" defined on line 45.(ã”™_
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(¸îÛúÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(§Û‡ïüÿÿÿÿ
+osquid:S1845"ZRename method "d" to prevent any misunderstanding/clash with field "D" defined on line 46.(–¦ä
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(€Ø„Ç
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ç“•¥
+nsquid:S1845"ZRename method "i" to prevent any misunderstanding/clash with field "I" defined on line 47.(™İü^
+[squid:S3457"AFormat specifiers should be used instead of string concatenation.(¡‰íäüÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(®å¥ üÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(şêĞ´ùÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Êİ“øÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(§ˆÜ
+osquid:S1845"ZRename method "w" to prevent any misunderstanding/clash with field "W" defined on line 48.(ëØÂÅ
+asquid:S2095"GUse try-with-resources or close this "Formatter" in a "finally" clause.(¡‰íäüÿÿÿÿ
+tsquid:S1845"ZRename method "a" to prevent any misunderstanding/clash with field "A" defined on line 50.(ßª˜öıÿÿÿÿ
+Asquid:S1481"'Remove this unused "sb" local variable.(€ê±Õúÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+\squid:S2095"GUse try-with-resources or close this "Formatter" in a "finally" clause.(Û„¹ó
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ğåúÈ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(†æÃãüÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(şÜ÷µ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(úü›±
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(£Íòúÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(êÜÉ
+\squid:S2095"GUse try-with-resources or close this "Formatter" in a "finally" clause.(ÆÄî³
+tsquid:S1845"ZRename method "d" to prevent any misunderstanding/clash with field "D" defined on line 46.(¿óÎ¿ıÿÿÿÿ
+tsquid:S1845"ZRename method "a" to prevent any misunderstanding/clash with field "A" defined on line 50.(à¡¢ıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÇÅ¸Òùÿÿÿÿ
+osquid:S4435"ZSecure this "Transformer" by either disabling external DTDs or enabling secure processing.(Ò‹ñÙ
+osquid:S1845"ZRename method "w" to prevent any misunderstanding/clash with field "W" defined on line 48.(Ûê˜¢
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Å¯û
+tsquid:S1845"ZRename method "e" to prevent any misunderstanding/clash with field "E" defined on line 49.(ƒúŞ­ıÿÿÿÿ
+tsquid:S1845"ZRename method "e" to prevent any misunderstanding/clash with field "E" defined on line 49.(û…¡ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(¦ÚÑÏ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(İˆˆÓ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ëÓç
+@squid:S1659"&Declare "typeHigh" on a separate line.(²«Ó¸øÿÿÿÿ
+7squid:S3626"Remove this redundant jump.(ûÁİ…8Îó¶ñá,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—Úïûÿÿÿÿ8Îó¶ñá,

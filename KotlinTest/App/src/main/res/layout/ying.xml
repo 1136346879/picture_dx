@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:padding="@dimen/space_10"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="较硬岩、坚硬岩计算（对照表第四行）"
+        />
+    <EditText
+        android:hint="请输入数值（如1.2等）"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/shurushuzi"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/color_orange"
+        android:gravity="center"
+        android:textSize="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:text="结果是："
+        />
+
+    <TextView
+        android:padding="@dimen/space_10"
+        android:gravity="center"
+        android:background="#999"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doit"
+        android:text="计算"
+        />
+
+    <TextView
+        android:textSize="@dimen/text_size_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="线性内插法对照表" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/runaying" />
+</LinearLayout>

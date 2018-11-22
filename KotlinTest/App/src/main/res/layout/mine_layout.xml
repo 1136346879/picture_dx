@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的页面" />
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:id="@+id/my_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的优惠券" />
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:id="@+id/my_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的地址" />
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:id="@+id/online_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="客服电话" />
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除缓存" />
+
+        <TextView
+            android:padding="@dimen/space_20"
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_16"
+            android:background="@drawable/shadow_radius_item">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/rvPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@drawable/shadow"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--<com.example.administrator.kotlintest.widget.DragViewGroup-->
+        <!--android:id="@+id/playerDragLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:padding="20dp"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:background="#333"-->
+            <!--android:id="@+id/playerView"-->
+            <!--android:layout_width="85dp"-->
+            <!--android:layout_height="85dp"-->
+            <!--android:text="踹我试试" />-->
+
+    <!--</com.example.administrator.kotlintest.widget.DragViewGroup>-->
+</RelativeLayout>

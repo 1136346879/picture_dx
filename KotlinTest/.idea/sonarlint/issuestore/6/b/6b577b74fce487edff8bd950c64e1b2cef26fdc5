@@ -1,0 +1,114 @@
+
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(çÂï
+qsquid:S00116"VRename this field "POINT_STATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Øƒõÿÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(çÂï
+asquid:S2184"GCast one of the operands of this multiplication operation to a "float".(‚€ä¶ûÿÿÿÿ
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(ú´°
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(’‡Š°ıÿÿÿÿ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şñÊëÿÿÿÿÿ
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 385.(Šãìá
+N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(—²ã†
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Â£¶ãøÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Š”¯
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(¹¼òûÿÿÿÿ
+Xsquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 498.(äáúò
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Ù¿îÀıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(’‡Š°ıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÓŒ‡âúÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(º„‡ï
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ßÜ‡­
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ÂØû‡
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Š”¯
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 463.(äáúò
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(İ®ú¹
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ì×„øúÿÿÿÿ
+^squid:HiddenFieldCheck"9Rename "temp1" which hides the field declared at line 70.(˜Çö˜şÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(çÂï
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ëß´øÿÿÿÿ
+gsquid:S00114"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™äØ
+…squid:S3008"kRename this field "four_corner_coordinate_positions" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¡óîşÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(äĞ‚‚ûÿÿÿÿ
+^squid:HiddenFieldCheck"9Rename "temp2" which hides the field declared at line 71.(›³¶îûÿÿÿÿ
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(ú´°
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Ù¿îÀıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Â£¶ãøÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ßÜ‡­
+^squid:HiddenFieldCheck"9Rename "temp2" which hides the field declared at line 71.(Ê›Áüÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ëß´øÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(’çé¼
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(’çé¼
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(º„‡ï
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(©²€ª
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 393.(äáúò
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(’çé¼
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÓŒ‡âúÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(÷Ğ³Ôşÿÿÿÿ
+vsquid:S00116"[Rename this field "RECT_BORDER_WITH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Û±úÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÓŒ‡âúÿÿÿÿ
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 490.(Šãìá
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(¢ğÀ"
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(œÂÒÃ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(œÂÒÃ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(’çé¼
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ì×„øúÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‘„Ç ùÿÿÿÿ
+Gsquid:S1068"2Remove this unused "NOW_MOVE_STATE" private field.(ê¸Ç­
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(œÂÒÃ
+vsquid:S00116"[Rename this field "IF_SCANNING_SHOW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰²Ä™üÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ì×„øúÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‘„Ç ùÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(º„‡ï
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 428.(äáúò
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(…Ìşãøÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ôó§è
+S"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãÁğ™øÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Â£¶ãøÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ú¯è¦
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(’‡Š°ıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Ù¿îÀıÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ß¥Ä
+N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(—²ã†
+nsquid:S3008"YRename this field "NOW_MOVE_STATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¸Ç­
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(¥ÂÑøÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ú¯è¦
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 455.(Šãìá
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(İ®ú¹
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(İ®ú¹
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ëß´øÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‘„Ç ùÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(º„‡ï
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(¤â³Äøÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ÓŒ‡âúÿÿÿÿ
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(ú´°
+xsquid:S00116"]Rename this field "RECT_CORNER_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¯ğÃùÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Â£¶ãøÿÿÿÿ
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 420.(Šãìá
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Š”¯
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ú¯è¦
+Dsquid:S1066"/Merge this if statement with the enclosing one.(ÓÁöä
+vsquid:S00116"[Rename this field "RECT_CORNER_WITH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àï…»şÿÿÿÿ
+N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(—²ã†
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(÷Ğ³Ôşÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Ù¿îÀıÿÿÿÿ
+Jsquid:S2696"6Make the enclosing method "static" or remove this set.(ú´°
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‘„Ç ùÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(İ®ú¹
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(œÂÒÃ
+Zsquid:UselessImportCheck"3Remove this unused import 'android.graphics.Color'.(øãíòşÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(İ®ú¹
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(÷Ğ³Ôşÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ßÜ‡­
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ú¯è¦
+wsquid:S3008"]Rename this field "MOVE_OR_ZOOM_STATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¹ÒÃüÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ì×„øúÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(÷Ğ³Ôşÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(çÂï
+Tsquid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(ëß´øÿÿÿÿ
+Ysquid:HiddenFieldCheck"9Rename "temp1" which hides the field declared at line 70.(œÇºÇ
+˜"squid:ClassVariableVisibilityCheck"gMake onImageDetailsSizeChanggedl a static final constant or non-public and provide accessors if needed.(ÛÀŠ¼ıÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(’‡Š°ıÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ßÜ‡­
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(€±èòûÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Š”¯

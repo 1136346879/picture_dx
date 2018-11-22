@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mainactivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mainactivyt2"
+        android:textColor="#000"
+        android:textSize="24sp"
+
+        />
+    <TextView
+        android:layout_below="@+id/mainactivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      瞧一瞧      "
+        android:id="@+id/looklook"
+
+        />
+    <TextView
+        android:layout_below="@+id/looklook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      你好      "
+        android:id="@+id/jump_javaclass"
+
+        />
+    <!--epvTextSize：字符的大小-->
+    <!-- - epvTextColor：字符的颜色-->
+    <!-- - epvTextPadding：字符的间距-->
+    <!-- - epvTextMaxScale：中间字符缩放的最大值-->
+    <!-- - epvTextMinAlpha：两端字符最小alpha值-->
+    <!-- - epvRecycleMode：是否为循环模式-->
+    <!-- - epvMaxShowNum：显示多少个字符-->
+    <com.example.baselibrary.widgets.EasyPickerView
+        android:layout_marginTop="100dp"
+        android:id="@+id/ep_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:epvMaxShowNum="3"
+        app:epvRecycleMode="false"
+        app:epvTextColor="#4aa4a4"
+        app:epvUnSelectTextColor="#F08327"
+        app:epvTextMaxScale="1.0"
+        app:epvTextMinAlpha="1.0"
+        app:epvTextPadding="20dp"
+        app:epvTextSize="20sp"
+        />
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看一看"
+        android:id="@+id/saoyisao"
+
+        />
+    <!--<com.example.administrator.kotlintest.widget.DragViewGroup-->
+        <!--android:id="@+id/playerDragLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="20dp"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/playerView"-->
+            <!--android:layout_width="85dp"-->
+            <!--android:layout_height="85dp"-->
+            <!--android:text="踹我试试" />-->
+
+    <!--</com.example.administrator.kotlintest.widget.DragViewGroup>-->
+
+</RelativeLayout>

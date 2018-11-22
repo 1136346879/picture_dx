@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="common">#2E3034</color>
+
+    <color name="blue">#33b5e5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_80_white">#80FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_80">#80000000</color>
+    <color name="transparent_50">#50000000</color>
+    <color name="transparent_60">#60000000</color>
+
+    <color name="tab_indicator_color">#EF5C61</color>
+    <color name="btn_border_color">#DDDDDD</color>
+    <color name="divider_line">#E7E7E7</color>
+    <color name="divider_line2">#EFEFEF</color>
+    <color name="common_background">#F5F5F5</color>
+    <color name="common_background_f3">#F3F3F3</color>
+    <color name="cb_background_normal">#F6F6F6</color>
+    <color name="btn_background_gray">#F0F0F0</color>
+    <color name="btn_background_gray2">#F4F4F4</color>
+    <color name="btn_background_gray3">#FAFAFA</color>
+    <color name="color_orange_low">#F5A623</color>
+    <color name="color_orange">#F08327</color>
+    <color name="color_orange_dark">#D07528</color>
+
+    <color name="text_color_dark">#999999</color>
+    <color name="text_color_middle">#666666</color>
+    <color name="text_color_light">#333333</color>
+    <color name="text_color_other">#2A2A2A</color>
+    <color name="search_border_normal">#ECECEC</color>
+    <color name="hint_text_color">#C6C6C6</color>
+    <color name="color_04be02">#04be02</color>
+
+    <color name="btn_disable_color">#3FF08327</color>
+    <color name="btn_enable_pressed_color">#D07528</color>
+    <color name="btn_enable_normal_color">#F08327</color>
+    <color name="btn_enable_normal_color2">#BBBBBB</color>
+
+    <color name="pink_dark">#FEF4EB</color>
+
+    <color name="color_blue">#4A90E2</color>
+    <color name="color_blue_dark">#007AFF</color>
+    <color name="color_green">#04BE02</color>
+
+
+    <color name="pay_border_color">#FFDDDDDD</color>
+    <color name="color_CCCCCCC">#CCCCCC</color>
+    <color name="color_e">#EEEEEE</color>
+    <color name="color_151515">#151515</color>
+
+    <!--二维码扫描相关-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="border_d7d7d7">#D7D7D7</color>
+
+</resources>

@@ -1,0 +1,29 @@
+
+9squid:S1659"Declare "x" on a separate line.(¸äÑïüÿÿÿÿ
+?squid:S1659"%Declare "goutsum" on a separate line.(÷ÙÁıÿÿÿÿ
+<squid:S1659""Declare "gsum" on a separate line.(¸äÑïüÿÿÿÿ
+a$squid:AssignmentInSubExpressionCheck".Extract the assignment out of this expression.(Œ‡îÓøÿÿÿÿ
+9squid:S1659"Declare "i" on a separate line.(¸äÑïüÿÿÿÿ
+?squid:S1659"%Declare "boutsum" on a separate line.(÷ÙÁıÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+9squid:S1659"Declare "p" on a separate line.(¸äÑïüÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+<squid:S1659""Declare "bsum" on a separate line.(¸äÑïüÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(Ò´˜Îøÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+>squid:S1659"$Declare "ginsum" on a separate line.(ˆ€ñ¼øÿÿÿÿ
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+:squid:S1659" Declare "yi" on a separate line.(¸äÑïüÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ı…¶‰
+:squid:S1659" Declare "yp" on a separate line.(¸äÑïüÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+:squid:S1659" Declare "yw" on a separate line.(¸äÑïüÿÿÿÿ
+>squid:S1659"$Declare "binsum" on a separate line.(ˆ€ñ¼øÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+9squid:S1659"Declare "y" on a separate line.(¸äÑïüÿÿÿÿ

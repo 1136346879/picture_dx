@@ -1,0 +1,11 @@
+
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(–µÀ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+…"squid:ClassVariableVisibilityCheck"YMake previewBitmap a static final constant or non-public and provide accessors if needed.(“Üı
+Hsquid:S1444"3Make this "public static previewBitmap" field final(“Üı
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Âõ…­
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§‡Ëéúÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(€Ã¿ıÿÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ï“í‰8–Üœñá,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ï“í‰8ªè–ñá,

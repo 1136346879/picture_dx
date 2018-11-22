@@ -1,0 +1,9 @@
+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãÁð™øÿÿÿÿ8ˆÕƒ¾å,
+squid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "velocity".(òÀÿùÿÿÿÿ8ˆÕƒ¾å,
+fsquid:HiddenFieldCheck"?Rename "offsetIndex" which hides the field declared at line 78.(Þ¤Ð8ˆÕƒ¾å,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(„Ìçå8ˆÕƒ¾å,
+squid:S1319"sThe type of the "dataList" object should be an interface such as "List" rather than the implementation "ArrayList".(·Ü£Í8ˆÕƒ¾å,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(„Ìçå8ˆÕƒ¾å,
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‚êÎá8ˆÕƒ¾å,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ÕÆ¾ùýÿÿÿÿ8ˆÕƒ¾å,

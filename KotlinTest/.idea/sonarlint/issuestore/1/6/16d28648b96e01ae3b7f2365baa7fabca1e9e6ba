@@ -1,0 +1,8 @@
+
+wsquid:S1450"[Remove the "mMBtn_Cancel" field and declare it as a local variable in the relevant methods.(ş®¾¢8î‰¿ªñ,
+ssquid:S1450"XRemove the "mTv_Title" field and declare it as a local variable in the relevant methods.(ŒÙñS8î‰¿ªñ,
+usquid:S1450"YRemove the "viewholder" field and declare it as a local variable in the relevant methods.(ûäƒæ8î‰¿ªñ,
+"squid:ClassVariableVisibilityCheck"\Make dialogItemButton a static final constant or non-public and provide accessors if needed.(µš´8î‰¿ªñ,
+csquid:S2259"GA "NullPointerException" could be thrown; "mTv_Title" is nullable here.(¯óµÚ8î‰¿ªñ,
+tsquid:S00116"WRename this field "mMBtn_Cancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş®¾¢8î‰¿ªñ,
+psquid:S00116"TRename this field "mTv_Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÙñS8î‰¿ªñ,

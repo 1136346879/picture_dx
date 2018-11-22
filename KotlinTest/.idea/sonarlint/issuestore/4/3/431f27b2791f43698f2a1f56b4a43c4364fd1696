@@ -1,0 +1,17 @@
+
+Fsquid:S1481"1Remove this unused "previewFrame" local variable.(‰Éô©
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ÍåÅšıÿÿÿÿ
+Dsquid:S00108")Either remove or fill this block of code.(”¢àúÿÿÿÿ
+Msquid:UnusedPrivateMethod"*Remove this unused private "dp2px" method.(ƒ˜Ú°
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«›±ëşÿÿÿÿ
+`squid:HiddenFieldCheck"@Rename "resultBitmap" which hides the field declared at line 57.(‡óÕé
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—ºÂ•úÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ­ì
+ssquid:S00116"XRename this field "SCAN_VELOCITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…–Û–üÿÿÿÿ
+Fsquid:S1068"1Remove this unused "SCANNER_ALPHA" private field.(ó¼ôâ
+Hsquid:S1481".Remove this unused "frameLeft" local variable.(–Ì‘íúÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(€òÕ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ùú åÿÿÿÿÿ
+Bsquid:S1481"-Remove this unused "frameTop" local variable.(œ±£ê
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎííŠùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Î‘ÍĞøÿÿÿÿ

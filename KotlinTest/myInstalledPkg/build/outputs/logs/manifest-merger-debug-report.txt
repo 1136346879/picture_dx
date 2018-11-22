@@ -1,0 +1,167 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:1-80:12
+	package
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+		INJECTED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:6:1-63
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:6:18-60
+uses-permission#android.permission.CAMERA
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:10:22-77
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:12:22-70
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:14:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:16:22-63
+uses-permission#android.permission.READ_LOGS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:17:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:18:22-78
+uses-permission#android.permission.READ_CONTACTS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:19:5-72
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:19:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:20:5-73
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:20:22-70
+uses-permission#android.permission.CALL_PHONE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:22:5-69
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:22:22-66
+uses-permission#android.permission.GET_TASKS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:23:22-65
+uses-permission#android.permission.WAKE_LOCK
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:24:22-65
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:25:5-75
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:25:22-72
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:26:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:27:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:28:5-76
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:28:22-73
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:29:5-84
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:29:22-81
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:44:5-81
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:44:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:45:5-71
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:45:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:46:5-74
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:46:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:47:5-74
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:47:22-71
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:48:5-80
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:48:22-77
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:49:5-85
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:49:22-82
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:50:5-75
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:50:22-72
+uses-feature#android.hardware.camera
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:53:5-60
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:53:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:54:5-70
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:54:19-67
+uses-feature#0x00020000
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:55:5-78
+	android:glEsVersion
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:55:19-51
+	android:required
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:55:52-75
+application
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:56:5-74:19
+activity#com.homer.installed.WebbrowserActivity4
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:69:9-73:20
+	android:screenOrientation
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:72:13-49
+	android:label
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:71:13-45
+	android:name
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:70:13-67
+uses-sdk
+ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:78:5-44
+	android:minSdkVersion
+		ADDED from F:\minedemo\xymens_new\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:78:15-41
