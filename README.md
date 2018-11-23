@@ -9,7 +9,7 @@
 基础类库：BaseLibrary
 附属类库：Provider
 图片裁剪：uCrop   任意裁剪
- ![image](picture_dx/image_flod/任意矩形裁剪.jpg)
+ ![image](http://github.com/yourname/your-repository/raw/master/picture_dx/image_flod/任意矩形裁剪.jpg)
 			 /**
      * 去裁剪  直接写这个方法即可  
      *
