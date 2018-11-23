@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
         tv4.setOnClickListener {
 //打开相册
-            pickPhoto()
+            pickPhotoUcrop()
         }
         tv5.setOnClickListener {
 //打开相册
@@ -69,10 +69,11 @@ class MainActivity : AppCompatActivity() {
             ToastUtilKt.showToast("--》$name")
             ToastUtilKt.showCustomToast("--》$age")
 
+//            startActivity(this!!.intentFor<com.xfs.fsyuncai.mavendemo.MainActivity>())
+
         }
         tv3.setOnClickListener {
                         startActivity(this!!.intentFor<MineActivity>())
-
         }
         ruan.setOnClickListener {
             startActivity(this!!.intentFor<RuanActivity>())
@@ -113,10 +114,16 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_PICK, null)
         // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
         intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
-        startActivityForResult(intent, UCROP_SELECT_PHOTO)
+        startActivityForResult(intent, SELECT_PHOTO)
     }
 
-
+    private fun pickPhotoUcrop() {
+//        photoUri = getImageUri()
+        val intent = Intent(Intent.ACTION_PICK, null)
+        // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
+        intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
+        startActivityForResult(intent, UCROP_SELECT_PHOTO)
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         when(requestCode){

@@ -8,7 +8,73 @@
 主工程：App（包含zxing扫一扫功能，view拖拽，）
 基础类库：BaseLibrary
 附属类库：Provider
-图片裁剪：uCrop
+图片裁剪：uCrop   任意裁剪
+
+			 /**
+     * 去裁剪  直接写这个方法即可  
+     *
+     * @param originalPath
+     */
+    protected fun startCrop(originalPath: String) {
+        val options = UCrop.Options()
+        val toolbarColor = AttrsUtils.getTypeValueColor(this, -1)
+        val statusColor = AttrsUtils.getTypeValueColor(this, -1)
+        val titleColor = AttrsUtils.getTypeValueColor(this, -1)
+        options.setToolbarColor(toolbarColor)//状态栏背景
+        options.setStatusBarColor(statusColor)
+        options.setToolbarWidgetColor(titleColor)
+        options.setCircleDimmedLayer(false)
+        options.setShowCropFrame(true)//显示裁剪框
+        options.setShowCropGrid(true)//显示裁剪框网格
+        options.setDragFrameEnabled(true)//裁剪框拖拽
+        options.setScaleEnabled(true)//图片缩放
+        options.setRotateEnabled(true)//图片旋转
+        options.setCompressionQuality(70)//图片质量
+        options.setHideBottomControls(true)
+        options.setFreeStyleCropEnabled(true)//裁剪
+        val isHttp = false
+        val imgType = PictureMimeType.getLastImgType(originalPath)
+        val uri = if (isHttp) Uri.parse(originalPath) else Uri.fromFile(File(originalPath))
+        UCrop.of(uri, Uri.fromFile(File(getDiskCacheDir(this), System.currentTimeMillis().toString() + "" + imgType)))
+                .withAspectRatio(0F, 0F)
+                .withMaxResultSize(0, 0)
+                .withOptions(options)
+                .start(this)
+//        finish()
+    }
+
+		
+		CropImageActivity  按正方形裁切图片
+			（参照该类即可）
+		
+		
+图片上传
+		（网络访问用的是
+		com.squareup.retrofit2:retrofit:$retrofitVersion"
+     com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
+    /**
+     * 图片路径传过来
+     *
+     *
+     */
+    private fun loadUpImg(path:String) {
+        val httpManger = HttpManager.instance()
+//        val file = File(BitmapUtils.compressImageUpload(path))
+        val file = File(path)
+        val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
+        val body = MultipartBody.Part.createFormData("file", file.name, requestFile)
+        httpManger.doHttpDeal(this, httpManger.createService(OrderService::class.java)!!.pictureSearch(body),
+                object : HttpOnNextListener() {
+                    override fun onNext(json: String) {
+                        ToastUtilKt.showCustomToast("Image upload sucessed :$json")
+                    }
+
+                    override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
+                        super.onError(statusCode, apiErrorModel)
+                        ToastUtilKt.showCustomToast("Image upload failed")
+                    }
+                },false)
+    }
 扫一扫功能：qrode-module
 个人中心：usercenter
 
@@ -16,7 +82,9 @@
 
 
 
-
+//内存泄漏检测（打开扫一扫即可观察到现象，因类中包含了多个静态变量）
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 
 
 
@@ -26,7 +94,7 @@
 图片相关问题（显示裁剪压缩轮播上传等等）
 
 系统裁剪图片调用
-（1）进入相册
+（1）进入相册（权限rxpremission） com.github.tbruyelle:rxpermissions
     val intent = Intent(Intent.ACTION_PICK, null)
         // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
         intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
