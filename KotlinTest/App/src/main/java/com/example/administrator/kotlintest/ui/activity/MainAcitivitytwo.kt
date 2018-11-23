@@ -80,16 +80,6 @@ ToastUtilKt.showCustomToast(it.toString())
 
 }
 
-
-
-
-
-
-
-
-
-
-
     }
 
     override fun initData() {

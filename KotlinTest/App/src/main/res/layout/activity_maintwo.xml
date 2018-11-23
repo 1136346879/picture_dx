@@ -25,7 +25,7 @@
         android:layout_below="@+id/looklook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="      你好      "
+        android:text="    进入空页面    "
         android:id="@+id/jump_javaclass"
 
         />
@@ -54,7 +54,7 @@
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="看一看"
+        android:text="看一看-two"
         android:id="@+id/saoyisao"
 
         />
