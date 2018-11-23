@@ -44,7 +44,7 @@
 //        finish()
     }
 ## 小心看图！！！
-		
+		 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/990d85bcecb360a2190d002658a9d0ff.gif)
 		CropImageActivity  按正方形裁切图片
 			（参照该类即可）
 		
