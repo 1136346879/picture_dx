@@ -10,6 +10,7 @@
 附属类库：Provider
 图片裁剪：uCrop   任意裁剪
  ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/suibiancrop.jpg)
+
 			 /**
      * 去裁剪  直接写这个方法即可  
      *
@@ -42,7 +43,7 @@
                 .start(this)
 //        finish()
     }
-
+## 小心看图！！！
 		
 		CropImageActivity  按正方形裁切图片
 			（参照该类即可）
