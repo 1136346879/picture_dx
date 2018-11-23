@@ -49,9 +49,9 @@
 		
 		
 图片上传
-		（网络访问用的是
+		网络访问用的是
 		com.squareup.retrofit2:retrofit:$retrofitVersion"
-     com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
+    		 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
     /**
      * 图片路径传过来
      *
@@ -83,6 +83,7 @@
 
 
 //内存泄漏检测（打开扫一扫即可观察到现象，因类中包含了多个静态变量）
+
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 
@@ -94,8 +95,10 @@
 图片相关问题（显示裁剪压缩轮播上传等等）
 
 系统裁剪图片调用
-（1）进入相册（权限rxpremission） com.github.tbruyelle:rxpermissions
-    val intent = Intent(Intent.ACTION_PICK, null)
+（1）进入相册（权限rxpremission）
+com.github.tbruyelle:rxpermissions
+   
+  	 val intent = Intent(Intent.ACTION_PICK, null)
         // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
         intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
         startActivityForResult(intent, UCROP_SELECT_PHOTO)
@@ -125,6 +128,6 @@
 
     }
     （3）再在回调onActivityResult中处理裁剪后的逻辑
-    如上传，保存等。
+   	 如上传，保存等。
 
 	安卓交流群：qq   335042824
