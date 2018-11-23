@@ -48,34 +48,35 @@
 			（参照该类即可）
 		
 		
-图片上传
-		网络访问用的是
-		com.squareup.retrofit2:retrofit:$retrofitVersion"
-    		 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
-    /**
-     * 图片路径传过来
-     *
-     *
-     */
-    private fun loadUpImg(path:String) {
-        val httpManger = HttpManager.instance()
-//        val file = File(BitmapUtils.compressImageUpload(path))
-        val file = File(path)
-        val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
-        val body = MultipartBody.Part.createFormData("file", file.name, requestFile)
-        httpManger.doHttpDeal(this, httpManger.createService(OrderService::class.java)!!.pictureSearch(body),
-                object : HttpOnNextListener() {
-                    override fun onNext(json: String) {
-                        ToastUtilKt.showCustomToast("Image upload sucessed :$json")
-                    }
+	图片上传
+	网络访问用的是
+	com.squareup.retrofit2:retrofit:$retrofitVersion"
+	 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
+	    /**
+	     * 图片路径传过来
+	     *
+	     */
+	    private fun loadUpImg(path:String) {
+		val httpManger = HttpManager.instance()
+	//        val file = File(BitmapUtils.compressImageUpload(path))
+		val file = File(path)
+		val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
+		val body = MultipartBody.Part.createFormData("file", file.name, requestFile)
+		httpManger.doHttpDeal(this, httpManger.createService(OrderService::class.java)!!.pictureSearch(body),
+			object : HttpOnNextListener() {
+			    override fun onNext(json: String) {
+				ToastUtilKt.showCustomToast("Image upload sucessed :$json")
+			    }
 
-                    override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
-                        super.onError(statusCode, apiErrorModel)
-                        ToastUtilKt.showCustomToast("Image upload failed")
-                    }
-                },false)
-    }
+			    override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
+				super.onError(statusCode, apiErrorModel)
+				ToastUtilKt.showCustomToast("Image upload failed")
+			    }
+			},false)
+	    }	
+	    
 扫一扫功能：qrode-module
+
 个人中心：usercenter
 
 
@@ -95,7 +96,7 @@
 图片相关问题（显示裁剪压缩轮播上传等等）
 
 系统裁剪图片调用
-（1）进入相册（权限rxpremission）
+（1）进入相册（权限rxpremission
 com.github.tbruyelle:rxpermissions
    
   	 val intent = Intent(Intent.ACTION_PICK, null)
