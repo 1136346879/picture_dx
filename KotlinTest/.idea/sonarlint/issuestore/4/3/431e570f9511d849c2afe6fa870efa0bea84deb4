@@ -1,0 +1,20 @@
+
+Tsquid:S3398"?Move this method into the anonymous class declared at line 384.(æŞúØ
+Ysquid:S3398"?Move this method into the anonymous class declared at line 384.(¸ıõÈøÿÿÿÿ
+Ksquid:S1659"1Declare "mWrapperStateRotate" on a separate line.(Ş‹‰Ÿüÿÿÿÿ
+Jsquid:S1659"0Declare "mWrapperStateScale" on a separate line.(Ş‹‰Ÿüÿÿÿÿ
+@squid:S1659"+Declare "mLayoutRotate" on a separate line.(Úù†’
+?squid:S1659"*Declare "mLayoutScale" on a separate line.(Úù†’
+Msquid:S1659"3Declare "mTextViewScalePercent" on a separate line.(Ãç–ûÿÿÿÿ
+@squid:S1659"+Declare "rotateEnabled" on a separate line.(ú”Ö€
+Csquid:S1068".Remove this unused "mLogoColor" private field.(›‹Œ
+nsquid:S1450"YRemove the "mLogoColor" field and declare it as a local variable in the relevant methods.(›‹Œ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õ†¤×ÿÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ëäİ«
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿ»­˜
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Àµ®ãüÿÿÿÿ
+Dsquid:S1905"*Remove this unnecessary cast to "Toolbar".(òé²Äüÿÿÿÿ
+Asquid:S1905",Remove this unnecessary cast to "UCropView".(¢ãêŠ
+Hsquid:S1481".Remove this unused "imageType" local variable.(µÒ²Ñùÿÿÿÿ
+>squid:S1481")Remove this unused "file" local variable.(Š×÷¡
+hsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(©¦×îøÿÿÿÿ

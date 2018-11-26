@@ -1,16 +1,15 @@
 # picture_dx
+# 欢迎能来到这里
 
-该项目demo原本计划，及产生过程：
-本来我是用来练习kotlin的语法
+>* 该项目demo原本计划，及产生过程：
+>* 本来我是用来练习kotlin的语法
 
-写了几个类练练手。然后是分模块来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。
+>* 写了几个类练练手。然后是分模块来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。
 
-主工程：App（包含zxing扫一扫功能，view拖拽，）
-基础类库：BaseLibrary
-附属类库：Provider
-图片裁剪：uCrop   任意裁剪
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/suibiancrop.jpg)
-
+>* 主工程：App（包含zxing扫一扫功能，view拖拽，）
+>* 基础类库：BaseLibrary
+>* 附属类库：Provider
+>* 图片裁剪： uCrop   任意裁剪 [^code]
 			 /**
      * 去裁剪  直接写这个方法即可  
      *
@@ -89,8 +88,13 @@
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
-
-
+点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
+会首先显示在通知栏中
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks3.jpg)
+通知栏里面的可以点击
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks2.jpg)
+最后在leaks这个app里面可以看到相应的内存泄漏详情
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks1.jpg)
 
 
 

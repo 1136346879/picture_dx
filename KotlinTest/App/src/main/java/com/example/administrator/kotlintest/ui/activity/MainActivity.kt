@@ -19,6 +19,7 @@ import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
 import com.example.administrator.kotlintest.ui.entity.学生
 import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.jakewharton.rxbinding2.view.RxView
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
@@ -33,6 +34,7 @@ import okhttp3.RequestBody
 import org.jetbrains.anko.intentFor
 import java.io.File
 import java.io.IOException
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
@@ -52,13 +54,19 @@ class MainActivity : AppCompatActivity() {
 //打开相册
             pickPhoto()
         }
-        tv1.setOnClickListener {
-            tv1.setText("你好")
+//        tv1.setOnClickListener {
+//            tv1.setText("你好")
+//            startActivity(this!!.intentFor<MainAcitivitytwo>())
+////            startActivity(this!!.intentFor<WebbrowserActivity4>())
+//
+//        }
+
+        RxView.clicks(tv1).
+                throttleFirst(1,TimeUnit.SECONDS)
+                .subscribe {
+            tv1.text = "你好"
             startActivity(this!!.intentFor<MainAcitivitytwo>())
-//            startActivity(this!!.intentFor<WebbrowserActivity4>())
-
         }
-
         tv2.setOnClickListener {
 //            startActivity(this!!.intentFor<WebbrowserActivity4>())
             val 学生 = 学生("丁",17)
@@ -75,6 +83,7 @@ class MainActivity : AppCompatActivity() {
         tv3.setOnClickListener {
                         startActivity(this!!.intentFor<MineActivity>())
         }
+
         ruan.setOnClickListener {
             startActivity(this!!.intentFor<RuanActivity>())
 

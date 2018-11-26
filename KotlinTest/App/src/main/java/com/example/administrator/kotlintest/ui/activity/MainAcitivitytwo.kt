@@ -76,7 +76,7 @@ class MainAcitivitytwo: BaseActivity(){
 
 Loglevel.values().map {
 
-ToastUtilKt.showCustomToast(it.toString())
+//ToastUtilKt.showCustomToast(it.toString())
 
 }
 
@@ -130,7 +130,7 @@ ToastUtilKt.showCustomToast(it.toString())
 //        for (i in rangela)   ToastUtilKt.showToast("$i,")
 
 //数组
-        val arrayOfInt : IntArray = intArrayOf(1,3,5,7)
+//        val arrayOfInt : IntArray = intArrayOf(1,3,5,7)
         val arrayCharArray : CharArray = charArrayOf('c','b','a')
         val arrayStringArray : Array<String> = arrayOf("我","是","谁")
         val arrayOf徐盛 : Array<学生> = arrayOf(学生("li"),学生("wang"))
@@ -146,9 +146,9 @@ ToastUtilKt.showCustomToast(it.toString())
 //        ToastUtilKt.showCustomToast(arrayCharArray.joinToString())//c，b，a
 //        ToastUtilKt.showCustomToast(arrayOfInt.slice(0..2).toString())
 
-        arrayOfInt.forEach {
+//        arrayOfInt.forEach {
 //            ToastUtilKt.showToast(it.toString())
-        }
+//        }
 
         arrayCharArray.forEach forEach@ {
             if(it == 'b')return@forEach

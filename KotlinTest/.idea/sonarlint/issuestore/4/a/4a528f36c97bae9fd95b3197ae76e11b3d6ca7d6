@@ -1,0 +1,5 @@
+
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®âŠ¡ùÿÿÿÿ
+fsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùùe
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÑİ
+Usquid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ
