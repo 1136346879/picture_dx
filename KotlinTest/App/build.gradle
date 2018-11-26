@@ -83,7 +83,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion"
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
-    // Glide
+    // Glide 图片加载
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     implementation "com.github.bumptech.glide:okhttp3-integration:$glideVersion"
     annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
@@ -103,4 +103,10 @@ dependencies {
 //内存泄漏检测
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //图片加载
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }

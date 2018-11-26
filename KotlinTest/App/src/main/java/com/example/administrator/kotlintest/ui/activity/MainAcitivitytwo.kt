@@ -14,7 +14,10 @@ import com.example.administrator.kotlintest.ui.qrcode.CaptureActivity
 import com.example.administrator.kotlintest.widget.ToastUtilKt
 import com.example.baselibrary.ui.activity.BaseActivity
 import com.example.baselibrary.widgets.EasyPickerView
+import com.xfs.fsyuncai.ui.main.home.banner.GlideImageLoader
 import com.xfs.qrcode_module.manager.ScanManager
+import com.youth.banner.BannerConfig
+import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.activity_maintwo.*
 import org.jetbrains.anko.intentFor
 
@@ -30,6 +33,15 @@ class MainAcitivitytwo: BaseActivity(){
     private var typeChar: Char = 'a'
 
     val FINAL_NI_HAO : String = "nihao"
+    var list_path = arrayListOf(
+            "http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg"
+            ,"http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg"
+    ,"http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg"
+    ,"http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg"
+    ,"http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg"
+    ,"http://h.hiphotos.baidu.com/image/pic/item/b999a9014c086e064a76b12f0f087bf40bd1cbfc.jpg")
+    var list_title = arrayListOf("爱党","爱祖国","爱人民","爱妹子","爱学习","爱人生")
+
 
         var arrayList= arrayListOf(
 
@@ -80,6 +92,31 @@ Loglevel.values().map {
 
 }
 
+        homeBanner//设置banner样式
+                .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
+                //设置图片加载器
+                .setImageLoader(GlideImageLoader())
+                //设置图片集合
+                .setImages(list_path)
+                //设置banner动画效果
+                .setBannerAnimation(Transformer.Default)
+                //设置标题集合（当banner样式有显示title时）
+                .setBannerTitles(list_title)
+                //设置轮播时间
+                .setDelayTime(1500)
+                //设置指示器位置（当banner模式中有指示器时）
+                .setIndicatorGravity(BannerConfig.CENTER)
+                //banner设置方法全部调用完毕时最后调用
+                .start()
+
+        homeBanner.setOnBannerListener {
+        val bean = list_path[it]
+
+
+
+
+        }
+
     }
 
     override fun initData() {
@@ -102,7 +139,8 @@ Loglevel.values().map {
 //            startActivity(this!!.intentFor<MainActivity>())
 //            ScanManager.getInstance().openScan(this@MainAcitivitytwo)
 
-            maxInt(a,20)
+//            maxInt(a,20)
+
 
         }
 

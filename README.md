@@ -10,7 +10,7 @@
 >* 基础类库：BaseLibrary
 >* 附属类库：Provider
 >* 图片裁剪： uCrop   任意裁剪 [^code]
-			 /**
+	/**
      * 去裁剪  直接写这个方法即可  
      *
      * @param originalPath
@@ -52,8 +52,8 @@
 ##	图片上传
 ##	网络访问用的是  [^code]
 
-	com.squareup.retrofit2:retrofit:$retrofitVersion"
-	 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
+		com.squareup.retrofit2:retrofit:$retrofitVersion"
+		 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
 	
 	    /**
 	     * 图片路径传过来
@@ -103,16 +103,17 @@
 
 ## 图片相关问题（显示裁剪压缩轮播上传等等）
 
-系统裁剪图片调用
-	###（1）进入相册（权限rxpremission
-		com.github.tbruyelle:rxpermissions
-	   
+	##系统裁剪图片调用
+	###（1）进入相册[^code]
+	
+	（权限rxpremission com.github.tbruyelle:rxpermissions
 		 val intent = Intent(Intent.ACTION_PICK, null)
 			// 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
 			intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
 			startActivityForResult(intent, UCROP_SELECT_PHOTO)
 
 	###（2）在页面onActivityResult回调中，调用系统裁剪 [^code]
+	
 		  private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
 
 			val intent = Intent("com.android.camera.action.CROP")
@@ -134,7 +135,31 @@
 			Log.e("TAKE_PHOTO", "TAKE_PHOTO-zoom-CROP_PHOTO")
 			startActivityForResult(intent, CROP_PHOTO)
 		  }
+		  
     ###（3）再在回调onActivityResult中处理裁剪后的逻辑
 			如上传，保存等。
-
+## 图片轮播用了两种写法：（第三方和自定义）
+			### 第三方     //轮播图
+				implementation 'com.youth.banner:banner:1.4.10'
+				使用也很简单： homeBanner//设置banner样式
+                .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
+                //设置图片加载器
+                .setImageLoader(GlideImageLoader())
+                //设置图片集合
+                .setImages(list_path)
+                //设置banner动画效果
+                .setBannerAnimation(Transformer.Default)
+                //设置标题集合（当banner样式有显示title时）
+                .setBannerTitles(list_title)
+                //设置轮播时间
+                .setDelayTime(1500)
+                //设置指示器位置（当banner模式中有指示器时）
+                .setIndicatorGravity(BannerConfig.CENTER)
+                //banner设置方法全部调用完毕时最后调用
+                .start()
+				
+			### 自定义的   ImageBanner（图片加载用的picasso）
+				直接设置数据就可以
+			  imageBanner.setList(imageArray,imageTitle);
+			  
 > * 	安卓交流群：qq   335042824
