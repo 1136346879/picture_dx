@@ -36,12 +36,9 @@ public class ImageBanner extends FrameLayout {
      * banner高度，默认屏幕宽度一半
      */
     private int bannerHeight;
-    private Consumer<Throwable> throwable = new Consumer<Throwable>() {
-        @Override
-        public void accept(Throwable throwable) throws Exception {
-            removeAllViews();
-            postInvalidate();
-        }
+    private Consumer<Throwable> throwable = throwable -> {
+        removeAllViews();
+        postInvalidate();
     };
     private boolean isFirst = true;
 
