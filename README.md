@@ -6,6 +6,7 @@
 
 >* 写了几个类练练手。然后是分模块来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。
 
+图片裁剪可用于：用户头像展示裁剪，图片搜索功能（如淘宝，京东，百度等搜索）
 >* 主工程：App（包含zxing扫一扫功能，view拖拽，）
 >* 基础类库：BaseLibrary
 >* 附属类库：Provider
@@ -46,8 +47,9 @@
 
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/suibiancaijian.gif)
 		CropImageActivity  按正方形裁切图片
+		用于app头像裁剪,用户图像裁剪
 			（参照该类即可）
-		
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/方形裁剪.jpg)			
 		
 ##	图片上传
 ##	网络访问用的是  [^code]
@@ -78,8 +80,11 @@
 			},false)
 	    }	
 	    
->*  扫一扫功能：qrode-module
+>*  扫一扫功能：qrode-module(直接可以引入该module)
 
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.zxing:android-core:3.3.0'
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
 >*  个人中心：usercenter
 
 
@@ -87,9 +92,12 @@
 
 
 # //内存泄漏检测（打开扫一扫即可观察到现象，因类中包含了多个静态变量）
+
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.zxing:android-core:3.3.0'
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing.gif)
 
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
+
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 	点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
@@ -114,7 +122,12 @@
 			intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
 			startActivityForResult(intent, UCROP_SELECT_PHOTO)
 
-	###（2）在页面onActivityResult回调中，调用系统裁剪 [^code]
+	###（2）在页面onActivityResult回调中，调用系统裁剪 
+	优点：稳定性高，无BUG，利于app
+	缺点：裁剪页面的UI不可以修改是固定的
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/系统裁剪.jpg)	
+
+	调用系统裁剪[^code]
 	
 		  private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
 
@@ -141,9 +154,10 @@
     ###（3）再在回调onActivityResult中处理裁剪后的逻辑
 			如上传，保存等。
 ## 图片轮播用了两种写法：（第三方和自定义）
-			### 第三方     //轮播图
+			### 第三方     //轮播图（新闻列表头部展示）
 			
-			![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
+			
 				implementation 'com.youth.banner:banner:1.4.10'
 				使用也很简单： homeBanner//设置banner样式
                 .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
@@ -164,7 +178,9 @@
 				
 			### 自定义的   ImageBanner（图片加载用的picasso）
 				直接设置数据就可以
-				![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/轮播图.jpg)
+				
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/轮播图.jpg)
+				
 			  imageBanner.setList(imageArray,imageTitle);
 			  
 > * 	安卓交流群：qq   335042824
