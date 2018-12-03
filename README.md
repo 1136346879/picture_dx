@@ -87,7 +87,9 @@
 
 
 # //内存泄漏检测（打开扫一扫即可观察到现象，因类中包含了多个静态变量）
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing.gif)
 
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 	点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
@@ -140,6 +142,8 @@
 			如上传，保存等。
 ## 图片轮播用了两种写法：（第三方和自定义）
 			### 第三方     //轮播图
+			
+			![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
 				implementation 'com.youth.banner:banner:1.4.10'
 				使用也很简单： homeBanner//设置banner样式
                 .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
@@ -160,6 +164,7 @@
 				
 			### 自定义的   ImageBanner（图片加载用的picasso）
 				直接设置数据就可以
+				![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/轮播图.jpg)
 			  imageBanner.setList(imageArray,imageTitle);
 			  
 > * 	安卓交流群：qq   335042824

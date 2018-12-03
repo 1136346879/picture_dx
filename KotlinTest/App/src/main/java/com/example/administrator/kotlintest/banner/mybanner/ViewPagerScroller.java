@@ -12,7 +12,7 @@ import android.widget.Scroller;
  */
 
 public class ViewPagerScroller extends Scroller {
-    private int newDuration = 1000;
+    private int newDuration = 500;
 
     public ViewPagerScroller(Context context) {
         super(context);

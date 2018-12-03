@@ -71,3 +71,5 @@ cApp/src/main/java/com/example/administrator/kotlintest/banner/mybanner/imageLoa
 WApp/src/main/java/com/example/administrator/kotlintest/banner/mybanner/ImageBanner.java,d\2\d2b8bcc88f224a26d7ee7fa02f6f738706fcf6dd
 ˆ
 XApp/src/main/java/com/example/administrator/kotlintest/ui/activity/TestActivityJava.java,a\4\a4f48a69febac23fbfd9b4690ce1884dddf2413a
+r
+BApp/src/main/java/com/example/administrator/kotlintest/Loglevel.kt,a\8\a8d9e54fa7623e6715438951e14c7dbd869b7021
