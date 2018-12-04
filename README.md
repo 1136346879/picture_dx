@@ -46,9 +46,11 @@
 ## 小心看图
 
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/suibiancaijian.gif)
+
 		CropImageActivity  按正方形裁切图片
 		用于app头像裁剪,用户图像裁剪
 			（参照该类即可）
+			
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/方形裁剪.jpg)			
 		
 ##	图片上传
@@ -84,6 +86,7 @@
 
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
+    
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
 >*  个人中心：usercenter
 
@@ -95,12 +98,14 @@
 
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
+    
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing.gif)
 
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 	点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
+	
 ## 会首先显示在通知栏中
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks3.png)
 ## 通知栏可以点击显示详情
@@ -125,6 +130,7 @@
 	###（2）在页面onActivityResult回调中，调用系统裁剪 
 	优点：稳定性高，无BUG，利于app
 	缺点：裁剪页面的UI不可以修改是固定的
+	
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/系统裁剪.jpg)	
 
 	调用系统裁剪[^code]
