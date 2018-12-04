@@ -27,8 +27,6 @@ v
 FApp/src/main/java/com/example/administrator/kotlintest/inner/Outter.kt,7\e\7e1cf98e1a7257aff99e4b632236c2c586b42fc5
 \
 ,App/src/main/res/layout/activity_maintwo.xml,4\2\420fc65458202c54ea79c0cd795211ef91aa10d2
-†
-VApp/src/main/java/com/example/administrator/kotlintest/ui/activity/MainAcitivitytwo.kt,b\d\bd7ab2c5f6699d3280788eb6fb18c68894c083ed
 Y
 )App/src/main/res/layout/activity_main.xml,3\9\39a40a130da1efc2710f2a0c9a9f86e4e571b5e7
 ‚
@@ -69,8 +67,6 @@ fApp/src/main/java/com/example/administrator/kotlintest/banner/mybanner/imageLoa
 cApp/src/main/java/com/example/administrator/kotlintest/banner/mybanner/imageLoader/ImageLoader.java,e\4\e4bb62f067cb90a07aec6a2d93172c57b393da41
 ‡
 WApp/src/main/java/com/example/administrator/kotlintest/banner/mybanner/ImageBanner.java,d\2\d2b8bcc88f224a26d7ee7fa02f6f738706fcf6dd
-ˆ
-XApp/src/main/java/com/example/administrator/kotlintest/ui/activity/TestActivityJava.java,a\4\a4f48a69febac23fbfd9b4690ce1884dddf2413a
 r
 BApp/src/main/java/com/example/administrator/kotlintest/Loglevel.kt,a\8\a8d9e54fa7623e6715438951e14c7dbd869b7021
 A

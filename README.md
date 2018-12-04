@@ -94,8 +94,8 @@
 
 
 
-# //内存泄漏检测（打开扫一扫即可观察到现象，因类中包含了多个静态变量）
-
+# //内存泄漏检测（（ThirdPartBannerZxingAcitivity）打开扫一扫即可观察到现象，因类中包含了多个静态变量）
+   扫一扫（自定义仿照微信界面）
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
     
@@ -160,7 +160,7 @@
     ###（3）再在回调onActivityResult中处理裁剪后的逻辑
 			如上传，保存等。
 ## 图片轮播用了两种写法：（第三方和自定义）
-			### 第三方     //轮播图（新闻列表头部展示）
+			### （ThirdPartBannerZxingAcitivity）第三方     //轮播图（新闻列表头部展示）
 			
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
 			
@@ -182,11 +182,15 @@
                 //banner设置方法全部调用完毕时最后调用
                 .start()
 				
-			### 自定义的   ImageBanner（图片加载用的picasso）
+			### （CustomerBannerActivityJava）自定义的   ImageBanner（图片加载用的picasso）
 				直接设置数据就可以
 				
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/轮播图.jpg)
-				
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/imageBannergif.gif)
+
 			  imageBanner.setList(imageArray,imageTitle);
 			  
+			  
+CustomerBannerActivityJava 该类中加入自定义loadingview
+					动画及图案纯手动打造
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/loadingview.gif)
 > * 	安卓交流群：qq   335042824
