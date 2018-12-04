@@ -51,7 +51,7 @@
 		用于app头像裁剪,用户图像裁剪
 			（参照该类即可）
 			
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/方形裁剪.jpg)			
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/squre_crop.gif)			
 		
 ##	图片上传
 ##	网络访问用的是  [^code]
@@ -131,7 +131,7 @@
 	优点：稳定性高，无BUG，利于app
 	缺点：裁剪页面的UI不可以修改是固定的
 	
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/系统裁剪.jpg)	
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/system_crop.gif)	
 
 	调用系统裁剪[^code]
 	
@@ -192,5 +192,7 @@
 			  
 CustomerBannerActivityJava 该类中加入自定义loadingview
 					动画及图案纯手动打造
+					
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/loadingview.gif)
-> * 	安卓交流群：qq   335042824
+
+> * 	安卓高级开发交流群：qq   335042824

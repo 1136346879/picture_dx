@@ -81,6 +81,7 @@ public class CustomerBannerActivityJava extends Activity implements LoadingView.
            public void run() {
 //               loadingView.showErrorView("网络错误，点击重新加载");
                loadingView.dismiss();
+               imageBanner.setStartRoll();
            }
        }, 2000);
 
