@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.kotlintest.loadingview.LoadingView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <com.example.administrator.kotlintest.loadingview.CustomProgressView
+            android:id="@+id/progress_bar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="努力加载中。。。"
+            android:textColor="#ff999999"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/empty_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:inflatedId="@+id/empty_layout"
+        android:layout="@layout/empty_layout" />
+
+    <ViewStub
+        android:id="@+id/error_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:inflatedId="@+id/error_layout"
+        android:layout="@layout/error_layout" />
+
+
+</com.example.administrator.kotlintest.loadingview.LoadingView>

@@ -19,9 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainAcitivitytwo"/>
+        <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
         <activity android:name=".ui.qrcode.CaptureActivity"/>
-        <activity android:name=".ui.activity.TestActivityJava"/>
+        <activity android:name=".ui.activity.CustomerBannerActivityJava"/>
         <activity android:name=".ui.activity.MineActivity"/>
         <activity android:name=".ui.activity.RuanActivity"/>
         <activity android:name=".ui.activity.YingActivity"/>

@@ -2,24 +2,37 @@ package com.example.administrator.kotlintest.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.kotlintest.Loglevel;
 import com.example.administrator.kotlintest.R;
 import com.example.administrator.kotlintest.banner.mybanner.ImageBanner;
 import com.example.administrator.kotlintest.inner.View;
+import com.example.administrator.kotlintest.loadingview.LoadingView;
+import com.example.administrator.kotlintest.widget.DensityUtil;
 import com.example.administrator.kotlintest.widget.ToastUtilKt;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestActivityJava extends Activity {
+/**
+ * 自定义显示轮播图
+ */
+public class CustomerBannerActivityJava extends Activity implements LoadingView.OnLoadingViewClickListener {
+
+    private LoadingView loadingView;
+    private RelativeLayout newsDetailContent;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_java);
-
+        loadingView = (LoadingView) LayoutInflater.from(this).inflate(R.layout.view_loading, null);
+        loadingView.setOnLoadingViewClickListener(this);
         OverLoader overLoader = new OverLoader();
 //       ToastUtilKt.INSTANCE.showCustomToast( overLoader.getOverLoaderMethod(3)+"");
 //       ToastUtilKt.INSTANCE.showToast( overLoader.methd()+"");
@@ -48,12 +61,37 @@ public class TestActivityJava extends Activity {
         }
 
        ImageBanner imageBanner =  findViewById(R.id.myBanner);
+        newsDetailContent = findViewById(R.id.news_detail_content);
         imageBanner.setList(imageArray,imageTitle);
 
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout
+                .LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+//        layoutParams.addRule(RelativeLayout.BELOW, R.id.topbar_news_detail);
+//        layoutParams.addRule(RelativeLayout.ABOVE, R.id.bottombar_news_detail);
+        layoutParams.topMargin = DensityUtil.dip2px(this, 0.5f);
+        layoutParams.bottomMargin = DensityUtil.dip2px(this, 0.5f);
+        loadingView.setLayoutParams(layoutParams);
+        newsDetailContent.addView(loadingView);
 
+
+        loadingView.showProgress();
+
+       new Handler().postDelayed(new Runnable() {
+           @Override
+           public void run() {
+//               loadingView.showErrorView("网络错误，点击重新加载");
+               loadingView.dismiss();
+           }
+       }, 2000);
 
     }
 
-
-
+    /**
+     * loadview  点击重新加载
+     * @param type
+     */
+    @Override
+    public void onLoadingViewClick(int type) {
+        ToastUtilKt.INSTANCE.showCustomToast("点击重新加载");
+    }
 }

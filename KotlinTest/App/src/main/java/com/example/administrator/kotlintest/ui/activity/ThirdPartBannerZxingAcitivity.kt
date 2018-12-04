@@ -21,7 +21,12 @@ import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.activity_maintwo.*
 import org.jetbrains.anko.intentFor
 
-class MainAcitivitytwo: BaseActivity(){
+/**
+ * 第三方imagebanner 轮播图
+ *
+ * 扫一扫入口
+ */
+class ThirdPartBannerZxingAcitivity: BaseActivity(){
 
     private  val aBoolean : Boolean = false
     private  var typeInt : Int = 0
@@ -92,6 +97,9 @@ Loglevel.values().map {
 
 }
 
+        /**
+         * 第三方的轮播图
+         */
         homeBanner//设置banner样式
                 .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
                 //设置图片加载器
@@ -103,7 +111,7 @@ Loglevel.values().map {
                 //设置标题集合（当banner样式有显示title时）
                 .setBannerTitles(list_title)
                 //设置轮播时间
-                .setDelayTime(1500)
+                .setDelayTime(500)
                 //设置指示器位置（当banner模式中有指示器时）
                 .setIndicatorGravity(BannerConfig.CENTER)
                 //banner设置方法全部调用完毕时最后调用
@@ -120,13 +128,16 @@ Loglevel.values().map {
     }
 
     override fun initData() {
+        //扫一扫（仿照微信界面）
         saoyisao.setOnClickListener {  startActivity(this!!.intentFor<CaptureActivity>()) }
+        //扫一扫 （自定义）
         looklook.setOnClickListener {
 
             ScanManager.getInstance().openScan(this)
 //            startActivity(this.intentFor<com.xfs.qrcode_module.activity.CaptureActivity>())
         }
-        jump_javaclass.setOnClickListener { startActivity(this!!.intentFor<TestActivityJava>()) }
+        //进入自定义的轮播图
+        jump_javaclass.setOnClickListener { startActivity(this!!.intentFor<CustomerBannerActivityJava>()) }
         var a = 1
         val s1 = "a is $a"
         a = 2

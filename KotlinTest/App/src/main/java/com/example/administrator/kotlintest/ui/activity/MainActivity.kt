@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 throttleFirst(1,TimeUnit.SECONDS)
                 .subscribe {
             tv1.text = "你好"
-            startActivity(this!!.intentFor<MainAcitivitytwo>())
+            startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
         }
         tv2.setOnClickListener {
 //            startActivity(this!!.intentFor<WebbrowserActivity4>())

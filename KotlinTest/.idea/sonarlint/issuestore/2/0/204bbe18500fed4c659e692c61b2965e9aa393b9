@@ -1,0 +1,8 @@
+
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý«‘8ÝÄ˜º÷,
+Dsquid:S1604"(Make this anonymous inner class a lambda(„ÑñŒ8ÝÄ˜º÷,
+fsquid:UselessImportCheck"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8ÝÄ˜º÷,
+squid:S1450"`Remove the "newsDetailContent" field and declare it as a local variable in the relevant methods.(‹Áëçÿÿÿÿÿ8ÝÄ˜º÷,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸ŸÕš8ÝÄ˜º÷,
+Psquid:S1481"/Remove this unused "overLoader" local variable.(äýèÞýÿÿÿÿ8ÝÄ˜º÷,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­Ë¹ýÿÿÿÿ8ÝÄ˜º÷,
