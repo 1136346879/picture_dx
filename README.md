@@ -1,19 +1,33 @@
 # picture_dx
 # 欢迎能来到这里
 
->* 该项目demo原本计划，及产生过程：
->* 本来我是用来练习kotlin的语法
+## 该项目demo原本计划，及产生过程：
+## 本来我是用来练习kotlin的语法
 
->* 写了几个类练练手。然后是分模块来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。
+** 写了几个类练练手。然后是分模块（1个主工程+6个依赖module）来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。**
 
-图片裁剪可用于：用户头像展示裁剪，图片搜索功能（如淘宝，京东，百度等搜索）
->* 主工程：App（包含zxing扫一扫功能，view拖拽，）
->* 基础类库：BaseLibrary
->* 附属类库：Provider
->* 图片裁剪： uCrop   任意裁剪 [^code]
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/project.jpg)
+
+上方标号与下方一至：
+## 分模块（多module）编写的项目目录，解耦性大，任意一模块都可以随意拆卸，安装不影响其他模块内容
+>* 1，主工程：App（包含zxing扫一扫功能，view拖拽，）
+>* 2，基础类库：BaseLibrary
+>* 3，测试类练市搭建：myInstalledPkg
+>* 4，附属类库：Provider
+>* 5， 扫一扫功能：qrode-module(直接可以引入该module)
+
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.zxing:android-core:3.3.0'
+    
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
+>* 7， 个人中心：usercenter
+>* 6， 图片裁剪： uCrop   任意裁剪 
+	图片裁剪可用于：用户头像展示裁剪，图片搜索功能（如淘宝，京东，百度等搜索）
+
+[^code]
+
 	/**
      * 去裁剪  直接写这个方法即可  
-     *
      * @param originalPath
      */
     protected fun startCrop(originalPath: String) {
@@ -82,18 +96,6 @@
 			},false)
 	    }	
 	    
->*  扫一扫功能：qrode-module(直接可以引入该module)
-
-    implementation 'com.google.zxing:core:3.3.0'
-    implementation 'com.google.zxing:android-core:3.3.0'
-    
-![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing_saoyisao.gif)
->*  个人中心：usercenter
-
-
-
-
-
 # //内存泄漏检测（（ThirdPartBannerZxingAcitivity）打开扫一扫即可观察到现象，因类中包含了多个静态变量）
    扫一扫（自定义仿照微信界面）
     implementation 'com.google.zxing:core:3.3.0'
@@ -136,7 +138,6 @@
 	调用系统裁剪[^code]
 	
 		  private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
-
 			val intent = Intent("com.android.camera.action.CROP")
 			intent.setDataAndType(data, "image/*")
 			// crop为true是设置在开启的intent中设置显示的view可以剪裁
@@ -190,9 +191,8 @@
 			  imageBanner.setList(imageArray,imageTitle);
 			  
 			  
-CustomerBannerActivityJava 该类中加入自定义loadingview
-					动画及图案纯手动打造
+CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图案纯手动打造**
 					
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/loadingview.gif)
 
-> * 	安卓高级开发交流群：qq   335042824
+## 	**安卓高级开发交流群：qq   335042824**
