@@ -139,4 +139,130 @@
     <string name="result_wifi">找到 Wi-Fi 配置</string>
     <string name="sbc_name">Google 图书搜索</string>
     <string name="wifi_changing_network">连接到 Wi-Fi \u2026</string>
+    <string name="news">新闻</string>
+    <string name="discovery">发现</string>
+    <string name="market">行情</string>
+    <string name="self_selection">自选</string>
+    <string name="my">我的</string>
+
+    <string name="internet_error">网络异常</string>
+    <string name="internet_timeout">网络超时</string>
+    <string name="internet_parse_error">网络解析异常</string>
+    <string name="null_data_error">数据为空</string>
+
+    <!--分享相关-->
+    <string name="share">分享</string>
+    <string name="wechat_friend">微信好友</string>
+    <string name="wechat_circle">微信朋友圈</string>
+    <string name="share_sina">新浪微博</string>
+    <string name="QQ">QQ</string>
+    <string name="QZONE">QQ空间</string>
+    <string name="email">邮件</string>
+    <string name="copy_link">复制链接</string>
+    <string name="cancel">取消</string>
+    <string name="push_activity_title">历史推送</string>
+    <string name="favorite_activity_title">我的收藏</string>
+    <string name="view_history_title">我浏览的</string>
+    <string name="my_comment_title">我评论的</string>
+    <string name="search_empty_text">无搜索结果</string>
+    <string name="search_error_text">搜索异常</string>
+    <string name="news_detail_page">详情页</string>
+    <string name="str_news_detail_no_data">对不起，找不到该内容了</string>
+    <!--评论 -->
+    <string name="comment_leave_count">还可以输入%s个字</string>
+    <string name="comment_size_tips">还可以输入%s个字</string>
+    <string name="comment_size_beyond">已超出%s个字</string>
+    <string name="list_no_more">已经到底了</string>
+    <string name="say_something">写评论...</string>
+    <!-- XListView-->
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">加载中...</string>
+    <string name="cancel_selection">取消收藏</string>
+    <string name="selection">收藏</string>
+    <string name="success_selection">收藏成功</string>
+    <!-- 评论-->
+    <string name="no_more_data">已显示全部</string>
+    <string name="no_more_message">没有更多消息了</string>
+    <string name="news_detail_commits_list">评论列表</string>
+    <string name="str_news_share_desc">我在和讯财经发现一篇精彩好文，推荐给你</string>
+    <string name="str_no_my_comments">暂无评论</string>
+    <string name="success_comments">评论成功</string>
+
+    <string name="user_feedback">反馈</string>
+    <string name="problem_notice">欢迎您提出宝贵的意见和建议</string>
+    <string name="count_text">字</string>
+    <string name="c500">500</string>
+    <string name="input">还可输入</string>
+    <string name="problem_title">您的QQ、手机号码、邮箱（选填）</string>
+    <string name="feed_back_email">请您留下有效的联系方式，以便我们更准确的了解问题，为您提供更好的产品。同时，我们会对您的信息严格保密，请放心填写。 </string>
+    <string name="commit_user_feedback">提交反馈</string>
+    <string name="feedback">留言反馈</string>
+    <string name="os">android</string>
+    <string name="commit_user_feedback_success">提交反馈成功！</string>
+
+    //文章类型
+    <string name="blog">博客</string>
+    <string name="ui_elapsed_time_warm">页面的 UI 加载耗时超过了 16 毫秒,请按要求来修改！实际耗时:</string>
+    <string name="ui_elapsed_time_like"> 这个页面很棒！实际耗时:</string>
+    <string name="cd_base_loading_text">努力加载中...</string>
+    <string name="cd_base_loading_empty_text">没有数据啊</string>
+    <string name="cd_base_loading_reload_text">点击屏幕，重新加载</string>
+    <string name="cd_base_list_view_footer_hint_normal">查看更多</string>
+    <string name="cd_base_list_view_header_hint_normal">下拉刷新</string>
+    <string name="cd_base_list_view_header_last_time">上次更新时间：</string>
+    <string name="cd_base_list_view_footer_hint_ready">松开载入更多</string>
+    <string name="cd_base_list_view_header_hint_ready">松开刷新</string>
+    <string name="cd_base_list_view_header_hint_loading">加载中...</string>
+
+    <string name="error_internal_abnormal">网络不给力</string>
+    <string name="login_authorization_success">授权成功</string>
+    <string name="login_authorization_fail">授权失败</string>
+    <string name="login_authorization_error">授权错误</string>
+    <string name="user_register">注册</string>
+    <string name="user_login">登录</string>
+    <string name="login_user_name_hint">邮箱/手机号/用户名</string>
+    <string name="login_user_password_hint">密码</string>
+    <string name="login_user_password_find">找回密码</string>
+    <string name="login_user_fast_register">快速注册</string>
+    <string name="login_user_third_login">使用第三方账号登录</string>
+    <string name="login_user_third_qq">QQ</string>
+    <string name="login_user_third_wx">微信</string>
+    <string name="login_user_third_xm">小米</string>
+    <string name="login_user_third_wx_notice">当前设备未安装微信或版本过低</string>
+    <string name="login_user_third_qq_notice">当前设备未安装QQ</string>
+    <string name="link_to_clip_success">已复制链接至剪切板</string>
+
+    <string name="login_user_empty_notice">用户名不能为空</string>
+    <string name="login_password_empty_notice">密码不能为空</string>
+    <string name="login_user_third_wb">微博</string>
+
+    <string name="dialog_tip">提示</string>
+
+    <string name="net_error_check_net">网络不可用，请检查您的网络</string>
+    <string name="comment_hint">我来说两句</string>
+    <string name="send">发送</string>
+    <string name="title_moment_detail">详情</string>
+    <string name="notification_H5_sys_msg">系统消息</string>
+
+    <string name="download_in_background">新版本已经帮你下载完毕，赶快安装吧！</string>
+    <string name="install_late">暂不安装</string>
+    <string name="install_now">立即安装</string>
+
+    <!--用于课程详情分享-->
+    <string name="class_detail_share_qw">我在财经学炒股，向你推荐一门好课。财经——互联网股票培训第一品牌。</string>
+    <string name="class_detail_share_circle">推荐一门好课《%1$s》，来自财经APP。</string>
+    <string name="class_detail_share_wb">我在财经学炒股，向你推荐一门好课《%1$s》。财经——互联网股票培训第一品牌。#君子爱财，取之有道#</string>
+
+    <!--RecyclerView-->
+    <string name="recycler_header_hint_normal">下拉刷新</string>
+    <string name="recycler_header_hint_release">释放立即刷新</string>
+    <string name="recycler_header_last_time">上次更新时间：</string>
+    <string name="recycler_loading">正在加载...</string>
+    <string name="recycler_nomore_loading">没有了</string>
+    <string name="recycler_refresh_done">刷新完成</string>
+    <string name="recycler_refreshing">正在刷新...</string>
 </resources>

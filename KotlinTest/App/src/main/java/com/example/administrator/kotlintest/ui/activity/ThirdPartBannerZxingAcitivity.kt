@@ -1,5 +1,7 @@
 package com.example.administrator.kotlintest.ui.activity
 
+import android.content.ComponentName
+import android.content.Intent
 import android.util.Log
 import com.example.administrator.kotlintest.Doctor
 import com.example.administrator.kotlintest.Loglevel
@@ -11,8 +13,8 @@ import com.example.administrator.kotlintest.inner.View
 import com.example.administrator.kotlintest.inner.onClickListener
 import com.example.administrator.kotlintest.ui.entity.学生
 import com.example.administrator.kotlintest.ui.qrcode.CaptureActivity
-import com.example.administrator.kotlintest.widget.ToastUtilKt
-import com.example.baselibrary.ui.activity.BaseActivity
+import com.example.baselibrary.widgets.ToastUtilKt
+import com.example.baselibrary.ui.activity.BaseUIActivity
 import com.example.baselibrary.widgets.EasyPickerView
 import com.xfs.fsyuncai.ui.main.home.banner.GlideImageLoader
 import com.xfs.qrcode_module.manager.ScanManager
@@ -26,7 +28,7 @@ import org.jetbrains.anko.intentFor
  *
  * 扫一扫入口
  */
-class ThirdPartBannerZxingAcitivity: BaseActivity(){
+class ThirdPartBannerZxingAcitivity: BaseUIActivity(){
 
     private  val aBoolean : Boolean = false
     private  var typeInt : Int = 0
@@ -111,7 +113,7 @@ Loglevel.values().map {
                 //设置标题集合（当banner样式有显示title时）
                 .setBannerTitles(list_title)
                 //设置轮播时间
-                .setDelayTime(500)
+                .setDelayTime(1500)
                 //设置指示器位置（当banner模式中有指示器时）
                 .setIndicatorGravity(BannerConfig.CENTER)
                 //banner设置方法全部调用完毕时最后调用
@@ -147,11 +149,15 @@ Loglevel.values().map {
         Log.e("s2",s2)
         mainactivity2.setOnClickListener {
 
-//            startActivity(this!!.intentFor<MainActivity>())
+//            startActivity(this!!.intentFor<RecycleviewActivity>())
 //            ScanManager.getInstance().openScan(this@MainAcitivitytwo)
 
 //            maxInt(a,20)
-
+            val intent = Intent(Intent.ACTION_VIEW)
+//这里的packetname 一定记住填写 调用方的packetname 因为 aar最终会被合并到调用方的manifest文件
+            intent.component = ComponentName("com.example.administrator.kotlintest", //packagename
+                    "com.dx.recycleview.recycleviewlibrary.RecycleviewActivity")//classname//
+            startActivity(intent)
 
         }
 

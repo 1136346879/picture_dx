@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import com.example.administrator.kotlintest.dao.AreaSelectedHistoryDataDao
 import com.example.administrator.kotlintest.dao.DaoMaster
 import com.example.administrator.kotlintest.entity.date.AreaSelectedHistoryData
-import com.example.administrator.kotlintest.MyApplication
+import com.example.baselibrary.MyApplication
 
 /**
 *@author : HaoBoy

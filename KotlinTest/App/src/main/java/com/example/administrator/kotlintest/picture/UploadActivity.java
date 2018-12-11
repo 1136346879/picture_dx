@@ -2,9 +2,9 @@ package com.example.administrator.kotlintest.picture;
 
 
 import com.example.administrator.kotlintest.R;
-import com.example.baselibrary.ui.activity.BaseActivity;
+import com.example.baselibrary.ui.activity.BaseUIActivity;
 
-public class UploadActivity extends BaseActivity {
+public class UploadActivity extends BaseUIActivity {
     PictureUploadFragment fragment;
 
     @Override

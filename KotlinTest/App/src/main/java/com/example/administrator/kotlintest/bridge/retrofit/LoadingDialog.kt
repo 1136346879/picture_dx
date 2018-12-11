@@ -11,7 +11,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.administrator.kotlintest.R
-import com.example.administrator.kotlintest.widget.TLog
+import com.example.baselibrary.widgets.TLog
 
 /**
  * Created by kangf on 2018/6/15.

@@ -25,7 +25,7 @@ android {
 }
 ext {
     ankoLibVersion = "0.10.3"
-    supportLibVersion = "27.1.1"
+    supportLibVersion = "26.0.2"
     rxlifecycleVersion = "2.2.1"
     rxKotlinVersion = "2.1.0"
     rxAndroidVersion = "2.0.1"
@@ -40,15 +40,21 @@ ext {
 
 }
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //noinspection GradleCompatible
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    api"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-kotlin:$rxlifecycleVersion"
+    implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rxlifecycleVersion"
+    implementation 'com.android.support:multidex:1.0.2'
+
+    //内存泄漏检测
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 
 
 }

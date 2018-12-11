@@ -1,6 +1,6 @@
 package com.xfs.fsyuncai.bridge.retrofit
 
-import com.example.administrator.kotlintest.widget.TLog
+import com.example.baselibrary.widgets.TLog
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.CookieInterceptor
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicParamsInterceptor
 import okhttp3.OkHttpClient

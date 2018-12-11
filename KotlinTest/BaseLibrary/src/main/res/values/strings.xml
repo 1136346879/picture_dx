@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">啥都有</string>
+    <string name="ui_elapsed_time_warm">页面的 UI 加载耗时超过了 16 毫秒,请按要求来修改！实际耗时:</string>
+    <string name="ui_elapsed_time_like"> 这个页面很棒！实际耗时:</string>
+    <string name="remote_elapsed_time_warm">实际耗时:</string>
+    <string name="remote_elapsed_time_like">超过两秒，请按要求来，实际耗时:</string>
 </resources>

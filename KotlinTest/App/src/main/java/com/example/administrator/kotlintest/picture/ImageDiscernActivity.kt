@@ -1,16 +1,11 @@
 package com.example.administrator.kotlintest.picture
 import android.net.Uri
-import android.view.View.GONE
 import com.example.administrator.kotlintest.R
-import com.example.administrator.kotlintest.R.id.image_view
-import com.example.baselibrary.ui.activity.BaseActivity
+import com.example.baselibrary.ui.activity.BaseUIActivity
 import kotlinx.android.synthetic.main.image_desirn_activity.*
-import okhttp3.MediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import java.io.File
 
-class ImageDiscernActivity : BaseActivity(){
+class ImageDiscernActivity : BaseUIActivity(){
     override fun initLayout(): Int {
 
         return R.layout.image_desirn_activity

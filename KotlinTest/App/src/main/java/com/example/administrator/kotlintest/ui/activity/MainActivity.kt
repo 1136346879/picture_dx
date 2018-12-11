@@ -18,12 +18,13 @@ import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
 import com.example.administrator.kotlintest.ui.entity.学生
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.ToastUtilKt
 import com.jakewharton.rxbinding2.view.RxView
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
 import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
+import com.xfs.qrcode_module.recycleview.RecycleviewActivity
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
 import com.yalantis.ucrop.util.PictureMimeType
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity() {
 //            ToastUtilKt.showCustomToast("--》${学生.component2()}")
             ToastUtilKt.showToast("--》$name")
             ToastUtilKt.showCustomToast("--》$age")
+            startActivity(this!!.intentFor<RecycleviewActivity>())
 
 //            startActivity(this!!.intentFor<com.xfs.fsyuncai.mavendemo.MainActivity>())
 

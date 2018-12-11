@@ -1,6 +1,6 @@
 
-Isquid:S1066"/Merge this if statement with the enclosing one.(ş»Ïùÿÿÿÿ
-qsquid:S1450"\Remove the "mProgressText" field and declare it as a local variable in the relevant methods.(ù”»
 psquid:S1450"[Remove the "progressView" field and declare it as a local variable in the relevant methods.(¢Œ×š
 Esquid:S1068"0Remove this unused "progressView" private field.(¢Œ×š
 Fsquid:S1068"1Remove this unused "mProgressText" private field.(ù”»
+qsquid:S1450"\Remove the "mProgressText" field and declare it as a local variable in the relevant methods.(ù”»
+Isquid:S1066"/Merge this if statement with the enclosing one.(ş»Ïùÿÿÿÿ

@@ -2,20 +2,19 @@ package com.example.administrator.kotlintest.picture;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 
 import com.example.administrator.kotlintest.R;
-import com.example.baselibrary.ui.activity.BaseActivity;
+import com.example.baselibrary.ui.activity.BaseUIActivity;
 
 import java.io.File;
 
 /**
  * 裁剪图片
  */
-public class CropImageActivity extends BaseActivity {
+public class CropImageActivity extends BaseUIActivity {
 
     private int lefttopX = 1;
     private int lefttopY = 1;

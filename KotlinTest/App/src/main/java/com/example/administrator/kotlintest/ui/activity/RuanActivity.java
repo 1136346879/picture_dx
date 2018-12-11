@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.administrator.kotlintest.R;
-import com.example.administrator.kotlintest.widget.ToastUtilKt;
+import com.example.baselibrary.widgets.ToastUtilKt;
 
 public class RuanActivity extends Activity {
     Double x1;

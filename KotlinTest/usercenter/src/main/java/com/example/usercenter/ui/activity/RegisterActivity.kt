@@ -1,11 +1,9 @@
 package com.example.usercenter.ui.activity
 
-import android.app.Activity
-import android.os.Bundle
-import com.example.baselibrary.ui.activity.BaseActivity
+import com.example.baselibrary.ui.activity.BaseUIActivity
 import com.example.usercenter.R
 
-class RegisterActivity : BaseActivity() {
+class RegisterActivity : BaseUIActivity() {
     override fun initLayout(): Int {
         return R.layout.regist_activity
     }

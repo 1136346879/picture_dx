@@ -5,12 +5,12 @@
 ## 本来我是用来练习kotlin的语法
 
 ** 写了几个类练练手。然后是分模块（1个主工程+6个依赖module）来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。**
-
+## 加入recycleview列表数据，包含下拉刷新，上拉加载更多，网络访问是okgo，(该功能已经封装好了，零bug，本计划单另一个module，由于需要引用一个jar包所以放在了扫一扫目录下，recycleview文件夹下，拉出来就可以直接使用)
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/project.jpg)
 
 上方标号与下方一至：
 ## 分模块（多module）编写的项目目录，解耦性大，任意一模块都可以随意拆卸，安装不影响其他模块内容
->* 1，主工程：App（包含zxing扫一扫功能，view拖拽，）
+>* 1，主工程：App（**包含zxing扫一扫功能，view拖拽，**）
 >* 2，基础类库：BaseLibrary
 >* 3，测试类练市搭建：myInstalledPkg
 >* 4，附属类库：Provider
@@ -88,7 +88,6 @@
 			    override fun onNext(json: String) {
 				ToastUtilKt.showCustomToast("Image upload sucessed :$json")
 			    }
-
 			    override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
 				super.onError(statusCode, apiErrorModel)
 				ToastUtilKt.showCustomToast("Image upload failed")
@@ -103,20 +102,21 @@
     
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing.gif)
 
-
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 	点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
 	
 ## 会首先显示在通知栏中
+
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks3.png)
+
 ## 通知栏可以点击显示详情
+
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks2.png)
+
 ## 最后在leaks这个app里面可以看到相应的内存泄漏详情
+
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/leaks1.png)
-
-
-
 
 ## 图片相关问题（显示裁剪压缩轮播上传等等）
 
@@ -161,7 +161,7 @@
     ###（3）再在回调onActivityResult中处理裁剪后的逻辑
 			如上传，保存等。
 ## 图片轮播用了两种写法：（第三方和自定义）
-			### （ThirdPartBannerZxingAcitivity）第三方     //轮播图（新闻列表头部展示）
+	### （ThirdPartBannerZxingAcitivity）第三方     //轮播图（新闻列表头部展示）
 			
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
 			
@@ -183,7 +183,7 @@
                 //banner设置方法全部调用完毕时最后调用
                 .start()
 				
-			### （CustomerBannerActivityJava）自定义的   ImageBanner（图片加载用的picasso）
+	### （CustomerBannerActivityJava）自定义的   ImageBanner（图片加载用的picasso）
 				直接设置数据就可以
 				
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/imageBannergif.gif)
@@ -194,5 +194,12 @@
 CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图案纯手动打造**
 					
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/loadingview.gif)
+
+
+自定义view拖拽功能，（DragView）悬浮在页面之上，自动吸附在两侧，可以点击
+
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/dragview.gif)
+
+
 
 ## 	**安卓高级开发交流群：qq   335042824**

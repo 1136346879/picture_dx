@@ -7,12 +7,14 @@ import android.support.v7.widget.LinearLayoutManager
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
-import com.example.administrator.kotlintest.widget.ToastUtilKt
-import com.example.baselibrary.ui.activity.BaseActivity
+import com.example.baselibrary.widgets.ToastUtilKt
+import com.example.baselibrary.ui.activity.BaseUIActivity
+import com.example.usercenter.ui.activity.UserCenterActivity
 import com.tbruyelle.rxpermissions2.RxPermissions
 import kotlinx.android.synthetic.main.mine_layout.*
+import org.jetbrains.anko.intentFor
 
-class MineActivity :BaseActivity(){
+class MineActivity :BaseUIActivity(){
 
    private val option = arrayListOf<PersonControlDao>()
     private lateinit var personAdapter : PersonAdapter
@@ -51,6 +53,7 @@ class MineActivity :BaseActivity(){
             it.setOnClickListener {
 
                 ToastUtilKt.showCustomToast("点击我的优惠券")
+                startActivity(this!!.intentFor<UserCenterActivity>())
             }
         }
     }

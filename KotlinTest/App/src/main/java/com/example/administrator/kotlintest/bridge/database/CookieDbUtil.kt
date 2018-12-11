@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import com.example.administrator.kotlintest.bridge.retrofit.callback.CookieResulte
 import com.example.administrator.kotlintest.dao.CookieResulteDao
 import com.example.administrator.kotlintest.dao.DaoMaster
-import com.example.administrator.kotlintest.MyApplication
+import com.example.baselibrary.MyApplication
 
 /**
  * Created by kangf on 2018/6/16.

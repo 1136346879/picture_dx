@@ -1,7 +1,7 @@
 package com.xfs.fsyuncai.bridge.retrofit.http
 
 import android.content.Context
-import com.example.administrator.kotlintest.widget.TLog
+import com.example.baselibrary.widgets.TLog
 import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
 import com.xfs.fsyuncai.bridge.retrofit.callback.ApiResponse
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
@@ -10,9 +10,7 @@ import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicParamsInterceptor
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
-import okhttp3.Request
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

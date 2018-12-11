@@ -22,7 +22,7 @@ import com.example.administrator.kotlintest.ui.qrcode.zxing.decode.DecodeThread
 import com.example.administrator.kotlintest.ui.qrcode.zxing.utils.BeepManager
 import com.example.administrator.kotlintest.ui.qrcode.zxing.utils.CaptureActivityHandler
 import com.example.administrator.kotlintest.ui.qrcode.zxing.utils.InactivityTimer
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.ToastUtilKt
 import com.google.gson.Gson
 import com.xfs.fsyuncai.extend.fromJson
 import kotlinx.android.synthetic.main.activity_capture.*

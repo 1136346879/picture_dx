@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import com.example.administrator.kotlintest.dao.DaoMaster
 import com.example.administrator.kotlintest.dao.SearchHistoryDao
 import com.example.administrator.kotlintest.entity.date.SearchHistory
-import com.example.administrator.kotlintest.MyApplication
+import com.example.baselibrary.MyApplication
 
 /**
  *  Created by kangf on 2018/6/16.

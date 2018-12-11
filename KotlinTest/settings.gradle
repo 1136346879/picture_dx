@@ -1,2 +1,2 @@
-include ':App', ':BaseLibrary', ':Provider', ':usercenter', ':qrcode-module'
+include ':App', ':BaseLibrary', ':Provider', ':usercenter', ':qrcode-module', ':recycleviewlibrary'
 include ':myInstalledPkg','ucrop'

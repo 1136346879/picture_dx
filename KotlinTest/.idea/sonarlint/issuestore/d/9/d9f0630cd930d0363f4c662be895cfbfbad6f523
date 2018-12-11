@@ -1,0 +1,12 @@
+
+ysquid:S3008"dRename this field "qr_recommend_content_host" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ψ•©λ
+wsquid:S3008"]Rename this field "check_app_key_host" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΈύΊύÿÿÿÿ
+[squid:S1068"ARemove this unused "QR_RECOMMEND_CONTENT_HOST_URL" private field.(—‘ΕÒωÿÿÿÿ
+Osquid:S1068":Remove this unused "CHECK_APP_KEY_HOST_URL" private field.(ªο¦±
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‰ΐώÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ΓÒ¦¤
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²Ϊ»¤
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ιτ³»
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(΅¬ί£
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ΏÒÒϊÿÿÿÿ
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(»½Κ¤ÿÿÿÿÿ

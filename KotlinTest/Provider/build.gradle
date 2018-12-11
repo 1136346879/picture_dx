@@ -25,7 +25,7 @@ android {
 }
 ext {
     ankoLibVersion = "0.10.3"
-    supportLibVersion = "27.1.1"
+    supportLibVersion = "26.0.2"
     rxlifecycleVersion = "2.2.1"
     rxKotlinVersion = "2.1.0"
     rxAndroidVersion = "2.0.1"
@@ -40,12 +40,9 @@ ext {
 
 }
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    api project(':BaseLibrary')
+    implementation project(':BaseLibrary')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {

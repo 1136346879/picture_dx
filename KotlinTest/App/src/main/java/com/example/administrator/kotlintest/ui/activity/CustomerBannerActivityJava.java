@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.administrator.kotlintest.Loglevel;
@@ -14,7 +13,7 @@ import com.example.administrator.kotlintest.banner.mybanner.ImageBanner;
 import com.example.administrator.kotlintest.inner.View;
 import com.example.administrator.kotlintest.loadingview.LoadingView;
 import com.example.administrator.kotlintest.widget.DensityUtil;
-import com.example.administrator.kotlintest.widget.ToastUtilKt;
+import com.example.baselibrary.widgets.ToastUtilKt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +30,7 @@ public class CustomerBannerActivityJava extends Activity implements LoadingView.
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_java);
-        loadingView = (LoadingView) LayoutInflater.from(this).inflate(R.layout.view_loading, null);
+        loadingView = (LoadingView) LayoutInflater.from(this).inflate(R.layout.view_recy_loading, null);
         loadingView.setOnLoadingViewClickListener(this);
         OverLoader overLoader = new OverLoader();
 //       ToastUtilKt.INSTANCE.showCustomToast( overLoader.getOverLoaderMethod(3)+"");

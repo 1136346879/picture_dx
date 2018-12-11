@@ -1,8 +1,8 @@
 package com.xfs.fsyuncai.bridge.retrofit.callback
 
 import android.text.TextUtils
-import com.example.administrator.kotlintest.widget.TLog
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.TLog
+import com.example.baselibrary.widgets.ToastUtilKt
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.entity.accont.AccessManager
 

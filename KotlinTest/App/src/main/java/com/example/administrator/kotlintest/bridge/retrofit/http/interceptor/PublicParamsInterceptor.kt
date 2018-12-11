@@ -1,7 +1,7 @@
 package com.xfs.fsyuncai.bridge.retrofit.http.interceptor
 
 import com.example.administrator.kotlintest.widget.DevicesUtils
-import com.example.administrator.kotlintest.MyApplication
+import com.example.baselibrary.MyApplication
 import com.example.administrator.kotlintest.widget.StringUtils
 import com.xfs.fsyuncai.entity.accont.AccessManager
 import okhttp3.*

@@ -1,7 +1,7 @@
 package com.example.administrator.kotlintest
 
 import com.example.administrator.kotlintest.ui.base.BaseClass
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.ToastUtilKt
 
 class ShopEntity : BaseClass() {
 

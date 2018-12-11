@@ -1,7 +1,7 @@
 package com.example.administrator.kotlintest.ui.entity
 
 import com.example.administrator.kotlintest.annotations.PoKo
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.ToastUtilKt
 
 
 @PoKo

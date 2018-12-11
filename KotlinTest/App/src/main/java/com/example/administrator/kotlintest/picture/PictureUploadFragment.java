@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.administrator.kotlintest.R;
-import com.example.administrator.kotlintest.ui.fragment.BaseFragment;
-import com.example.administrator.kotlintest.widget.ToastUtilKt;
+import com.example.administrator.kotlintest.ui.fragment.BaseAppFragment;
+import com.example.baselibrary.widgets.ToastUtilKt;
 import com.lzy.imagepicker.ImagePicker;
 import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImageGridActivity;
@@ -31,7 +31,7 @@ import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
-public class PictureUploadFragment extends BaseFragment implements ImagePickerAdapter.OnRecyclerViewItemClickListener {
+public class PictureUploadFragment extends BaseAppFragment implements ImagePickerAdapter.OnRecyclerViewItemClickListener {
 
     public static final int IMAGE_ITEM_ADD = -1;
     public static final int REQUEST_CODE_SELECT = 100;

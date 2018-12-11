@@ -1,0 +1,5 @@
+
+ƒ"squid:ClassVariableVisibilityCheck"RMake status a static final constant or non-public and provide accessors if needed.(¥ß®üÿÿÿÿ
+‡"squid:ClassVariableVisibilityCheck"VMake serverTime a static final constant or non-public and provide accessors if needed.(…áş˜ıÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"UMake fromCache a static final constant or non-public and provide accessors if needed.(–¿Ø†
+@squid:S1948"&Make "data" transient or serializable.(–ú‚Áøÿÿÿÿ

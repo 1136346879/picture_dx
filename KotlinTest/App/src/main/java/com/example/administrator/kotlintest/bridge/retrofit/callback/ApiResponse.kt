@@ -1,7 +1,7 @@
 package com.xfs.fsyuncai.bridge.retrofit.callback
 
 import android.content.Context
-import com.example.administrator.kotlintest.widget.TLog
+import com.example.baselibrary.widgets.TLog
 import com.google.gson.Gson
 import com.xfs.fsyuncai.bridge.database.CookieDbUtil
 import com.xfs.fsyuncai.bridge.retrofit.LoadingDialog

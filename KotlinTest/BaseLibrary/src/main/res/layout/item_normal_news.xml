@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:background="@drawable/item_recommend_background">
+
+    <ImageView
+        android:id="@+id/iv_item_img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_item_img"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/iv_item_img"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="2"
+        android:textColor="@color/color_333333"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_news_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_item_img"
+        android:layout_marginLeft="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_item_img"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/iv_item_img"
+        android:maxLines="1"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_eeeeee" />
+
+
+</RelativeLayout>

@@ -4,6 +4,8 @@
 
     <application>
         <activity android:name=".ui.activity.UserCenterActivity"></activity>
+        <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
+
     </application>
 
 

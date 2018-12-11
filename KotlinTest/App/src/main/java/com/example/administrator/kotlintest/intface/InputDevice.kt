@@ -1,6 +1,6 @@
 package com.example.administrator.kotlintest.intface
 
-import com.example.administrator.kotlintest.widget.ToastUtilKt
+import com.example.baselibrary.widgets.ToastUtilKt
 
 interface InputDevice{
 

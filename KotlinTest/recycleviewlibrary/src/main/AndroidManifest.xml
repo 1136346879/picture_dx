@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dx.recycleview.recycleviewlibrary" >
+
+    <application>
+        <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity$RecycleviewActivity" />
+    </application>
+</manifest>
