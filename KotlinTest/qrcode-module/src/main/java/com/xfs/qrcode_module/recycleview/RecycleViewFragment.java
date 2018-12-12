@@ -34,7 +34,7 @@ public class RecycleViewFragment extends BaseLibraryFragment implements XRecycle
      * 页码 & 每页条目
      */
     private int pageNum = 0;
-    private int pageSize = 10;
+    private int pageSize = 20;
 
     @Override
     public int layoutResId() {
@@ -115,13 +115,13 @@ public class RecycleViewFragment extends BaseLibraryFragment implements XRecycle
 
         pageNum = 0;
         loadData(false);
-        ToastUtil.Companion.showToast(getActivity(),"刷新",1);
+        ToastUtil.Companion.showToast(getActivity(),"下拉刷新",1);
     }
 
     @Override
     public void onLoadMore() {
         footerText.setVisibility(View.VISIBLE);
-        ToastUtil.Companion.showToast(getActivity(),"加载更多",1);
+        ToastUtil.Companion.showToast(getActivity(),"上拉加载更多",1);
         loadData(true);
 
     }

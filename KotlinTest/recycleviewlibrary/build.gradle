@@ -42,10 +42,4 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    implementation project(':BaseLibrary')
-//    implementation project(':qrcode-module')
-
-
-
-
 }
