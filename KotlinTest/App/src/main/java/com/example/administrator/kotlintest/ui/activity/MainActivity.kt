@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
 
                 //view拖拽功能
-        dragview.setImageResource(R.drawable.ic_launcher)
+        dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
         dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
     }

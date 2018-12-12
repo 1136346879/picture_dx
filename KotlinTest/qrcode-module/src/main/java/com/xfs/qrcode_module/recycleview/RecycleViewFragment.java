@@ -34,7 +34,7 @@ public class RecycleViewFragment extends BaseLibraryFragment implements XRecycle
      * 页码 & 每页条目
      */
     private int pageNum = 0;
-    private int pageSize = 20;
+    private int pageSize = 10;
 
     @Override
     public int layoutResId() {

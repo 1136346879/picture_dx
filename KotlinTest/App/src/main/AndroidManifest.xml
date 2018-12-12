@@ -28,7 +28,9 @@
         <activity android:name=".picture.UploadActivity"/>
         <activity android:name=".picture.CropImageActivity"/>
         <activity android:name=".picture.ImageDiscernActivity"/>
+        <!--进入UserCentermodule-->
         <activity android:name="com.example.usercenter.ui.activity.UserCenterActivity"/>
+        <!--进入UserCentermodule-->
         <activity android:name="com.yalantis.ucrop.UCropActivity" />
         <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
