@@ -14,12 +14,15 @@ import android.provider.DocumentsContract
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
+import com.blankj.ALog
+import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
 import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
 import com.example.administrator.kotlintest.ui.entity.学生
+import com.example.baselibrary.MyApplication
 import com.example.baselibrary.widgets.ToastUtilKt
 import com.jakewharton.rxbinding2.view.RxView
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
@@ -44,6 +47,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        //log 初始化
+        LogConfig.initLog(application)
         tv6.setOnClickListener {
 
             startActivity(this!!.intentFor<UploadActivity>())
@@ -395,7 +402,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("return-data", false)
         intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG)
         intent.putExtra("noFaceDetection", true) // no face detection
-        Log.e("TAKE_PHOTO", "TAKE_PHOTO-zoom-CROP_PHOTO")
+        ALog.e("TAKE_PHOTO", "TAKE_PHOTO-zoom-CROP_PHOTO")
         startActivityForResult(intent, CROP_PHOTO)
 
 
@@ -441,11 +448,11 @@ class MainActivity : AppCompatActivity() {
      * 查询所有数据
      */
     private fun queryMeiziData(){
-        Log.d("数据库数量：","${MeiziDaoUtils(this).queryAllMeizi().size}")
+        ALog.d("数据库数量：","${MeiziDaoUtils(this).queryAllMeizi().size}")
 
         MeiziDaoUtils(this).queryAllMeizi().forEach {
 //            ToastUtilKt.showCustomToast("妹子来自==${it.source}" )
-            Log.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
+            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
 
         }
 
@@ -482,7 +489,7 @@ class MainActivity : AppCompatActivity() {
         val condition =  arrayOf("27")
         val meiziList2 = MeiziDaoUtils(this).queryMeiziByNativeSql(sql, null)
         meiziList2.forEach {
-            Log.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
+            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
         }
     }
 
@@ -492,7 +499,7 @@ class MainActivity : AppCompatActivity() {
     private fun queryByThings(){
         val meiziList2 = MeiziDaoUtils(this).queryMeiziByQueryBuilder(27)
         meiziList2.forEach {
-            Log.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
+            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
         }
     }
 }

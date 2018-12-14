@@ -23,6 +23,7 @@ public  class MyApplication extends MultiDexApplication {
                      }
         refWatcher = LeakCanary.install(this);
         Density.INSTANCE.setDensity(this);
+
     }
 
     public static RefWatcher getRefWatcher (Context context){

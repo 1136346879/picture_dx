@@ -134,6 +134,8 @@ dependencies {
 
     //图片加载
     implementation 'com.squareup.picasso:picasso:2.5.2'
-
+    //数据库
     implementation 'org.greenrobot:greendao:3.2.2' // add library
+    //LOG
+    implementation 'com.blankj:alog:1.3.0'
 }

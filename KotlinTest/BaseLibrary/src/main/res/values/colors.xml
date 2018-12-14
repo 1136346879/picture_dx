@@ -10,6 +10,7 @@
     <color name="textColorHint">#42000000</color>
     <color name="lineColor">#1e000000</color>
     <color name="list_top_space">#f5f5f5</color>
+    <color name="backcolor">#ad3f41b5</color>
 
     <color name="ad_tag_color">#f14e51</color>
     <color name="zhuanti_tag_color">#2a90d7</color>

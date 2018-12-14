@@ -67,5 +67,6 @@
 
             />
 
+        <activity android:name=".StickyItemRecycleview.StickyItemREcycleviewActivity"/>
     </application>
 </manifest>

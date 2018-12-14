@@ -1,6 +1,7 @@
 package com.xfs.qrcode_module.recycleview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import com.example.baselibrary.common.ToastUtil;
 import com.example.baselibrary.imageLoader.ImageLoader;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.xfs.qrcode_module.R;
+import com.xfs.qrcode_module.StickyItemRecycleview.StickyItemREcycleviewActivity;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -138,7 +140,9 @@ public class TopNewsNormalDelegate extends BaseAdapterDelegate<NewsInfo,
 
         @Override
         public void accept(Object o) throws Exception {
-            ToastUtil.Companion.showToast(mContext,"跳转至详情页",1);
+            ToastUtil.Companion.showToast(mContext,"跳转至详情页but 现跳转至RecycleView列表带吸附的标题",1);
+
+            mContext.startActivity(new Intent(mContext, StickyItemREcycleviewActivity.class));
 //            if (newsInfo != null) {
 //                ToastUtilKt.INSTANCE.showCustomToast("跳转至详情页");
 //                DetailActivity.gotoNewDetailWith(mContext, Long.toString(newsInfo.getNewsId()), "1", TOPNEWS.getId(),TOPNEWS.getName());

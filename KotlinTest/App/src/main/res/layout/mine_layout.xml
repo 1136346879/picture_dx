@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -61,7 +63,7 @@
 
                 android:id="@+id/rvPerson"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="500dp"
                 android:layout_margin="1dp"
                 android:background="@drawable/shadow"
                 android:paddingLeft="@dimen/space_10"
@@ -87,4 +89,4 @@
             <!--android:text="踹我试试" />-->
 
     <!--</com.example.administrator.kotlintest.widget.DragViewGroup>-->
-</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
