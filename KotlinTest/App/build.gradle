@@ -25,6 +25,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//        compileOptions {
+//            sourceCompatibility JavaVersion.VERSION_1_8
+//            targetCompatibility JavaVersion.VERSION_1_8
+//        }
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
@@ -46,6 +50,19 @@ ext {
     photoViewVersion = "1.2.4"
 
 }
+// In your app projects build.gradle file:
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+greendao {
+    //数据库的schema版本，也可以理解为数据库版本号
+    schemaVersion 1
+    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+    daoPackage "com.example.administrator.dbdao.dbdao"
+    //设置DaoMaster、DaoSession、Dao目录
+    targetGenDir "src/main/java"
+}
+
+
 apply plugin: 'kotlin-noarg'
 apply plugin: 'kotlin-allopen'
 
@@ -68,7 +85,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
     implementation project(':BaseLibrary')
@@ -119,4 +135,5 @@ dependencies {
     //图片加载
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
+    implementation 'org.greenrobot:greendao:3.2.2' // add library
 }

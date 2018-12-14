@@ -22,6 +22,10 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 ext {
     ankoLibVersion = "0.10.3"
@@ -40,21 +44,17 @@ ext {
 
 }
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
     implementation "com.trello.rxlifecycle2:rxlifecycle-kotlin:$rxlifecycleVersion"
     implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rxlifecycleVersion"
     implementation 'com.android.support:multidex:1.0.2'
-
     //内存泄漏检测
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
-
-
 }

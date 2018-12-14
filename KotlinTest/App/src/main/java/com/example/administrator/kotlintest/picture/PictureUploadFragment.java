@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.example.administrator.kotlintest.R;
@@ -62,14 +63,19 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
     @Override
     public void logic() {
 
-        getViewById(R.id.btn).setOnClickListener(v -> {
-            if(!selImageList.isEmpty()){
-                uploadImage(selImageList);
-            }else{
-                Toast.makeText(getActivity(),"请选择照片",Toast.LENGTH_LONG).show();
-                return;
+        getViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!selImageList.isEmpty()){
+                    uploadImage(selImageList);
+                }else{
+                    Toast.makeText(getActivity(),"请选择照片",Toast.LENGTH_LONG).show();
+                    return;
+                }
             }
-        });
+        }
+
+        );
         //最好放到 Application oncreate执行
         initImagePicker();
         initWidget();
@@ -116,25 +122,47 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
                 List<String> names = new ArrayList<>();
                 names.add("拍照");
                 names.add("相册");
-                showDialog((parent, view1, position1, id) -> {
-                    switch (position1) {
-                        case 0: // 直接调起相机
-                            //打开选择,本次允许选择的数量
-                            ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
-                            Intent intent = new Intent(getActivity(), ImageGridActivity.class);
-                            intent.putExtra(ImageGridActivity.EXTRAS_TAKE_PICKERS, true); // 是否是直接打开相机
-                            startActivityForResult(intent, REQUEST_CODE_SELECT);
-                            break;
-                        case 1:
-                            //打开选择,本次允许选择的数量
-                            ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
-                            Intent intent1 = new Intent(getActivity(), ImageGridActivity.class);
-                            startActivityForResult(intent1, REQUEST_CODE_SELECT);
-                            break;
-                        default:
-                            break;
+                showDialog(new SelectDialog.SelectDialogListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        switch (position) {
+                            case 0: // 直接调起相机
+                                //打开选择,本次允许选择的数量
+                                ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
+                                Intent intent = new Intent(getActivity(), ImageGridActivity.class);
+                                intent.putExtra(ImageGridActivity.EXTRAS_TAKE_PICKERS, true); // 是否是直接打开相机
+                                startActivityForResult(intent, REQUEST_CODE_SELECT);
+                                break;
+                            case 1:
+                                //打开选择,本次允许选择的数量
+                                ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
+                                Intent intent1 = new Intent(getActivity(), ImageGridActivity.class);
+                                startActivityForResult(intent1, REQUEST_CODE_SELECT);
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }, names);
+//                showDialog((parent, view1, position1, id) -> {
+//                    switch (position1) {
+//                        case 0: // 直接调起相机
+//                            //打开选择,本次允许选择的数量
+//                            ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
+//                            Intent intent = new Intent(getActivity(), ImageGridActivity.class);
+//                            intent.putExtra(ImageGridActivity.EXTRAS_TAKE_PICKERS, true); // 是否是直接打开相机
+//                            startActivityForResult(intent, REQUEST_CODE_SELECT);
+//                            break;
+//                        case 1:
+//                            //打开选择,本次允许选择的数量
+//                            ImagePicker.getInstance().setSelectLimit(maxImgCount - selImageList.size());
+//                            Intent intent1 = new Intent(getActivity(), ImageGridActivity.class);
+//                            startActivityForResult(intent1, REQUEST_CODE_SELECT);
+//                            break;
+//                        default:
+//                            break;
+//                    }
+//                }, names);
                 break;
             default:
                 //打开预览
