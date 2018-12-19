@@ -1,0 +1,10 @@
+
+tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±½íîıÿÿÿÿ8¨¿¦³ú,
+Csquid:S1068"'Remove this unused "TAG" private field.(æùâÔ8¨¿¦³ú,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(ÛÔ–³üÿÿÿÿ8¨¿¦³ú,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(ï¥×‰8¨¿¦³ú,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(ŒÂûÿÿÿÿ8¨¿¦³ú,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(Ò¿ô­8¨¿¦³ú,
+Wsquid:S2696"6Make the enclosing method "static" or remove this set.(¨ç§Öøÿÿÿÿ8¨¿¦³ú,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(ÚŠ§ 8¨¿¦³ú,
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(†÷Äò8¨¿¦³ú,

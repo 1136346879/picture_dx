@@ -1,9 +1,0 @@
-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”åÕ˜8Ç¹ìºù,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( Çª°8Ç¹ìºù,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ’ÈŠüÿÿÿÿ8Ç¹ìºù,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ž–ûîÿÿÿÿÿ8Ç¹ìºù,
-Gsquid:S1481"+Remove this unused "frames" local variable.(¶Äï‹8Ç¹ìºù,
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¤âšÆ8Ç¹ìºù,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó „¿úÿÿÿÿ8Ç¹ìºù,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¹ÉÁ›ûÿÿÿÿ8Ç¹ìºù,

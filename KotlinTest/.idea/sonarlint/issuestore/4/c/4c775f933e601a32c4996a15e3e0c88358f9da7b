@@ -1,0 +1,11 @@
+
+vsquid:S3008"URename this field "log_switch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èê‹¸üÿÿÿÿ8Š¾ÁÕú,
+wsquid:S3008"VRename this field "file_switch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥†Öàúÿÿÿÿ8Š¾ÁÕú,
+wsquid:S3008"VRename this field "file_prefix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òê÷ÿÿÿÿÿ8Š¾ÁÕú,
+{squid:S3008"ZRename this field "log_file_filter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àæşèúÿÿÿÿ8Š¾ÁÕú,
+tsquid:S3008"XRename this field "show_log_head" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Œ¥ì8Š¾ÁÕú,
+zsquid:S3008"YRename this field "console_switch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æòâ©úÿÿÿÿ8Š¾ÁÕú,
+psquid:S3008"TRename this field "file_path" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÔè8Š¾ÁÕú,
+ysquid:S3008"]Rename this field "log_console_filter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°äœğ8Š¾ÁÕú,
+zsquid:S3008"YRename this field "log_stack_deep" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»âÒÿÿÿÿÿ8Š¾ÁÕú,
+ysquid:S3008"XRename this field "border_switch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™¾´ªøÿÿÿÿ8Š¾ÁÕú,

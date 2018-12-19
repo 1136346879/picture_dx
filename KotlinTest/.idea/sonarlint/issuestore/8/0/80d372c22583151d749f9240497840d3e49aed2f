@@ -1,32 +1,0 @@
-
-U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ˆ¾Í¬8ÿ†Œ¿ø,
-…squid:S4165"dRemove this useless assignment; "result" already holds the assigned value along all execution paths.(î›øÌûÿÿÿÿ8ÿ†Œ¿ø,
-Jsquid:S1172"/Remove this unused method parameter "defStyle".(…¯Ö8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(»¥Î‘üÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’œ×ß8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(áÁ‘¶8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«‰Û®8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ùüöşÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÊŒ¢ò8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(úşúüÿÿÿÿ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÿÃ¿¾ÿÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(´¸šÒ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ş—•…ùÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ô‹Õ±8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ï£…ûÿÿÿÿ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ö¹¶êÿÿÿÿÿ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ş°œòûÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ñÓ ´8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ªşßç8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¸ÿÕö8ÿ†Œ¿ø,
-vsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥ê”8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(­×¨’8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÂœëŞúÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(û™¸Ï8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¿†ÿ¾8ÿ†Œ¿ø,
-vsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ó»Ø=8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ı‚áÒ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(±ÁƒÁşÿÿÿÿ8ÿ†Œ¿ø,
-|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(å„ó…ûÿÿÿÿ8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(×Ÿİ®8ÿ†Œ¿ø,
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(×Í­Û8ÿ†Œ¿ø,

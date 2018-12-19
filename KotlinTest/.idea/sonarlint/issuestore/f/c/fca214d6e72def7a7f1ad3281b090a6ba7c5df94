@@ -1,15 +1,0 @@
-
-Ksquid:S1066"/Merge this if statement with the enclosing one.(­ÙÇ8µÙÈã÷,
-@squid:S3398"$Move this method into "WrapAdapter".(´Ÿùä8µÙÈã÷,
-bsquid:S1126"AReplace this if-then-else statement by a single return statement.(½Ë ’üÿÿÿÿ8µÙÈã÷,
-]squid:S1126"AReplace this if-then-else statement by a single return statement.(ÈñâÙ8µÙÈã÷,
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ºµÇ¨8µÙÈã÷,
-Psquid:S1066"/Merge this if statement with the enclosing one.(ÊÏ¿óÿÿÿÿÿ8µÙÈã÷,
-@squid:S3398"$Move this method into "WrapAdapter".(ø¥¥ 8µÙÈã÷,
-Psquid:S1066"/Merge this if statement with the enclosing one.(šÌ¶Ïşÿÿÿÿ8µÙÈã÷,
-Psquid:EmptyStatementUsageCheck"Remove this empty statement.(Åñ­õşÿÿÿÿ8µÙÈã÷,
-Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(‰¨œ£8µÙÈã÷,
-Psquid:S1066"/Merge this if statement with the enclosing one.(Ñã©‚şÿÿÿÿ8µÙÈã÷,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•“ä8µÙÈã÷,
-Osquid:S1068".Remove this unused "mPageCount" private field.(Ü¡áşÿÿÿÿ8µÙÈã÷,
-esquid:S4201"IRemove this unnecessary null check; "instanceof" returns false for nulls.(ìØ‹É8µÙÈã÷,

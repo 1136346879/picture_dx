@@ -1,0 +1,7 @@
+
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(•£¢Û
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(§ïÛÙüÿÿÿÿ
+msquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(–ÙÏÖùÿÿÿÿ
+hsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(€îŸ›
+xsquid:S1488"^Immediately return this expression instead of assigning it to the temporary variable "entity".(Ìážáüÿÿÿÿ
+Osquid:S1118":Add a private constructor to hide the implicit public one.(–Û’ý

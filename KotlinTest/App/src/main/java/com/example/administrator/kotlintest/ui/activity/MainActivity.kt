@@ -17,6 +17,7 @@ import android.widget.Toast
 import com.blankj.ALog
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
+import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
 import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
@@ -48,7 +49,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        tv0.setOnClickListener {
 
+            startActivity(this!!.intentFor<AttendviewActivity>())
+
+        }
         //log 初始化
         LogConfig.initLog(application)
         tv6.setOnClickListener {
