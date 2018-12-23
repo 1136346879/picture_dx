@@ -15,7 +15,11 @@
 ** 写了几个类练练手。然后是分模块（1个主工程+6个依赖module）来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。**
 ## 加入recycleview列表数据，包含下拉刷新，上拉加载更多，网络访问是okgo，(该功能已经封装好了，零bug，本计划单另一个module，由于需要引用一个jar包所以放在了扫一扫目录下，recycleview文件夹下，拉出来就可以直接使用)
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/project.jpg)
+列表加载，刷新，加载更多
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/loadingview_refresh_loadmore.gif) 
+
 ## RecycleView列表带吸附的标题  纯手工打造 源码可见  原理是在定义  StickyItemDecoration 继承 RecyclerView.ItemDecoration 
+
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/StickyRec.gif)
 上方标号与下方一至：
 ## 分模块（多module）编写的项目目录，解耦性大，任意一模块都可以随意拆卸，安装不影响其他模块内容
@@ -209,6 +213,7 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
 
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/dragview.gif)
 
-
-
+日历（完全自定义，可以编写相应日期，添加日程）
+该页面用半透明style可以模糊看到后面的页面
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/carlanderDate.gif)
 ## 	**安卓高级开发交流群：qq   335042824**

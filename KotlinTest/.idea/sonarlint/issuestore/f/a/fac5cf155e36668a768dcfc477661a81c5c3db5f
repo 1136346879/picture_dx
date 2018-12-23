@@ -1,0 +1,11 @@
+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ò½Óûÿÿÿÿ8ã¦  ü,
+Usquid:S1068"4Remove this unused "selectedPosition" private field.(¶•¬Ìþÿÿÿÿ8ã¦  ü,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ðÀÝÕüÿÿÿÿ8Èè¯ ü,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñÀù8ã¦  ü,
+€squid:S1450"_Remove the "selectedPosition" field and declare it as a local variable in the relevant methods.(¶•¬Ìþÿÿÿÿ8ã¦  ü,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŽÈû8ã¦  ü,
+Esquid:S1125")Remove the literal "false" boolean value.(Ø¹žÍ8ã¦  ü,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎþÆâ8ã¦  ü,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ºµå8ã¦  ü,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾ÛÌµþÿÿÿÿ8ã¦  ü,

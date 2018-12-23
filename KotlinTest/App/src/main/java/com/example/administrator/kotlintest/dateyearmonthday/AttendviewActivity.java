@@ -70,6 +70,7 @@ public class AttendviewActivity extends RxAppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setTheme(R.style.Transparent);
         setContentView(R.layout.activity_attendview);
         attendviewActivity = this;
 

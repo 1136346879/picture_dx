@@ -5,10 +5,11 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="common">#2E3034</color>
-
+    <color name="transparent_background">#50000000</color>
     <color name="blue">#33b5e5</color>
     <color name="white">#FFFFFF</color>
     <color name="transparent_80_white">#80FFFFFF</color>
+    <color name="transparent_20_white">#E6FFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="transparent_80">#80000000</color>
     <color name="transparent_50">#50000000</color>

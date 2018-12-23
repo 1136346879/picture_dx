@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:mce="http://schemas.android.com/tools" xmlns:android="urn:oasis:names:tc:xliff:document:1.2">
 
     <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/photo_choose_bg</item>
@@ -49,4 +49,18 @@
         <!-- Defines closed handle (drawable/color). -->
         <attr name="closedHandle" format="reference|color" />
     </declare-styleable>
+
+        <style name="Transparent">
+            <item name="android:windowBackground">@color/transparent_background</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+        </style>
+
+    <style name="TranslucentActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>

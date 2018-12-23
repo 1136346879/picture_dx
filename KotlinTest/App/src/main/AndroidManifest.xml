@@ -35,7 +35,8 @@
         <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
 
-        <activity android:name=".dateyearmonthday.AttendviewActivity"/>
+        <activity android:name=".dateyearmonthday.AttendviewActivity"
+            android:theme="@style/TranslucentActivityTheme"/>
 
         <activity
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
