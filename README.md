@@ -223,9 +223,10 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
 
 日历（完全自定义，可以编写相应日期，添加日程）
 该页面用半透明style可以模糊看到后面的页面
+
 [^code]
-		类集成Activity  style风格
 		
+	类集成Activity  style风格
      <style name="Transparent">
             <item name="android:windowBackground">@color/transparent_background</item>
             <item name="android:windowNoTitle">true</item>
