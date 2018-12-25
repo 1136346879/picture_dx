@@ -31,7 +31,7 @@ public class LogConfig {
     /**
      * 是否显示日志边框
      */
-    private static boolean border_switch = true;
+    private static boolean border_switch = false;
     /**
      * 当自定义路径为空时，写入应用的/cache/log/目录中
      */

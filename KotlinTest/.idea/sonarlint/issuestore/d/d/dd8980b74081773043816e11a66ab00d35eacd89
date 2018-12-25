@@ -1,12 +1,12 @@
 
-Ksquid:S1066"/Merge this if statement with the enclosing one.( Ίτ8σσήϊ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(΅φεΆ8σσήϊ,
-7squid:S3626"Remove this redundant jump.(ϋΑέ…8σσήϊ,
 lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
-csquid:S1858"G"json" is already a string, there's no need to call "toString()" on it.(ΎσΪ—8σσήϊ,
-lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ΌσΫόÿÿÿÿ8σσήϊ,
-Isquid:S1604"(Make this anonymous inner class a lambda(†ƒδόÿÿÿÿ8σσήϊ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±―€¤8σσήϊ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ώ‚‡όÿÿÿÿ8σσήϊ,
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ΌσΫόÿÿÿÿ8σσήϊ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(΅φεΆ8σσήϊ,
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ςΰ­8σσήϊ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
+7squid:S3626"Remove this redundant jump.(ϋΑέ…8σσήϊ,
+Isquid:S1604"(Make this anonymous inner class a lambda(†ƒδόÿÿÿÿ8σσήϊ,
+Ksquid:S1066"/Merge this if statement with the enclosing one.( Ίτ8σσήϊ,
+csquid:S1858"G"json" is already a string, there's no need to call "toString()" on it.(ΎσΪ—8σσήϊ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ώ‚‡όÿÿÿÿ8σσήϊ,

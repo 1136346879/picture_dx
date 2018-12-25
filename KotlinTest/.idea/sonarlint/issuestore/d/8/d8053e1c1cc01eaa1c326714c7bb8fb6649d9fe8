@@ -1,50 +1,49 @@
 
-Hsquid:S3398"'Move this method into "MyPagerAdapter".(È•©Ïıÿÿÿÿ8Â¨‹Íü,
-Psquid:S1068"/Remove this unused "_formatDate" private field.(£ëÓ©øÿÿÿÿ8Â¨‹Íü,
-Ksquid:S1068"*Remove this unused "_month" private field.(´í”ÿÿÿÿÿ8Â¨‹Íü,
-zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¶ù¸Ùûÿÿÿÿ8Â¨‹Íü,
-zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Á» Ëûÿÿÿÿ8Â¨‹Íü,
-xsquid:S1450"WRemove the "gridView" field and declare it as a local variable in the relevant methods.(˜™ªúÿÿÿÿ8Â¨‹Íü,
-osquid:S1450"TRemove the "panel" field and declare it as a local variable in the relevant methods.(äº28Â¨‹Íü,
-{squid:S1450"ZRemove the "_formatDate" field and declare it as a local variable in the relevant methods.(£ëÓ©øÿÿÿÿ8Â¨‹Íü,
-vsquid:S1450"URemove the "_month" field and declare it as a local variable in the relevant methods.(´í”ÿÿÿÿÿ8Â¨‹Íü,
-Tsquid:S1444"8Make this "public static attendviewActivity" field final(ß¯Áø8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ìÛÂŸıÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ğ›½Çıÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³ú©±úÿÿÿÿ8Â¨‹Íü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹ÍÈÈ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÉºÅ üÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÛØßæúÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥˜ß»øÿÿÿÿ8Â¨‹Íü,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡›®68Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Šêøšşÿÿÿÿ8Â¨‹Íü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡Õ±š8Â¨‹Íü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ±™Œ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÉÛğËşÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ò›€Èùÿÿÿÿ8Â¨‹Íü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å™¸†8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªØáøûÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ğ²³¬øÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿùËÎøÿÿÿÿ8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´ó…¡şÿÿÿÿ8Â¨‹Íü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(…ÿìì8Â¨‹Íü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜³„ùÿÿÿÿ8Â¨‹Íü,
-Qsquid:S2696"6Make the enclosing method "static" or remove this set.(»›ş8Â¨‹Íü,
-‘"squid:ClassVariableVisibilityCheck"^Make attendviewActivity a static final constant or non-public and provide accessors if needed.(ß¯Áø8Â¨‹Íü,
-"squid:ClassVariableVisibilityCheck"UMake viewPager a static final constant or non-public and provide accessors if needed.(öıûşÿÿÿÿ8Â¨‹Íü,
-"squid:ClassVariableVisibilityCheck"XMake pagerAdapter a static final constant or non-public and provide accessors if needed.(ö†Îµúÿÿÿÿ8Â¨‹Íü,
-‹"squid:ClassVariableVisibilityCheck"SMake adapter a static final constant or non-public and provide accessors if needed.(‚ãùËıÿÿÿÿ8Â¨‹Íü,
-Œ"squid:ClassVariableVisibilityCheck"TMake currList a static final constant or non-public and provide accessors if needed.(ôÂãÃúÿÿÿÿ8Â¨‹Íü,
-ˆ"squid:ClassVariableVisibilityCheck"PMake list a static final constant or non-public and provide accessors if needed.(¹¿¢èùÿÿÿÿ8Â¨‹Íü,
-‹"squid:ClassVariableVisibilityCheck"XMake lastSelected a static final constant or non-public and provide accessors if needed.(ßˆœá8Â¨‹Íü,
-‘"squid:ClassVariableVisibilityCheck"YMake showYearMonth a static final constant or non-public and provide accessors if needed.(¹àÑËüÿÿÿÿ8Â¨‹Íü,
-Jsquid:S1905".Remove this unnecessary cast to "MyViewPager".(ÊûæÄ8Â¨‹Íü,
-Lsquid:S1905"0Remove this unnecessary cast to "DatePanelView".(·Çø8Â¨‹Íü,
-Psquid:S1481"/Remove this unused "formatDate" local variable.(ÜƒµÀüÿÿÿÿ8Â¨‹Íü,
-Jsquid:S1481".Remove this unused "searchkey" local variable.(”¼8Â¨‹Íü,
-lsquid:CallToDeprecatedMethod"?Remove this use of "setOnPageChangeListener"; it is deprecated.(ÈÀ®˜8Â¨‹Íü,
-squid:S1845"mRename field "searchmonth" to prevent any misunderstanding/clash with field "searchMonth" defined on line 61.(“†¿üÿÿÿÿ8Â¨‹Íü,
-œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²ù©j8Â¨‹Íü,
-xsquid:S00116"VRename this field "_formatDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ëÓ©øÿÿÿÿ8Â¨‹Íü,
-ssquid:S00116"QRename this field "_month" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´í”ÿÿÿÿÿ8Â¨‹Íü,
-jsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(ÇË8Â¨‹Íü,
+Hsquid:S3398"'Move this method into "MyPagerAdapter".(È•©Ïıÿÿÿÿ8ÿËéíı,
+Psquid:S1068"/Remove this unused "_formatDate" private field.(£ëÓ©øÿÿÿÿ8ÿËéíı,
+Ksquid:S1068"*Remove this unused "_month" private field.(´í”ÿÿÿÿÿ8ÿËéíı,
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¶ù¸Ùûÿÿÿÿ8ÿËéíı,
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Á» Ëûÿÿÿÿ8ÿËéíı,
+xsquid:S1450"WRemove the "gridView" field and declare it as a local variable in the relevant methods.(˜™ªúÿÿÿÿ8ÿËéíı,
+osquid:S1450"TRemove the "panel" field and declare it as a local variable in the relevant methods.(äº28ÿËéíı,
+{squid:S1450"ZRemove the "_formatDate" field and declare it as a local variable in the relevant methods.(£ëÓ©øÿÿÿÿ8ÿËéíı,
+vsquid:S1450"URemove the "_month" field and declare it as a local variable in the relevant methods.(´í”ÿÿÿÿÿ8ÿËéíı,
+Tsquid:S1444"8Make this "public static attendviewActivity" field final(ß¯Áø8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ğ›½Çıÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³ú©±úÿÿÿÿ8ÿËéíı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹ÍÈÈ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÉºÅ üÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÛØßæúÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥˜ß»øÿÿÿÿ8ÿËéíı,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡›®68ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Šêøšşÿÿÿÿ8ÿËéíı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡Õ±š8ÿËéíı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ±™Œ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÉÛğËşÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ò›€Èùÿÿÿÿ8ÿËéíı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Å™¸†8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªØáøûÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ğ²³¬øÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿùËÎøÿÿÿÿ8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´ó…¡şÿÿÿÿ8ÿËéíı,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(…ÿìì8ÿËéíı,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜³„ùÿÿÿÿ8ÿËéíı,
+Qsquid:S2696"6Make the enclosing method "static" or remove this set.(»›ş8ÿËéíı,
+‘"squid:ClassVariableVisibilityCheck"^Make attendviewActivity a static final constant or non-public and provide accessors if needed.(ß¯Áø8ÿËéíı,
+"squid:ClassVariableVisibilityCheck"UMake viewPager a static final constant or non-public and provide accessors if needed.(öıûşÿÿÿÿ8ÿËéíı,
+"squid:ClassVariableVisibilityCheck"XMake pagerAdapter a static final constant or non-public and provide accessors if needed.(ö†Îµúÿÿÿÿ8ÿËéíı,
+‹"squid:ClassVariableVisibilityCheck"SMake adapter a static final constant or non-public and provide accessors if needed.(‚ãùËıÿÿÿÿ8ÿËéíı,
+Œ"squid:ClassVariableVisibilityCheck"TMake currList a static final constant or non-public and provide accessors if needed.(ôÂãÃúÿÿÿÿ8ÿËéíı,
+ˆ"squid:ClassVariableVisibilityCheck"PMake list a static final constant or non-public and provide accessors if needed.(¹¿¢èùÿÿÿÿ8ÿËéíı,
+‹"squid:ClassVariableVisibilityCheck"XMake lastSelected a static final constant or non-public and provide accessors if needed.(ßˆœá8ÿËéíı,
+‘"squid:ClassVariableVisibilityCheck"YMake showYearMonth a static final constant or non-public and provide accessors if needed.(¹àÑËüÿÿÿÿ8ÿËéíı,
+Jsquid:S1905".Remove this unnecessary cast to "MyViewPager".(ÊûæÄ8ÿËéíı,
+Lsquid:S1905"0Remove this unnecessary cast to "DatePanelView".(·Çø8ÿËéíı,
+Psquid:S1481"/Remove this unused "formatDate" local variable.(ÜƒµÀüÿÿÿÿ8ÿËéíı,
+Jsquid:S1481".Remove this unused "searchkey" local variable.(”¼8ÿËéíı,
+lsquid:CallToDeprecatedMethod"?Remove this use of "setOnPageChangeListener"; it is deprecated.(ÈÀ®˜8ÿËéíı,
+squid:S1845"mRename field "searchmonth" to prevent any misunderstanding/clash with field "searchMonth" defined on line 61.(“†¿üÿÿÿÿ8ÿËéíı,
+œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²ù©j8ÿËéíı,
+xsquid:S00116"VRename this field "_formatDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ëÓ©øÿÿÿÿ8ÿËéíı,
+ssquid:S00116"QRename this field "_month" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´í”ÿÿÿÿÿ8ÿËéíı,
+jsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(ÇË8ÿËéíı,

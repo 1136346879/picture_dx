@@ -62,11 +62,11 @@ class MainActivity : AppCompatActivity() {
 
         }
         tv4.setOnClickListener {
-//打开相册
+        //打开相册
             pickPhotoUcrop()
         }
         tv5.setOnClickListener {
-//打开相册
+        //打开相册
             pickPhoto()
         }
 //        tv1.setOnClickListener {
@@ -108,39 +108,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(this!!.intentFor<YingActivity>())
 
         }
-        tv7.setOnClickListener {
-
-            insertMeiziData(Meizi(null, "China",
-                    "http://7xi8d6.48096_n.jpg"))
-
-            var meiziList = arrayListOf(
-                 Meizi(null, "HuaWei",
-                        "http://7xi8d648096_n.jpg"),
-                 Meizi(null, "Apple",
-                        "http://7xi8d648096_n.jpg"),
-                 Meizi(null, "MIUI",
-                        "http://7xi8d648096_n.jpg"))
-            manyMeiziaddData(meiziList)
-
-
-
-
-        }
-        tv8.setOnClickListener {
-            queryMeiziData()
-        }
-        tv9.setOnClickListener {
-//        ToastUtilKt.showCustomToast("删除数据库数据 is " +    MeiziDaoUtils(this).deleteAll())
-
-//            updateOneData(Meizi(1, "China",
-//                    "http://buidu。com"))
-//            deleteOneData(Meizi(22,"",""))
-
-            nativeQueryAll()
-//            queryByThings()
-        }
-
-
+        tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }
                 //view拖拽功能
         dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
@@ -409,8 +377,6 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("noFaceDetection", true) // no face detection
         ALog.e("TAKE_PHOTO", "TAKE_PHOTO-zoom-CROP_PHOTO")
         startActivityForResult(intent, CROP_PHOTO)
-
-
     }
 
     private fun getImageUri(): Uri? {
@@ -440,71 +406,5 @@ class MainActivity : AppCompatActivity() {
             cachePath = context.cacheDir.path
         }
         return cachePath
-    }
-
-    /**
-     * 单个插入操作
-     */
-    private fun insertMeiziData(meizi: Meizi){
-        ToastUtilKt.showCustomToast("数据库增删改查" + MeiziDaoUtils(this).insertMeizi(meizi))
-    }
-
-    /**
-     * 查询所有数据
-     */
-    private fun queryMeiziData(){
-        ALog.d("数据库数量：","${MeiziDaoUtils(this).queryAllMeizi().size}")
-
-        MeiziDaoUtils(this).queryAllMeizi().forEach {
-//            ToastUtilKt.showCustomToast("妹子来自==${it.source}" )
-            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
-
-        }
-
-    }
-    /**
-     * 批量插入操作：
-     */
-    private fun manyMeiziaddData(meiziList:List<Meizi> ){
-       ToastUtilKt.showCustomToast("添加一串妹子 is "+ MeiziDaoUtils(this).insertMultMeizi(meiziList))
-    }
-    /**
-     * 单个更改操作：（其中原有的数据都不会保存，如果新建的对象有属性没有设置，则会为空，不为空的字段没有设置，则报错）
-     *
-     * 根据id更改对象其他信息
-     */
-    private fun updateOneData(meizi: Meizi){
-        ToastUtilKt.showCustomToast("更新妹子信息 is "+ MeiziDaoUtils(this).updateMeizi(meizi))
-
-    }
-    /**
-     * 删除某条记录操作：  根据id删除该条数据
-     */
-
-    private fun deleteOneData(meizi: Meizi){
-        ToastUtilKt.showCustomToast("删除该妹子信息 is "+ MeiziDaoUtils(this).deleteMeizi(meizi))
-    }
-
-    /**
-     * 使用native sql进行条件查询：
-     * @TODO 会崩溃  condition没理解什么意思
-     */
-    private fun nativeQueryAll(){
-         val sql = "where _id > 25"
-        val condition =  arrayOf("27")
-        val meiziList2 = MeiziDaoUtils(this).queryMeiziByNativeSql(sql, null)
-        meiziList2.forEach {
-            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
-        }
-    }
-
-    /**
-     * 使用queryBuilder进行条件查询：
-     */
-    private fun queryByThings(){
-        val meiziList2 = MeiziDaoUtils(this).queryMeiziByQueryBuilder(27)
-        meiziList2.forEach {
-            ALog.d("妹子来自==${it.source}","妹子来自==${it?._id} + ${it.url}")
-        }
     }
 }

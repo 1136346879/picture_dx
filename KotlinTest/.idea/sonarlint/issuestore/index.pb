@@ -329,3 +329,11 @@ UApp/src/main/java/com/example/administrator/kotlintest/dateyearmonthday/TimeUti
 \App/src/main/java/com/example/administrator/kotlintest/dateyearmonthday/CalendarAdapter.java,f\a\fac5cf155e36668a768dcfc477661a81c5c3db5f
 R
 "App/src/main/res/values/colors.xml,b\0\b002149ac6926d53ad5de853f67a7bf3db455eea
+
+OApp/src/main/java/com/example/administrator/kotlintest/adapter/BaseRvAdapter.kt,2\8\2844570336e4ae048f2b33ffd209e6bdaef0b39a
+k
+;App/src/main/java/com/example/administrator/kotlintest/A.kt,c\1\c14d819bb31fa02ab55d43cae1e2ccec066825df
+\
+,App/src/main/res/layout/db_show_activity.xml,6\e\6e19d856d72ddab3842dac346acb2714261fbbaa
+„
+TApp/src/main/java/com/example/administrator/kotlintest/ui/activity/DbShowActivity.kt,7\d\7dd145edfff48770ef68578dac8673fc43c54976
