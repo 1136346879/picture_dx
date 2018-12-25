@@ -37,6 +37,7 @@
 >* 4，附属类库：Provider
 >* 5， 扫一扫功能：qrode-module(直接可以引入该module)
 
+[^code]
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
     
@@ -122,7 +123,7 @@
     implementation 'com.google.zxing:android-core:3.3.0'
     
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/zxing.gif)
-
+[^code]
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
 	点击到相应的页面之后，如存在内存泄漏，该帮助类就会显示出来
@@ -185,7 +186,8 @@
 	### （ThirdPartBannerZxingAcitivity）第三方     //轮播图（新闻列表头部展示）
 			
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/lubotu.gif)
-			
+		
+	[^code]		
 				implementation 'com.youth.banner:banner:1.4.10'
 				使用也很简单： homeBanner//设置banner样式
                 .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE)
@@ -209,6 +211,7 @@
 				
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/imageBannergif.gif)
 
+   [^code]
 			  imageBanner.setList(imageArray,imageTitle);
 			  
 			  
@@ -226,14 +229,14 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
 
 [^code]
 		
-	类集成Activity  style风格
+	类集成Activity  style风格（日历页面应用）
      <style name="Transparent">
             <item name="android:windowBackground">@color/transparent_background</item>
             <item name="android:windowNoTitle">true</item>
             <item name="android:windowIsTranslucent">true</item>
         </style>
 		
-	类集成RxAppCompatActivity  style风格
+	类集成RxAppCompatActivity  style风格(数据库页面应用)
     <style name="TranslucentActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
@@ -243,4 +246,11 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
     </style>
 	
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/carlanderDate.gif)
+
+
+添加数据库GreenDao页面，包含完整逻辑，增删改查。相应的数据可以在log日志页面查看
+
+
+
+
 ## 	**安卓高级开发交流群：qq   335042824**
