@@ -37,7 +37,8 @@
 >* 4，附属类库：Provider
 >* 5， 扫一扫功能：qrode-module(直接可以引入该module)
 
-[^code]
+		[^code]
+
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
     
@@ -90,7 +91,8 @@
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/squre_crop.gif)			
 		
 ##	图片上传
-##	网络访问用的是  [^code]
+##	网络访问用的是 
+ [^code]
 
 		com.squareup.retrofit2:retrofit:$retrofitVersion"
 		 com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"）
@@ -143,7 +145,8 @@
 ## 图片相关问题（显示裁剪压缩轮播上传等等）
 
 	##系统裁剪图片调用
-	###（1）进入相册[^code]
+	###（1）进入相册
+	[^code]
 	
 	（权限rxpremission com.github.tbruyelle:rxpermissions
 		 val intent = Intent(Intent.ACTION_PICK, null)
@@ -157,7 +160,8 @@
 	
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/system_crop.gif)	
 
-	调用系统裁剪[^code]
+	调用系统裁剪
+	[^code]
 	
 		  private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
 			val intent = Intent("com.android.camera.action.CROP")
