@@ -8,6 +8,14 @@
 
 客服  机器人  美洽第三方完美接入      魔窗
 
+app
+追求的理念;
+apk包大小越小越好
+app打开耗费资源少
+UI图不是越炫酷越好 还要考虑性能 及对app的影响
+如 以前加了个功能  打开pdf  加了个控件  apk直接加大了6M（上一版本12M，增加50%  相当于一个app，对用户什么感觉  直接就不下载了）
+一个提示可以解决的  就别整个弹框（开发写出来就分分钟的事），但是代码量增加，代码是一个字母一个字母，一个字节字节堆起来的，会让apk无端端的增大，而不知道原因
+着重点搞清楚：app这个是为了什么，功能还是UI还是效果 。为了UI效果耗时耗力耗财  功能影响了  
 
 ## 该项目demo原本计划，及产生过程：
 ## 本来我是用来练习kotlin的语法
@@ -37,7 +45,7 @@
 >* 4，附属类库：Provider
 >* 5， 扫一扫功能：qrode-module(直接可以引入该module)
 
-		[^code]
+[^code]
 
     implementation 'com.google.zxing:core:3.3.0'
     implementation 'com.google.zxing:android-core:3.3.0'
@@ -252,9 +260,41 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/carlanderDate.gif)
 
 
-添加数据库GreenDao页面，包含完整逻辑，增删改查。相应的数据可以在log日志页面查看
+## 添加数据库GreenDao页面，包含完整逻辑，增删改查。相应的数据可以在log日志页面查看
 
 
+
+##  多种状态切换的view（loadingview，error，empty，content）
+[^code]
+
+		在布局文件中引入
+		<com.classic.common.MultipleStatusView
+			android:id="@+id/multipleStatusView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:emptyView="@layout/layout_empty_view"（传入相应布局）
+			app:errorView="@layout/layout_error_view"（传入相应布局）
+			app:loadingView="@layout/layout_loading_view"（传入相应布局）
+			app:noNetworkView="@layout/layout_network_view">（传入相应布局）
+			
+			<LinearLayout
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+			</LinearLayout>
+		</com.classic.common.MultipleStatusView>
+		
+		在代码中
+			//展示内容
+            mLayoutStatusView?.showContent()
+            //展示空内容
+            mLayoutStatusView?.showEmpty()
+            //展示错误页面
+            mLayoutStatusView?.showError()
+		//错误页面点击重新加载
+        mLayoutStatusView?.setOnClickListener { ToastUtilKt.showToast("点击重新加载") }
 
 
 ## 	**安卓高级开发交流群：qq   335042824**
