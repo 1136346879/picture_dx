@@ -1,6 +1,8 @@
 package com.example.administrator.kotlintest.ui.activity
 
 import android.Manifest
+import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.support.v7.widget.LinearLayoutManager
@@ -15,6 +17,8 @@ import com.tbruyelle.rxpermissions2.RxPermissions
 import kotlinx.android.synthetic.main.mine_layout.*
 import org.jetbrains.anko.intentFor
 import java.util.*
+import android.telephony.TelephonyManager
+
 
 class MineActivity :BaseUIActivity(){
 
@@ -60,7 +64,7 @@ class MineActivity :BaseUIActivity(){
                  mLayoutStatusView?.showError()
             }
 
-ToastUtilKt.showToast(""+type)
+            ToastUtilKt.showToast(""+type)
 
         },1000)
 
@@ -78,7 +82,8 @@ ToastUtilKt.showToast(""+type)
                 1 -> ToastUtilKt.showCustomToast(""+it)
                 2 -> callPhone(CALL_PHONE)
                 3 -> ToastUtilKt.showCustomToast(""+it)
-                4 -> ToastUtilKt.showCustomToast(""+it)
+//                4 -> ToastUtilKt.showCustomToast(""+it)
+                4 -> getMoreId()
             }
         }
         my_coupon?.let {
@@ -86,6 +91,20 @@ ToastUtilKt.showToast(""+type)
 
                 ToastUtilKt.showCustomToast("点击我的优惠券")
                 startActivity(this!!.intentFor<UserCenterActivity>())
+            }
+        }
+    }
+
+    @SuppressLint("MissingPermission")
+    private fun getMoreId(){
+     val rxPermissions  =  RxPermissions(this)
+        rxPermissions.request(Manifest.permission.READ_PHONE_STATE).subscribe {
+            if(it){
+                val tm = this.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+                val deviceid = tm!!.deviceId   //取 IMEI或者MEID
+                val tel = tm!!.line1Number     //取出用户手机号码,手机没有安装SIM卡，值为null
+                val imsi = tm!!.subscriberId     //取出IMSI,手机没有安装SIM卡，值为null
+                val imei = tm!!.simSerialNumber
             }
         }
     }
