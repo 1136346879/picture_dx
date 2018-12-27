@@ -58,7 +58,9 @@ class MainActivity : AppCompatActivity() {
         LogConfig.initLog(application)
         tv6.setOnClickListener {
 
-            startActivity(this!!.intentFor<UploadActivity>())
+            startActivity(this!!.intentFor<UploadActivity>()
+                    .putExtra("","")
+                    .putExtra("",""))
 
         }
         tv4.setOnClickListener {
@@ -209,7 +211,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(KEY_PHOTO_PATH, photoUri?.path)
                setResult(Activity.RESULT_OK, intent)
 //                activity?.finish()
-                tv5.setImageURI(Uri.parse(photoUri?.path))
+//                tv5.setImageURI(Uri.parse(photoUri?.path))
                 loadUpImg(Uri.parse(photoUri?.path).toString())
             } else {
 //                ToastUtil.showCustomToast("取消图片设置!")

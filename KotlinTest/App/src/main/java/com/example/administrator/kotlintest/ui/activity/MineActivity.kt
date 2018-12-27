@@ -82,8 +82,8 @@ class MineActivity :BaseUIActivity(){
                 1 -> ToastUtilKt.showCustomToast(""+it)
                 2 -> callPhone(CALL_PHONE)
                 3 -> ToastUtilKt.showCustomToast(""+it)
-//                4 -> ToastUtilKt.showCustomToast(""+it)
-                4 -> getMoreId()
+                4 -> ToastUtilKt.showCustomToast(""+it)
+//                4 -> getMoreId()
             }
         }
         my_coupon?.let {

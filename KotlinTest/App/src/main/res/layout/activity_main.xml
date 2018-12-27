@@ -25,7 +25,7 @@
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="next_activity"
+        android:text="跳转至下一activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -54,16 +54,18 @@
         android:id="@+id/tv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ucrop 你懂得"
+        android:text="Ucrop矩形图片裁剪"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />   <ImageView
-    android:padding="@dimen/space_10"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:text="方形裁剪"
+        android:padding="@dimen/space_10"
         android:id="@+id/tv5"
-        android:layout_width="@dimen/space_80"
-        android:layout_height="@dimen/space_80"
-        android:background="@drawable/icon_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
