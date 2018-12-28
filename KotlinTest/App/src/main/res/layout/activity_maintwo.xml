@@ -55,7 +55,7 @@
         android:layout_below="@+id/mainactivity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="      瞧一瞧      "
+        android:text="扫一扫(访微信UI)"
         android:id="@+id/looklook"
 
         />
@@ -66,6 +66,14 @@
         android:layout_height="wrap_content"
         android:text="    进入空页面    "
         android:id="@+id/jump_javaclass"
+
+        />
+    <TextView
+        android:padding="@dimen/space_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫一扫-two"
+        android:id="@+id/saoyisao"
 
         />
     <!--epvTextSize：字符的大小-->
@@ -89,15 +97,7 @@
         app:epvTextPadding="20dp"
         app:epvTextSize="20sp"
         />
-    <TextView
-        android:padding="@dimen/space_10"
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="看一看-two"
-        android:id="@+id/saoyisao"
 
-        />
     <!--<com.example.administrator.kotlintest.widget.DragViewGroup-->
         <!--android:id="@+id/playerDragLayout"-->
         <!--android:layout_width="wrap_content"-->

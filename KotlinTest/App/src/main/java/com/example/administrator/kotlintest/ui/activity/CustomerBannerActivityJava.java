@@ -30,7 +30,7 @@ public class CustomerBannerActivityJava extends Activity implements LoadingView.
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_java);
-        loadingView = (LoadingView) LayoutInflater.from(this).inflate(R.layout.view_recy_loading, null);
+        loadingView = (LoadingView) LayoutInflater.from(this).inflate(R.layout.view_loading, null);
         loadingView.setOnLoadingViewClickListener(this);
         OverLoader overLoader = new OverLoader();
 //       ToastUtilKt.INSTANCE.showCustomToast( overLoader.getOverLoaderMethod(3)+"");
