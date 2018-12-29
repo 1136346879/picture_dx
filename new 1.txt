@@ -1,0 +1,426 @@
+史上最恶心的json数据解析：
+用Gson解析一半，再用JSONObject解析剩下的数据（因为key值是变化的(我想哭)，后台这样说的这种格式是全世界通用的，京东就是这么返回解析的（醉了） -_-），
+
+json数据如下：
+String   jsonString = "{"cityId": "1",
+	"codeUuid": "1000000282074200",
+	"couponSpuSkuBoList": [],
+	"customerCode": "01.01.0003",
+	"customerId": "CN00001901",
+	"deliverSupport": "private,kd",
+	"deliverWay": "private",
+	"errorCode": "61",
+	"errorMessage": "商品信息缺失",
+	"freight": {
+		"kdDeliverTime": "2019年01月05日",
+		"kdFreight": 16.0,
+		"kdPrescription": 3,
+		"privateFreight": 100.0,
+		"privatePrescription": 0
+	},
+	"goodTotalMoney": "167.77",
+	"goodTotalVolume": "7925.3",
+	"goodTotalWeight": "6.04",
+	"maxArrivalCycle": "3",
+	"maxLength": "17.0",
+	"orderType": "10",
+	"payModelChoosen": {
+		"payName": "在线支付",
+		"payType": "1001"
+	},
+	"payModelList": [{
+		"payName": "在线支付",
+		"payType": "1001"
+	}, {
+		"payName": "银行转账",
+		"payType": "1301"
+	}, {
+		"payName": "银行汇票",
+		"payType": "1401"
+	}, {
+		"accountAvailable": "50189.73",
+		"payName": "账期支付",
+		"payType": "1201"
+	}, {
+		"onoff": "1",
+		"payName": "货到付款",
+		"paySubType": "110101,110102",
+		"payType": "1101"
+	}],
+	"payTotalMoney": "267.77",
+	"platform": 1,
+	"serverTime": 1546045243356,
+	"shippingAddressModel": {
+		"address_type": "10",
+		"detail_address": "海鑫北路9号鑫方盛集团",
+		"warehouse_code": "1",
+		"city_code": "2810",
+		"addressPersonList": [{
+			"receiverId": 0,
+			"receiverName": "李燕",
+			"mobile": "18131813320",
+			"id": 4761,
+			"addressId": 1909,
+			"status": 10
+		}],
+		"add_alias": "分销客户测试",
+		"is_default": "1",
+		"province_code": "1",
+		"street_code": "",
+		"office_phone": "",
+		"ship_add_id": 1909,
+		"streetName": "",
+		"cityName": "大兴区",
+		"areaName": "大兴郊区",
+		"province_id": 1,
+		"district_code": "4205",
+		"limitLine": 20,
+		"district_id": 646,
+		"provinceName": "北京",
+		"street_id": 0,
+		"email": "",
+		"memberId": 0,
+		"city_id": 100
+	},
+	"shoppingAddList": [{
+		"address_type": "10",
+		"detail_address": "海鑫北路9号鑫方盛集团",
+		"warehouse_code": "1",
+		"city_code": "2810",
+		"addressPersonList": [{
+			"receiverId": 0,
+			"receiverName": "李燕",
+			"mobile": "18131813320",
+			"id": 4761,
+			"addressId": 1909,
+			"status": 10
+		}],
+		"add_alias": "分销客户测试",
+		"is_default": "1",
+		"province_code": "1",
+		"street_code": "",
+		"office_phone": "",
+		"ship_add_id": 1909,
+		"streetName": "",
+		"cityName": "大兴区",
+		"areaName": "大兴郊区",
+		"province_id": 1,
+		"district_code": "4205",
+		"limitLine": 20,
+		"district_id": 646,
+		"provinceName": "北京",
+		"street_id": 0,
+		"email": "",
+		"memberId": 0,
+		"city_id": 100
+	}],
+	"skuModelList": {
+		"2510": [{
+			"arrivalCycle": "3",
+			"buyyerCount": "1",
+			"cartId": "2241",
+			"categoryCode": "",
+			"categoryDiscountRate": "1",
+			"categoryId": "363",
+			"color": "",
+			"costPrice": "27.68",
+			"distributionPrice": "28.70",
+			"fare": "17.11",
+			"helpcode": "ZMNLJZZS(SR)12#/25MM",
+			"high": "8.5",
+			"length": "17.0",
+			"lowerStock": "",
+			"marketingAttribute": "",
+			"miniOrder": "1.0",
+			"orderLimitType": "0",
+			"origin": "邯郸",
+			"originalPrice": "28.70",
+			"partsNumber": "外箱10盒/中盒7百个",
+			"platDiscountRate": "1",
+			"price": "28.70",
+			"productCode": "03.14.01.080607",
+			"productName": "啄木鸟 六角自钻丝(速锐)",
+			"productPic": "https://fsyuncai.oss-cn-beijing.aliyuncs.com/product/images/080606a.jpg?x-oss-process=style/marking_text",
+			"retailPrice": "33.30",
+			"saleOrNot": "1",
+			"salePrice": "28.70",
+			"saleType": "50",
+			"salesManagerId": "0",
+			"skuCode": "91002510007",
+			"skuId": "16712",
+			"skuInfo": "12#/25mm",
+			"skuName": "啄木鸟 六角自钻丝(速锐)",
+			"skuWeight": "2.42",
+			"specifications": "12#/25mm",
+			"spuCode": "91002510000",
+			"spuId": "2510",
+			"srcSalePrice": "28.70",
+			"status": "1",
+			"stockNum": "0",
+			"tempPurchase": "0",
+			"unitName": "盒",
+			"upperStock": "",
+			"virtualStock": "9999998",
+			"volume": "0.001600",
+			"warehouseId": "1",
+			"warehouseName": "大兴5库F",
+			"width": "11.0"
+		}, {
+			"arrivalCycle": "3",
+			"buyyerCount": "1",
+			"cartId": "2240",
+			"categoryCode": "",
+			"categoryDiscountRate": "1",
+			"categoryId": "363",
+			"color": "",
+			"costPrice": "28.95",
+			"distributionPrice": "30.00",
+			"fare": "17.88",
+			"helpcode": "ZMNLJZZS(SR)12#/20MM",
+			"high": "8.5",
+			"length": "17.0",
+			"lowerStock": "",
+			"marketingAttribute": "",
+			"miniOrder": "1.0",
+			"orderLimitType": "0",
+			"origin": "邯郸",
+			"originalPrice": "30.00",
+			"partsNumber": "外箱10盒/中盒8百个",
+			"platDiscountRate": "1",
+			"price": "30.00",
+			"productCode": "03.14.01.080606",
+			"productName": "啄木鸟 六角自钻丝(速锐)",
+			"productPic": "https://fsyuncai.oss-cn-beijing.aliyuncs.com/product/images/080606a.jpg?x-oss-process=style/marking_text",
+			"retailPrice": "34.80",
+			"saleOrNot": "1",
+			"salePrice": "30.00",
+			"saleType": "50",
+			"salesManagerId": "0",
+			"skuCode": "91002510009",
+			"skuId": "16714",
+			"skuInfo": "12#/20mm",
+			"skuName": "啄木鸟 六角自钻丝(速锐)",
+			"skuWeight": "2.44",
+			"specifications": "12#/20mm",
+			"spuCode": "91002510000",
+			"spuId": "2510",
+			"srcSalePrice": "30.00",
+			"status": "1",
+			"stockNum": "0",
+			"tempPurchase": "0",
+			"unitName": "盒",
+			"upperStock": "",
+			"virtualStock": "9999746",
+			"volume": "0.001600",
+			"warehouseId": "1",
+			"warehouseName": "大兴5库F",
+			"width": "11.0"
+		}],
+		"4026": [{
+			"arrivalCycle": "3",
+			"buyyerCount": "4",
+			"cartId": "2203",
+			"categoryCode": "",
+			"categoryDiscountRate": "1",
+			"categoryId": "841",
+			"color": "",
+			"costPrice": "19.50",
+			"distributionPrice": "26.90",
+			"fare": "64.12",
+			"helpcode": "DLYGBJQJTY-GF-XY701",
+			"high": "6.5",
+			"length": "13.5",
+			"lowerStock": "140.000000",
+			"marketingAttribute": "",
+			"miniOrder": "1.0",
+			"orderLimitType": "0",
+			"origin": "津南",
+			"originalPrice": "26.90",
+			"partsNumber": "1",
+			"platDiscountRate": "1",
+			"price": "26.90",
+			"productCode": "13.09.04.071569",
+			"productName": "独立烟感报警器JTY-GF-XY701",
+			"productPic": "https://fsyuncai.oss-cn-beijing.aliyuncs.com/product/images/071569a.jpg?x-oss-process=style/marking_text",
+			"retailPrice": "30.90",
+			"saleOrNot": "1",
+			"salePrice": "26.90",
+			"saleType": "50",
+			"salesManagerId": "0",
+			"skuCode": "91004026001",
+			"skuId": "16599",
+			"skuInfo": "",
+			"skuName": "独立烟感报警器JTY-GF-XY701",
+			"skuWeight": "0.28",
+			"specifications": "默认",
+			"spuCode": "91004026000",
+			"spuId": "4026",
+			"srcSalePrice": "26.90",
+			"status": "1",
+			"stockNum": "319",
+			"tempPurchase": "0",
+			"unitName": "个",
+			"upperStock": "350.000000",
+			"virtualStock": "9999999",
+			"volume": "0.001180",
+			"warehouseId": "1",
+			"warehouseName": "大兴3库F",
+			"width": "13.5"
+		}],
+		"2869": [{
+			"arrivalCycle": "40",
+			"buyyerCount": "3",
+			"cartId": "2190",
+			"categoryCode": "",
+			"categoryDiscountRate": "1",
+			"categoryId": "158",
+			"color": "蓝色",
+			"costPrice": "0.26",
+			"distributionPrice": "0.49",
+			"fare": "0.89",
+			"helpcode": "HLSHELISIW4ZBMHZT2.8MM(201025)LS",
+			"high": "0.1",
+			"length": "6.5",
+			"lowerStock": "1021.000000",
+			"marketingAttribute": "集团主推",
+			"miniOrder": "1.0",
+			"orderLimitType": "0",
+			"origin": "普陀",
+			"originalPrice": "0.49",
+			"partsNumber": "中盒100/塑袋10",
+			"platDiscountRate": "1",
+			"price": "0.49",
+			"productCode": "01.10.01.061695",
+			"productName": "赫力斯HELISI W4直柄麻花钻头",
+			"productPic": "https://fsyuncai.oss-cn-beijing.aliyuncs.com/product/images/061703a.jpg?x-oss-process=style/marking_text",
+			"retailPrice": "0.59",
+			"saleOrNot": "1",
+			"salePrice": "0.49",
+			"saleType": "50",
+			"salesManagerId": "0",
+			"skuCode": "91002869028",
+			"skuId": "14619",
+			"skuInfo": "蓝色2.8mm(201025)",
+			"skuName": "赫力斯HELISI W4直柄麻花钻头",
+			"skuWeight": "0.02",
+			"specifications": "2.8mm(201025)",
+			"spuCode": "91002869000",
+			"spuId": "2869",
+			"srcSalePrice": "0.49",
+			"status": "1",
+			"stockNum": "551",
+			"tempPurchase": "0",
+			"unitName": "支",
+			"upperStock": "2552.000000",
+			"virtualStock": "9999999",
+			"volume": "0.000003",
+			"warehouseId": "1",
+			"warehouseName": "大兴7库F",
+			"width": "4.0"
+		}]
+	},
+	"skuTotalNum": "9.0",
+	"wannaDeliverAtBegin": "",
+	"wannaDeliverAtEnd": "",
+	"warehouseId": "1"
+}"
+
+数据解析：
+（因为skuModelList中的key值是变化的，所以先用Object接收，然后再去用JSONObject解析，获取key的list值，然后遍历key依次取出对应的value）
+ ConfirmOrderentity confirmOrderentity = new Gson().fromJson(json, ConfirmOrderentity.class);
+ 
+   //解析返回的购物信息（即key值有变化的数组）
+                        String skuModeListString = new Gson().toJson(confirmOrderentity.getSkuModelList());
+                        try {
+                            JSONObject jsonObject = new JSONObject(skuModeListString);
+                            Iterator iterator = jsonObject.keys();
+                            map = new HashMap<>();
+                            while (iterator.hasNext()) {
+                                List<List<SkuModelListBean>> listList = new ArrayList<>();
+                                listList.clear();
+                                String key = (String) iterator.next();
+                                JSONArray jsonArray = jsonObject.getJSONArray(key);
+                                List<SkuModelListBean> listBeans = new ArrayList<>();
+                                listBeans.clear();
+                                for (int i = 0; i < jsonArray.length(); i++) {
+                                    JSONObject jsonObjectResult = jsonArray.getJSONObject(i);
+                                    SkuModelListBean skuModelListBean = new SkuModelListBean();
+                                    if (jsonObjectResult.has("arrivalCycle")) {
+                                        String arrivalCycle = jsonObjectResult.getString("arrivalCycle");
+                                        skuModelListBean.setArrivalCycle(arrivalCycle);
+                                    }
+                                    String buyyerCount = jsonObjectResult.getString("buyyerCount");
+                                    skuModelListBean.setBuyyerCount(buyyerCount);
+                                    String cartId = jsonObjectResult.getString("cartId");
+                                    skuModelListBean.setCartId(cartId);
+                                    String categoryDiscountRate = jsonObjectResult.getString("categoryDiscountRate");
+                                    skuModelListBean.setCategoryDiscountRate(categoryDiscountRate);
+                                    String categoryId = jsonObjectResult.getString("categoryId");
+                                    skuModelListBean.setCategoryId(categoryId);
+                                    String color = jsonObjectResult.getString("color");
+                                    skuModelListBean.setColor(color);
+                                    String costPrice = jsonObjectResult.getString("costPrice");
+                                    skuModelListBean.setCostPrice(costPrice);
+                                    if (jsonObjectResult.has("fare")) {
+                                        String fare = jsonObjectResult.getString("fare");
+                                        skuModelListBean.setFare(fare);
+                                    }
+                                    String high = jsonObjectResult.getString("high");
+                                    skuModelListBean.setHigh(high);
+                                    String length = jsonObjectResult.getString("length");
+                                    skuModelListBean.setLength(length);
+                                    String originalPrice = jsonObjectResult.getString("originalPrice");
+                                    skuModelListBean.setOriginalPrice(originalPrice);
+                                    String platDiscountRate = jsonObjectResult.getString("platDiscountRate");
+                                    skuModelListBean.setPlatDiscountRate(platDiscountRate);
+                                    String productCode = jsonObjectResult.getString("productCode");
+                                    skuModelListBean.setProductCode(productCode);
+                                    String productName = jsonObjectResult.getString("productName");
+                                    skuModelListBean.setProductName(productName);
+                                    if (jsonObjectResult.has("productPic")) {
+                                        String productPic = jsonObjectResult.getString("productPic");
+                                        skuModelListBean.setProductPic(productPic);
+                                    }
+                                    String salePrice = jsonObjectResult.getString("salePrice");
+                                    skuModelListBean.setSalePrice(salePrice);
+                                    String salesManagerId = jsonObjectResult.getString("salesManagerId");
+                                    skuModelListBean.setSalesManagerId(salesManagerId);
+                                    String skuCode = jsonObjectResult.getString("skuCode");
+                                    skuModelListBean.setSkuCode(skuCode);
+                                    String skuId = jsonObjectResult.getString("skuId");
+                                    skuModelListBean.setSkuId(skuId);
+                                    String skuInfo = jsonObjectResult.getString("skuInfo");
+                                    skuModelListBean.setSkuInfo(skuInfo);
+                                    String skuName = jsonObjectResult.getString("skuName");
+                                    skuModelListBean.setSkuName(skuName);
+                                    String skuWeight = jsonObjectResult.getString("skuWeight");
+                                    skuModelListBean.setSkuWeight(skuWeight);
+                                    String specifications = jsonObjectResult.getString("specifications");
+                                    skuModelListBean.setSpecifications(specifications);
+                                    String spuId = jsonObjectResult.getString("spuId");
+                                    skuModelListBean.setSpuId(spuId);
+                                    String status = jsonObjectResult.getString("status");
+                                    skuModelListBean.setStatus(status);
+                                    String stockNum = jsonObjectResult.getString("stockNum");
+                                    skuModelListBean.setStockNum(stockNum);
+                                    String unitName = jsonObjectResult.getString("unitName");
+                                    skuModelListBean.setUnitName(unitName);
+                                    String virtualStock = jsonObjectResult.getString("virtualStock");
+                                    skuModelListBean.setVirtualStock(virtualStock);
+                                    String warehouseId = jsonObjectResult.getString("warehouseId");
+                                    skuModelListBean.setWarehouseId(warehouseId);
+                                    String width = jsonObjectResult.getString("width");
+                                    skuModelListBean.setWidth(width);
+                                    listBeans.add(i, skuModelListBean);
+                                }
+                                listList.add(listBeans);
+                                map.put(key, listList);
+                            }
+                        } catch (JSONException e) {
+                            //
+                        }
+
+
+
+
+

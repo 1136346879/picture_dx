@@ -353,3 +353,7 @@ Q
 -App/src/main/res/layout/layout_empty_view.xml,b\2\b29418c31321f3dd1b7f220b3637768ce2a63573
 }
 Mmultiple-status-view/src/main/java/com/classic/common/MultipleStatusView.java,e\a\eaab02d4be1cc76aa147175eb4abaa23cfa3b68b
+i
+9multiple-status-view/src/main/res/layout/loading_view.xml,9\9\9944c6ec5a81b256ef501e073164ded30c2ad3ca
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e

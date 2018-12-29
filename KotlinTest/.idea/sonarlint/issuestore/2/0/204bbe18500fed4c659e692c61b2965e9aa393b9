@@ -1,7 +1,7 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸ŸÕš8••¼Æ÷,
-Psquid:S1481"/Remove this unused "overLoader" local variable.(äýèÞýÿÿÿÿ8••¼Æ÷,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý«‘8••¼Æ÷,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­Ë¹ýÿÿÿÿ8••¼Æ÷,
-squid:S1450"`Remove the "newsDetailContent" field and declare it as a local variable in the relevant methods.(‹Áëçÿÿÿÿÿ8••¼Æ÷,
-Dsquid:S1604"(Make this anonymous inner class a lambda(„ÑñŒ8••¼Æ÷,
+Psquid:S1481"/Remove this unused "overLoader" local variable.(äýèÞýÿÿÿÿ8ÖÙéøþ,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý«‘8ÖÙéøþ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸ŸÕš8ÖÙéøþ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­Ë¹ýÿÿÿÿ8ÖÙéøþ,
+Dsquid:S1604"(Make this anonymous inner class a lambda(„ÑñŒ8ÖÙéøþ,
+squid:S1450"`Remove the "newsDetailContent" field and declare it as a local variable in the relevant methods.(‹Áëçÿÿÿÿÿ8ÖÙéøþ,
