@@ -295,6 +295,15 @@ CustomerBannerActivityJava 该类中加入自定义loadingview  **动画及图�
             mLayoutStatusView?.showError()
 		//错误页面点击重新加载
         mLayoutStatusView?.setOnClickListener { ToastUtilKt.showToast("点击重新加载") }
+		
+		
+##  频道管理页面（高仿头条等新闻app）
+>* 频道名称数据是保存在Sqlite数据库中
+		DragGrid  继承 GridView    
+>* 我的频道页面 点击删除频道，长按拖拽顺序
+		OtherGridView  继承  GridView   
+>* 更多频道  点击添加频道
 
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/channelPage.gif)
 
 ## 	**安卓高级开发交流群：qq   335042824**
