@@ -1,0 +1,8 @@
+
+tsquid:S1450"XRemove the "item_text" field and declare it as a local variable in the relevant methods.(èÛèø8´Ãº-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£²˜»8´Ãº-
+Š"squid:ClassVariableVisibilityCheck"WMake channelList a static final constant or non-public and provide accessors if needed.(±¶Àı8´Ãº-
+"squid:ClassVariableVisibilityCheck"[Make remove_position a static final constant or non-public and provide accessors if needed.(ò•Ğ»8´Ãº-
+qsquid:S00116"TRename this field "item_text" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÛèø8´Ãº-
+wsquid:S00116"ZRename this field "remove_position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò•Ğ»8´Ãº-
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(ñÔª°8´Ãº-

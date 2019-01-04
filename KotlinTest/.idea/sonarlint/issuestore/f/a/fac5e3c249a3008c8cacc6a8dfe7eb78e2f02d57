@@ -1,0 +1,12 @@
+
+zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤ÅˆŒıÿÿÿÿ8ß×»º-
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(“ôµ‘8ß×»º-
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(µÀà8ß×»º-
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷×¶’ûÿÿÿÿ8ß×»º-
+Ssquid:S1172"2Remove this unused method parameter "moveChannel".(÷×¶’ûÿÿÿÿ8ß×»º-
+Ksquid:S00108")Either remove or fill this block of code.(İ‚Î€ıÿÿÿÿ8ß×»º-
+Ksquid:S00108")Either remove or fill this block of code.(İ‚Î€ıÿÿÿÿ8ß×»º-
+Dsquid:S1604"(Make this anonymous inner class a lambda(„ÑñŒ8ß×»º-
+Dsquid:S1604"(Make this anonymous inner class a lambda(„ÑñŒ8ß×»º-
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úƒÚÓûÿÿÿÿ8ß×»º-
+ƒsquid:UselessImportCheck"ZRemove this unused import 'com.example.administrator.kotlintest.ui.activity.MainActivity'.(¬”ôç8ß×»º-

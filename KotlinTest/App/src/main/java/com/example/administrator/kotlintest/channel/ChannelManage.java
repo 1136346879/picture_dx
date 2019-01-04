@@ -42,6 +42,7 @@ public class ChannelManage {
 		defaultOtherChannels.add(new ChannelItem(16, "美女", 9, 0));
 		defaultOtherChannels.add(new ChannelItem(17, "游戏", 10, 0));
 		defaultOtherChannels.add(new ChannelItem(18, "数码", 11, 0));
+		defaultOtherChannels.add(new ChannelItem(19, "音乐", 12, 0));
 	}
 
 	private ChannelManage(SQLHelper paramDBHelper) throws SQLException {
