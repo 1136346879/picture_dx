@@ -8,6 +8,8 @@ import android.os.Build
 import android.provider.Settings
 import android.telephony.TelephonyManager
 import android.text.TextUtils
+import com.example.administrator.kotlintest.channel.SQLHelper
+import com.example.baselibrary.MyApplication
 import java.net.Inet4Address
 import java.net.NetworkInterface
 import java.net.SocketException
@@ -18,6 +20,17 @@ import java.net.SocketException
  */
 
 object DevicesUtils {
+
+
+
+
+    var sqlHelper: SQLHelper? = null
+    /** 获取数据库Helper  */
+    fun getSQLHelper(): SQLHelper {
+        if (sqlHelper == null)
+            sqlHelper = SQLHelper(MyApplication.cxt)
+        return sqlHelper as SQLHelper
+    }
 
     /**
      * 获取设备唯一标识

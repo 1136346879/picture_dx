@@ -30,4 +30,6 @@ public  class MyApplication extends MultiDexApplication {
         MyApplication application =(MyApplication) context . getApplicationContext ();
         return application.refWatcher;
     }
+
+
 }

@@ -17,12 +17,15 @@ import android.widget.Toast
 import com.blankj.ALog
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
+import com.example.administrator.kotlintest.channel.ChannelActivity
+import com.example.administrator.kotlintest.channel.SQLHelper
 import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
 import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
 import com.example.administrator.kotlintest.ui.entity.学生
+import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.baselibrary.MyApplication
 import com.example.baselibrary.widgets.ToastUtilKt
 import com.jakewharton.rxbinding2.view.RxView
@@ -45,9 +48,14 @@ import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        getSQLHelper()
+
 
         tv0.setOnClickListener {
 
@@ -111,6 +119,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }
+        tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }
                 //view拖拽功能
         dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");

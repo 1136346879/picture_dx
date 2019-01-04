@@ -11,4 +11,11 @@
     <string name="no_network">请检查网络后点击重新加载</string>
     <string name="data_error">数据获取失败(ㄒoㄒ)~~</string>
     <string name="empty_view_hint">暂时木有内容呀~~</string>
+
+
+    <string name="drawer_btn_rss">频道管理</string>
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
 </resources>

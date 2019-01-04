@@ -56,6 +56,7 @@
         <activity
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
            />
+        <activity android:name=".channel.ChannelActivity"/>
     </application>
 
 </manifest>
