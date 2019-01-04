@@ -24,6 +24,7 @@ import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
 import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
+import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.学生
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.baselibrary.MyApplication
@@ -120,6 +121,7 @@ class MainActivity : AppCompatActivity() {
         }
         tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }
         tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }
+        tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }
                 //view拖拽功能
         dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");

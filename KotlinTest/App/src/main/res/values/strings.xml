@@ -18,4 +18,6 @@
     <string name="subscribe_more_category">更多频道</string>
     <string name="subscribe_manager_category_info">单击增删频道</string>
     <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+
+    <string name="action_reset">Reset</string>
 </resources>

@@ -57,6 +57,7 @@
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
            />
         <activity android:name=".channel.ChannelActivity"/>
+        <activity android:name=".smashzhadan.smashzhadan"/>
     </application>
 
 </manifest>
