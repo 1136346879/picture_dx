@@ -1,5 +1,5 @@
 # picture_dx
-# 欢迎能来到这里（详情见demo，代码可直接拿到）
+# 欢迎能来到这里（详情见demo，代码可直接拿到，如有用麻烦start一下）
 
 >* 1，主工程：App（**包含zxing扫一扫功能，view拖拽，**）
 >* 2，基础类库：BaseLibrary
