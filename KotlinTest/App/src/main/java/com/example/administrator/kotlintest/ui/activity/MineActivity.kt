@@ -20,7 +20,7 @@ import java.util.*
 import android.telephony.TelephonyManager
 
 
-class MineActivity :BaseUIActivity(){
+open class MineActivity :BaseUIActivity(){
 
    private val option = arrayListOf<PersonControlDao>()
     private lateinit var personAdapter : PersonAdapter
@@ -48,27 +48,25 @@ class MineActivity :BaseUIActivity(){
 
 
 
-        android.os.Handler().postDelayed(Runnable {
+//        android.os.Handler().postDelayed(Runnable {
+//
+//            val rand = Random()
+//            val type =1+ rand.nextInt(3)
+////           var type =  (1+Math.random()*(3-1+1))as Int
+//                //展示内容
+//            when (type) {
+//                1 -> mLayoutStatusView?.showContent()
+//                2 -> //展示空内容
+//                    mLayoutStatusView?.showEmpty()
+//                3 -> //展示错误页面
+//                    mLayoutStatusView?.showError()
+//            }
+//
+//            ToastUtilKt.showToast(""+type)
+//
+//        },1000)
 
-            val rand = Random()
-            val type =1+ rand.nextInt(3)
-//           var type =  (1+Math.random()*(3-1+1))as Int
-                //展示内容
-            if(type ==1){
-                mLayoutStatusView?.showContent()
-            }else if(type ==2){
-                //展示空内容
-                mLayoutStatusView?.showEmpty()
-            }else if(type ==3){
-                //展示错误页面
-                 mLayoutStatusView?.showError()
-            }
-
-            ToastUtilKt.showToast(""+type)
-
-        },1000)
-
-
+         mLayoutStatusView?.showContent()
         mLayoutStatusView?.setOnClickListener { ToastUtilKt.showToast("点击重新加载") }
       personAdapter = PersonAdapter(option,this)
 

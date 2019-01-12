@@ -31,6 +31,9 @@ UI图不是越炫酷越好 还要考虑性能 及对app的影响
 ## 该项目demo原本计划，及产生过程：
 ## 本来我是用来练习kotlin的语法
 
+
+加入 ASimpleCache 是一个为android制定的 轻量级的 开源缓存框架。轻量到只有一个java文件（由十几个类精简而来）。
+
 ** 写了几个类练练手。
 			然后是分模块（1个主工程+6个依赖module）来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。**
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/project.jpg)

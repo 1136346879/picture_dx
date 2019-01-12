@@ -5,7 +5,24 @@
     <application>
         <activity android:name=".ui.activity.UserCenterActivity"></activity>
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
+<activity android:name=".ui.activity.simplecache.AcacheActivity"/>
 
+
+
+        <activity android:name=".ui.activity.simplecache.AboutActivity" />
+        <activity android:name=".ui.activity.simplecache.SaveBitmapActivity" />
+        <activity android:name=".ui.activity.simplecache.SaveJsonObjectActivity" />
+        <activity android:name=".ui.activity.simplecache.SaveObjectActivity" />
+        <activity android:name=".ui.activity.simplecache.SaveStringActivity" />
+        <activity android:name=".ui.activity.simplecache.SaveMediaActivity" />
+        <activity
+            android:name=".ui.activity.simplecache.SaveDrawableActivity"
+            android:label="SaveDrawableActivity" >
+        </activity>
+        <activity
+            android:name=".ui.activity.simplecache.SaveJsonArrayActivity"
+            android:label="SaveJsonArrayActivity" >
+        </activity>
     </application>
 
 

@@ -1,0 +1,64 @@
+
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S1161":Add the "@Override" annotation above this method signature(æÔ«÷şÿÿÿÿ
+msquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸÿÂF
+csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñ”‹
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1604"(Make this anonymous inner class a lambda(ÉãÃ®
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+usquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "obj".(Åë®şÿÿÿÿ
+csquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(æ€ÜÆ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó”¬
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıåĞßÿÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¨ò¨øÿÿÿÿ
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+1squid:S1643"Use a StringBuilder instead.(Åõ©Ò
+gsquid:S2259"M"NullPointerException" will be thrown when invoking method "calculateSize()".(úÁ«›øÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+asquid:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‡ŠÍĞ
+isquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¬ûÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+Dsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ÁŞ…üÿÿÿÿ
+csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(é‘‚©úÿÿÿÿ
+isquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¾¬ôÿÿÿÿÿ
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+X
+squid:S899"DDo something with the "boolean" value returned by "setLastModified".(»æÆò
+T
+squid:S899";Do something with the "boolean" value returned by "delete".(é‘‚©úÿÿÿÿ
+Usquid:S2259"AA "NullPointerException" could be thrown; "oos" is nullable here.(İÛĞK
+Rsquid:S2130"8Use "Long.parseLong" for this string-to-long conversion.(ºç„™ÿÿÿÿÿ
+csquid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(òÆ½øÿÿÿÿ
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıåĞßÿÿÿÿÿ
+]squid:S4042"IUse "java.nio.Files#delete" here for better messages on error conditions.(ò¢æt
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+X
+squid:S899"DDo something with the "boolean" value returned by "setLastModified".(»æÆò
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+zsquid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "reObject".(²Ñ”˜ıÿÿÿÿ
+usquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "obj".(÷¾¦öûÿÿÿÿ
+6squid:S1643"Use a StringBuilder instead.(µÄà–şÿÿÿÿ
+;squid:S1168"&Return an empty array instead of null.(¥¹ï
+psquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£õç
+Rsquid:S2130"8Use "Long.parseLong" for this string-to-long conversion.(€Ê˜›øÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Šñ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Šñ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(ï­£Ä
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¨ò¨øÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+\squid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(‚‚µõ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó”¬

@@ -45,7 +45,7 @@
         android:id="@+id/mainactivity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ThirdPartBannerZxingAcitivity"
+        android:text="暂时没有用到"
         android:textColor="#000"
         android:textSize="24sp"
 
@@ -64,7 +64,7 @@
         android:layout_below="@+id/looklook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="    进入空页面    "
+        android:text="   进入自定义的轮播图   "
         android:id="@+id/jump_javaclass"
 
         />

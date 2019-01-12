@@ -66,6 +66,8 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation project(':Provider')
     implementation project(':BaseLibrary')
+    // Anko lib
+    implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation "com.trello.rxlifecycle2:rxlifecycle-kotlin:$rxlifecycleVersion"
     implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rxlifecycleVersion"

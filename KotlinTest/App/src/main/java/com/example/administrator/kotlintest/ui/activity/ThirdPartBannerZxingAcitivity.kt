@@ -148,16 +148,17 @@ Loglevel.values().map {
         //
         Log.e("s2",s2)
         mainactivity2.setOnClickListener {
+            ToastUtilKt.showToast("还没有使用")
 
 //            startActivity(this!!.intentFor<RecycleviewActivity>())
 //            ScanManager.getInstance().openScan(this@MainAcitivitytwo)
 
 //            maxInt(a,20)
-            val intent = Intent(Intent.ACTION_VIEW)
-//这里的packetname 一定记住填写 调用方的packetname 因为 aar最终会被合并到调用方的manifest文件
-            intent.component = ComponentName("com.example.administrator.kotlintest", //packagename
-                    "com.dx.recycleview.recycleviewlibrary.RecycleviewActivity")//classname//
-            startActivity(intent)
+//            val intent = Intent(Intent.ACTION_VIEW)
+////这里的packetname 一定记住填写 调用方的packetname 因为 aar最终会被合并到调用方的manifest文件
+//            intent.component = ComponentName("com.example.administrator.kotlintest", //packagename
+//                    "com.dx.recycleview.recycleviewlibrary.RecycleviewActivity")//classname//
+//            startActivity(intent)
 
         }
 
