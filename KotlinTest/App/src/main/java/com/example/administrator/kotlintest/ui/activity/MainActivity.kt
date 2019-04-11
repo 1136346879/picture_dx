@@ -17,10 +17,12 @@ import android.widget.Toast
 import com.blankj.ALog
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
+import com.example.administrator.kotlintest.area.AreaSelectorDialog
 import com.example.administrator.kotlintest.channel.ChannelActivity
 import com.example.administrator.kotlintest.channel.SQLHelper
 import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
+import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
 import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
@@ -30,6 +32,7 @@ import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.baselibrary.MyApplication
 import com.example.baselibrary.widgets.ToastUtilKt
 import com.jakewharton.rxbinding2.view.RxView
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
@@ -47,9 +50,10 @@ import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : RxAppCompatActivity() {
 
-
+    private var areaSelectorDialog:  AreaSelectorDialog? = null
+    private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -57,75 +61,76 @@ class MainActivity : AppCompatActivity() {
 
         getSQLHelper()
 
-
-        tv0.setOnClickListener {
-
-            startActivity(this!!.intentFor<AttendviewActivity>())
-
-        }
         //log 初始化
         LogConfig.initLog(application)
-        tv6.setOnClickListener {
-
-            startActivity(this!!.intentFor<UploadActivity>()
-                    .putExtra("","")
-                    .putExtra("",""))
-
-        }
-        tv4.setOnClickListener {
-        //打开相册
-            pickPhotoUcrop()
-        }
-        tv5.setOnClickListener {
-        //打开相册
-            pickPhoto()
-        }
 //        tv1.setOnClickListener {
 //            tv1.setText("你好")
 //            startActivity(this!!.intentFor<MainAcitivitytwo>())
 ////            startActivity(this!!.intentFor<WebbrowserActivity4>())
 //
 //        }
-
-        RxView.clicks(tv1).
+       // 跳转至下一activity
+            RxView.clicks(tv1).
                 throttleFirst(1,TimeUnit.SECONDS)
                 .subscribe {
             tv1.text = "你好"
             startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
         }
+        //日历
+        tv0.setOnClickListener { startActivity(this!!.intentFor<AttendviewActivity>()) }
+        //进入recycleview
         tv2.setOnClickListener {
 //            startActivity(this!!.intentFor<WebbrowserActivity4>())
             val 学生 = 学生("丁",17)
             val (name,age) = 学生
-
 //            ToastUtilKt.showToast("--》${学生.component1()}")
 //            ToastUtilKt.showCustomToast("--》${学生.component2()}")
             ToastUtilKt.showToast("--》$name")
             ToastUtilKt.showCustomToast("--》$age")
             startActivity(this!!.intentFor<RecycleviewActivity>())
-
 //            startActivity(this!!.intentFor<com.xfs.fsyuncai.mavendemo.MainActivity>())
 
         }
-        tv3.setOnClickListener {
-                        startActivity(this!!.intentFor<MineActivity>())
-        }
+        //个人中心
+        tv3.setOnClickListener { startActivity(this!!.intentFor<MineActivity>()) }
+      //Ucrop矩形图片裁剪
+        tv4.setOnClickListener { pickPhotoUcrop() }//打开相册
+        //方形裁剪
+        tv5.setOnClickListener { pickPhoto() }//打开相册
+        //系统裁剪
+        tv6.setOnClickListener { startActivity(this!!.intentFor<UploadActivity>().putExtra("","").putExtra("","")) }
+        tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }//进入数据库页面
+        tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }//频道管理页面
+        tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }//点击粉碎当前view
+        tv10.setOnClickListener {
+            ToastUtilKt.showCustomToast("城市选择")
 
-        ruan.setOnClickListener {
-            startActivity(this!!.intentFor<RuanActivity>())
+                 areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
+                override fun onDismiss() {
+                }
 
-        }
-        ying.setOnClickListener {
-            startActivity(this!!.intentFor<YingActivity>())
-
-        }
-        tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }
-        tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }
-        tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }
-                //view拖拽功能
+                override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
+                     selectedArea.clear()
+                    selectedArea.addAll(dataList!!)
+                    if (selectedArea.size != 0) {
+                        var area = ""
+                        selectedArea.map {
+                            area += it.name
+                        }
+                        tv10.text = area
+                    } else {
+                        tv10.text = ""
+                    }
+                }
+            }, this@MainActivity)
+            areaSelectorDialog!!.show()
+        }//点击城市区域选择
+        //view拖拽功能
         dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
         dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
+        ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
+        ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
     }
 
     /**
@@ -172,22 +177,16 @@ class MainActivity : AppCompatActivity() {
                     Log.e("selectPhoto:",selectPhoto)
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
-
                     //打开裁剪页面
                     startActivity(intentFor<CropImageActivity>()
                             .putExtra("image_path",selectPhoto))
-
-
 //                        if (selectPhoto != null) {
 //                            loadUpImg(selectPhoto)
 //                        }
 //                    ivAvatar.setImageURI(Uri.fromFile(File(selectPhoto)))
                 }
-
-
 //系统裁剪
 //                startPhotoZoom(data.data,picWith,picHeight)
-
             }else{
 //                ToastUtil.showToast("获取图片失败")
                setResult(Activity.RESULT_CANCELED,intent)
@@ -201,15 +200,10 @@ class MainActivity : AppCompatActivity() {
                     //图片识别上传至服务器
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
-
-
                     //自定义的图片裁剪，正方形裁剪
 //                    startActivity(intentFor<CropImageActivity>()
 //                            .putExtra("image_path",selectPhoto))
-
                     startCrop(selectPhoto!!)
-
-
                 }
             }else{
 //                ToastUtil.showToast("获取图片失败")
@@ -280,9 +274,7 @@ class MainActivity : AppCompatActivity() {
             return getRealPathFromUri_Api11To18(mainActivity,imageUri)
         }
         return getRealPathFromUri_AboveApi19(mainActivity, imageUri)//没用到
-
     }
-
     //针对图片URI格式为Uri:: file:///storage/emulated/0/DCIM/Camera/IMG_20170613_132837.jpg
     private fun getRealPathFromUri_Byfile(uri: Uri): String {
         val uri2Str = uri.toString()
@@ -296,21 +288,16 @@ class MainActivity : AppCompatActivity() {
     private fun getRealPathFromUri_AboveApi19(context: Context, uri: Uri): String? {
         var filePath: String? = null
         var wholeID: String?
-
         wholeID = DocumentsContract.getDocumentId(uri)
-
         // 使用':'分割
         val id = wholeID!!.split(":".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[1]
-
         val projection = arrayOf(MediaStore.Images.Media.DATA)
         val selection = MediaStore.Images.Media._ID + "=?"
         val selectionArgs = arrayOf(id)
-
         val cursor = context.contentResolver.query(
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI, projection,
                 selection, selectionArgs, null)
         val columnIndex = cursor.getColumnIndex(projection[0])
-
         if (cursor.moveToFirst()) {
             filePath = cursor.getString(columnIndex)
         }
@@ -325,17 +312,14 @@ class MainActivity : AppCompatActivity() {
     private fun getRealPathFromUri_Api11To18(context: Context, uri: Uri): String? {
         var filePath: String? = null
         val projection = arrayOf(MediaStore.Images.Media.DATA)
-
         val loader = CursorLoader(context, uri, projection, null, null, null)
         val cursor = loader.loadInBackground()
-
         if (cursor != null) {
             cursor!!.moveToFirst()
             filePath = cursor!!.getString(cursor!!.getColumnIndex(projection[0]))
             cursor!!.close()
         }
         return filePath
-
     }
 
 
@@ -355,7 +339,6 @@ class MainActivity : AppCompatActivity() {
                     override fun onNext(json: String) {
                         ToastUtilKt.showCustomToast("Image upload sucessed :$json")
                     }
-
                     override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
                         super.onError(statusCode, apiErrorModel)
                         ToastUtilKt.showCustomToast("Image upload failed")

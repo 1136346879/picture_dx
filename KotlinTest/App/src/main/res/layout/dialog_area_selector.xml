@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:id="@+id/rlTopTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送至"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_light"
+            android:layout_margin="@dimen/space_10"/>
+
+        <ImageView
+            android:id="@+id/ivAreaClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_close_dia"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/space_10"/>
+    </RelativeLayout>
+    
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_input_normal"
+        app:tabTextColor="@color/text_color_light"
+        app:tabSelectedTextColor="@color/text_color_light"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/color_orange"
+        >
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_20"/>
+</LinearLayout>

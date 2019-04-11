@@ -1,0 +1,9 @@
+
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(®»–ü
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Üû·˜ýÿÿÿÿ
+csquid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(žíÊêûÿÿÿÿ
+csquid:S001129"FDefine and throw a dedicated exception instead of using a generic one.(Üû·˜ýÿÿÿÿ
+csquid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(žíÊêûÿÿÿÿ
+vsquid:S1149N"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Èœ¶
+Dsquid:S4425("(Use String.format( "%02X", ...) instead.(¼í¿®øÿÿÿÿ
+Dsquid:S4425B"(Use String.format( "%02X", ...) instead.(¼í¿®øÿÿÿÿ

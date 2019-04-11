@@ -65,7 +65,6 @@
         android:id="@+id/tv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -104,6 +103,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击粉碎当前view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:padding="@dimen/space_10"
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击城市区域选择"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

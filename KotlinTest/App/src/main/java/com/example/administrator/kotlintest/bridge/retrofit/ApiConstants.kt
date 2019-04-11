@@ -10,15 +10,21 @@ class ApiConstants private constructor() {
 
         /*控制是否输入日志*/
         const val IS_DEBUG = true
-
-        //        const val BASE_URL = "https://t.fsyuncai.com/api/mobile/"
+//测试环境
+        const val BASE_URL = "https://t.fsyuncai.com/api/mobile/"
 //        const val BASE_URL_TEST = "https://t.fsyuncai.com/"
 //        const val BASE_URL_WWW = "https://www.fsyuncai.com/"
-        const val BASE_URL = "http://192.168.0.55:9060/"
+        const val UPLOAD_BASE_URL = "http://192.168.0.55:9060/"//图片上传
 //        const val BASE_URL = "http://192.168.0.34:8888/"
 //                const val BASE_URL = "https://t.fsyuncai.com/api/mobile/"
 //        const val BASE_URL = "http://192.168.0.31/"
 //        const val BASE_URL = "http://192.168.65.116:8888/"
+
+        //正式环境
+//        const val BASE_URL = "https://www.fsyuncai.com/api/mobile/"
+        //图片识别上传
+//        const val UPLOAD_BASE_URL = "http://111.200.196.1:9060/"
+
 
 
 //        const val BASE_URL = "http://192.168.0.107:36060/"

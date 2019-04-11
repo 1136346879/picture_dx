@@ -73,7 +73,7 @@ class HttpManager private constructor() {
                 }
     }
 
-    fun <T> createService(serviceClass: Class<T>): T? {
+    fun <T> createService(serviceClass: Class<T>,baseUrl: String? = ApiConstants.BASE_URL): T {
         val httpClientBuilder = OkHttpClient.Builder()
         httpClientBuilder.connectTimeout(60, TimeUnit.SECONDS)
         httpClientBuilder.readTimeout(60, TimeUnit.SECONDS)
@@ -89,7 +89,7 @@ class HttpManager private constructor() {
                 .addConverterFactory(ScalarsConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                .baseUrl(ApiConstants.BASE_URL)
+                .baseUrl(baseUrl ?:ApiConstants.BASE_URL)
 
         return retrofitBuilder.client(httpClientBuilder.build()).build().create(serviceClass)
 

@@ -144,4 +144,24 @@
     <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
         <item name="android:textSize">13.0sp</item>
     </style>
+
+    <style name="bottom_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Bottom_Dialog</item>
+    </style>
+
+    <style name="Animation_Bottom_Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_exit</item>
+    </style>
+
+    <style name="customer_switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#00000000</item>
+        <item name="colorSwitchThumbNormal">#00000000</item>
+        <item name="android:colorForeground">#00000000</item>
+    </style>
 </resources>

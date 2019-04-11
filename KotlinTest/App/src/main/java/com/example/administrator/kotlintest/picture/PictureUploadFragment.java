@@ -17,6 +17,7 @@ import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImageGridActivity;
 import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
 import com.lzy.imagepicker.view.CropImageView;
+import com.xfs.fsyuncai.bridge.retrofit.ApiConstants;
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener;
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel;
 import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager;
@@ -216,7 +217,7 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
         File file = new File(BitmapUtils.compressImageUpload(pathList.get(0).path));
         RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file);
         MultipartBody.Part body = MultipartBody.Part.createFormData("file", file.getName(), requestFile);
-        httpManager.doHttpDeal(getActivity(), httpManager.createService(OrderService.class).pictureSearch(body),
+        httpManager.doHttpDeal(getActivity(), httpManager.createService(OrderService.class, ApiConstants.UPLOAD_BASE_URL).pictureSearch(body),
                 new HttpOnNextListener() {
                     @Override
                     public void onNext(@NotNull String json) {
