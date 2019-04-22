@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="KeyBoardView">
+        <attr name="keyboardType">
+            <enum name="number" value="0" />
+            <enum name="letter" value="1" />
+            <enum name="letterNumber" value="2" />
+        </attr>
+        <attr name="keyWidth" format="dimension"/>
+        <attr name="keyHeight" format="dimension"/>
+        <attr name="keyHorizontalSpace" format="dimension"/>
+        <attr name="keyVerticalSpace" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>

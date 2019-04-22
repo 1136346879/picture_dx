@@ -53,11 +53,14 @@
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
 
 
-        <activity
-            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
-           />
+        <activity android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"/>
+        <!--频道选择-->
         <activity android:name=".channel.ChannelActivity"/>
+        <!--粉碎VIew-->
         <activity android:name=".smashzhadan.smashzhadan"/>
+        <!--键盘-->
+        <activity android:name=".ui.activity.KeyBroadActivity"/>
+            <!--android:screenOrientation="landscape" />-->
     </application>
 
 </manifest>

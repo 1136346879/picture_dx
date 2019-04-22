@@ -10,13 +10,20 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.os.Parcel
+import android.os.Parcelable
 import android.provider.DocumentsContract
 import android.provider.MediaStore
+import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import android.view.View
+import android.view.View.inflate
+import android.widget.LinearLayout
 import android.widget.Toast
 import com.blankj.ALog
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
+import com.example.administrator.kotlintest.adapter.BaseRvAdapter
 import com.example.administrator.kotlintest.area.AreaSelectorDialog
 import com.example.administrator.kotlintest.channel.ChannelActivity
 import com.example.administrator.kotlintest.channel.SQLHelper
@@ -27,6 +34,7 @@ import com.example.administrator.kotlintest.entity.daoentity.Meizi
 import com.example.administrator.kotlintest.picture.CropImageActivity
 import com.example.administrator.kotlintest.picture.UploadActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
+import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.ui.entity.学生
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.baselibrary.MyApplication
@@ -37,10 +45,13 @@ import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
 import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
+import com.xfs.qrcode_module.manager.LightManager
 import com.xfs.qrcode_module.recycleview.RecycleviewActivity
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
 import com.yalantis.ucrop.util.PictureMimeType
+import jsc.kit.keyboard.KeyBoardView
+import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -48,41 +59,100 @@ import okhttp3.RequestBody
 import org.jetbrains.anko.intentFor
 import java.io.File
 import java.io.IOException
+import java.util.*
 import java.util.concurrent.TimeUnit
 
-class MainActivity : RxAppCompatActivity() {
+class MainActivity() : RxAppCompatActivity() {
 
-    private var areaSelectorDialog:  AreaSelectorDialog? = null
+
+    private val listData = arrayListOf<PersonControlDao>()
+    private var areaSelectorDialog: AreaSelectorDialog? = null
     private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
         getSQLHelper()
-
         //log 初始化
         LogConfig.initLog(application)
-//        tv1.setOnClickListener {
-//            tv1.setText("你好")
-//            startActivity(this!!.intentFor<MainAcitivitytwo>())
-////            startActivity(this!!.intentFor<WebbrowserActivity4>())
-//
-//        }
-       // 跳转至下一activity
-            RxView.clicks(tv1).
-                throttleFirst(1,TimeUnit.SECONDS)
-                .subscribe {
-            tv1.text = "你好"
-            startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
+
+        multipleStatusView?.showLoading()
+        listData.add(PersonControlDao("跳转至下一activity", null))
+        listData.add(PersonControlDao("日历", null))
+        listData.add(PersonControlDao("进入recycleview", null))
+        listData.add(PersonControlDao("个人中心", null))
+        listData.add(PersonControlDao("Ucrop矩形图片裁剪", null))
+        listData.add(PersonControlDao("方形裁剪", null))
+        listData.add(PersonControlDao("系统裁剪", null))
+        listData.add(PersonControlDao("进入数据库页面", null))
+        listData.add(PersonControlDao("频道管理页面", null))
+        listData.add(PersonControlDao("点击粉碎当前view", null))
+        listData.add(PersonControlDao("点击城市区域选择", null))
+        listData.add(PersonControlDao("键盘", null))
+        listData.add(PersonControlDao("等等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("等", null))
+
+        multipleStatusView.showContent()
+        multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
+        val mainAdapter = MainAdapter(listData, this@MainActivity)
+
+        recycleview_list_all.let {
+            it.adapter = mainAdapter
+            it.layoutManager = LinearLayoutManager(this)
         }
+
+        mainAdapter.setOnClickItem {
+            when (it) {
+                0 -> startActivity(this!!.intentFor<AttendviewActivity>())
+                1 -> startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
+                2 -> startActivity(this!!.intentFor<RecycleviewActivity>())
+                3 -> startActivity(this!!.intentFor<MineActivity>())
+                4 -> pickPhotoUcrop()
+                5 -> pickPhoto()
+                6 -> startActivity(this!!.intentFor<UploadActivity>().putExtra("", "").putExtra("", ""))
+                7 -> startActivity(this.intentFor<DbShowActivity>())
+                8 -> startActivity(this.intentFor<ChannelActivity>())
+                9 -> startActivity(this.intentFor<smashzhadan>())
+                10 -> ToastUtilKt.showCustomToast("城市选择")
+                11 ->  startActivity(this.intentFor<KeyBroadActivity>())
+            }
+        }
+        //view拖拽功能
+        dragview.setImageResource(R.drawable.icon_app)
+//        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
+        dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 跳转至下一activity
+        RxView.clicks(tv1).throttleFirst(1, TimeUnit.SECONDS)
+                .subscribe {
+                    tv1.text = "你好"
+                    startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
+                }
         //日历
         tv0.setOnClickListener { startActivity(this!!.intentFor<AttendviewActivity>()) }
         //进入recycleview
         tv2.setOnClickListener {
-//            startActivity(this!!.intentFor<WebbrowserActivity4>())
-            val 学生 = 学生("丁",17)
-            val (name,age) = 学生
+            //            startActivity(this!!.intentFor<WebbrowserActivity4>())
+            val 学生 = 学生("丁", 17)
+            val (name, age) = 学生
 //            ToastUtilKt.showToast("--》${学生.component1()}")
 //            ToastUtilKt.showCustomToast("--》${学生.component2()}")
             ToastUtilKt.showToast("--》$name")
@@ -93,24 +163,24 @@ class MainActivity : RxAppCompatActivity() {
         }
         //个人中心
         tv3.setOnClickListener { startActivity(this!!.intentFor<MineActivity>()) }
-      //Ucrop矩形图片裁剪
+        //Ucrop矩形图片裁剪
         tv4.setOnClickListener { pickPhotoUcrop() }//打开相册
         //方形裁剪
         tv5.setOnClickListener { pickPhoto() }//打开相册
         //系统裁剪
-        tv6.setOnClickListener { startActivity(this!!.intentFor<UploadActivity>().putExtra("","").putExtra("","")) }
+        tv6.setOnClickListener { startActivity(this!!.intentFor<UploadActivity>().putExtra("", "").putExtra("", "")) }
         tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }//进入数据库页面
         tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }//频道管理页面
         tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }//点击粉碎当前view
         tv10.setOnClickListener {
             ToastUtilKt.showCustomToast("城市选择")
 
-                 areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
+            areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
                 override fun onDismiss() {
                 }
 
                 override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
-                     selectedArea.clear()
+                    selectedArea.clear()
                     selectedArea.addAll(dataList!!)
                     if (selectedArea.size != 0) {
                         var area = ""
@@ -125,11 +195,7 @@ class MainActivity : RxAppCompatActivity() {
             }, this@MainActivity)
             areaSelectorDialog!!.show()
         }//点击城市区域选择
-        //view拖拽功能
-        dragview.setImageResource(R.drawable.icon_app)
-//        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
-        dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
-        ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
+     ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
     }
 
@@ -151,6 +217,14 @@ class MainActivity : RxAppCompatActivity() {
      * 从Intent获取图片路径的KEY
      */
     val KEY_PHOTO_PATH = "photo_path"
+
+    constructor(parcel: Parcel) : this() {
+        picWith = parcel.readInt()
+        picHeight = parcel.readInt()
+        photoUri = parcel.readParcelable(Uri::class.java.classLoader)
+        sdPath = parcel.readString()
+    }
+
     private fun pickPhoto() {
 //        photoUri = getImageUri()
         val intent = Intent(Intent.ACTION_PICK, null)
@@ -168,18 +242,18 @@ class MainActivity : RxAppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        when(requestCode){
+        when (requestCode) {
             //选中图片
-            SELECT_PHOTO -> if( data != null){
-                if(resultCode== Activity.RESULT_OK) {
+            SELECT_PHOTO -> if (data != null) {
+                if (resultCode == Activity.RESULT_OK) {
                     val imageUri = data.data
-                    val selectPhoto = getRealPathFromUri(this,imageUri)
-                    Log.e("selectPhoto:",selectPhoto)
+                    val selectPhoto = getRealPathFromUri(this, imageUri)
+                    Log.e("selectPhoto:", selectPhoto)
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
                     //打开裁剪页面
                     startActivity(intentFor<CropImageActivity>()
-                            .putExtra("image_path",selectPhoto))
+                            .putExtra("image_path", selectPhoto))
 //                        if (selectPhoto != null) {
 //                            loadUpImg(selectPhoto)
 //                        }
@@ -187,16 +261,16 @@ class MainActivity : RxAppCompatActivity() {
                 }
 //系统裁剪
 //                startPhotoZoom(data.data,picWith,picHeight)
-            }else{
+            } else {
 //                ToastUtil.showToast("获取图片失败")
-               setResult(Activity.RESULT_CANCELED,intent)
+                setResult(Activity.RESULT_CANCELED, intent)
 //                activity?.finish()
             }
-            UCROP_SELECT_PHOTO -> if( data != null){
-                if(resultCode== Activity.RESULT_OK) {
+            UCROP_SELECT_PHOTO -> if (data != null) {
+                if (resultCode == Activity.RESULT_OK) {
                     val imageUri = data.data
-                    val selectPhoto = getRealPathFromUri(this,imageUri)
-                    Log.e("selectPhoto:",selectPhoto)
+                    val selectPhoto = getRealPathFromUri(this, imageUri)
+                    Log.e("selectPhoto:", selectPhoto)
                     //图片识别上传至服务器
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
@@ -205,22 +279,22 @@ class MainActivity : RxAppCompatActivity() {
 //                            .putExtra("image_path",selectPhoto))
                     startCrop(selectPhoto!!)
                 }
-            }else{
+            } else {
 //                ToastUtil.showToast("获取图片失败")
-               setResult(Activity.RESULT_CANCELED,intent)
+                setResult(Activity.RESULT_CANCELED, intent)
 //                activity?.finish()
             }
 
             //系统裁剪之后--裁剪图片--上传图片
             CROP_PHOTO -> if (resultCode == Activity.RESULT_OK) {
                 intent.putExtra(KEY_PHOTO_PATH, photoUri?.path)
-               setResult(Activity.RESULT_OK, intent)
+                setResult(Activity.RESULT_OK, intent)
 //                activity?.finish()
 //                tv5.setImageURI(Uri.parse(photoUri?.path))
                 loadUpImg(Uri.parse(photoUri?.path).toString())
             } else {
 //                ToastUtil.showCustomToast("取消图片设置!")
-               setResult(Activity.RESULT_CANCELED,intent)
+                setResult(Activity.RESULT_CANCELED, intent)
 //                activity?.finish()
             }
         }
@@ -265,16 +339,17 @@ class MainActivity : RxAppCompatActivity() {
     private fun getRealPathFromUri(mainActivity: MainActivity, imageUri: Uri?): String? {
 
 
-        if(mainActivity == null || imageUri == null) {
+        if (mainActivity == null || imageUri == null) {
             return null
         }
-        if("file".equals(imageUri.scheme,true)) {
+        if ("file".equals(imageUri.scheme, true)) {
             return getRealPathFromUri_Byfile(imageUri)
-        } else if("content".equals(imageUri.scheme,true)) {
-            return getRealPathFromUri_Api11To18(mainActivity,imageUri)
+        } else if ("content".equals(imageUri.scheme, true)) {
+            return getRealPathFromUri_Api11To18(mainActivity, imageUri)
         }
         return getRealPathFromUri_AboveApi19(mainActivity, imageUri)//没用到
     }
+
     //针对图片URI格式为Uri:: file:///storage/emulated/0/DCIM/Camera/IMG_20170613_132837.jpg
     private fun getRealPathFromUri_Byfile(uri: Uri): String {
         val uri2Str = uri.toString()
@@ -328,7 +403,7 @@ class MainActivity : RxAppCompatActivity() {
      *
      *
      */
-    private fun loadUpImg(path:String) {
+    private fun loadUpImg(path: String) {
         val httpManger = HttpManager.instance()
 //        val file = File(BitmapUtils.compressImageUpload(path))
         val file = File(path)
@@ -339,11 +414,12 @@ class MainActivity : RxAppCompatActivity() {
                     override fun onNext(json: String) {
                         ToastUtilKt.showCustomToast("Image upload sucessed :$json")
                     }
+
                     override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
                         super.onError(statusCode, apiErrorModel)
                         ToastUtilKt.showCustomToast("Image upload failed")
                     }
-                },false)
+                }, false)
     }
 
     /**
@@ -390,6 +466,7 @@ class MainActivity : RxAppCompatActivity() {
 
         return Uri.fromFile(outputImage)
     }
+
     /**
      * @param context
      * @return
@@ -403,4 +480,27 @@ class MainActivity : RxAppCompatActivity() {
         }
         return cachePath
     }
+
+    companion object CREATOR : Parcelable.Creator<MainActivity> {
+        override fun createFromParcel(parcel: Parcel): MainActivity {
+            return MainActivity(parcel)
+        }
+
+        override fun newArray(size: Int): Array<MainActivity?> {
+            return arrayOfNulls(size)
+        }
+    }
+}
+
+class MainAdapter(option: ArrayList<PersonControlDao>, mineActivity: MainActivity)
+    : BaseRvAdapter<PersonControlDao>(option, R.layout.item_person_control, mineActivity) {
+    override fun onBindView(holder: Companion.BaseRvHolder, data: PersonControlDao) {
+        data.text.let {
+            holder.setText(R.id.tvText, it)
+        }
+        data.hint?.let {
+            holder.setText(R.id.tvHint, it)
+        }
+    }
+
 }

@@ -8,7 +8,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.administrator.kotlintest"
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -91,6 +91,7 @@ dependencies {
     implementation project(':myInstalledPkg')
     implementation project(':ucrop')
     implementation project(':usercenter')
+    implementation project(':keboardLibrary')
 
     //    api project(':qrcode-module')
     implementation project(':qrcode-module')

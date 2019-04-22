@@ -1,6 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.user_org = 'justinquote'
+    ext.min_sdk_veriosn = 21
+    ext.sdk_veriosn = 28
+    ext.component_version = '28.0.0'
+    ext.version_code = 19
+    ext.version_name = '0.0.1'
 //    ext.kotlin_version = '1.2.61'
     ext.kotlin_version = '1.2.30'
     repositories {
@@ -14,6 +20,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-noarg:$kotlin_version"
         classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+        classpath 'com.novoda:bintray-release:0.9'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
