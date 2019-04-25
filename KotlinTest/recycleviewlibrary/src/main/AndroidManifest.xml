@@ -2,6 +2,5 @@
     package="com.dx.recycleview.recycleviewlibrary" >
 
     <application>
-        <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity$RecycleviewActivity" />
     </application>
 </manifest>

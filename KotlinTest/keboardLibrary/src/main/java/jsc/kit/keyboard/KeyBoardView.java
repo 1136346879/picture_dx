@@ -1,5 +1,6 @@
 package jsc.kit.keyboard;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
@@ -11,6 +12,7 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.media.AudioManager;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringDef;
@@ -458,11 +460,20 @@ public class KeyBoardView extends LinearLayout {
     }
 
     private int getKeyBackground(int key) {
-        if (key == KeyUtils.KEY_NEXT)
-            return R.drawable.key_next_key_background_ripple;
-        if (KeyUtils.isFunctionKey(key))
-            return R.drawable.key_special_key_background_ripple;
-        return R.drawable.key_normal_key_background_ripple;
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if (key == KeyUtils.KEY_NEXT)
+                return R.drawable.key_next_key_background_ripple;
+            if (KeyUtils.isFunctionKey(key))
+                return R.drawable.key_special_key_background_ripple;
+            return R.drawable.key_normal_key_background_ripple;
+        }else{
+            if (key == KeyUtils.KEY_NEXT)
+                return R.drawable.key_next_key_background_ripple_20;
+            if (KeyUtils.isFunctionKey(key))
+                return R.drawable.key_special_key_background_ripple_20;
+            return R.drawable.key_normal_key_background_ripple_20;
+        }
+
     }
 
     private void executeKeyboardReLocation(Animator.AnimatorListener listener) {

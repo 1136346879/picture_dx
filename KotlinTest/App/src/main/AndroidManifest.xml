@@ -51,6 +51,7 @@
         <activity android:name="com.yalantis.ucrop.PictureMultiCuttingActivity" />
         <!--列表-->
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
+        <activity android:name="com.xfs.qrcode_module.StickyItemRecycleview.StickyItemREcycleviewActivity" />
 
 
         <activity android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"/>

@@ -1,6 +1,8 @@
 package com.xfs.qrcode_module.StickyItemRecycleview.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,6 +60,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         return new ViewHolde(item);
     }
 
+    @SuppressLint("NewApi")
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof  ViewHolde){
@@ -65,8 +68,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
            ((ViewHolde) holder).txt. setText(mData.getName());
 //            Log.d("aaa","onBindViewHolder————"+mData.getName());
            if (mData.getType() == 1){
-               ((ViewHolde) holder).txt .setTextColor(mContext.getColor(R.color.color_ff9500));
-               ((ViewHolde) holder).txt .setBackgroundColor(mContext.getColor(R.color.textColorPrimary));
+               ((ViewHolde) holder).txt .setTextColor(Color.parseColor("#ff9500"));
+               ((ViewHolde) holder).txt .setBackgroundColor(Color.parseColor("#dd000000"));
                ((ViewHolde) holder).txt .setTextSize(20);
            }
         }
