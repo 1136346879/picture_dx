@@ -59,7 +59,7 @@
         <!--粉碎VIew-->
         <activity android:name=".smashzhadan.smashzhadan"/>
         <!--键盘-->
-        <activity android:name=".ui.activity.KeyBroadActivity"/>
+        <activity android:name="jsc.kit.keyboard.KeyBroadActivity"/>
             <!--android:screenOrientation="landscape" />-->
     </application>
 

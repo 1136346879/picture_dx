@@ -1,58 +1,58 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•£ÿ8Ž§¾¾ø,
-Ksquid:S1068"/Remove this unused "MY_COMMENTS" private field.(Ôá‘£8Ž§¾¾ø,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ãÛ}8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(íðÌ—8Ž§¾¾ø,
-ksquid:S3008"ORename this field "HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü“Á¸8Ø¼¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜žòî8Ž§¾¾ø,
-Zsquid:S1068"9Remove this unused "ADVERTING_OPEN_SCREEN" private field.(Þéñúúÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ýÖ½™8Ž§¾¾ø,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿŒÉ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”®­’8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³‰ŠÀþÿÿÿÿ8Ø¼¾ø,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Óþ¬u8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÒÕÐ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ë æ­8Ž§¾¾ø,
-Fsquid:S1068"*Remove this unused "BANNER" private field.(ýÓ¹ 8Ž§¾¾ø,
-psquid:S3008"TRename this field "NEWS_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÛðÐ8Ø¼¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(›æ‚å8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ûæ­™8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Áì—šüÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(á‡õ±8Ž§¾¾ø,
-†"squid:ClassVariableVisibilityCheck"TMake BLOG_GET a static final constant or non-public and provide accessors if needed.(ÅÎ®e8Ø¼¾ø,
-Ssquid:S1068"2Remove this unused "RECOMMEND_LIST" private field.(áø´êýÿÿÿÿ8Ž§¾¾ø,
-Qsquid:S1068"0Remove this unused "HISTORY_PUSH" private field.(“Üôîúÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™ñÃþ8Ž§¾¾ø,
-Isquid:S1444".Make this "public static BLOG_GET" field final(ÅÎ®e8Ø¼¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§õ‹ýÿÿÿÿ8Ž§¾¾ø,
-zsquid:S3008"YRename this field "ADVERSING_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áú¨ÿÿÿÿÿ8Ø¼¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥šÓÌ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ñóöþÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜µ€Áúÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
-qsquid:S3008"URename this field "NEWSDETAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÃ»8Ø¼¾ø,
-Usquid:S1068"4Remove this unused "PUBLIUSH_COMMENT" private field.(ŽÎÎ´øÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñÍç¥8Ž§¾¾ø,
-|squid:S3008"[Rename this field "COMMENT_HOST_SSL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÖñ§þÿÿÿÿ8Ø¼¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Šæ¥üÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§öÖ›øÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚Œèùÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(âøš©8Ž§¾¾ø,
-Qsquid:S1068"0Remove this unused "COMMENT_LIST" private field.(óòäáÿÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—Éˆ‘ûÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(È¸õôùÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŽõÎ‡8Ø¼¾ø,
-xsquid:S3008"WRename this field "COMMENT_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–„¸Íûÿÿÿÿ8Ø¼¾ø,
-Psquid:S1068"/Remove this unused "NEWS_SEARCH" private field.(Öåùäúÿÿÿÿ8Ž§¾¾ø,
-Ssquid:S1068"2Remove this unused "PRAISE_COMMENT" private field.(Ò˜øºûÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÆíÉ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§öÖ›øÿÿÿÿ8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
-Jsquid:S1068".Remove this unused "NEWSDETAIL" private field.(ŽÃ»8Ž§¾¾ø,
-nsquid:S3008"SRename this field "BLOG_GET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÎ®e8Ø¼¾ø,
-rsquid:S3008"VRename this field "SEARCH_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´øŠ8Ø¼¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÉÓá8Ž§¾¾ø,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÏÞÿæúÿÿÿÿ8Ž§¾¾ø,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ö¼à8Ž§¾¾ø,
+osquid:CommentedOutCodeLine„"<This block of commented-out lines of code should be removed.(Áì—šüÿÿÿÿ8Ž§¾¾ø,
+ssquid:S3008A"URename this field "NEWSDETAIL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÃ»8Ø¼¾ø,
+msquid:S3008"ORename this field "HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü“Á¸8Ø¼¾ø,
+Hsquid:S1068C"*Remove this unused "BANNER" private field.(ýÓ¹ 8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(ýÖ½™8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(•£ÿ8Ž§¾¾ø,
+zsquid:S3008"WRename this field "COMMENT_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–„¸Íûÿÿÿÿ8Ø¼¾ø,
+Ksquid:S1444K".Make this "public static BLOG_GET" field final(ÅÎ®e8Ø¼¾ø,
+jsquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(ÆíÉ8Ž§¾¾ø,
+osquid:CommentedOutCodeLineù"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
+Msquid:S1068I"/Remove this unused "MY_COMMENTS" private field.(Ôá‘£8Ž§¾¾ø,
+isquid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(ãÛ}8Ž§¾¾ø,
+osquid:CommentedOutCodeLine÷"<This block of commented-out lines of code should be removed.(Ñóöþÿÿÿÿ8Ž§¾¾ø,
+Ssquid:S1068?"0Remove this unused "HISTORY_PUSH" private field.(“Üôîúÿÿÿÿ8Ž§¾¾ø,
+isquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ŽõÎ‡8Ø¼¾ø,
+jsquid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(ë æ­8Ž§¾¾ø,
+isquid:CommentedOutCodeLinet"<This block of commented-out lines of code should be removed.(ñÍç¥8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(”®­’8Ž§¾¾ø,
+osquid:CommentedOutCodeLine¯"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
+osquid:CommentedOutCodeLineÇ"<This block of commented-out lines of code should be removed.(§öÖ›øÿÿÿÿ8Ž§¾¾ø,
+nsquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(—Éˆ‘ûÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(™ñÃþ8Ž§¾¾ø,
+nsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(³‰ŠÀþÿÿÿÿ8Ø¼¾ø,
+osquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(˜µ€Áúÿÿÿÿ8Ž§¾¾ø,
+ˆ"squid:ClassVariableVisibilityCheckK"TMake BLOG_GET a static final constant or non-public and provide accessors if needed.(ÅÎ®e8Ø¼¾ø,
+\squid:S1068<"9Remove this unused "ADVERTING_OPEN_SCREEN" private field.(Þéñúúÿÿÿÿ8Ž§¾¾ø,
+Ssquid:S10689"0Remove this unused "COMMENT_LIST" private field.(óòäáÿÿÿÿÿ8Ž§¾¾ø,
+Wsquid:S1068E"4Remove this unused "PUBLIUSH_COMMENT" private field.(ŽÎÎ´øÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(âøš©8Ž§¾¾ø,
+Lsquid:S1068A".Remove this unused "NEWSDETAIL" private field.(ŽÃ»8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(ÒÕÐ8Ž§¾¾ø,
+tsquid:S3008"VRename this field "SEARCH_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´øŠ8Ø¼¾ø,
+osquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(§õ‹ýÿÿÿÿ8Ž§¾¾ø,
+rsquid:S3008"TRename this field "NEWS_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÛðÐ8Ø¼¾ø,
+jsquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(Ö¼à8Ž§¾¾ø,
+hsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(ÿŒÉ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine©"<This block of commented-out lines of code should be removed.(íðÌ—8Ž§¾¾ø,
+osquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(§öÖ›øÿÿÿÿ8Ž§¾¾ø,
+Rsquid:S10686"/Remove this unused "NEWS_SEARCH" private field.(Öåùäúÿÿÿÿ8Ž§¾¾ø,
+osquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(Šæ¥üÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡ÉÓá8Ž§¾¾ø,
+osquid:CommentedOutCodeLineè"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(›æ‚å8Ž§¾¾ø,
+osquid:CommentedOutCodeLineµ"<This block of commented-out lines of code should be removed.(È¸õôùÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(á‡õ±8Ž§¾¾ø,
+|squid:S3008""YRename this field "ADVERSING_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áú¨ÿÿÿÿÿ8Ø¼¾ø,
+psquid:S3008K"SRename this field "BLOG_GET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÎ®e8Ø¼¾ø,
+jsquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(Ûæ­™8Ž§¾¾ø,
+isquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(Óþ¬u8Ž§¾¾ø,
+~squid:S3008"[Rename this field "COMMENT_HOST_SSL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽÖñ§þÿÿÿÿ8Ø¼¾ø,
+osquid:CommentedOutCodeLine·"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ž§¾¾ø,
+Usquid:S10683"2Remove this unused "RECOMMEND_LIST" private field.(áø´êýÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLineÙ"<This block of commented-out lines of code should be removed.(¥šÓÌ8Ž§¾¾ø,
+osquid:CommentedOutCodeLineð"<This block of commented-out lines of code should be removed.(‚Œèùÿÿÿÿ8Ž§¾¾ø,
+Usquid:S1068G"2Remove this unused "PRAISE_COMMENT" private field.(Ò˜øºûÿÿÿÿ8Ž§¾¾ø,
+osquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(ÏÞÿæúÿÿÿÿ8Ž§¾¾ø,
+jsquid:CommentedOutCodeLineÄ"<This block of commented-out lines of code should be removed.(˜žòî8Ž§¾¾ø,

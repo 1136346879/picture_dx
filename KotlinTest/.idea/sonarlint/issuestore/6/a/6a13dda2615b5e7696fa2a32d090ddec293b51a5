@@ -1,11 +1,10 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( Çª°8¸£¬Ýú,
-Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(âÚÂù8¸£¬Ýú,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ž–ûîÿÿÿÿÿ8¸£¬Ýú,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ’ÈŠüÿÿÿÿ8¸£¬Ýú,
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(¹ÉÁ›ûÿÿÿÿ8¸£¬Ýú,
-Dsquid:S1604"(Make this anonymous inner class a lambda(·×àÏ8¸£¬Ýú,
-Gsquid:S1481"+Remove this unused "frames" local variable.(¶Äï‹8¸£¬Ýú,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”åÕ˜8¸£¬Ýú,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó „¿úÿÿÿÿ8¸£¬Ýú,
-nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¤âšÆ8¸£¬Ýú,
+isquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(”åÕ˜8¸£¬Ýú,
+bsquid:S1155¯">Use isEmpty() to check whether the collection is empty or not.(¹ÉÁ›ûÿÿÿÿ8¸£¬Ýú,
+Jsquid:S1481"+Remove this unused "frames" local variable.(¶Äï‹8¸£¬Ýú,
+]squid:S1155–">Use isEmpty() to check whether the collection is empty or not.(âÚÂù8¸£¬Ýú,
+osquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(Ž–ûîÿÿÿÿÿ8¸£¬Ýú,
+nsquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(ˆ’ÈŠüÿÿÿÿ8¸£¬Ýú,
+Fsquid:S1604;"(Make this anonymous inner class a lambda(·×àÏ8¸£¬Ýú,
+isquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.( Çª°8¸£¬Ýú,
+¥squid:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ó „¿úÿÿÿÿ8¸£¬Ýú,

@@ -5,6 +5,8 @@ import android.support.annotation.Nullable;
 
 import com.xfs.qrcode_module.R;
 
+import static com.xfs.qrcode_module.recycleview.RecycleViewFragment.newInstance;
+
 public class RecycleviewActivity extends com.example.baselibrary.ui.BaseRecycleviewActivity {
     RecycleViewFragment fragment;
 
@@ -27,7 +29,7 @@ public class RecycleviewActivity extends com.example.baselibrary.ui.BaseRecyclev
     @Override
     public void logic() {
         if (fragment == null) {
-            fragment = RecycleViewFragment.newInstance();
+            fragment = newInstance();
 //            fragment.setData(jsonData);
         }
         getSupportFragmentManager().beginTransaction().add(

@@ -50,8 +50,9 @@ import com.xfs.qrcode_module.recycleview.RecycleviewActivity
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
 import com.yalantis.ucrop.util.PictureMimeType
-import jsc.kit.keyboard.KeyBoardView
-import jsc.kit.keyboard.KeyUtils
+import jsc.kit.keyboard.KeyBroadActivity
+//import jsc.kit.keyboard.KeyBoardView
+//import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -119,7 +120,7 @@ class MainActivity() : RxAppCompatActivity() {
                 7 -> startActivity(this.intentFor<DbShowActivity>())
                 8 -> startActivity(this.intentFor<ChannelActivity>())
                 9 -> startActivity(this.intentFor<smashzhadan>())
-                10 -> ToastUtilKt.showCustomToast("城市选择")
+                10 -> selectCity()
                 11 ->  startActivity(this.intentFor<KeyBroadActivity>())
             }
         }
@@ -173,30 +174,34 @@ class MainActivity() : RxAppCompatActivity() {
         tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }//频道管理页面
         tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }//点击粉碎当前view
         tv10.setOnClickListener {
-            ToastUtilKt.showCustomToast("城市选择")
-
-            areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
-                override fun onDismiss() {
-                }
-
-                override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
-                    selectedArea.clear()
-                    selectedArea.addAll(dataList!!)
-                    if (selectedArea.size != 0) {
-                        var area = ""
-                        selectedArea.map {
-                            area += it.name
-                        }
-                        tv10.text = area
-                    } else {
-                        tv10.text = ""
-                    }
-                }
-            }, this@MainActivity)
-            areaSelectorDialog!!.show()
+            selectCity()
         }//点击城市区域选择
      ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
+    }
+
+    private fun selectCity() {
+        ToastUtilKt.showCustomToast("城市选择")
+
+        areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
+            override fun onDismiss() {
+            }
+
+            override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
+                selectedArea.clear()
+                selectedArea.addAll(dataList!!)
+                if (selectedArea.size != 0) {
+                    var area = ""
+                    selectedArea.map {
+                        area += it.name
+                    }
+                    tv10.text = area
+                } else {
+                    tv10.text = ""
+                }
+            }
+        }, this@MainActivity)
+        areaSelectorDialog!!.show()
     }
 
     /**

@@ -1,29 +1,13 @@
 apply plugin: 'com.android.library'
 
-ext {
-    ankoLibVersion = "0.10.3"
-    supportLibVersion = "26.0.2"
-    rxlifecycleVersion = "2.2.1"
-    rxKotlinVersion = "2.1.0"
-    rxAndroidVersion = "2.0.1"
-    retrofitVersion = "2.3.0"
-    rxPermission = "0.10.2"
-    loggingInterceptorVersion = "3.9.1"
-    glideVersion = "4.7.1"
-    greendaoVersion = "3.2.2"
-    constraintLayoutVersion = "1.1.0"
-    springViewVersion = "1.5.0"
-    photoViewVersion = "1.2.4"
-
-}
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
 
 
 
     defaultConfig {
         minSdkVersion 17
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 

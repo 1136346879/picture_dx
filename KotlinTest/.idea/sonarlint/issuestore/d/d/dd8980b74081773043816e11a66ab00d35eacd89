@@ -1,11 +1,10 @@
 
-Ksquid:S1604~"(Make this anonymous inner class a lambda(†ƒδόÿÿÿÿ8σσήϊ,
 jsquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(ςΰ­8σσήϊ,
-jsquid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(±―€¤8σσήϊ,
-osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
-osquid:CommentedOutCodeLineΞ"<This block of commented-out lines of code should be removed.(Ώ‚‡όÿÿÿÿ8σσήϊ,
 nsquid:S1301y"KReplace this "switch" statement by "if" statements to increase readability.(ΌσΫόÿÿÿÿ8σσήϊ,
+jsquid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(±―€¤8σσήϊ,
+jsquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(΅φεΆ8σσήϊ,
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
 osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ªΔ‚ξϊÿÿÿÿ8σσήϊ,
 9squid:S3626J"Remove this redundant jump.(ϋΑέ…8σσήϊ,
-jsquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(΅φεΆ8σσήϊ,
 fsquid:S1858ΰ"G"json" is already a string, there's no need to call "toString()" on it.(ΎσΪ—8σσήϊ,
+osquid:CommentedOutCodeLineΞ"<This block of commented-out lines of code should be removed.(Ώ‚‡όÿÿÿÿ8σσήϊ,

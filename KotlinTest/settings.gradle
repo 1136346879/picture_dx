@@ -1,2 +1,4 @@
-include ':App', ':BaseLibrary', ':Provider', ':usercenter', ':qrcode-module', ':recycleviewlibrary', ':multiple-status-view', ':keboardLibrary'
-include ':myInstalledPkg','ucrop'
+include ':App', ':BaseLibrary', ':Provider', ':usercenter', ':qrcode-module', ':recycleviewlibrary', ':multiple-status-view', ':newbaselibrary'
+
+include ':myInstalledPkg','ucrop',':keboardLibrary'
+//
