@@ -20,7 +20,9 @@ import android.view.View
 import android.view.View.inflate
 import android.widget.LinearLayout
 import android.widget.Toast
+import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.ALog
+import com.dx.banner.newbaselibrary.routerapi.RouterApi
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
@@ -121,7 +123,7 @@ class MainActivity() : RxAppCompatActivity() {
                 8 -> startActivity(this.intentFor<ChannelActivity>())
                 9 -> startActivity(this.intentFor<smashzhadan>())
                 10 -> selectCity()
-                11 ->  startActivity(this.intentFor<KeyBroadActivity>())
+                11 -> startKeyBOard()
             }
         }
         //view拖拽功能
@@ -178,6 +180,13 @@ class MainActivity() : RxAppCompatActivity() {
         }//点击城市区域选择
      ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
+    }
+
+    private fun startKeyBOard() {
+//        startActivity(this.intentFor<KeyBroadActivity>())
+        ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_URL)
+//                .withInt("select", 4)
+                .navigation()
     }
 
     private fun selectCity() {

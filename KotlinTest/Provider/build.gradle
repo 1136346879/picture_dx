@@ -1,5 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 android {
     compileSdkVersion 27
 
@@ -32,6 +39,8 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation project(':BaseLibrary')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation project(':newbaselibrary')
+    kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
 }
 repositories {
     mavenCentral()

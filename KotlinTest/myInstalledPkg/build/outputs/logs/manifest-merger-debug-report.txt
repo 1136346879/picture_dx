@@ -161,7 +161,3 @@ ADDED from F:\gitDemo\picture_dx\KotlinTest\myInstalledPkg\src\main\AndroidManif
 		ADDED from F:\gitDemo\picture_dx\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:71:13-45
 	android:name
 		ADDED from F:\gitDemo\picture_dx\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:70:13-67
-uses-sdk
-ADDED from F:\gitDemo\picture_dx\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:78:5-44
-	android:minSdkVersion
-		ADDED from F:\gitDemo\picture_dx\KotlinTest\myInstalledPkg\src\main\AndroidManifest.xml:78:15-41

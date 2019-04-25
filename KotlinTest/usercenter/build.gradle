@@ -5,7 +5,13 @@ if(isUserModule.toBoolean()){
 }
 
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 android {
     compileSdkVersion 28
 
@@ -44,12 +50,14 @@ dependencies {
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation project(':Provider')
     implementation project(':BaseLibrary')
+    implementation project(':newbaselibrary')
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation "com.trello.rxlifecycle2:rxlifecycle-kotlin:$rxlifecycleVersion"
     implementation "com.trello.rxlifecycle2:rxlifecycle-components:$rxlifecycleVersion"
     implementation project(':recycleviewlibrary')
+    kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
 }
 repositories {
     mavenCentral()

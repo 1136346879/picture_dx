@@ -1,7 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'kotlin-kapt'
 
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
 android {
     compileSdkVersion sdk_veriosn
 
@@ -64,4 +70,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
+    implementation project(':newbaselibrary')
+    kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
 }

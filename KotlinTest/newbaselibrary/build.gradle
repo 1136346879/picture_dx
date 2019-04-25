@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-android-extensions"
 android {
     compileSdkVersion 28
 
@@ -13,6 +14,11 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -22,9 +28,22 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    // 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    api "com.alibaba:arouter-api:${aRouterApiVersion}"
+    annotationProcessor "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
+}
+repositories {
+    mavenCentral()
 }
