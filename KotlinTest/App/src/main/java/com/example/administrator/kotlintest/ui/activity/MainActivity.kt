@@ -72,6 +72,7 @@ class MainActivity() : RxAppCompatActivity() {
     private var areaSelectorDialog: AreaSelectorDialog? = null
     private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
 
+    @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -92,7 +93,7 @@ class MainActivity() : RxAppCompatActivity() {
         listData.add(PersonControlDao("点击粉碎当前view", null))
         listData.add(PersonControlDao("点击城市区域选择", null))
         listData.add(PersonControlDao("键盘", null))
-        listData.add(PersonControlDao("等等", null))
+        listData.add(PersonControlDao("键盘fragment", null))
         listData.add(PersonControlDao("等", null))
         listData.add(PersonControlDao("等", null))
         listData.add(PersonControlDao("等", null))
@@ -124,6 +125,7 @@ class MainActivity() : RxAppCompatActivity() {
                 9 -> startActivity(this.intentFor<smashzhadan>())
                 10 -> selectCity()
                 11 -> startKeyBOard()
+                12 -> startKeyBOardFragmentToActivity()
             }
         }
         //view拖拽功能
@@ -182,9 +184,13 @@ class MainActivity() : RxAppCompatActivity() {
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
     }
 
+    private fun startKeyBOardFragmentToActivity() {
+        startActivity(this!!.intentFor<EmptyFragmentActivity>())
+    }
+
     private fun startKeyBOard() {
 //        startActivity(this.intentFor<KeyBroadActivity>())
-        ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_URL)
+        ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_ACTIVITY_URL)
 //                .withInt("select", 4)
                 .navigation()
     }
@@ -516,5 +522,4 @@ class MainAdapter(option: ArrayList<PersonControlDao>, mineActivity: MainActivit
             holder.setText(R.id.tvHint, it)
         }
     }
-
 }

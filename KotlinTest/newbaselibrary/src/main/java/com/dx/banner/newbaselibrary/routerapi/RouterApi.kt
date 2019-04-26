@@ -27,7 +27,8 @@ class RouterApi {
     class  KeboardLibrary{
         companion object {
 
-            const val ROUTER_KEYBOARD_URL = "/KeboardLibrary/KeyBroadActivity"
+            const val ROUTER_KEYBOARD_ACTIVITY_URL = "/KeboardLibrary/KeyBroadActivity"
+            const val ROUTER_KEYBOARD_FRAGMENT_URL = "/KeboardLibrary/KeyBroadFragment"
         }
 
 

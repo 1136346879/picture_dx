@@ -5,7 +5,7 @@ import com.dx.banner.newbaselibrary.routerapi.RouterApi
 import com.example.baselibrary.ui.activity.BaseUIActivity
 import jsc.kit.keyboard.R
 
-@Route(path = RouterApi.KeboardLibrary.ROUTER_KEYBOARD_URL)
+@Route(path = RouterApi.KeboardLibrary.ROUTER_KEYBOARD_ACTIVITY_URL)
 class KeyBroadActivity : BaseUIActivity(){
     val EXTRA_LANDSCAPE = "landscape"
     private var fragment: KeyBoardFragment? = null

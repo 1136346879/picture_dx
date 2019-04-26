@@ -27,6 +27,7 @@
         <activity android:name=".ui.activity.CustomerBannerActivityJava"/>
         <!--个人中心-->
         <activity android:name=".ui.activity.MineActivity"/>
+        <activity android:name=".ui.activity.EmptyFragmentActivity"/>
         <!--日历页面-->
         <activity android:name=".dateyearmonthday.AttendviewActivity"
             android:theme="@style/TranslucentActivityTheme"/>
