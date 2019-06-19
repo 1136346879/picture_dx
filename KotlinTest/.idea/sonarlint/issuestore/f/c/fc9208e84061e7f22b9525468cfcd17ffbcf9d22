@@ -1,35 +1,36 @@
 
-¥squid:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-msquid:HiddenFieldCheck§">Rename "keyHeight" which hides the field declared at line 130.(½—¹–şÿÿÿÿ8¼š€™¤-
-Isquid:S1481¸"*Remove this unused "pLeft" local variable.(—¼¿8¼š€™¤-
-]"squid:SwitchLastCaseIsDefaultCheck±""Add a default case to this switch.(ÍÙÍÎıÿÿÿÿ8¼š€™¤-
-osquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(¢Âúÿÿÿÿ8¼š€™¤-
-¥squid:S1186˜	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-psquid:HiddenFieldCheckÙ"ARename "keyboardType" which hides the field declared at line 138.(å¿Ëèùÿÿÿÿ8¼š€™¤-
-Msquid:S1481º")Remove this unused "pTop" local variable.(¹¹™¤ıÿÿÿÿ8¼š€™¤-
-X"squid:SwitchLastCaseIsDefaultCheckñ""Add a default case to this switch.(½¼æÓ8¼š€™¤-
-csquid:S3398ß"?Move this method into the anonymous class declared at line 108.(¹ ¯Ìøÿÿÿÿ8ÛÉÎ ¤-
-osquid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(¬¤¬Üøÿÿÿÿ8¼š€™¤-
-vsquid:S00114í"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ü“—Äùÿÿÿÿ8¼š€™¤-
-¥squid:S1186„	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À˜Ğ¡şÿÿÿÿ8¼š€™¤-
-X"squid:SwitchLastCaseIsDefaultCheckÅ""Add a default case to this switch.(üŠÀ¦8¼š€™¤-
-isquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ù”¶ä8¼š€™¤-
-Osquid:S1481¹"+Remove this unused "pRight" local variable.(âà¤±øÿÿÿÿ8¼š€™¤-
-isquid:UnusedPrivateMethod¯"7Remove this unused private "getStatusBarHeight" method.(Å£»Óùÿÿÿÿ8¼š€™¤-
-¥squid:S1186Ó"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-]"squid:SwitchLastCaseIsDefaultCheck¨""Add a default case to this switch.(ÊèÈªøÿÿÿÿ8¼š€™¤-
-Lsquid:S1185–"(Remove this method to simply inherit it.(‚´»¾ûÿÿÿÿ8¼š€™¤-
-¥squid:S1186›"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À˜Ğ¡şÿÿÿÿ8¼š€™¤-
-osquid:CommentedOutCodeLineà"<This block of commented-out lines of code should be removed.(õÌ¢ìüÿÿÿÿ8¼š€™¤-
-¥squid:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áá„üÿÿÿÿ8¼š€™¤-
-jsquid:CommentedOutCodeLine×"<This block of commented-out lines of code should be removed.(Çâ”ê8¼š€™¤-
-¥squid:S1186ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-¥squid:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-gsquid:HiddenFieldCheck¦"=Rename "keyWidth" which hides the field declared at line 128.(•¹ùº8¼š€™¤-
-`squid:UnusedPrivateMethod¸"3Remove this unused private "playClickSound" method.(§·Ù8¼š€™¤-
-¥squid:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úƒÚÓûÿÿÿÿ8¼š€™¤-
-X"squid:SwitchLastCaseIsDefaultCheckö""Add a default case to this switch.(†Øšß8¼š€™¤-
-osquid:CommentedOutCodeLineà"<This block of commented-out lines of code should be removed.(¬¤¬Üøÿÿÿÿ8¼š€™¤-
-`squid:S3518‚"<Make sure "column" can't be zero before doing this division.(‘¬ÑÙúÿÿÿÿ8¼š€™¤-
-¥squid:S1186…"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
-Jsquid:S1068>"'Remove this unused "TAG" private field.(÷¶şÿÿÿÿ8¼š€™¤-
+X"squid:SwitchLastCaseIsDefaultCheckÇ""Add a default case to this switch.(üŠÀ¦8¼š€™¤-
+`squid:UnusedPrivateMethodÃ"3Remove this unused private "playClickSound" method.(§·Ù8¼š€™¤-
+msquid:HiddenFieldCheck©">Rename "keyHeight" which hides the field declared at line 132.(½—¹–şÿÿÿÿ8¼š€™¤-
+¥squid:S1186¦"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À˜Ğ¡şÿÿÿÿ8¼š€™¤-
+psquid:HiddenFieldCheckä"ARename "keyboardType" which hides the field declared at line 140.(å¿Ëèùÿÿÿÿ8¼š€™¤-
+`squid:S3518„"<Make sure "column" can't be zero before doing this division.(‘¬ÑÙúÿÿÿÿ8¼š€™¤-
+¥squid:S1186°"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áá„üÿÿÿÿ8¼š€™¤-
+osquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(õÌ¢ìüÿÿÿÿ8¼š€™¤-
+¥squid:S1186£	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
+]"squid:SwitchLastCaseIsDefaultCheck³""Add a default case to this switch.(ÊèÈªøÿÿÿÿ8¼š€™¤-
+isquid:UnusedPrivateMethodº"7Remove this unused private "getStatusBarHeight" method.(Å£»Óùÿÿÿÿ8¼š€™¤-
+osquid:CommentedOutCodeLineå"<This block of commented-out lines of code should be removed.(¬¤¬Üøÿÿÿÿ8¼š€™¤-
+¥squid:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À˜Ğ¡şÿÿÿÿ8¼š€™¤-
+Osquid:S1481Ä"+Remove this unused "pRight" local variable.(âà¤±øÿÿÿÿ8¼š€™¤-
+Msquid:S1481Å")Remove this unused "pTop" local variable.(¹¹™¤ıÿÿÿÿ8¼š€™¤-
+¥squid:S1186ï"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
+¥squid:S1186«"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úƒÚÓûÿÿÿÿ8¼š€™¤-
+]"squid:SwitchLastCaseIsDefaultCheck³""Add a default case to this switch.(ÍÙÍÎıÿÿÿÿ8¼š€™¤-
+Isquid:S1481Ã"*Remove this unused "pLeft" local variable.(—¼¿8¼š€™¤-
+vsquid:S00114ø"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ü“—Äùÿÿÿÿ8¼š€™¤-
+X"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(†Øšß8¼š€™¤-
+gsquid:HiddenFieldCheck¨"=Rename "keyWidth" which hides the field declared at line 130.(•¹ùº8¼š€™¤-
+¥squid:S1186µ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
+Jsquid:S1068@"'Remove this unused "TAG" private field.(÷¶şÿÿÿÿ8¼š€™¤-
+osquid:CommentedOutCodeLineë"<This block of commented-out lines of code should be removed.(¬¤¬Üøÿÿÿÿ8¼š€™¤-
+Lsquid:S1185¡"(Remove this method to simply inherit it.(‚´»¾ûÿÿÿÿ8¼š€™¤-
+]squid:UselessImportCheck"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8úÑéœ¥-
+jsquid:CommentedOutCodeLineâ"<This block of commented-out lines of code should be removed.(Çâ”ê8¼š€™¤-
+isquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ù”¶ä8¼š€™¤-
+csquid:S3398ê"?Move this method into the anonymous class declared at line 110.(¹ ¯Ìøÿÿÿÿ8éÙ œ¥-
+¥squid:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
+osquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(¢Âúÿÿÿÿ8¼š€™¤-
+X"squid:SwitchLastCaseIsDefaultCheckó""Add a default case to this switch.(½¼æÓ8¼š€™¤-
+¥squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-
+¥squid:S1186Ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğŒÂ´şÿÿÿÿ8¼š€™¤-

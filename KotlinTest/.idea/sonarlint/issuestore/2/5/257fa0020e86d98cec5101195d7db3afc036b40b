@@ -1,13 +1,12 @@
 
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ö¬ìŸü,
-Esquid:S1125")Remove the literal "false" boolean value.(ïË ­8ö¬ìŸü,
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(É•Ä8ö¬ìŸü,
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò²†¦8ö¬ìŸü,
-Csquid:S2885""Make "solar" an instance variable.(Ø¡ÍÌşÿÿÿÿ8ö¬ìŸü,
-bsquid:S1126"AReplace this if-then-else statement by a single return statement.(óı˜øÿÿÿÿ8ö¬ìŸü,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(éÁåÆøÿÿÿÿ8ö¬ìŸü,
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(íÍ´¤8ö¬ìŸü,
-Gsquid:S1172"&Remove these unused method parameters.(éÁåÆøÿÿÿÿ8ö¬ìŸü,
-Dsquid:S1659"#Declare "month" on a separate line.(Ì‚èĞıÿÿÿÿ8ö¬ìŸü,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(éÁåÆøÿÿÿÿ8ö¬ìŸü,
-Jsquid:S1068")Remove this unused "solar" private field.(Ø¡ÍÌşÿÿÿÿ8ö¬ìŸü,
+Fsquid:S1659$"#Declare "month" on a separate line.(Ì‚èĞıÿÿÿÿ8ö¬ìŸü,
+Fsquid:S2885ˆ""Make "solar" an instance variable.(Ø¡ÍÌşÿÿÿÿ8ö¬ìŸü,
+Hsquid:S1125»")Remove the literal "false" boolean value.(ïË ­8ö¬ìŸü,
+Fsquid:S1148B"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ö¬ìŸü,
+ksquid:S00112š"FDefine and throw a dedicated exception instead of using a generic one.(éÁåÆøÿÿÿÿ8ö¬ìŸü,
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(íÍ´¤8ö¬ìŸü,
+rsquid:ModifiersOrderCheck‰"EReorder the modifiers to comply with the Java Language Specification.(É•Ä8ö¬ìŸü,
+xsquid:S2293¨"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò²†¦8ö¬ìŸü,
+Msquid:S1068ˆ")Remove this unused "solar" private field.(Ø¡ÍÌşÿÿÿÿ8ö¬ìŸü,
+dsquid:S1126P"AReplace this if-then-else statement by a single return statement.(óı˜øÿÿÿÿ8ö¬ìŸü,
+Jsquid:S1172š"&Remove these unused method parameters.(éÁåÆøÿÿÿÿ8ö¬ìŸü,

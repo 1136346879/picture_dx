@@ -68,19 +68,21 @@ class ApiResponse(private val context: Context,
                     }
 
                     override fun onNext(t: String) {
-                        val cookieResult = CookieDbUtil.instance().queryCookieBy(t)
-                        if (cookieResult == null) {
-                            errorDo(error)
-                            return
-                        }
-                        val time = (System.currentTimeMillis() - cookieResult.time) / 1000
-                        if (time < option.cookieNoNetWorkTime) {
-                            listener?.onCache(cookieResult.resulte)
-                        } else {
-                            CookieDbUtil.instance().deleteCookie(cookieResult)
-                            errorDo(error)
-                        }
-
+                            try{
+                                val cookieResult = CookieDbUtil.instance().queryCookieBy(t)
+                                if (cookieResult == null) {
+                                    errorDo(error)
+                                    return
+                                }
+                                val time = (System.currentTimeMillis() - cookieResult.time) / 1000
+                                if (time < option.cookieNoNetWorkTime) {
+                                    listener?.onCache(cookieResult.resulte)
+                                } else {
+                                    CookieDbUtil.instance().deleteCookie(cookieResult)
+                                    errorDo(error)
+                                }
+                            }catch (e:Exception){
+                            }
                     }
 
                     override fun onError(e: Throwable) {

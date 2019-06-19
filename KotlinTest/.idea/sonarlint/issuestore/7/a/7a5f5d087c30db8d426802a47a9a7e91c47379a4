@@ -1,9 +1,9 @@
 
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý¯‹‚üÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•éÏœ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß•¡à
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æÿ‡Î
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æÿ‡Î
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(èäœö
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ßŒÚ
-esquid:UselessImportCheck"CRemove this unused import 'android.support.v7.widget.RecyclerView'.(ÊŠáó
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æÿ‡Î
+bsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(Æÿ‡Î
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß•¡à
+bsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(èäœö
+bsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(ßŒÚ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•éÏœ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ý¯‹‚üÿÿÿÿ
+gsquid:UselessImportCheck"CRemove this unused import 'android.support.v7.widget.RecyclerView'.(ÊŠáó

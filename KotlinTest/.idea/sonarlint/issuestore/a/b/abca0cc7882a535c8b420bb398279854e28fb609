@@ -1,18 +1,17 @@
 
-Psquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8Ôç‡…ü,
-Jsquid:S3398"/Move this method into "PanelOnGestureListener".(¾ƒ 8Ôç‡…ü,
-@squid:S1659"$Declare "touchY" on a separate line.(ö›ç¾8Ôç‡…ü,
-Gsquid:S1659"&Declare "toXDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
-Isquid:S1659"(Declare "fromYDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
-Gsquid:S1659"&Declare "toYDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
->squid:S1659""Declare "tmpX" on a separate line.(„²šÓ8Ôç‡…ü,
-Ksquid:S1066"/Merge this if statement with the enclosing one.(Å¼™Å8Ôç‡…ü,
-Zsquid:S3516"9Refactor this method to not always return the same value.(Óı°ûÿÿÿÿ8Ôç‡…ü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼²ıı8Ôç‡…ü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(³Ä»¦øÿÿÿÿ8Ôç‡…ü,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ôç‡…ü,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢ºÿ­8Ôç‡…ü,
-Isquid:S1604"(Make this anonymous inner class a lambda(øË ÷øÿÿÿÿ8Ôç‡…ü,
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(«ÀËù8Ôç‡…ü,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ñ•ÿÿÿÿÿ8Ôç‡…ü,
-¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úƒÚÓûÿÿÿÿ8Ôç‡…ü,
+Jsquid:S1659‘"&Declare "toYDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
+Msquid:S3398á"/Move this method into "PanelOnGestureListener".(¾ƒ 8Ôç‡…ü,
+¥squid:S1186é"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úƒÚÓûÿÿÿÿ8Ôç‡…ü,
+Lsquid:S1604Œ"(Make this anonymous inner class a lambda(øË ÷øÿÿÿÿ8Ôç‡…ü,
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢ºÿ­8Ôç‡…ü,
+jsquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(¼²ıı8Ôç‡…ü,
+Csquid:S1659è"$Declare "touchY" on a separate line.(ö›ç¾8Ôç‡…ü,
+osquid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(³Ä»¦øÿÿÿÿ8Ôç‡…ü,
+Jsquid:S1659‘"&Declare "toXDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
+ksquid:S00112¯"FDefine and throw a dedicated exception instead of using a generic one.(Ñ•ÿÿÿÿÿ8Ôç‡…ü,
+fsquid:S00112©"FDefine and throw a dedicated exception instead of using a generic one.(«ÀËù8Ôç‡…ü,
+Asquid:S1659£""Declare "tmpX" on a separate line.(„²šÓ8Ôç‡…ü,
+Rsquid:EmptyStatementUsageCheckA"Remove this empty statement.(ôŸìúÿÿÿÿ8Ôç‡…ü,
+]squid:S3516ê"9Refactor this method to not always return the same value.(Óı°ûÿÿÿÿ8Ôç‡…ü,
+Lsquid:S1659‘"(Declare "fromYDelta" on a separate line.(Õâƒ’ıÿÿÿÿ8Ôç‡…ü,
+osquid:CommentedOutCodeLineô"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ôç‡…ü,

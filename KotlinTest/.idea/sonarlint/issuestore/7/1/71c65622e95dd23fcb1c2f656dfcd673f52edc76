@@ -1,0 +1,8 @@
+
+Bsquid:S1659."+Declare "mCurrentAngle" on a separate line.(¿š¾ú
+Isquid:S1659/"2Declare "mMaxResultImageSizeY" on a separate line.(†Ö‘Ÿ
+Esquid:S16593".Declare "mImageOutputPath" on a separate line.(Ð©Ùô
+Hsquid:S16597"1Declare "mCroppedImageHeight" on a separate line.(±«©—
+@squid:S16598")Declare "cropOffsetY" on a separate line.(„„Éä
+Dsquid:S10684"-Remove this unused "mExifInfo" private field.(õ—âí
+<squid:S1181a"%Catch Exception instead of Throwable.(ëß‹™
