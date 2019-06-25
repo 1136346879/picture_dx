@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xfs.fsyuncai.attachmentfile">
+
+    <application>
+        <activity android:name=".ui.AttachmentFileActivity" />
+        <activity android:name=".ui.WordPdfExcFileImageListActivity" />
+        <activity android:name=".ui.FileDisplayActivity" />
+    </application>
+
+</manifest>

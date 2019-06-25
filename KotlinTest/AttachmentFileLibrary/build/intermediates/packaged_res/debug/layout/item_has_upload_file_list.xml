@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_press_up"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingLeft="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:clickable="false"
+            android:id="@+id/chckedfile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_select_file_delete"
+            android:button="@null"
+            android:checked="false"
+            />
+        <ImageView
+            android:layout_marginRight="@dimen/space_10"
+            android:id="@+id/item_file_img"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/file_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="yui.docx"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/upload_account_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="qianyue001"
+                android:textColor="@color/text_color_middle"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_file_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-19 12:12"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_middle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

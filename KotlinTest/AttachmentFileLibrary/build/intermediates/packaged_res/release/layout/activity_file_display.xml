@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_file_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/look_bar"
+        layout="@layout/toolbar_common_file" />
+
+    <com.xfs.fsyuncai.attachmentfile.widget.SuperFileView
+        android:id="@+id/mSuperFileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/look_bar" />
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/look_bar"
+        android:src="@mipmap/emptyimg"
+        android:visibility="gone" />
+</RelativeLayout>

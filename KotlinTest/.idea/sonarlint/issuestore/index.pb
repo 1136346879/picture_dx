@@ -565,3 +565,5 @@ wkeboardLibrary/build/generated/source/kapt/debug/com/alibaba/android/arouter/ro
 ^App/src/main/java/com/example/administrator/kotlintest/bridge/retrofit/callback/ApiResponse.kt,8\1\8101eca20551480e05b74b584f0fd79add3f3991
 }
 MApp/src/main/java/com/example/administrator/kotlintest/entity/BannerEntity.kt,b\8\b885ed1e5ff49fa3f51e47bd3f104f5c30213eb6
+}
+MBaseLibrary/src/main/java/com/example/baselibrary/widgets/EasyPickerView.java,c\1\c188e5a728b5fb20be89dbe13d97468c2164b013
