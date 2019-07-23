@@ -567,3 +567,9 @@ wkeboardLibrary/build/generated/source/kapt/debug/com/alibaba/android/arouter/ro
 MApp/src/main/java/com/example/administrator/kotlintest/entity/BannerEntity.kt,b\8\b885ed1e5ff49fa3f51e47bd3f104f5c30213eb6
 }
 MBaseLibrary/src/main/java/com/example/baselibrary/widgets/EasyPickerView.java,c\1\c188e5a728b5fb20be89dbe13d97468c2164b013
+`
+0App/src/main/res/xml/network_security_config.xml,7\d\7d03e6915963c952fbe14266130f98929839610d
+c
+3App/src/main/res/layout/activitu_picture_action.xml,c\8\c8969dedd1957856036280a2baa2810dfaebba17
+‹
+[App/src/main/java/com/example/administrator/kotlintest/ui/activity/PictureActionActivity.kt,3\6\361b15cd690756ef394fe6f80852bdfc587900e5
