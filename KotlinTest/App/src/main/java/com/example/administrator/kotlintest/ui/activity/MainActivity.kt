@@ -79,22 +79,18 @@ class MainActivity() : RxAppCompatActivity() {
         getSQLHelper()
         //log 初始化
         LogConfig.initLog(application)
-
         multipleStatusView?.showLoading()
         listData.add(PersonControlDao("跳转至下一activity", null))
         listData.add(PersonControlDao("日历", null))
         listData.add(PersonControlDao("进入recycleview", null))
         listData.add(PersonControlDao("个人中心", null))
-        listData.add(PersonControlDao("Ucrop矩形图片裁剪", null))
-        listData.add(PersonControlDao("方形裁剪", null))
-        listData.add(PersonControlDao("系统裁剪", null))
         listData.add(PersonControlDao("进入数据库页面", null))
         listData.add(PersonControlDao("频道管理页面", null))
         listData.add(PersonControlDao("点击粉碎当前view", null))
         listData.add(PersonControlDao("点击城市区域选择", null))
         listData.add(PersonControlDao("键盘", null))
         listData.add(PersonControlDao("键盘fragment", null))
-        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao("图片操作", null))
         listData.add(PersonControlDao("等", null))
         listData.add(PersonControlDao("等", null))
         listData.add(PersonControlDao("等", null))
@@ -113,19 +109,17 @@ class MainActivity() : RxAppCompatActivity() {
 
         mainAdapter.setOnClickItem {
             when (it) {
-                0 -> startActivity(this!!.intentFor<AttendviewActivity>())
-                1 -> startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
-                2 -> startActivity(this!!.intentFor<RecycleviewActivity>())
-                3 -> startActivity(this!!.intentFor<MineActivity>())
-                4 -> pickPhotoUcrop()
-                5 -> pickPhoto()
-                6 -> startActivity(this!!.intentFor<UploadActivity>().putExtra("", "").putExtra("", ""))
-                7 -> startActivity(this.intentFor<DbShowActivity>())
-                8 -> startActivity(this.intentFor<ChannelActivity>())
-                9 -> startActivity(this.intentFor<smashzhadan>())
-                10 -> selectCity()
-                11 -> startKeyBOard()
-                12 -> startKeyBOardFragmentToActivity()
+                0 -> startActivity(this.intentFor<ThirdPartBannerZxingAcitivity>())
+                1 -> startActivity(this.intentFor<AttendviewActivity>())
+                2 -> startActivity(this.intentFor<RecycleviewActivity>())
+                3 -> startActivity(this.intentFor<MineActivity>())
+                4 -> startActivity(this.intentFor<DbShowActivity>())
+                5 -> startActivity(this.intentFor<ChannelActivity>())
+                6 -> startActivity(this.intentFor<smashzhadan>())
+                7 -> selectCity()
+                8 -> startKeyBOard()
+                9 -> startKeyBOardFragmentToActivity()
+                10 -> startActivity(this.intentFor<PictureActionActivity>())
             }
         }
         //view拖拽功能
@@ -135,24 +129,14 @@ class MainActivity() : RxAppCompatActivity() {
 
 
 
-
-
-
-
-
-
-
-
-
-
+        tv1.setOnClickListener { startActivity(this!!.intentFor<AttendviewActivity>()) }
         // 跳转至下一activity
-        RxView.clicks(tv1).throttleFirst(1, TimeUnit.SECONDS)
+        RxView.clicks(tv0).throttleFirst(1, TimeUnit.SECONDS)
                 .subscribe {
                     tv1.text = "你好"
                     startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
                 }
         //日历
-        tv0.setOnClickListener { startActivity(this!!.intentFor<AttendviewActivity>()) }
         //进入recycleview
         tv2.setOnClickListener {
             //            startActivity(this!!.intentFor<WebbrowserActivity4>())
@@ -168,19 +152,13 @@ class MainActivity() : RxAppCompatActivity() {
         }
         //个人中心
         tv3.setOnClickListener { startActivity(this!!.intentFor<MineActivity>()) }
-        //Ucrop矩形图片裁剪
-        tv4.setOnClickListener { pickPhotoUcrop() }//打开相册
-        //方形裁剪
-        tv5.setOnClickListener { pickPhoto() }//打开相册
-        //系统裁剪
-        tv6.setOnClickListener { startActivity(this!!.intentFor<UploadActivity>().putExtra("", "").putExtra("", "")) }
         tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }//进入数据库页面
         tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }//频道管理页面
         tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }//点击粉碎当前view
         tv10.setOnClickListener {
             selectCity()
         }//点击城市区域选择
-     ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
+        ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
     }
 
@@ -219,297 +197,7 @@ class MainActivity() : RxAppCompatActivity() {
         areaSelectorDialog!!.show()
     }
 
-    /**
-     * 使用相册中的图片
-     */
-    private val SELECT_PHOTO = 3
-    private val UCROP_SELECT_PHOTO = 33
-    private var picWith = 310
-    private var picHeight = 220
-    private var photoUri: Uri? = null
-    //图片根目录
-    private var sdPath: String? = null
-    /***
-     * 裁剪图片请求
-     */
-    val CROP_PHOTO = 2
-    /***
-     * 从Intent获取图片路径的KEY
-     */
-    val KEY_PHOTO_PATH = "photo_path"
 
-    constructor(parcel: Parcel) : this() {
-        picWith = parcel.readInt()
-        picHeight = parcel.readInt()
-        photoUri = parcel.readParcelable(Uri::class.java.classLoader)
-        sdPath = parcel.readString()
-    }
-
-    private fun pickPhoto() {
-//        photoUri = getImageUri()
-        val intent = Intent(Intent.ACTION_PICK, null)
-        // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
-        intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
-        startActivityForResult(intent, SELECT_PHOTO)
-    }
-
-    private fun pickPhotoUcrop() {
-//        photoUri = getImageUri()
-        val intent = Intent(Intent.ACTION_PICK, null)
-        // 如果朋友们要限制上传到服务器的图片类型时可以直接写如：image/jpeg 、 image/png等的类型
-        intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*")
-        startActivityForResult(intent, UCROP_SELECT_PHOTO)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        when (requestCode) {
-            //选中图片
-            SELECT_PHOTO -> if (data != null) {
-                if (resultCode == Activity.RESULT_OK) {
-                    val imageUri = data.data
-                    val selectPhoto = getRealPathFromUri(this, imageUri)
-                    Log.e("selectPhoto:", selectPhoto)
-//                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
-//                            .putExtra("image_path",selectPhoto))
-                    //打开裁剪页面
-                    startActivity(intentFor<CropImageActivity>()
-                            .putExtra("image_path", selectPhoto))
-//                        if (selectPhoto != null) {
-//                            loadUpImg(selectPhoto)
-//                        }
-//                    ivAvatar.setImageURI(Uri.fromFile(File(selectPhoto)))
-                }
-//系统裁剪
-//                startPhotoZoom(data.data,picWith,picHeight)
-            } else {
-//                ToastUtil.showToast("获取图片失败")
-                setResult(Activity.RESULT_CANCELED, intent)
-//                activity?.finish()
-            }
-            UCROP_SELECT_PHOTO -> if (data != null) {
-                if (resultCode == Activity.RESULT_OK) {
-                    val imageUri = data.data
-                    val selectPhoto = getRealPathFromUri(this, imageUri)
-                    Log.e("selectPhoto:", selectPhoto)
-                    //图片识别上传至服务器
-//                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
-//                            .putExtra("image_path",selectPhoto))
-                    //自定义的图片裁剪，正方形裁剪
-//                    startActivity(intentFor<CropImageActivity>()
-//                            .putExtra("image_path",selectPhoto))
-                    startCrop(selectPhoto!!)
-                }
-            } else {
-//                ToastUtil.showToast("获取图片失败")
-                setResult(Activity.RESULT_CANCELED, intent)
-//                activity?.finish()
-            }
-
-            //系统裁剪之后--裁剪图片--上传图片
-            CROP_PHOTO -> if (resultCode == Activity.RESULT_OK) {
-                intent.putExtra(KEY_PHOTO_PATH, photoUri?.path)
-                setResult(Activity.RESULT_OK, intent)
-//                activity?.finish()
-//                tv5.setImageURI(Uri.parse(photoUri?.path))
-                loadUpImg(Uri.parse(photoUri?.path).toString())
-            } else {
-//                ToastUtil.showCustomToast("取消图片设置!")
-                setResult(Activity.RESULT_CANCELED, intent)
-//                activity?.finish()
-            }
-        }
-        super.onActivityResult(requestCode, resultCode, data)
-    }
-
-
-    /**
-     * 去裁剪
-     *
-     * @param originalPath
-     */
-    @SuppressLint("Range")
-    protected fun startCrop(originalPath: String) {
-        val options = UCrop.Options()
-        val toolbarColor = AttrsUtils.getTypeValueColor(this, -1)
-        val statusColor = AttrsUtils.getTypeValueColor(this, -1)
-        val titleColor = AttrsUtils.getTypeValueColor(this, -1)
-        options.setToolbarColor(toolbarColor)//状态栏背景
-        options.setStatusBarColor(statusColor)
-        options.setToolbarWidgetColor(titleColor)
-        options.setCircleDimmedLayer(false)
-        options.setShowCropFrame(true)//显示裁剪框
-        options.setShowCropGrid(true)//显示裁剪框网格
-        options.setDragFrameEnabled(true)//裁剪框拖拽
-        options.setScaleEnabled(true)//图片缩放
-        options.setRotateEnabled(true)//图片旋转
-        options.setCompressionQuality(70)//图片质量
-        options.setHideBottomControls(true)
-        options.setFreeStyleCropEnabled(true)//裁剪
-        val isHttp = false
-        val imgType = PictureMimeType.getLastImgType(originalPath)
-        val uri = if (isHttp) Uri.parse(originalPath) else Uri.fromFile(File(originalPath))
-        UCrop.of(uri, Uri.fromFile(File(getDiskCacheDir(this), System.currentTimeMillis().toString() + "" + imgType)))
-                .withAspectRatio(0F, 0F)
-                .withMaxResultSize(0, 0)
-                .withOptions(options)
-                .start(this)
-//        finish()
-    }
-
-    private fun getRealPathFromUri(mainActivity: MainActivity, imageUri: Uri?): String? {
-
-
-        if (mainActivity == null || imageUri == null) {
-            return null
-        }
-        if ("file".equals(imageUri.scheme, true)) {
-            return getRealPathFromUri_Byfile(imageUri)
-        } else if ("content".equals(imageUri.scheme, true)) {
-            return getRealPathFromUri_Api11To18(mainActivity, imageUri)
-        }
-        return getRealPathFromUri_AboveApi19(mainActivity, imageUri)//没用到
-    }
-
-    //针对图片URI格式为Uri:: file:///storage/emulated/0/DCIM/Camera/IMG_20170613_132837.jpg
-    private fun getRealPathFromUri_Byfile(uri: Uri): String {
-        val uri2Str = uri.toString()
-        return uri2Str.substring(uri2Str.indexOf(":") + 3)
-    }
-
-    /**
-     * 适配api19以上,根据uri获取图片的绝对路径
-     */
-    @SuppressLint("NewApi")
-    private fun getRealPathFromUri_AboveApi19(context: Context, uri: Uri): String? {
-        var filePath: String? = null
-        var wholeID: String?
-        wholeID = DocumentsContract.getDocumentId(uri)
-        // 使用':'分割
-        val id = wholeID!!.split(":".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[1]
-        val projection = arrayOf(MediaStore.Images.Media.DATA)
-        val selection = MediaStore.Images.Media._ID + "=?"
-        val selectionArgs = arrayOf(id)
-        val cursor = context.contentResolver.query(
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI, projection,
-                selection, selectionArgs, null)
-        val columnIndex = cursor.getColumnIndex(projection[0])
-        if (cursor.moveToFirst()) {
-            filePath = cursor.getString(columnIndex)
-        }
-        cursor.close()
-        return filePath
-    }
-
-    /**
-     * //适配api11-api18,根据uri获取图片的绝对路径。
-     * 针对图片URI格式为Uri:: content://media/external/images/media/1028
-     */
-    private fun getRealPathFromUri_Api11To18(context: Context, uri: Uri): String? {
-        var filePath: String? = null
-        val projection = arrayOf(MediaStore.Images.Media.DATA)
-        val loader = CursorLoader(context, uri, projection, null, null, null)
-        val cursor = loader.loadInBackground()
-        if (cursor != null) {
-            cursor!!.moveToFirst()
-            filePath = cursor!!.getString(cursor!!.getColumnIndex(projection[0]))
-            cursor!!.close()
-        }
-        return filePath
-    }
-
-
-    /**
-     * 图片路径传过来
-     *
-     *
-     */
-    private fun loadUpImg(path: String) {
-        val httpManger = HttpManager.instance()
-//        val file = File(BitmapUtils.compressImageUpload(path))
-        val file = File(path)
-        val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
-        val body = MultipartBody.Part.createFormData("file", file.name, requestFile)
-        httpManger.doHttpDeal(this, httpManger.createService(OrderService::class.java)!!.pictureSearch(body),
-                object : HttpOnNextListener() {
-                    override fun onNext(json: String) {
-                        ToastUtilKt.showCustomToast("Image upload sucessed :$json")
-                    }
-
-                    override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
-                        super.onError(statusCode, apiErrorModel)
-                        ToastUtilKt.showCustomToast("Image upload failed")
-                    }
-                }, false)
-    }
-
-    /**
-     * 系统裁剪
-     * uri
-     * 宽 本地写死
-     * 高 本地写死
-     *
-     */
-    private fun startPhotoZoom(data: Uri?, picWith: Int, picHeight: Int) {
-
-        val intent = Intent("com.android.camera.action.CROP")
-        intent.setDataAndType(data, "image/*")
-        // crop为true是设置在开启的intent中设置显示的view可以剪裁
-        intent.putExtra("crop", "true")
-        // aspectX aspectY 是宽高的比例
-        intent.putExtra("aspectX", 1)
-        intent.putExtra("aspectY", 1.4)
-        // outputX,outputY 是剪裁图片的宽高
-        intent.putExtra("outputX", picWith)
-        intent.putExtra("outputY", picHeight)
-        intent.putExtra("scale", true)
-        photoUri = getImageUri()
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
-        intent.putExtra("return-data", false)
-        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG)
-        intent.putExtra("noFaceDetection", true) // no face detection
-        ALog.e("TAKE_PHOTO", "TAKE_PHOTO-zoom-CROP_PHOTO")
-        startActivityForResult(intent, CROP_PHOTO)
-    }
-
-    private fun getImageUri(): Uri? {
-        var outputImage: File? = null
-        val t = System.currentTimeMillis()
-        outputImage = File(sdPath, t.toString() + "xfsImage.jpg")
-        if (outputImage!!.exists()) {
-            outputImage.delete()
-        }
-        try {
-            outputImage.createNewFile()
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-
-        return Uri.fromFile(outputImage)
-    }
-
-    /**
-     * @param context
-     * @return
-     */
-    fun getDiskCacheDir(context: Context): String {
-        var cachePath: String? = null
-        if (Environment.MEDIA_MOUNTED == Environment.getExternalStorageState() || !Environment.isExternalStorageRemovable()) {
-            cachePath = context.externalCacheDir!!.path
-        } else {
-            cachePath = context.cacheDir.path
-        }
-        return cachePath
-    }
-
-    companion object CREATOR : Parcelable.Creator<MainActivity> {
-        override fun createFromParcel(parcel: Parcel): MainActivity {
-            return MainActivity(parcel)
-        }
-
-        override fun newArray(size: Int): Array<MainActivity?> {
-            return arrayOfNulls(size)
-        }
-    }
 }
 
 class MainAdapter(option: ArrayList<PersonControlDao>, mineActivity: MainActivity)

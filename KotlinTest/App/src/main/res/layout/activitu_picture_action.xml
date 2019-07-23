@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:background="#000"
+        android:textColor="#fff"
+        android:padding="@dimen/space_20"
+        android:textSize="@dimen/space_20"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="图片处理页面"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/space_10"
+            android:id="@+id/tv4"
+            android:layout_height="wrap_content"
+            android:text="Ucrop矩形图片裁剪"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:text="方形裁剪"
+            android:padding="@dimen/space_10"
+            android:id="@+id/tv5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:id="@+id/tv6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="系统裁剪"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

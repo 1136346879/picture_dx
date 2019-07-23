@@ -37,11 +37,12 @@
             android:theme="@style/TranslucentActivityTheme"/>
         <!--数据库操作页面-->
         <activity android:name=".ui.activity.DbShowActivity"
-         android:theme="@style/Transparent"/>
+            />
 
 
 
         <activity android:name=".ui.activity.RuanActivity"/>
+        <activity android:name=".ui.activity.PictureActionActivity"/>
         <activity android:name=".ui.activity.YingActivity"/>
         <!--图片上传-->
         <activity android:name=".picture.UploadActivity"/>
