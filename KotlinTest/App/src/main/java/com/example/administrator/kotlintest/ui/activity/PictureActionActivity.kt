@@ -24,7 +24,7 @@ import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
 import com.yalantis.ucrop.util.PictureMimeType
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activitu_picture_action.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody

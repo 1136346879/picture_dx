@@ -92,11 +92,6 @@ class MainActivity() : RxAppCompatActivity() {
         listData.add(PersonControlDao("键盘fragment", null))
         listData.add(PersonControlDao("图片操作", null))
         listData.add(PersonControlDao("等", null))
-        listData.add(PersonControlDao("等", null))
-        listData.add(PersonControlDao("等", null))
-        listData.add(PersonControlDao("等", null))
-        listData.add(PersonControlDao("等", null))
-        listData.add(PersonControlDao("等", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -126,56 +121,19 @@ class MainActivity() : RxAppCompatActivity() {
         dragview.setImageResource(R.drawable.icon_app)
 //        mDragView.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495193578123&di=1356056ae967c04aa8b2d75a8634e7a0&imgtype=0&src=http%3A%2F%2Fs15.sinaimg.cn%2Fmw690%2F001MXOZUgy6DUbyFxgy7e%26690");
         dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
-
-
-
-        tv1.setOnClickListener { startActivity(this!!.intentFor<AttendviewActivity>()) }
-        // 跳转至下一activity
-        RxView.clicks(tv0).throttleFirst(1, TimeUnit.SECONDS)
-                .subscribe {
-                    tv1.text = "你好"
-                    startActivity(this!!.intentFor<ThirdPartBannerZxingAcitivity>())
-                }
-        //日历
-        //进入recycleview
-        tv2.setOnClickListener {
-            //            startActivity(this!!.intentFor<WebbrowserActivity4>())
-            val 学生 = 学生("丁", 17)
-            val (name, age) = 学生
-//            ToastUtilKt.showToast("--》${学生.component1()}")
-//            ToastUtilKt.showCustomToast("--》${学生.component2()}")
-            ToastUtilKt.showToast("--》$name")
-            ToastUtilKt.showCustomToast("--》$age")
-            startActivity(this!!.intentFor<RecycleviewActivity>())
-//            startActivity(this!!.intentFor<com.xfs.fsyuncai.mavendemo.MainActivity>())
-
-        }
-        //个人中心
-        tv3.setOnClickListener { startActivity(this!!.intentFor<MineActivity>()) }
-        tv7.setOnClickListener { startActivity(this.intentFor<DbShowActivity>()) }//进入数据库页面
-        tv8.setOnClickListener { startActivity(this.intentFor<ChannelActivity>()) }//频道管理页面
-        tv9.setOnClickListener { startActivity(this.intentFor<smashzhadan>()) }//点击粉碎当前view
-        tv10.setOnClickListener {
-            selectCity()
-        }//点击城市区域选择
         ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
     }
 
     private fun startKeyBOardFragmentToActivity() {
-        startActivity(this!!.intentFor<EmptyFragmentActivity>())
+        startActivity(this.intentFor<EmptyFragmentActivity>())
     }
-
     private fun startKeyBOard() {
-//        startActivity(this.intentFor<KeyBroadActivity>())
         ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_ACTIVITY_URL)
-//                .withInt("select", 4)
                 .navigation()
     }
 
     private fun selectCity() {
-        ToastUtilKt.showCustomToast("城市选择")
-
         areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
             override fun onDismiss() {
             }
@@ -188,15 +146,14 @@ class MainActivity() : RxAppCompatActivity() {
                     selectedArea.map {
                         area += it.name
                     }
-                    tv10.text = area
+                    ToastUtilKt.showCustomToast("您选择的地址是：$area")
                 } else {
-                    tv10.text = ""
+                    ToastUtilKt.showCustomToast("您选择的地址为空")
                 }
             }
         }, this@MainActivity)
         areaSelectorDialog!!.show()
     }
-
 
 }
 

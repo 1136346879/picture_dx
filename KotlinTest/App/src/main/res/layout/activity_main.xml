@@ -15,7 +15,6 @@
     app:loadingView="@layout/layout_loading_view"
     app:noNetworkView="@layout/layout_network_view">
     <android.support.v7.widget.RecyclerView
-
         android:id="@+id/recycleview_list_all"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,137 +24,12 @@
         android:paddingRight="@dimen/space_10" />
 </com.classic.common.MultipleStatusView>
 
-
-
-
-
-
-
-
-
-<LinearLayout
-    android:visibility="gone"
-    android:layout_below="@+id/multipleStatusView"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="日历"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="跳转至下一activity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="进入recycleview"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />   <TextView
-    android:padding="@dimen/space_10"
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="个人中心"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />   <TextView
-    android:padding="@dimen/space_10"
-        android:id="@+id/tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ucrop矩形图片裁剪"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:text="方形裁剪"
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />   <TextView
-    android:padding="@dimen/space_10"
-        android:id="@+id/tv6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="系统裁剪"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" /><TextView
-    android:padding="@dimen/space_10"
-        android:id="@+id/tv7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="进入数据库页面"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="频道管理页面"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点击粉碎当前view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:padding="@dimen/space_10"
-        android:id="@+id/tv10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点击城市区域选择"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</LinearLayout>
 <LinearLayout
     android:visibility="gone"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-
     <TextView
-
         android:textSize="30sp"
         android:gravity="center"
         android:text="极软岩、软岩"
@@ -170,13 +44,9 @@
         android:text="较硬岩、坚硬岩"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
-
 </LinearLayout>
-
     <com.example.administrator.kotlintest.widget.DragView
         android:id="@+id/dragview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
 </RelativeLayout>
