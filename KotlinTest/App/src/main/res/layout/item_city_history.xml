@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_6"
+    android:textColor="@color/text_color_light"
+    android:background="@drawable/shape_radius_gray_4"
+    android:gravity="center"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:textSize="@dimen/text_size_14" />
+

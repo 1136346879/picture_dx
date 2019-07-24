@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space_80">
+
+    <ImageView
+        android:id="@+id/ivError"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_100"
+        android:src="@drawable/error_no_network" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="@string/INTERNAL_SERVER_ERROR"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tvRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_110"
+        android:background="@drawable/shape_radius_white_2_linegray"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingTop="@dimen/space_6"
+        android:paddingRight="@dimen/space_30"
+        android:paddingBottom="@dimen/space_6"
+        android:text="重新加载"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>

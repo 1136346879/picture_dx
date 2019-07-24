@@ -27,7 +27,18 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-
+    <style name="SystemDialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
     <declare-styleable name="DatePanel">
         <!-- Defines panel animation duration in ms. -->
         <attr name="animationDuration" format="integer" />

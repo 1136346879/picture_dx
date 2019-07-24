@@ -20,7 +20,7 @@ import com.lzy.imagepicker.view.CropImageView;
 import com.xfs.fsyuncai.bridge.retrofit.ApiConstants;
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener;
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel;
-import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager;
+import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager;
 import com.xfs.fsyuncai.bridge.retrofit.service.OrderService;
 
 import org.greenrobot.greendao.annotation.NotNull;
@@ -228,6 +228,6 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
                         super.onError(statusCode, apiErrorModel);
                         ToastUtilKt.INSTANCE.showCustomToast("Image upload failed");
                     }
-                },true);
+                });
     }
 }

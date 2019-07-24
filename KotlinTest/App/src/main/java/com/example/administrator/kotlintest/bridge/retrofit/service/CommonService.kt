@@ -2,10 +2,9 @@ package com.xfs.fsyuncai.bridge.retrofit.service
 
 import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
 import io.reactivex.Observable
-import retrofit2.http.Body
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.http.*
 
 /**
  *@author : HaoBoy
@@ -32,7 +31,15 @@ interface CommonService {
     @POST(ApiConstants.LOCATION_CITY)
     fun getAllCity(): Observable<String>
 
-
+    /**
+     * 获取地址对应的仓库
+     * @return
+     */
+    @POST(ApiConstants.GET_WAREHORSE_BY_CITY)
+    @FormUrlEncoded
+    fun getWarehouseByCity(
+            @Field("code") code: String
+    ): Observable<String>
     /**
      * 获取指定城市的仓库信息
      */
@@ -54,6 +61,11 @@ interface CommonService {
             @Field("password") password: Int,
             @Field("warehouse_code") warehouse_code: Int
     ): Observable<String>
-
+    /**
+     * 下载附件然后预览
+     */
+    @GET
+    fun loadPdfFile(@Url fileUrl: String)
+            : Call<ResponseBody>
 
 }

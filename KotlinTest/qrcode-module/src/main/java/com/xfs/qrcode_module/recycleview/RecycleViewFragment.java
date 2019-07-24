@@ -59,7 +59,7 @@ public class RecycleViewFragment extends BaseLibraryFragment implements XRecycle
         loadingView.setOnLoadingViewClickListener(new LoadingRecycleViewView.OnLoadingViewClickListener() {
             @Override
             public void onLoadingViewClick(int type) {
-               ToastUtil.Companion.showToast(getActivity(),"点击重新加载",1);
+               ToastUtil.INSTANCE.showCustomToast("点击重新加载");
             }
         });
     }
@@ -115,13 +115,13 @@ public class RecycleViewFragment extends BaseLibraryFragment implements XRecycle
 
         pageNum = 0;
         loadData(false);
-        ToastUtil.Companion.showToast(getActivity(),"下拉刷新",1);
+        ToastUtil.INSTANCE.showCustomToast("下拉刷新");
     }
 
     @Override
     public void onLoadMore() {
         footerText.setVisibility(View.VISIBLE);
-        ToastUtil.Companion.showToast(getActivity(),"上拉加载更多",1);
+        ToastUtil.INSTANCE.showCustomToast("上拉加载更多");
         loadData(true);
 
     }

@@ -19,7 +19,7 @@ import com.example.baselibrary.widgets.ToastUtilKt
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
-import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
+import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager
 import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
@@ -258,7 +258,7 @@ class PictureActionActivity() : RxAppCompatActivity(){
                         super.onError(statusCode, apiErrorModel)
                         ToastUtilKt.showCustomToast("Image upload failed")
                     }
-                }, false)
+                })
     }
 
     /**

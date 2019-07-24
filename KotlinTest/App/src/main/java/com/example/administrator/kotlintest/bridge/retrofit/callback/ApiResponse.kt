@@ -1,13 +1,16 @@
-package com.xfs.fsyuncai.bridge.retrofit.callback
+package com.example.administrator.kotlintest.bridge.retrofit.callback
 
+import android.app.Activity
 import android.content.Context
+import com.example.administrator.kotlintest.R
+import com.example.administrator.kotlintest.bridge.retrofit.http.RequestOption
 import com.example.baselibrary.widgets.TLog
 import com.google.gson.Gson
 import com.xfs.fsyuncai.bridge.database.CookieDbUtil
 import com.xfs.fsyuncai.bridge.retrofit.LoadingDialog
+import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorType
-import com.xfs.fsyuncai.bridge.retrofit.http.RequestOption
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
@@ -22,18 +25,34 @@ import java.net.UnknownHostException
 class ApiResponse(private val context: Context,
                   private val msg: String,
                   private val option: RequestOption,
-                  private val listener: HttpOnNextListener?,
-                  private val showLoading: Boolean) : Observer<String> {
+                  private val listener: HttpOnNextListener?) : Observer<String> {
+
+    companion object {
+        private const val START_TIME_NUM = 2000
+    }
+
+    private val className = context.javaClass.simpleName
+    private var startTime: Long = 0
 
     override fun onComplete() {
         LoadingDialog.dissmiss()
+        if (startTime > 0 ) {
+            startTime = System.currentTimeMillis() - startTime
+            if (startTime > START_TIME_NUM) {
+                TLog.i("接口访问 " + className.toString() + context.resources.getString(R.string.remote_elapsed_time_warm) + startTime)
+            } else {
+                TLog.i("接口访问 " + className.toString() + context.resources.getString(R.string.remote_elapsed_time_like) + startTime)
+            }
+            startTime = 0
+        }
     }
 
     override fun onSubscribe(d: Disposable) {
-        if(showLoading){
-            if (option.isShowProgress) LoadingDialog.show(context, msg,true)
-        } else
-            if (option.isShowProgress) LoadingDialog.show(context, msg,false)
+        startTime = System.currentTimeMillis()
+        if (option.isShowProgress) {
+            if (context is Activity)
+                LoadingDialog.show(context, msg,false)
+        }
         if (option.isCache) {
             val cookieResult = CookieDbUtil.instance().queryCookieBy(option.getUrl())
             if (cookieResult != null) {
@@ -42,7 +61,6 @@ class ApiResponse(private val context: Context,
                 if (time < option.cookieNetWorkTime) {
                     listener?.onCache(cookieResult.resulte)
                 }
-
                 onComplete()
             }
 
@@ -68,21 +86,21 @@ class ApiResponse(private val context: Context,
                     }
 
                     override fun onNext(t: String) {
-                            try{
-                                val cookieResult = CookieDbUtil.instance().queryCookieBy(t)
-                                if (cookieResult == null) {
-                                    errorDo(error)
-                                    return
-                                }
-                                val time = (System.currentTimeMillis() - cookieResult.time) / 1000
-                                if (time < option.cookieNoNetWorkTime) {
-                                    listener?.onCache(cookieResult.resulte)
-                                } else {
-                                    CookieDbUtil.instance().deleteCookie(cookieResult)
-                                    errorDo(error)
-                                }
-                            }catch (e:Exception){
+                        try {
+                            val cookieResult = CookieDbUtil.instance().queryCookieBy(t)
+                            if (cookieResult == null) {
+                                errorDo(error)
+                                return
                             }
+                            val time = (System.currentTimeMillis() - cookieResult.time) / 1000
+                            if (time < option.cookieNoNetWorkTime) {
+                                listener?.onCache(cookieResult.resulte)
+                            } else {
+                                CookieDbUtil.instance().deleteCookie(cookieResult)
+                                errorDo(error)
+                            }
+                        } catch (e: Exception) {
+                        }
                     }
 
                     override fun onError(e: Throwable) {
@@ -90,17 +108,13 @@ class ApiResponse(private val context: Context,
                         CookieDbUtil.instance().queryCookieBy(option.getUrl())?.let {
                             CookieDbUtil.instance().deleteCookie(it)
                         }
-
                     }
-
                 })
-
     }
 
     private fun errorDo(e: Throwable) {
         TLog.i("http_error>>>>>>${e.message}")
         if (e is HttpException) {
-
             val apiErrorModel: ApiErrorModel? = when (e.code()) {
                 ApiErrorType.INTERNAL_SERVER_ERROR.code ->
                     ApiErrorType.INTERNAL_SERVER_ERROR.getApiErrorModel(context)
@@ -115,8 +129,8 @@ class ApiResponse(private val context: Context,
             listener?.onError(e.code(), apiErrorModel)
             return
         }
-
-        val apiErrorType: ApiErrorType = when (e) {  //发送网络问题或其它未知问题，请根据实际情况进行修改
+        val apiErrorType: ApiErrorType = when (e) {
+            //发送网络问题或其它未知问题，请根据实际情况进行修改
             is UnknownHostException -> ApiErrorType.NETWORK_NOT_CONNECT
             is ConnectException -> ApiErrorType.NETWORK_NOT_CONNECT
             is SocketTimeoutException -> ApiErrorType.CONNECTION_TIMEOUT
@@ -133,8 +147,6 @@ class ApiResponse(private val context: Context,
         } catch (e: Exception) {
             TLog.i(e.toString())
         }
-
-
         return model
     }
 

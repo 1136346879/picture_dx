@@ -29,6 +29,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -132,4 +137,5 @@ dependencies {
     //LOG
     implementation 'com.blankj:alog:1.3.0'
     kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
+    implementation files('libs/BaiduLBS_Android.jar')
 }

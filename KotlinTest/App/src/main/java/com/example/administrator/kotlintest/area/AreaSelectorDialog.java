@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.example.administrator.kotlintest.R;
+import com.example.administrator.kotlintest.bridge.retrofit.http.RequestOption;
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity;
 import com.example.baselibrary.widgets.TLog;
 import com.example.baselibrary.widgets.UIUtils;
@@ -20,8 +21,7 @@ import com.google.gson.Gson;
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener;
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel;
-import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager;
-import com.xfs.fsyuncai.bridge.retrofit.http.RequestOption;
+import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager;
 import com.xfs.fsyuncai.entity.repository.CommonRepository;
 
 import org.jetbrains.annotations.NotNull;
@@ -211,7 +211,7 @@ public class AreaSelectorDialog extends Dialog {
                 .setOption(option)
                 .doHttpDeal(context,
                         CommonRepository.INSTANCE.getAreaByParentCode(code).compose(appCompatActivity.bindToLifecycle()),
-                        httpOnNextListener,true);
+                        httpOnNextListener);
     }
 
     private HttpOnNextListener httpOnNextListener = new HttpOnNextListener() {

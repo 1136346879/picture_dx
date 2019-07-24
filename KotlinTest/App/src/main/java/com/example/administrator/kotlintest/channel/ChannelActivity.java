@@ -38,6 +38,7 @@ public class ChannelActivity extends Activity implements OnItemClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.subscribe_activity);
+		findViewById(R.id.back).setOnClickListener(v -> finish());
 		initView();
 		initData();
 	}

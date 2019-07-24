@@ -1,4 +1,4 @@
-package com.xfs.fsyuncai.bridge.retrofit.http
+package com.example.administrator.kotlintest.bridge.retrofit.http
 
 import android.text.TextUtils
 import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
@@ -16,7 +16,7 @@ class RequestOption {
 
     var method = ""
 
-    var connectionTime = 6
+    var connectionTime = 6L
 
     var cookieNetWorkTime = 60
 

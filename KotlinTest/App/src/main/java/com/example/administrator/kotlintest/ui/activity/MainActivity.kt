@@ -1,69 +1,35 @@
 package com.example.administrator.kotlintest.ui.activity
 
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.content.Context
-import android.content.CursorLoader
-import android.content.Intent
-import android.graphics.Bitmap
-import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
-import android.os.Parcel
-import android.os.Parcelable
-import android.provider.DocumentsContract
-import android.provider.MediaStore
 import android.support.v7.widget.LinearLayoutManager
-import android.util.Log
-import android.view.View
-import android.view.View.inflate
-import android.widget.LinearLayout
+import android.text.TextUtils
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
-import com.blankj.ALog
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
 import com.example.administrator.kotlintest.area.AreaSelectorDialog
 import com.example.administrator.kotlintest.channel.ChannelActivity
-import com.example.administrator.kotlintest.channel.SQLHelper
+import com.example.administrator.kotlintest.common.ActiveResultDef
+import com.example.administrator.kotlintest.common.IntentDataDef
 import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
-import com.example.administrator.kotlintest.dbutil.MeiziDaoUtils
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
-import com.example.administrator.kotlintest.entity.daoentity.Meizi
-import com.example.administrator.kotlintest.picture.CropImageActivity
-import com.example.administrator.kotlintest.picture.UploadActivity
+import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
-import com.example.administrator.kotlintest.ui.entity.学生
+import com.example.administrator.kotlintest.util.BDLocationUtils
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
-import com.example.baselibrary.MyApplication
+import com.example.administrator.kotlintest.widget.SystemDialog
 import com.example.baselibrary.widgets.ToastUtilKt
-import com.jakewharton.rxbinding2.view.RxView
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
-import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
-import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
-import com.xfs.fsyuncai.bridge.retrofit.http.HttpManager
-import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
-import com.xfs.qrcode_module.manager.LightManager
 import com.xfs.qrcode_module.recycleview.RecycleviewActivity
-import com.yalantis.ucrop.UCrop
-import com.yalantis.ucrop.util.AttrsUtils
-import com.yalantis.ucrop.util.PictureMimeType
-import jsc.kit.keyboard.KeyBroadActivity
 //import jsc.kit.keyboard.KeyBoardView
 //import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
-import okhttp3.MediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import org.jetbrains.anko.intentFor
-import java.io.File
-import java.io.IOException
 import java.util.*
-import java.util.concurrent.TimeUnit
 
 class MainActivity() : RxAppCompatActivity() {
 
@@ -85,7 +51,6 @@ class MainActivity() : RxAppCompatActivity() {
         listData.add(PersonControlDao("进入recycleview", null))
         listData.add(PersonControlDao("个人中心", null))
         listData.add(PersonControlDao("进入数据库页面", null))
-        listData.add(PersonControlDao("频道管理页面", null))
         listData.add(PersonControlDao("点击粉碎当前view", null))
         listData.add(PersonControlDao("点击城市区域选择", null))
         listData.add(PersonControlDao("键盘", null))
@@ -109,12 +74,11 @@ class MainActivity() : RxAppCompatActivity() {
                 2 -> startActivity(this.intentFor<RecycleviewActivity>())
                 3 -> startActivity(this.intentFor<MineActivity>())
                 4 -> startActivity(this.intentFor<DbShowActivity>())
-                5 -> startActivity(this.intentFor<ChannelActivity>())
-                6 -> startActivity(this.intentFor<smashzhadan>())
-                7 -> selectCity()
-                8 -> startKeyBOard()
-                9 -> startKeyBOardFragmentToActivity()
-                10 -> startActivity(this.intentFor<PictureActionActivity>())
+                5 -> startActivity(this.intentFor<smashzhadan>())
+                6 -> selectCity()
+                7 -> startKeyBOard()
+                8 -> startKeyBOardFragmentToActivity()
+                9 -> startActivity(this.intentFor<PictureActionActivity>())
             }
         }
         //view拖拽功能
@@ -123,6 +87,9 @@ class MainActivity() : RxAppCompatActivity() {
         dragview.setOnClickListener { Toast.makeText(this@MainActivity, "Clicked me", Toast.LENGTH_SHORT).show() }
         ruan.setOnClickListener { startActivity(this!!.intentFor<RuanActivity>()) }
         ying.setOnClickListener { startActivity(this!!.intentFor<YingActivity>()) }
+        channel_mannger.setOnClickListener { startActivity(this!!.intentFor<ChannelActivity>()) }
+        location.setOnClickListener { startActivity(this!!.intentFor<CitySelectActivity>()) }
+        locationData()
     }
 
     private fun startKeyBOardFragmentToActivity() {
@@ -155,6 +122,65 @@ class MainActivity() : RxAppCompatActivity() {
         areaSelectorDialog!!.show()
     }
 
+    private fun locationA() {
+
+//        if (ActivityCompat.checkSelfPermission(activity!!, Manifest.permission.ACCESS_FINE_LOCATION)
+//                != PackageManager.PERMISSION_GRANTED
+//                && ActivityCompat.checkSelfPermission(activity!!, Manifest.permission.ACCESS_COARSE_LOCATION)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            ToastUtil.showToast("您拒绝了定位，请在设置-权限中允许")
+//            tvLocation.text = (resources.getText(R.string.location_default))
+//            return
+//        }
+
+        /**定位**/
+        BDLocationUtils.instance.startLocation(this, object : BDLocationUtils.ResultCallback {
+
+            override fun fail() {
+                location.text = (resources.getText(R.string.location_default))
+                BDLocationUtils.instance.stopLocation()
+                showSelectAddrDialog()
+            }
+
+            override fun onPermissionError() {
+                location.text = (resources.getText(R.string.location_default))
+                BDLocationUtils.instance.stopLocation()
+                showSelectAddrDialog()
+            }
+
+            override fun success(city: String) {
+                var addr = ""
+                if (city.isEmpty()) {
+                    location.text = (resources.getText(R.string.location_default))
+                    showSelectAddrDialog()
+                } else {
+                    if (city.contains("市")) {
+                        addr = city.substringBefore("市", city)
+                    }
+                    location?.text = if (addr.length > 2) addr.substring(0, 2) + "..." else addr
+                    BDLocationUtils.instance.stopLocation()
+                    hideSelectAddrDialog()
+                }
+            }
+        })
+    }
+    private var selectAddrDialog: SystemDialog? = null
+    private fun hideSelectAddrDialog() {
+        if (selectAddrDialog != null && selectAddrDialog!!.isShowing)
+            selectAddrDialog?.dismiss()
+    }
+    private fun showSelectAddrDialog() {
+        ARouter.getInstance()
+                .build(RouterApi.MainLibrary.ROUTER_MAIN_SELECT_CITY)
+                .withString(IntentDataDef.LOCATION_KEY, location.text.toString().trim())
+                .navigation(this@MainActivity, ActiveResultDef.ACTIVITY_RESULT_LOCATION)
+    }
+    /**
+     * 定位
+     */
+    private fun locationData() {
+            locationA()
+    }
 }
 
 class MainAdapter(option: ArrayList<PersonControlDao>, mineActivity: MainActivity)

@@ -140,12 +140,13 @@ public class TopNewsNormalDelegate extends BaseAdapterDelegate<NewsInfo,
 
         @Override
         public void accept(Object o) throws Exception {
-            ToastUtil.Companion.showToast(mContext,"跳转至详情页but 现跳转至RecycleView列表带吸附的标题",1);
+            ToastUtil.INSTANCE.showCustomToast("跳转至详情页but 现跳转至RecycleView列表带吸附的标题");
 
             mContext.startActivity(new Intent(mContext, StickyItemREcycleviewActivity.class));
 //            if (newsInfo != null) {
 //                ToastUtilKt.INSTANCE.showCustomToast("跳转至详情页");
-//                DetailActivity.gotoNewDetailWith(mContext, Long.toString(newsInfo.getNewsId()), "1", TOPNEWS.getId(),TOPNEWS.getName());
+//                DetailActivity.gotoNewDetailWith(mContext, Long.toString(newsInfo.getNewsId()), "1"
+// , TOPNEWS.getId(),TOPNEWS.getName());
 //            }
         }
     }

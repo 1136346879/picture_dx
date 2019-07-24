@@ -177,6 +177,8 @@ class ApiConstants private constructor() {
          * 无人仓
          */
         const val SELECT_HOST_POWER = "api/pc/nobodyhouse/selectHousePower"
+            //获取地址对应的仓
+            const val GET_WAREHORSE_BY_CITY = "baseservice/area/getAddressCorrespondWarehouse"
     }
 
 }

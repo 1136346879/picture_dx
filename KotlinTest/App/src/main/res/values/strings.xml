@@ -13,6 +13,7 @@
     <string name="empty_view_hint">暂时木有内容呀~~</string>
 
 
+    <string name="location_default">位置</string>
     <string name="drawer_btn_rss">频道管理</string>
     <string name="subscribe_my_category">我的频道</string>
     <string name="subscribe_more_category">更多频道</string>
@@ -20,4 +21,13 @@
     <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
 
     <string name="action_reset">Reset</string>
+    <!-- 定位 -->
+    <string name="title_location">区域选择</string>
+    <string name="hint_search_addr">请输入配送地址</string>
+    <string name="subtitle_current_addr">当前定位城市</string>
+    <string name="subtitle_select_addr">选择配送位置</string>
+    <string name="hint_location">正在定位中</string>
+    <string name="location_search_history">历史选择</string>
+    <string name="location_fail">定位失败</string>
+    <string name="no_search_any_result">不好意思，暂时没有找到“相关”城市～</string>
 </resources>

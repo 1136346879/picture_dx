@@ -6,7 +6,45 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".ui.activity.MainActivity">
+    <RelativeLayout
+        android:id="@+id/ll_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/space_20"
+            android:gravity="center"
+            android:text="啥都有"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:background="#000"
+            android:id="@+id/top_bar"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="频道管理"
+            android:id="@+id/channel_mannger"
+            android:layout_marginRight="@dimen/space_20"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_20"
+            android:id="@+id/location"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="定位中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
 <com.classic.common.MultipleStatusView
+    android:layout_below="@+id/ll_topbar"
     android:id="@+id/multipleStatusView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
