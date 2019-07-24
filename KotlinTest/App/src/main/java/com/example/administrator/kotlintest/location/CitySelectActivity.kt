@@ -226,6 +226,7 @@ class CitySelectActivity : BaseActivity() {
             }
 
             override fun success(city: String) {
+                ToastUtil.showCustomToast("定位成功")
                 if (city.isEmpty()) {
                     tv_city_location.text = (resources.getText(R.string.location_fail))
                     BDLocationUtils.instance.stopLocation()

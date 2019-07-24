@@ -31,12 +31,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.intentFor
 import java.util.*
 
-class MainActivity() : RxAppCompatActivity() {
+class MainActivity : RxAppCompatActivity() {
 
 
     private val listData = arrayListOf<PersonControlDao>()
-    private var areaSelectorDialog: AreaSelectorDialog? = null
-    private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
 
     @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,7 +50,6 @@ class MainActivity() : RxAppCompatActivity() {
         listData.add(PersonControlDao("个人中心", null))
         listData.add(PersonControlDao("进入数据库页面", null))
         listData.add(PersonControlDao("点击粉碎当前view", null))
-        listData.add(PersonControlDao("点击城市区域选择", null))
         listData.add(PersonControlDao("键盘", null))
         listData.add(PersonControlDao("键盘fragment", null))
         listData.add(PersonControlDao("图片操作", null))
@@ -75,10 +72,9 @@ class MainActivity() : RxAppCompatActivity() {
                 3 -> startActivity(this.intentFor<MineActivity>())
                 4 -> startActivity(this.intentFor<DbShowActivity>())
                 5 -> startActivity(this.intentFor<smashzhadan>())
-                6 -> selectCity()
-                7 -> startKeyBOard()
-                8 -> startKeyBOardFragmentToActivity()
-                9 -> startActivity(this.intentFor<PictureActionActivity>())
+                6 -> startKeyBOard()
+                7 -> startKeyBOardFragmentToActivity()
+                8 -> startActivity(this.intentFor<PictureActionActivity>())
             }
         }
         //view拖拽功能
@@ -98,28 +94,6 @@ class MainActivity() : RxAppCompatActivity() {
     private fun startKeyBOard() {
         ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_ACTIVITY_URL)
                 .navigation()
-    }
-
-    private fun selectCity() {
-        areaSelectorDialog = AreaSelectorDialog(this@MainActivity, object : AreaSelectorDialog.ResultCallBack {
-            override fun onDismiss() {
-            }
-
-            override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
-                selectedArea.clear()
-                selectedArea.addAll(dataList!!)
-                if (selectedArea.size != 0) {
-                    var area = ""
-                    selectedArea.map {
-                        area += it.name
-                    }
-                    ToastUtilKt.showCustomToast("您选择的地址是：$area")
-                } else {
-                    ToastUtilKt.showCustomToast("您选择的地址为空")
-                }
-            }
-        }, this@MainActivity)
-        areaSelectorDialog!!.show()
     }
 
     private fun locationA() {

@@ -18,6 +18,8 @@ import kotlinx.android.synthetic.main.mine_layout.*
 import org.jetbrains.anko.intentFor
 import java.util.*
 import android.telephony.TelephonyManager
+import com.example.administrator.kotlintest.area.AreaSelectorDialog
+import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
 
 
 open class MineActivity :BaseUIActivity(){
@@ -77,20 +79,14 @@ open class MineActivity :BaseUIActivity(){
         personAdapter.setOnClickItem {
             when(it){
                 0 -> ToastUtilKt.showCustomToast(""+it)
-                1 -> ToastUtilKt.showCustomToast(""+it)
+                1 -> selectCity()
                 2 -> callPhone(CALL_PHONE)
-                3 -> ToastUtilKt.showCustomToast(""+it)
+                3 ->   startActivity(this.intentFor<UserCenterActivity>())
                 4 -> ToastUtilKt.showCustomToast(""+it)
 //                4 -> getMoreId()
             }
         }
-        my_coupon?.let {
-            it.setOnClickListener {
 
-                ToastUtilKt.showCustomToast("点击我的优惠券")
-                startActivity(this!!.intentFor<UserCenterActivity>())
-            }
-        }
     }
 
     @SuppressLint("MissingPermission")
@@ -132,7 +128,34 @@ open class MineActivity :BaseUIActivity(){
 //        option[0].hint = "无可用"
 //        personAdapter.notifyDataSetChanged()
     }
+    private var areaSelectorDialog: AreaSelectorDialog? = null
+    private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
 
+
+    private fun selectCity() {
+        areaSelectorDialog = AreaSelectorDialog(this@MineActivity, object : AreaSelectorDialog.ResultCallBack {
+            override fun onDismiss() {//
+            }
+
+            override fun onDismissForResult(dataList: ArrayList<AddressAreaEntity.ListBean>?) {
+                selectedArea.clear()
+                selectedArea.addAll(dataList!!)
+                if (selectedArea.size != 0) {
+                    var area = ""
+                    selectedArea.map {
+                        area += it.name
+                    }
+                    option.removeAt(1)
+                    option.add(1,PersonControlDao("我的地址是：$area",""))
+                    personAdapter.notifyDataSetChanged()
+
+                } else {
+                    ToastUtilKt.showCustomToast("您选择的地址为空")
+                }
+            }
+        }, this@MineActivity)
+        areaSelectorDialog!!.show()
+    }
 }
 
 class PersonAdapter(option: ArrayList<PersonControlDao>, mineActivity: MineActivity)
@@ -145,5 +168,4 @@ class PersonAdapter(option: ArrayList<PersonControlDao>, mineActivity: MineActiv
             holder.setText(R.id.tvHint,it)
         }
     }
-
 }

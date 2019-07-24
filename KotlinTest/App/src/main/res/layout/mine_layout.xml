@@ -18,47 +18,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:padding="@dimen/space_20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="我的页面" />
-
-        <TextView
-            android:padding="@dimen/space_20"
-            android:id="@+id/my_coupon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="我的优惠券" />
-
-        <TextView
-            android:padding="@dimen/space_20"
-            android:id="@+id/my_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="我的地址" />
-
-        <TextView
-            android:padding="@dimen/space_20"
-            android:id="@+id/online_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="客服电话" />
-
-        <TextView
-            android:padding="@dimen/space_20"
-            android:id="@+id/clear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="清除缓存" />
-
-        <TextView
-            android:padding="@dimen/space_20"
-            android:id="@+id/setting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="设置" />
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
