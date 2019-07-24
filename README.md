@@ -16,6 +16,7 @@
 >* 13， 内存泄漏集成
 >* 14， 频道管理页面（高仿头条等新闻app）
 >* 15，点击view出现粉碎炸掉的动画及viewpage左右滑动含titilebar一块滑动
+>* 16，百度地图SDK定位集成，城市列表展示，历史记录保存至数据库，26字母快速查询，城市搜索等等功能
 
 客服  机器人  美洽第三方完美接入      魔窗（待接入） 
 
@@ -37,7 +38,8 @@ UI图不是越炫酷越好 还要考虑性能 及对app的影响
 ** 写了几个类练练手。
 			然后是分模块（1个主工程+6个依赖module）来写的，后面慢慢加了好多功能。所以提交上来了，以便记录和学习。**
 ![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/project.jpg)
-
+**百度sdk定位到城市**
+![image](https://github.com/1136346879/picture_dx/blob/master/image_flod/baidudingwei.gif)
 ## 加入recycleview列表数据，
 				包含下拉刷新，上拉加载更多，
 				网络访问是okgo，(该功能已经封装好了，零bug，本计划单另一个module，由于需要引用一个jar包所以放在了扫一扫目录下，recycleview文件夹下，拉出来就可以直接使用)
