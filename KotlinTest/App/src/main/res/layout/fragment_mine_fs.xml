@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_20">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:background="@drawable/shape_person_bg">
+
+            <LinearLayout
+                android:id="@+id/llAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@drawable/shape_circle_avatar">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_12"
+                    android:paddingLeft="@dimen/space_14"
+                    android:paddingRight="@dimen/space_14"
+                    android:paddingBottom="@dimen/space_12"
+                    android:src="@drawable/personal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_toRightOf="@id/llAvatar">
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_50"
+                    android:ellipsize="end"
+                    android:text="账号："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAccount"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_marginEnd="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/MemberShip_Grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvType"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:text="会员等级："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvType"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_toEndOf="@+id/MemberShip_Grade"
+                    android:layout_toRightOf="@+id/MemberShip_Grade"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:text="铁牌"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvIntegral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvType"
+                    android:layout_alignBaseline="@+id/tvLevel"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_toEndOf="@+id/tvLevel"
+                    android:layout_toRightOf="@+id/tvLevel"
+                    android:background="@drawable/background_white_radius_level"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/space_6"
+                    android:paddingLeft="@dimen/space_6"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="@dimen/space_6"
+                    android:paddingRight="@dimen/space_6"
+                    android:paddingBottom="1dp"
+                    android:text="积分0"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/in_white" />
+
+            <TextView
+                android:id="@+id/tvPersonUpVip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/space_14"
+                android:background="@drawable/background_white_radius"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingTop="@dimen/space_4"
+                android:paddingRight="@dimen/space_16"
+                android:paddingBottom="@dimen/space_4"
+                android:text="升级会员"
+                android:textColor="@color/color_orange"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/shadow_radius_item"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/my_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_44">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/my_order"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_24"
+                    android:text="@string/all_order"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="@dimen/text_size_12" />
+
+                <ImageView
+                    android:id="@+id/ivMineRightIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawablePadding="@dimen/space_14"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/in" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_line" />
+
+
+            <include layout="@layout/layout_personal_order" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/shadow_radius_item">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@drawable/shadow"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

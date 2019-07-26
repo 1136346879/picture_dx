@@ -12,7 +12,8 @@ class ApiConstants private constructor() {
         const val IS_DEBUG = true
 //测试环境
         const val BASE_URL = "https://t.fsyuncai.com/api/mobile/"
-//        const val BASE_URL_TEST = "https://t.fsyuncai.com/"
+            const val WEB_BASE_URL = "https://t3.fsyuncai.com/"
+            //        const val BASE_URL_TEST = "https://t.fsyuncai.com/"
 //        const val BASE_URL_WWW = "https://www.fsyuncai.com/"
         const val UPLOAD_BASE_URL = "http://192.168.0.55:9060/"//图片上传
 //        const val BASE_URL = "http://192.168.0.34:8888/"

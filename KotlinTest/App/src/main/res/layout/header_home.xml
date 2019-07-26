@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/mIvDef"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_banner_default"
+        android:contentDescription="图片描述" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/homeBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:indicator_width="6dp"
+        app:indicator_height="6dp"
+        app:image_scale_type="fit_xy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/space_6"
+        android:text="我是标题 title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_22" />
+
+</FrameLayout>

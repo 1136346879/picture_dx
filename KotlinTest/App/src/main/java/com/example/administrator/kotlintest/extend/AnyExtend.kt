@@ -2,6 +2,7 @@ package com.xfs.fsyuncai.extend
 
 import android.content.Context
 import android.content.Intent
+import com.xfs.fsyuncai.entity.accont.AccessManager
 import org.jetbrains.anko.intentFor
 
 /**
@@ -37,15 +38,15 @@ fun Any.getFieldValueByName(fieldName: String): Any? {
 
 }
 
-//fun Context.isLogin(login: () -> Unit, unLogin:()->Unit?) {
-//
-//    if (AccessManager.instance().isLogin()) {
-//        login()
-//    } else {
-//        unLogin()
+fun isLogin(login: () -> Unit, unLogin:()->Unit?) {
+
+    if (AccessManager.instance().isLogin()) {
+        login()
+    } else {
+        unLogin()
 //        this.startActivity(intentFor<LoginActivity>().addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
-//    }
-//}
+    }
+}
 //
 //fun Context.isLogin(login: () -> Unit) {
 //

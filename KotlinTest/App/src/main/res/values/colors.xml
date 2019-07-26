@@ -14,7 +14,7 @@
     <color name="transparent_80">#80000000</color>
     <color name="transparent_50">#50000000</color>
     <color name="transparent_60">#60000000</color>
-
+    <color name="promotion_red">#FF401A</color>
     <color name="tab_indicator_color">#EF5C61</color>
     <color name="btn_border_color">#DDDDDD</color>
     <color name="divider_line">#E7E7E7</color>

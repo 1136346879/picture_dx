@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/space_10"
+    android:paddingTop="@dimen/space_10"
+  >
+
+    <RelativeLayout
+        android:id="@+id/rlExamine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+         android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mTvExamine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivDaiS"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivDaiS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_4"
+            android:src="@drawable/order_audit" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivDaiS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/examine" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_orders"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+
+        <TextView
+            android:id="@+id/mTvAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivAll"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_4"
+            android:src="@drawable/order_all" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivAll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/all_order" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/will_pay_orders"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        >
+
+        <TextView
+            android:id="@+id/mTvWillPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/ivWaitPay"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivWaitPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_6"
+            android:src="@drawable/order_wait_pay" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivWaitPay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/order_wait_pay" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/will_send_orders"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTvSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivSend"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/order_wait_send" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/order_wait_send" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/will_receiver_orders"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTvReceiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivReceiver"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivReceiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_4"
+            android:src="@drawable/order_wait_receive" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivReceiver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/order_wait_receive" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/willSaleBack"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tvSaleBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-8dp"
+            android:layout_toRightOf="@+id/ivSaleBack"
+            android:background="@drawable/shape_circle_director"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_4"
+            android:paddingRight="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivSaleBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_4"
+            android:src="@drawable/return_repair_receive" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSaleBack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/order_sale_back" />
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -11,15 +11,29 @@
     <string name="no_network">请检查网络后点击重新加载</string>
     <string name="data_error">数据获取失败(ㄒoㄒ)~~</string>
     <string name="empty_view_hint">暂时木有内容呀~~</string>
-
-
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_category">全部分类</string>
+    <string name="main_tab_online_service">在线客服</string>
+    <string name="main_tab_purchasing_order">采购单</string>
+    <string name="main_tab_mine_fs">我的方盛</string>
+    <string name="webview_js_javainterface">YunYou</string>
     <string name="location_default">位置</string>
     <string name="drawer_btn_rss">频道管理</string>
     <string name="subscribe_my_category">我的频道</string>
     <string name="subscribe_more_category">更多频道</string>
     <string name="subscribe_manager_category_info">单击增删频道</string>
     <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
-
+    <string name="tip_hasShopCustomer_address">商店分销客户无法切换城市</string>
+    <!--我的方盛-->
+    <string name="my_order">我的订单</string>
+    <string name="all_order">全部订单</string>
+    <string name="examine">待审批</string>
+    <string name="order_wait_pay">待付款</string>
+    <string name="order_wait_send">待发货</string>
+    <string name="order_wait_receive">待收货</string>
+    <string name="order_sale_back">退货/维修</string>
+    <string name="personal_coupon">优惠券</string>
+    <string name="place_choices_goods">请选择结算物品后，再结算</string>
     <string name="action_reset">Reset</string>
     <!-- 定位 -->
     <string name="title_location">区域选择</string>

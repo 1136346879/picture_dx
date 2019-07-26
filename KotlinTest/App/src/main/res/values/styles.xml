@@ -175,4 +175,61 @@
         <item name="colorSwitchThumbNormal">#00000000</item>
         <item name="android:colorForeground">#00000000</item>
     </style>
+
+
+    <style name="HomeTab" />
+    <style name="HomeTab.Badge" parent="@style/HomeTab">
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-4.0dip</item>
+        <item name="android:layout_marginRight">-4.0dip</item>
+        <item name="android:src">@drawable/bg_badge_new_message</item>
+    </style>
+
+    <style name="HomeTab.Icon" parent="@style/HomeTab">
+        <item name="android:layout_width">@dimen/space_20</item>
+        <item name="android:layout_height">@dimen/space_20</item>
+    </style>
+
+    <style name="HomeTab.Layout" parent="@style/HomeTab">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="HomeTab.Text" parent="@style/HomeTab">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_maintab</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+
+
+    <style name="ActionSheetDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
 </resources>

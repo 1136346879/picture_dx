@@ -22,78 +22,50 @@ import com.example.administrator.kotlintest.area.AreaSelectorDialog
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
 
 
-open class MineActivity :BaseUIActivity(){
+open class MineActivity : BaseUIActivity() {
 
-   private val option = arrayListOf<PersonControlDao>()
-    private lateinit var personAdapter : PersonAdapter
+    private val option = arrayListOf<PersonControlDao>()
+    private lateinit var personAdapter: PersonAdapter
     private val CALL_PHONE = "13361665161"
     /**
      * 多种状态的 View 的切换
      */
     protected var mLayoutStatusView: MultipleStatusView? = null
-    override fun initLayout(): Int {
 
-        return R.layout.mine_layout
-
-    }
+    override fun initLayout(): Int { return R.layout.mine_layout }
 
     override fun initView() {
-
         mLayoutStatusView = multipleStatusView
         mLayoutStatusView?.showLoading()
-
-        option.add(PersonControlDao("我的优惠券",null))
-        option.add(PersonControlDao("我的地址",""))
-        option.add(PersonControlDao("客服电话",CALL_PHONE))
-        option.add(PersonControlDao("清除缓存",""))
-        option.add(PersonControlDao("设置",""))
-
-
-
-//        android.os.Handler().postDelayed(Runnable {
-//
-//            val rand = Random()
-//            val type =1+ rand.nextInt(3)
-////           var type =  (1+Math.random()*(3-1+1))as Int
-//                //展示内容
-//            when (type) {
-//                1 -> mLayoutStatusView?.showContent()
-//                2 -> //展示空内容
-//                    mLayoutStatusView?.showEmpty()
-//                3 -> //展示错误页面
-//                    mLayoutStatusView?.showError()
-//            }
-//
-//            ToastUtilKt.showToast(""+type)
-//
-//        },1000)
-
-         mLayoutStatusView?.showContent()
+        option.add(PersonControlDao(1, "我的优惠券", null))
+        option.add(PersonControlDao(2, "我的地址", ""))
+        option.add(PersonControlDao(3, "客服电话", CALL_PHONE))
+        option.add(PersonControlDao(4, "清除缓存", ""))
+        option.add(PersonControlDao(5, "设置", ""))
+        mLayoutStatusView?.showContent()
         mLayoutStatusView?.setOnClickListener { ToastUtilKt.showToast("点击重新加载") }
-      personAdapter = PersonAdapter(option,this)
-
+        personAdapter = PersonAdapter(option, this)
         rvPerson.let {
             it.adapter = personAdapter
             it.layoutManager = LinearLayoutManager(this)
         }
         personAdapter.setOnClickItem {
-            when(it){
-                0 -> ToastUtilKt.showCustomToast(""+it)
+            when (it) {
+                0 -> ToastUtilKt.showCustomToast("" + it)
                 1 -> selectCity()
                 2 -> callPhone(CALL_PHONE)
-                3 ->   startActivity(this.intentFor<UserCenterActivity>())
-                4 -> ToastUtilKt.showCustomToast(""+it)
+                3 -> startActivity(this.intentFor<UserCenterActivity>())
+                4 -> ToastUtilKt.showCustomToast("" + it)
 //                4 -> getMoreId()
             }
         }
-
     }
 
     @SuppressLint("MissingPermission")
-    private fun getMoreId(){
-     val rxPermissions  =  RxPermissions(this)
+    private fun getMoreId() {
+        val rxPermissions = RxPermissions(this)
         rxPermissions.request(Manifest.permission.READ_PHONE_STATE).subscribe {
-            if(it){
+            if (it) {
                 val tm = this.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
                 val deviceid = tm!!.deviceId   //取 IMEI或者MEID
                 val tel = tm!!.line1Number     //取出用户手机号码,手机没有安装SIM卡，值为null
@@ -103,31 +75,26 @@ open class MineActivity :BaseUIActivity(){
         }
     }
 
-    private fun callPhone(phone:String) {
+    private fun callPhone(phone: String) {
         if (CALL_PHONE.isEmpty()) {
             return
         }
         val rxpermission = RxPermissions(this)
         rxpermission.request(Manifest.permission.CALL_PHONE)
                 .subscribe {
-                    if(it){
+                    if (it) {
                         val intent = Intent(Intent.ACTION_DIAL)
-                        val data = Uri.parse("tel:${phone.replace("-","")}")
+                        val data = Uri.parse("tel:${phone.replace("-", "")}")
                         intent.data = data
                         startActivity(intent)
 
                     }
                 }
-
-
-
     }
 
     override fun initData() {
-
-//        option[0].hint = "无可用"
-//        personAdapter.notifyDataSetChanged()
     }
+
     private var areaSelectorDialog: AreaSelectorDialog? = null
     private val selectedArea = ArrayList<AddressAreaEntity.ListBean>()//已选的区域
 
@@ -146,7 +113,7 @@ open class MineActivity :BaseUIActivity(){
                         area += it.name
                     }
                     option.removeAt(1)
-                    option.add(1,PersonControlDao("我的地址是：$area",""))
+                    option.add(1, PersonControlDao(1, "我的地址是：$area", ""))
                     personAdapter.notifyDataSetChanged()
 
                 } else {
@@ -159,13 +126,13 @@ open class MineActivity :BaseUIActivity(){
 }
 
 class PersonAdapter(option: ArrayList<PersonControlDao>, mineActivity: MineActivity)
-    :BaseRvAdapter<PersonControlDao>(option,R.layout.item_person_control,mineActivity){
+    : BaseRvAdapter<PersonControlDao>(option, R.layout.item_person_control, mineActivity) {
     override fun onBindView(holder: Companion.BaseRvHolder, data: PersonControlDao) {
         data.text.let {
             holder.setText(R.id.tvText, it)
         }
         data.hint?.let {
-            holder.setText(R.id.tvHint,it)
+            holder.setText(R.id.tvHint, it)
         }
     }
 }

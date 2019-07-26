@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_home_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="测试"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_guide"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1" />
+    <com.example.administrator.kotlintest.widget.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/common"
+        app:tabBackground="@color/transparent" />
+
+</LinearLayout>

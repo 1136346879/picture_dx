@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
+import com.example.administrator.kotlintest.HomeActiivty
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
@@ -44,16 +45,17 @@ class MainActivity : RxAppCompatActivity() {
         //log 初始化
         LogConfig.initLog(application)
         multipleStatusView?.showLoading()
-        listData.add(PersonControlDao("跳转至下一activity", null))
-        listData.add(PersonControlDao("日历", null))
-        listData.add(PersonControlDao("进入recycleview", null))
-        listData.add(PersonControlDao("个人中心", null))
-        listData.add(PersonControlDao("进入数据库页面", null))
-        listData.add(PersonControlDao("点击粉碎当前view", null))
-        listData.add(PersonControlDao("键盘", null))
-        listData.add(PersonControlDao("键盘fragment", null))
-        listData.add(PersonControlDao("图片操作", null))
-        listData.add(PersonControlDao("等", null))
+        listData.add(PersonControlDao(0,"跳转至下一activity", null))
+        listData.add(PersonControlDao(1,"日历", null))
+        listData.add(PersonControlDao(2,
+                "进入recycleview", null))
+        listData.add(PersonControlDao(3,"个人中心", null))
+        listData.add(PersonControlDao(4,"进入数据库页面", null))
+        listData.add(PersonControlDao(5,"点击粉碎当前view", null))
+        listData.add(PersonControlDao(6,"键盘", null))
+        listData.add(PersonControlDao(7,"键盘fragment", null))
+        listData.add(PersonControlDao(8,"图片操作", null))
+        listData.add(PersonControlDao(9,"进入首页--可切换", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -75,6 +77,7 @@ class MainActivity : RxAppCompatActivity() {
                 6 -> startKeyBOard()
                 7 -> startKeyBOardFragmentToActivity()
                 8 -> startActivity(this.intentFor<PictureActionActivity>())
+                9 -> startActivity(this.intentFor<HomeActiivty>())
             }
         }
         //view拖拽功能

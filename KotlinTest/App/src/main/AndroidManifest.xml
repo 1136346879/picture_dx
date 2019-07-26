@@ -66,6 +66,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--tab可切换的布局  fragment-->
+        <activity android:name=".HomeActiivty"/>
+
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
         <!--扫一扫-->

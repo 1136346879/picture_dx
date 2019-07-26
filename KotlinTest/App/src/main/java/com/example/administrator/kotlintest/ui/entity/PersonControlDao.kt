@@ -4,6 +4,7 @@ package com.example.administrator.kotlintest.ui.entity
  * Created by kangf on 2018/7/27.
  */
 data class PersonControlDao(
+        var id: Int,
         var text: String,
         var hint: String?,
         var icon: String? = null,
