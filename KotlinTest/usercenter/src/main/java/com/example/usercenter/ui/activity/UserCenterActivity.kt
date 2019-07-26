@@ -15,11 +15,9 @@ class UserCenterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_usercenter)
         user_center.setOnClickListener {
-            ToastUtilKt.showToast("用户中西")
 //            val intent = Intent()
 //            intent.setClass(this@UserCenterActivity,AcacheActivity::class.java)
 //            startActivity(intent)
-
             startActivity(this.intentFor<AcacheActivity>())
         }
     }

@@ -1,0 +1,9 @@
+
+bsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(ØÏÍÙ
+osquid:S2293="YReplace the type specification in this constructor call with the diamond operator ("<>").(ÈÈ¸'
+Hsquid:S1068",Remove this unused "scopeSet" private field.(ˆ£ş£úÿÿÿÿ
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•™Ë«ÿÿÿÿÿ
+lsquid:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(İ¢êÍıÿÿÿÿ
+hsquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(¬áïÄüÿÿÿÿ
+Hsquid:S1135q"2Complete the task associated to this TODO comment.(¾™Œl
+gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(„ êøÿÿÿÿ

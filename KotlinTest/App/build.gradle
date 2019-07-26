@@ -84,6 +84,7 @@ dependencies {
     implementation project(':usercenter')
     implementation project(':keboardLibrary')
     implementation project(':newbaselibrary')
+    implementation project(':imagepicker')
 
     //    api project(':qrcode-module')
     implementation project(':qrcode-module')
@@ -117,7 +118,7 @@ dependencies {
 
     //权限管理
     implementation "com.github.tbruyelle:rxpermissions:$rxPermission"
-    implementation 'com.lzy.widget:imagepicker:0.5.4'
+//    implementation 'com.lzy.widget:imagepicker:0.6.1'   依赖中有问题 然后去拽的源码
 
     //内存泄漏检测
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.1'

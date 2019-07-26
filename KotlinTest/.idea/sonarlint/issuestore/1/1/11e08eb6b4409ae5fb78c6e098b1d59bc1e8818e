@@ -1,0 +1,4 @@
+
+Psquid:S10680"4Remove this unused "MAX_FRAME_HEIGHT" private field.(ì—Âƒøÿÿÿÿ
+hsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(“ÿâþÿÿÿÿ
+bsquid:HiddenFieldCheck‡"?Rename "framingRect" which hides the field declared at line 54.(¦†Á

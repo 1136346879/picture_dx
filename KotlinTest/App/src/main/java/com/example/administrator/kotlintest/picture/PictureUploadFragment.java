@@ -71,7 +71,6 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
                     uploadImage(selImageList);
                 }else{
                     Toast.makeText(getActivity(),"请选择照片",Toast.LENGTH_LONG).show();
-                    return;
                 }
             }
         }
@@ -175,7 +174,7 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
                 break;
         }
     }
-
+    ArrayList<ImageItem> images = null;
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -183,7 +182,7 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
         if (resultCode == ImagePicker.RESULT_CODE_ITEMS) {
             //添加图片返回
             if (data != null && requestCode == REQUEST_CODE_SELECT) {
-                ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
+                images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_RESULT_ITEMS);
                 if (images != null) {
                     selImageList.addAll(images);
                     adapter.setImages(selImageList);
@@ -192,7 +191,7 @@ public class PictureUploadFragment extends BaseAppFragment implements ImagePicke
         } else if (resultCode == ImagePicker.RESULT_CODE_BACK) {
             //预览图片返回
             if (data != null && requestCode == REQUEST_CODE_PREVIEW) {
-                ArrayList<ImageItem> images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_IMAGE_ITEMS);
+                 images = (ArrayList<ImageItem>) data.getSerializableExtra(ImagePicker.EXTRA_IMAGE_ITEMS);
                 if (images != null) {
                     selImageList.clear();
                     selImageList.addAll(images);

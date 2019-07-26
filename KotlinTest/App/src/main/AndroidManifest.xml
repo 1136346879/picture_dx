@@ -105,6 +105,7 @@
 
 
         <activity android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"/>
+        <activity android:name="com.lzy.imagepicker.ui.ImageCropActivity"/>
         <!--频道选择-->
         <activity android:name=".channel.ChannelActivity"/>
         <!--粉碎VIew-->

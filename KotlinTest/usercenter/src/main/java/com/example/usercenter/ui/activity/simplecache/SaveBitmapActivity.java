@@ -53,7 +53,7 @@ public class SaveBitmapActivity extends Activity {
 	public void save(View v) {
 		Resources res = getResources();
 		Bitmap bitmap = BitmapFactory.decodeResource(res, R.drawable.img_test);
-		mCache.put("testBitmap", bitmap);
+		mCache.put("testBitmap", bitmap,7*24*60*60);
 	}
 
 	/**
