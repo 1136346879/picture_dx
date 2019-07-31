@@ -85,7 +85,9 @@ dependencies {
     implementation project(':keboardLibrary')
     implementation project(':newbaselibrary')
     implementation project(':imagepicker')
-
+//    implementation('HangQing-debug.aar')
+//    implementation('quotationapi-debug.aar')
+//    implementation( 'hexunproject-debug.aar')
     //    api project(':qrcode-module')
     implementation project(':qrcode-module')
     implementation project(':multiple-status-view')
@@ -133,9 +135,9 @@ dependencies {
 
     //数据库
     implementation 'org.greenrobot:greendao:3.2.2'
-
+    implementation 'com.f2prateek.rx.preferences2:rx-preferences:2.0.0-RC3'
     // add library
-
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.0@aar'
     //LOG
     implementation 'com.blankj:alog:1.3.0'
     kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"

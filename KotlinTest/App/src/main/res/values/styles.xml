@@ -76,8 +76,33 @@
     </style>
 
 
+    <!--圆形图片-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="fill_color" format="color" />
+    </declare-styleable>
 
 
+    <!--条目item-->
+    <declare-styleable name="MineItemView">
+        <attr name="imgsrc" format="reference" />
+        <attr name="imgsrcWidth" format="dimension"/>
+        <attr name="imgsrcLeftMargin" format="dimension"/>
+        <attr name="imgright" format="reference" />
+        <attr name="imgrightRightMargin" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textTitleSize" format="dimension" />
+        <attr name="textTitleColor" format="color" />
+        <attr name="textLeftMargin" format="dimension" />
+        <attr name="underline" format="boolean" />
+        <attr name="underlinePaddingLeft" format="dimension" />
+        <attr name="showIcon" format="boolean" />
+        <attr name="checkboxSelected" format="reference" />
+        <attr name="textExplain" format="string" />
+        <attr name="textExplainIsShow" format="boolean" />
+    </declare-styleable>
 
     <style name="title_bar_style">
         <item name="android:background">@drawable/bg_titlebar</item>

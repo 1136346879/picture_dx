@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--搜索，扫一扫，我的-->
+        <include layout="@layout/search_scan_me"/>
+
+        <RelativeLayout
+            android:id="@+id/totalbarheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/title_search"
+                android:layout_width="33dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@color/color_ffffff"
+                android:paddingBottom="1.5px"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_into_channel" />
+
+            <com.example.administrator.kotlintest.widget.SlidingTabLayout
+                android:id="@+id/tl_new_type"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_toLeftOf="@id/title_search"
+                android:layout_toStartOf="@id/title_search"
+                android:background="@color/title_background_color"
+                android:overScrollMode="never"
+                android:paddingLeft="3dp"
+                android:paddingStart="3dp"
+                app:tl_indicator_color="@color/indicator_color"
+                app:tl_indicator_corner_radius="2dp"
+                app:tl_indicator_height="2dp"
+                app:tl_indicator_margin_bottom="7dp"
+                app:tl_indicator_width="15dp"
+                app:tl_tab_width="55dp"
+                app:tl_textSelectColor="@color/color_333333"
+                app:tl_textUnselectColor="@color/color_666666"
+                app:tl_textsize="16dp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="45dp"
+                android:layout_toLeftOf="@id/title_search"
+                android:layout_toStartOf="@id/title_search"
+                android:background="@drawable/transparent_gradient" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_dddddd"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_new_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:overScrollMode="never"
+            tools:ignore="ObsoleteLayoutParam" />
+    </LinearLayout>
+
+</RelativeLayout>
+

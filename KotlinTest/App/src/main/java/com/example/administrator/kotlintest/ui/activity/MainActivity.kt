@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
+import com.example.administrator.kotlintest.FirstActivity
 import com.example.administrator.kotlintest.HomeActiivty
 import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
@@ -21,6 +22,7 @@ import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
+import com.example.administrator.kotlintest.videorecorde.CameraActivity
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.administrator.kotlintest.widget.SystemDialog
 import com.example.baselibrary.widgets.ToastUtilKt
@@ -55,7 +57,9 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(6,"键盘", null))
         listData.add(PersonControlDao(7,"键盘fragment", null))
         listData.add(PersonControlDao(8,"图片操作", null))
-        listData.add(PersonControlDao(9,"进入首页--可切换", null))
+        listData.add(PersonControlDao(9,"进入首页1--可切换", null))
+        listData.add(PersonControlDao(10,"进入首页2--可切换", null))
+        listData.add(PersonControlDao(11,"视频录制", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -78,6 +82,9 @@ class MainActivity : RxAppCompatActivity() {
                 7 -> startKeyBOardFragmentToActivity()
                 8 -> startActivity(this.intentFor<PictureActionActivity>())
                 9 -> startActivity(this.intentFor<HomeActiivty>())
+                10 -> startActivity(this.intentFor<FirstActivity>())
+                11 -> startActivity(this.intentFor<CameraActivity>()
+                        .putExtra(CameraActivity.TYPE_TAG, CameraActivity.TYPE_RECORD))
             }
         }
         //view拖拽功能

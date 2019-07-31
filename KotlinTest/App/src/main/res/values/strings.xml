@@ -44,4 +44,12 @@
     <string name="location_search_history">历史选择</string>
     <string name="location_fail">定位失败</string>
     <string name="no_search_any_result">不好意思，暂时没有找到“相关”城市～</string>
+
+    <string name="tab_me">我的</string>
+    <string name="tab_news">新闻</string>
+    <string name="tab_hangqing">行情</string>
+    <string name="tab_stock_selected">自选</string>
+    <string name="tab_stock_god">股神</string>
+    <string name="tab_me_login">登录 | 注册</string>
+    <string name="item_setting">设置</string>
 </resources>

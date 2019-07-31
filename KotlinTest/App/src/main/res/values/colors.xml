@@ -15,6 +15,7 @@
     <color name="transparent_50">#50000000</color>
     <color name="transparent_60">#60000000</color>
     <color name="promotion_red">#FF401A</color>
+    <color name="color_ee504f">#ee504f</color>
     <color name="tab_indicator_color">#EF5C61</color>
     <color name="btn_border_color">#DDDDDD</color>
     <color name="divider_line">#E7E7E7</color>
@@ -94,4 +95,32 @@
     <color name="subscribe_activity_bg">#ffefefef</color>
     <color name="subscribe_bg">#fff5f5f5</color>
     <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <!--我的界面-->
+    <color name="me_parting_line_color">#fff5f5f5</color>
+    <color name="me_title_text_color">#ff333333</color>
+    <color name="me_title_background_color">#ffffffff</color>
+    <color name="me_color_ffffff">#ffffff</color>
+    <color name="me_color_80ffffff">#80ffffff</color>
+    <color name="me_color_e8e8e8">#e8e8e8</color>
+    <color name="me_color_f5f5f5">#f5f5f5</color>
+    <color name="me_color_444444">#444444</color>
+    <color name="me_color_dddddd">#dddddd</color>
+    <color name="me_color_ee5050">#ee5050</color>
+    <color name="me_color_999999">#999999</color>
+    <color name="me_color_333333">#333333</color>
+    <color name="me_color_222222">#222222</color>
+    <color name="me_color_80000000">#80000000</color>
+    <color name="me_color_f6f5f4">#f6f5f4</color>
+    <color name="me_color_eeeeee">#eeeeee</color>
+    <color name="me_color_416699">#416699</color>
+    <color name="me_actionbarBottomLineColor">#cfcfcf</color>
+    <color name="me_color_f4f5f6">#f4f5f6</color>
+    <color name="me_textColorPrimary">#dd000000</color>
+    <color name="me_color_cacaca">#cacaca</color>
+    <color name="me_color_cccccc">#cccccc</color>
+    <color name="me_color_f0f0f0">#f0f0f0</color>
+    <color name="me_color_d8d8d8">#d8d8d8</color>
+    <color name="me_color_f4f4f4">#f4f4f4</color>
+    <color name="me_color_f8f8f8">#f8f8f8</color>
+
 </resources>

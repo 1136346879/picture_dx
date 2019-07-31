@@ -69,6 +69,8 @@
 
 <!--tab可切换的布局  fragment-->
         <activity android:name=".HomeActiivty"/>
+        <activity android:name=".FirstActivity"/>
+        <activity android:name=".videorecorde.CameraActivity"/>
 
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>

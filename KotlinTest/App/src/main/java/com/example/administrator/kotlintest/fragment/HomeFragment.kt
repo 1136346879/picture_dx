@@ -3,7 +3,9 @@ package com.example.administrator.kotlintest.fragment
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.widget.SystemDialog
 import com.xfs.fsyuncai.entity.CategoryTopEntity
@@ -59,11 +61,6 @@ class HomeFragment : BaseTabFragment(), View.OnClickListener {
 
     override fun onStop() {
         super.onStop()
-    }
-
-    @SuppressLint("CheckResult")
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
     }
 
     override fun init() {

@@ -61,7 +61,7 @@ class HomeActiivty : BaseActivity(){
         tabAdapter = TabAdapter(supportFragmentManager, fragments)
         viewPager.adapter = tabAdapter
         viewPager.isScrollable = false
-        viewPager.offscreenPageLimit = 4
+        viewPager.offscreenPageLimit = 5
         viewPager.currentItem = mSelectedTab
         tab_layout?.getTabAt(mSelectedTab)?.select()
         RxBus.get().toFlowable(String::class.java)
@@ -152,6 +152,7 @@ class HomeActiivty : BaseActivity(){
             override fun onPageSelected(position: Int) {
                 if (position != tab_layout.selectedTabPosition) {
                     tab_layout.getTabAt(position)!!.select()
+
                 }
             }
 

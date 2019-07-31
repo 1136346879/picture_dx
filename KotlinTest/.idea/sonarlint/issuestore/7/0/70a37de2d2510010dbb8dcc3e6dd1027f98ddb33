@@ -1,0 +1,28 @@
+
+Usquid:S2696”"6Make the enclosing method "static" or remove this set.(Υ†ώÿ8άεά½Γ-
+Ssquid:S1068Α"4Remove this unused "onlyChannelLogin" private field.(σ¦κ΄8ÿΧπ½Γ-
+xsquid:S1450\"[Remove the "shareContent" field and declare it as a local variable in the relevant methods.(ΪάΝ~8άεά½Γ-
+:squid:S3626Τ"Remove this redundant jump.(ϋΑέ…8ΑΓρ½Γ-
+osquid:CommentedOutCodeLineη"<This block of commented-out lines of code should be removed.(ιΨ»Ϊϋÿÿÿÿ8΄σι½Γ-
+osquid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.( ϋΡ›ÿÿÿÿÿ8Χν½Γ-
+Isquid:S1068\",Remove this unused "shareUrl" private field.(ΪάΝ~8άεά½Γ-
+jsquid:CommentedOutCodeLineε"<This block of commented-out lines of code should be removed.(”•Μ8΄σι½Γ-
+zsquid:S1450Ώ"VRemove the "webView" field and declare it as a local variable in the relevant methods.(„Β Ώώÿÿÿÿ8ÿΧπ½Γ-
+:squid:S3626ν"Remove this redundant jump.(ϋΑέ…8Ώ¨ρ½Γ-
+Ksquid:S1068\".Remove this unused "shareTitle" private field.(ΪάΝ~8άεά½Γ-
+Msquid:S3398Θ")Move this method into "JavaScriptObject".(ιΏΓΛϋÿÿÿÿ8Ώ¨ρ½Γ-
+Psquid:S1068K"-Remove this unused "showClose" private field.(”Β²ϋÿÿÿÿ8άεά½Γ-
+Msquid:S1068\"0Remove this unused "shareContent" private field.(ΪάΝ~8άεά½Γ-
+Psquid:S1068³",Remove this unused "activity" private field.(Ω—εÿÿÿÿÿ8άεά½Γ-
+Csquid:S1659\"&Declare "shareUrl" on a separate line.(ΪάΝ~8άεά½Γ-
+isquid:CommentedOutCodeLineά"<This block of commented-out lines of code should be removed.(·΄ϋ}8΄σι½Γ-
+Gsquid:S1659\"*Declare "shareContent" on a separate line.(ΪάΝ~8άεά½Γ-
+wsquid:S3008+"TRename this field "JS_Object" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‡΅γόÿÿÿÿ8άεά½Γ-
+osquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(ίϊύÿÿÿÿ8“η½Γ-
+tsquid:S1450\"WRemove the "shareUrl" field and declare it as a local variable in the relevant methods.(ΪάΝ~8άεά½Γ-
+jsquid:CommentedOutCodeLineή"<This block of commented-out lines of code should be removed.(α«ρ8΄σι½Γ-
+Osquid:S1068Ώ"+Remove this unused "webView" private field.(„Β Ώώÿÿÿÿ8ÿΧπ½Γ-
+bsquid:S2583"CChange this condition so that it does not always evaluate to "true"(Υ®‚8ό‡ν½Γ-
+}squid:S1450X"ZRemove the "loadingView" field and declare it as a local variable in the relevant methods.(ξ£Ϊώÿÿÿÿ8άεά½Γ-
+vsquid:S1450\"YRemove the "shareTitle" field and declare it as a local variable in the relevant methods.(ΪάΝ~8άεά½Γ-
+Jsquid:S1172Γ"&Remove these unused method parameters.(µΫΞ°όÿÿÿÿ8¤ϊσ½Γ-

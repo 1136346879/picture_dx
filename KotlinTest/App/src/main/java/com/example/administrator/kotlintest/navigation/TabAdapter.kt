@@ -1,8 +1,12 @@
 package com.example.administrator.kotlintest.navigation
 
+import android.os.Parcelable
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import android.support.v4.app.FragmentStatePagerAdapter
+import android.view.View
+import android.view.ViewGroup
 import java.util.ArrayList
 
 /**
@@ -18,7 +22,10 @@ class TabAdapter(fm: FragmentManager, private val fragments: ArrayList<Fragment>
         return fragments.size
     }
 
-//    override fun getPageTitle(position: Int): CharSequence? {
-//        return Constants.tabs.get(position)
-//    }
+    override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
+    }
+
+    override fun restoreState(state: Parcelable?, loader: ClassLoader?) {
+
+    }
 }

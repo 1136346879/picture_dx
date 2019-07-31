@@ -1,0 +1,8 @@
+
+Usquid:S2168V"9Remove this dangerous instance of double-checked locking.(Û‚Äøÿÿÿÿ
+hsquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(İ¾¶üÿÿÿÿ
+ˆsquid:S1319Ö"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(·²—á
+squid:S1319å"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(”óâ—ùÿÿÿÿ
+–squid:S1319Ğ"yThe type of the "selectedImages" object should be an interface such as "List" rather than the implementation "ArrayList".(éÙ†Ñüÿÿÿÿ
+„"squid:ClassVariableVisibilityCheckH"VMake cropBitmap a static final constant or non-public and provide accessors if needed.(ÉÑİİ
+Tsquid:S2589†"7Remove this expression which always evaluates to "true"(ê¼²øÿÿÿÿ

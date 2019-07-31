@@ -34,6 +34,12 @@ abstract class BaseFragment : RxFragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+        if(mView!=null){
+            val paraent = mView!!.parent as ViewGroup
+            paraent.removeView(mView)
+            return  mView
+        }
         mView = inflater.inflate(layoutResId(), container, false)
         return mView
     }

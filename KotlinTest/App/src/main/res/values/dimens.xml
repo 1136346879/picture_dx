@@ -32,7 +32,278 @@
     <dimen name="space_6">6.0dip</dimen>
     <dimen name="space_4">4.0dip</dimen>
     <dimen name="space_2">2.0dip</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="px1_to_dp">0.5dp</dimen>
+    <dimen name="px4_to_dp">2dp</dimen>
+    <dimen name="px6_to_dp">3dp</dimen>
+    <dimen name="px10_to_dp">5dp</dimen>
+    <dimen name="px12_to_dp">6dp</dimen>
+    <dimen name="px16_to_dp">8dp</dimen>
+    <dimen name="px18_to_dp">9dp</dimen>
+    <dimen name="px20_to_dp">10dp</dimen>
+    <dimen name="px22_to_dp">11dp</dimen>
+    <dimen name="px24_to_dp">12dp</dimen>
+    <dimen name="px28_to_dp">14dp</dimen>
+    <dimen name="px30_to_dp">15dp</dimen>
+    <dimen name="px32_to_dp">16dp</dimen>
+    <dimen name="px34_to_dp">17dp</dimen>
+    <dimen name="px36_to_dp">18dp</dimen>
+    <dimen name="px38_to_dp">19dp</dimen>
+    <dimen name="px40_to_dp">20dp</dimen>
+    <dimen name="px44_to_dp">22dp</dimen>
+    <dimen name="px48_to_dp">24dp</dimen>
+    <dimen name="px50_to_dp">25dp</dimen>
+    <dimen name="px52_to_dp">26dp</dimen>
+    <dimen name="px56_to_dp">28dp</dimen>
+    <dimen name="px60_to_dp">30dp</dimen>
+    <dimen name="px68_to_dp">34dp</dimen>
+    <dimen name="px70_to_dp">35dp</dimen>
+    <dimen name="px72_to_dp">36dp</dimen>
+    <dimen name="px74_to_dp">37dp</dimen>
+    <dimen name="px80_to_dp">40dp</dimen>
+    <dimen name="px82_to_dp">41dp</dimen>
+    <dimen name="px86_to_dp">43dp</dimen>
+    <dimen name="px88_to_dp">44dp</dimen>
+    <dimen name="px90_to_dp">45dp</dimen>
+    <dimen name="px96_to_dp">48dp</dimen>
+    <dimen name="px100_to_dp">50dp</dimen>
+    <dimen name="px104_to_dp">52dp</dimen>
+    <dimen name="px110_to_dp">55dp</dimen>
+    <dimen name="px120_to_dp">60dp</dimen>
+    <dimen name="px126_to_dp">63dp</dimen>
+    <dimen name="px128_to_dp">64dp</dimen>
+    <dimen name="px130_to_dp">65dp</dimen>
+    <dimen name="px140_to_dp">70dp</dimen>
+    <dimen name="px144_to_dp">72dp</dimen>
+    <dimen name="px148_to_dp">74dp</dimen>
+    <dimen name="px150_to_dp">75dp</dimen>
+    <dimen name="px160_to_dp">80dp</dimen>
+    <dimen name="px180_to_dp">90dp</dimen>
+    <dimen name="px200_to_dp">100dp</dimen>
+    <dimen name="px220_to_dp">110dp</dimen>
+    <dimen name="px280_to_dp">140dp</dimen>
+    <dimen name="px340_to_dp">170dp</dimen>
+    <dimen name="px370_to_dp">185dp</dimen>
+    <dimen name="px380_to_dp">190dp</dimen>
+    <dimen name="px400_to_dp">200dp</dimen>
+    <dimen name="px420_to_dp">210dp</dimen>
+    <dimen name="px540_to_dp">270dp</dimen>
 
+    <dimen name="tab_text_size">11dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_text_top_padding">2dp</dimen>
+
+
+    <dimen name="banner_height">110dip</dimen>
+    <dimen name="margin_12">12.0dip</dimen>
+    <dimen name="vi_margin">15.0dip</dimen>
+    <dimen name="margin_7">7dip</dimen>
+    <dimen name="margin_8">8dip</dimen>
+    <dimen name="margin_15">15dip</dimen>
+    <dimen name="margin_20">20dip</dimen>
+    <dimen name="margin_10">10dip</dimen>
+
+    <dimen name="videolive_tab_play_drag_line_radius">1dip</dimen>
+    <dimen name="videolive_tab_play_line_radius">4dip</dimen>
+    <dimen name="videolive_tab_play_radius">13dip</dimen>
+
+    <dimen name="teacher_tab_height">80dip</dimen>
+    <dimen name="teacher_tab_circle_height">45dip</dimen>
+    <dimen name="teacher_tab_incircle_height">40dip</dimen>
+    <dimen name="teacher_tab_ring_height">5dip</dimen>
+    <dimen name="teacher_tab_img_padding">12dp</dimen>
+    <dimen name="teacher_tab_text_size">13dp</dimen>
+    <dimen name="teacher_portrait_big_size">48dp</dimen>
+
+    <dimen name="teacher_portrait_size">@dimen/px80_to_dp</dimen>
+    <dimen name="teacher_name_size">@dimen/px30_to_dp</dimen>
+    <dimen name="teacher_name_big_size">@dimen/px32_to_dp</dimen>
+    <dimen name="teacher_time_size">@dimen/px24_to_dp</dimen>
+
+    <!--MineItem&MeFragment-->
+    <dimen name="new_message_icon_size">8dip</dimen>
+    <dimen name="mine_item_margin_left">14dp</dimen>
+    <dimen name="mine_item_margin_right">15dp</dimen>
+    <dimen name="mine_item_img_size">22dp</dimen>
+    <dimen name="mine_item_arrow_height">16dp</dimen>
+    <dimen name="mine_item_height">50dp</dimen>
+    <dimen name="mine_item_underline_height">0.5dp</dimen>
+    <dimen name="header_layout_height">150dp</dimen>
+    <dimen name="header_size">80dp</dimen>
+    <dimen name="header_border">5dp</dimen>
+    <dimen name="header_margin_top">25dp</dimen>
+    <dimen name="header_text_margin_bottom">15dp</dimen>
+    <dimen name="unlogin_layout_width">260dp</dimen>
+    <dimen name="unlogin_layout_margin">150dp</dimen>
+
+
+    <!--MessageCenter-->
+    <dimen name="indicator_underline_width">100dp</dimen>
+    <dimen name="indicator_underline_height">2dp</dimen>
+    <dimen name="message_user_potrait">26dp</dimen>
+
+    <!--OrderList-->
+    <dimen name="order_list_item_height">100dp</dimen>
+
+    <!--DiscoverFragment-->
+    <dimen name="discover_item_textsize">16dp</dimen>
+    <!--DiscoverFragment-->
+    <dimen name="discover_item_describe_textsize">12dp</dimen>
+
+    <dimen name="discover_item_height">50dp</dimen>
+    <dimen name="discover_item_padding">12dp</dimen>
+    <dimen name="discover_item_dividingline">1dp</dimen>
+
+
+    <!-- *RadarListFragment A股雷达列表相关-->
+    <dimen name="radar_list_progress_textsize_40px">20dp</dimen>
+    <dimen name="radar_list_progress_textsize_36px">18dp</dimen>
+    <dimen name="radar_list_progress_textsize_32px">16dp</dimen>
+    <dimen name="radar_list_progress_textsize_28px">14dp</dimen>
+    <dimen name="radar_list_progress_textsize_24px">12dp</dimen>
+    <dimen name="radar_list_progress_textsize_20px">10dp</dimen>
+
+    <dimen name="radar_list_mainlayout_220px">110dp</dimen>
+    <dimen name="radar_list_dividerheight_20px">10dp</dimen>
+    <dimen name="radar_list_imageheight_52px">26dp</dimen>
+    <dimen name="radar_list_imageheight_180px">90dp</dimen>
+    <dimen name="radar_list_interval_172px">86dp</dimen>
+    <dimen name="radar_list_interval_20px">10dp</dimen>
+    <dimen name="radar_list_interval_16px">8dp</dimen>
+    <dimen name="radar_list_interval_4px">2dp</dimen>
+    <dimen name="radar_list_advisetlayout_70px">35dp</dimen>
+    <dimen name="radar_list_progress_48px">24dp</dimen>
+
+
+    <!--DiscoverRadarActivity 发现-A股雷达-->
+    <dimen name="discover_radar_textsize_32px">16dp</dimen>
+
+    <dimen name="discover_radar_tab_84px">42dp</dimen>
+    <dimen name="discover_radar_tab_line_4px">2dp</dimen>
+    <dimen name="discover_radar_interval_30px">15dp</dimen>
+
+
+    <!--MyeRadarActivity 我的-A股雷达-->
+    <dimen name="me_radar_textsize_32px">16dp</dimen>
+
+    <dimen name="me_radar_tab_84px">42dp</dimen>
+    <dimen name="me_radar_tab_line_4px">2dp</dimen>
+    <dimen name="me_radar_interval_30px">15dp</dimen>
+    <dimen name="profile_name_size">16dp</dimen>
+    <dimen name="title_text_size">@dimen/px36_to_dp</dimen>
+    <dimen name="title_height">@dimen/px100_to_dp</dimen>
+
+    <!-- TeacherRadarActivity 个人主页-他A股雷达 -->
+    <dimen name="other_radar_textsize_40px">20dp</dimen>
+    <dimen name="other_radar_textsize_24px">12dp</dimen>
+
+    <dimen name="other_radar_line_1px">1px</dimen>
+    <dimen name="other_radar_interval_10px">5dp</dimen>
+    <dimen name="other_radar_height_60px">30dp</dimen>
+    <dimen name="other_radar_height_50px">25dp</dimen>
+
+
+    <!-- RadarDetailActivity A股雷达详情 -->
+    <dimen name="radar_detail_textsize_100px">50dp</dimen>
+    <dimen name="radar_detail_textsize_40px">20dp</dimen>
+    <dimen name="radar_detail_textsize_24px">12dp</dimen>
+    <dimen name="radar_detail_textsize_28px">14dp</dimen>
+    <dimen name="radar_detail_textsize_36px">18dp</dimen>
+    <dimen name="radar_detail_textsize_32px">16dp</dimen>
+
+    <dimen name="radar_detail_style_width_80px">40dp</dimen>
+    <dimen name="radar_detail_style_height_36px">18dp</dimen>
+
+    <dimen name="radar_detail_line_1px">1px</dimen>
+    <dimen name="radar_detail_line_2px">1dp</dimen>
+    <dimen name="radar_detail_interval_4px">2dp</dimen>
+    <dimen name="radar_detail_interval_5px">2.5dp</dimen>
+    <dimen name="radar_detail_interval_10px">5dp</dimen>
+    <dimen name="radar_detail_interval_20px">10dp</dimen>
+    <dimen name="radar_detail_interval_26px">13dp</dimen>
+    <dimen name="radar_detail_interval_30px">15dp</dimen>
+    <dimen name="radar_detail_interval_50px">25dp</dimen>
+    <dimen name="radar_detail_interval_24px">12dp</dimen>
+    <dimen name="radar_detail_height_76px">38dp</dimen>
+    <dimen name="radar_detail_height_4px">2dp</dimen>
+    <dimen name="radar_detail_height_100px">50dp</dimen>
+    <dimen name="radar_detail_height_120px">60dp</dimen>
+    <dimen name="radar_detail_height_240px">120dp</dimen>
+    <dimen name="radar_detail_height_96px">48dp</dimen>
+    <dimen name="radar_detail_height_92px">46dp</dimen>
+    <dimen name="radar_detail_image_15px">7.5dp</dimen>
+    <dimen name="radar_detail_image_28px">14dp</dimen>
+    <dimen name="radar_detail_image_30px">15dp</dimen>
+    <dimen name="radar_detail_image_40px">20dp</dimen>
+    <dimen name="radar_detail_image_42px">21dp</dimen>
+    <dimen name="radar_detail_image_80px">40dp</dimen>
+    <dimen name="radar_detail_interval_39px">18.5dp</dimen>
+
+
+    <!--DiscoverLiveActivity 发现-互动直播-->
+    <dimen name="discover_live_textsize_32px">16sp</dimen>
+
+    <dimen name="discover_live_tab_76px">38dp</dimen>
+    <dimen name="discover_live_tab_line_4px">2dp</dimen>
+    <dimen name="discover_live_interval_20px">10dp</dimen>
+
+
+    <!--*LiveListFragment 互动直播列表相关-->
+    <dimen name="live_list_textsize_32px">16sp</dimen>
+    <dimen name="live_list_textsize_28px">14sp</dimen>
+    <dimen name="live_list_textsize_24px">12sp</dimen>
+
+    <dimen name="live_list_interval_lineheight_1px">1px</dimen>
+    <dimen name="live_list_interval_5px">2.5dp</dimen>
+    <dimen name="live_list_interval_20px">10dp</dimen>
+    <dimen name="live_list_imageheight_140px">70dp</dimen>
+
+
+    <!-- LiveRoomActivity 直播室相关-->
+    <dimen name="live_room_textsize_32px">16sp</dimen>
+    <dimen name="live_room_textsize_28px">14sp</dimen>
+    <dimen name="live_room_textsize_24px">12sp</dimen>
+
+    <dimen name="live_room_interval_lineheight_1px">1px</dimen>
+    <dimen name="live_room_interval_5px">2.5dp</dimen>
+    <dimen name="live_room_interval_14px">7dp</dimen>
+
+    <dimen name="live_room_interval_15px">7.5dp</dimen>
+    <dimen name="live_room_interval_20px">10dp</dimen>
+    <dimen name="live_room_interval_30px">15dp</dimen>
+    <dimen name="live_room_imageheight_96px">48dp</dimen>
+    <dimen name="live_room_imageheight_106px">53dp</dimen>
+    <dimen name="live_room_height_90px">45dp</dimen>
+    <dimen name="live_room_height_134px">67dp</dimen>
+
+    <!-- 我的收藏列表 -->
+    <dimen name="my_favorite_itemtop_textsize_24px">12sp</dimen>
+
+    <dimen name="my_favorite_itemtop_height_60px">30dp</dimen>
+    <dimen name="my_favorite_delete_height_50px">25dp</dimen>
+    <dimen name="my_favorite_delete_width_110px">55dp</dimen>
+    <dimen name="my_favorite_interval_20px">10dp</dimen>
+    <dimen name="my_favorite_interval_30px">15dp</dimen>
+    <dimen name="my_favorite_line_1px">1px</dimen>
+
+    <!--  老师课程列表页-->
+    <dimen name="teacher_course_childItem_image_height_160px">80dp</dimen>
+    <dimen name="teacher_course_childItem_image_width_227px">113.5dp</dimen>
+    <dimen name="teacher_course_childItem_image_space_20px">10dp</dimen>
+    <dimen name="teacher_course_childItem_text_space_top_36px">18dp</dimen>
+    <dimen name="teacher_course_childItem_textsize_34px">17sp</dimen>
+    <!--  h5 返回 关闭-->
+    <dimen name="title_back_size">@dimen/px32_to_dp</dimen>
+    <dimen name="title_back_middle">@dimen/px30_to_dp</dimen>
+    <dimen name="title_back_right">@dimen/px10_to_dp</dimen>
+
+
+    <!-- 圆角半径 -->
+    <dimen name="radius_5px">2.5dp</dimen>
+    <dimen name="radius_4px">2dp</dimen>
+    <dimen name="radius_10px">5dp</dimen>
+    <dimen name="radius_16px">8dp</dimen>
+    <dimen name="radius_38px">19dp</dimen>
     <!--常用文字大小-->
     <dimen name="text_size_10">10sp</dimen>
     <dimen name="text_size_12">12sp</dimen>
