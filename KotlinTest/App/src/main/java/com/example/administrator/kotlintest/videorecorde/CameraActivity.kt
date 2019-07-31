@@ -65,7 +65,14 @@ class CameraActivity : AppCompatActivity() {
             btnStart.visibility = View.VISIBLE
         }
 
-        btnTakePic.setOnClickListener { mCameraHelper.takePic() }
+        btnTakePic.setOnClickListener {
+            val rxpression = RxPermissions(this@CameraActivity)
+            rxpression.request(android.Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE).subscribe(Consumer {
+                if (it) {
+                    mCameraHelper.takePic()
+                }
+            })
+        }
         ivExchange.setOnClickListener { mCameraHelper.exchangeCamera() }
         btnStart.setOnClickListener {
             ivExchange.isClickable = false

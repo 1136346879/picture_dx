@@ -67,10 +67,11 @@
             </intent-filter>
         </activity>
 
-<!--tab可切换的布局  fragment-->
+        <!--tab可切换的布局  fragment-->
         <activity android:name=".HomeActiivty"/>
         <activity android:name=".FirstActivity"/>
         <activity android:name=".videorecorde.CameraActivity"/>
+        <activity android:name=".videorecorde.MainCameraActivity"/>
 
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
@@ -87,9 +88,6 @@
         <!--数据库操作页面-->
         <activity android:name=".ui.activity.DbShowActivity"
             />
-
-
-
         <activity android:name=".location.CitySelectActivity"/>
         <activity android:name=".ui.activity.RuanActivity"/>
         <activity android:name=".ui.activity.PictureActionActivity"/>

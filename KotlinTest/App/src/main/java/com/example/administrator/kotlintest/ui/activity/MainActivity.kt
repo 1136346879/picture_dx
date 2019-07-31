@@ -23,6 +23,7 @@ import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
 import com.example.administrator.kotlintest.videorecorde.CameraActivity
+import com.example.administrator.kotlintest.videorecorde.MainCameraActivity
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.administrator.kotlintest.widget.SystemDialog
 import com.example.baselibrary.widgets.ToastUtilKt
@@ -59,7 +60,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(8,"图片操作", null))
         listData.add(PersonControlDao(9,"进入首页1--可切换", null))
         listData.add(PersonControlDao(10,"进入首页2--可切换", null))
-        listData.add(PersonControlDao(11,"视频录制", null))
+        listData.add(PersonControlDao(11,"相机视频-拍照", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -83,8 +84,7 @@ class MainActivity : RxAppCompatActivity() {
                 8 -> startActivity(this.intentFor<PictureActionActivity>())
                 9 -> startActivity(this.intentFor<HomeActiivty>())
                 10 -> startActivity(this.intentFor<FirstActivity>())
-                11 -> startActivity(this.intentFor<CameraActivity>()
-                        .putExtra(CameraActivity.TYPE_TAG, CameraActivity.TYPE_RECORD))
+                11 -> startActivity(this.intentFor<MainCameraActivity>())
             }
         }
         //view拖拽功能
