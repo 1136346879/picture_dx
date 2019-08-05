@@ -1,23 +1,23 @@
 
-Rsquid:UnusedPrivateMethod›",Remove this unused private "isSpace" method.(·½Ø¶
-Msquid:S2696z"6Make the enclosing method "static" or remove this set.(Ğ ™‚
+Msquid:S2696M"6Make the enclosing method "static" or remove this set.(Ğ ™‚
+Bsquid:S00108ë")Either remove or fill this block of code.(ğıˆÒ
+Fsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
 Csquid:S1172I",Remove this unused method parameter "clazz".(Ê¿Íƒ
+Fsquid:S3010/"*Remove this assignment of "rxPreferences".(™ÛÃßıÿÿÿÿ
+[squid:S2147["DCombine this catch with the one at line 89, which has the same body.(ıàÑÎ
+Rsquid:UnusedPrivateMethod›",Remove this unused private "isSpace" method.(·½Ø¶
+Osquid:S2589ˆ"7Remove this expression which always evaluates to "true"(Ù„¶ş
+@squid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 Bsquid:S3010."&Remove this assignment of "defaultSp".(Øš§Òüÿÿÿÿ
 ?squid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Fsquid:S3010/"*Remove this assignment of "rxPreferences".(™ÛÃßıÿÿÿÿ
-Msquid:S2696M"6Make the enclosing method "static" or remove this set.(Ğ ™‚
-?squid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-?squid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Csquid:S1452à"&Remove usage of generic wildcard type.(Ç ù™üÿÿÿÿ
-Ksquid:S1068¾".Remove this unused "isPrefetch" private field.(µı™ıÿÿÿÿ
-Fsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-@squid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-[squid:S2147["DCombine this catch with the one at line 89, which has the same body.(ıàÑÎ
 @squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Nsquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(Ğ ™‚
-Fsquid:S2093V"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Bsquid:S00108ë")Either remove or fill this block of code.(ğıˆÒ
-csquid:S00112<"FDefine and throw a dedicated exception instead of using a generic one.(ˆÈıüÿÿÿÿ
-Osquid:S2589ˆ"7Remove this expression which always evaluates to "true"(Ù„¶ş
 ssquid:S1488¸"[Immediately return this expression instead of assigning it to the temporary variable "ids".(Ç……Ç
+csquid:S00112<"FDefine and throw a dedicated exception instead of using a generic one.(ˆÈıüÿÿÿÿ
+?squid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Fsquid:S2093V"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Csquid:S1452à"&Remove usage of generic wildcard type.(Ç ù™üÿÿÿÿ
+Nsquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(Ğ ™‚
+Msquid:S2696z"6Make the enclosing method "static" or remove this set.(Ğ ™‚
 Ssquid:S2589_"7Remove this expression which always evaluates to "true"(‰æç¦ûÿÿÿÿ
+Ksquid:S1068¾".Remove this unused "isPrefetch" private field.(µı™ıÿÿÿÿ
+?squid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

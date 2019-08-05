@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.hexun.training.widget.LoadingView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.administrator.kotlintest.loadingview.LoadingView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/loading_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background_color"
+    android:background="#ffffffff"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:orientation="horizontal"
         android:paddingBottom="30dp">
 
-        <com.hexun.training.widget.CustomProgressView
+        <com.example.administrator.kotlintest.loadingview.CustomProgressView
             android:id="@+id/progress_bar"
             android:layout_width="38dp"
             android:layout_height="38dp"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:text="@string/cd_base_loading_text"
+            android:text="努力加载中。。。"
             android:textColor="#ff999999"
             android:textSize="14dp" />
 
@@ -49,4 +49,4 @@
         android:layout="@layout/error_layout" />
 
 
-</com.hexun.training.widget.LoadingView>
+</com.example.administrator.kotlintest.loadingview.LoadingView>

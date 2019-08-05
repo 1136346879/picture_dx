@@ -22,13 +22,18 @@ import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
+import com.example.administrator.kotlintest.util.SpManager
 import com.example.administrator.kotlintest.videorecorde.CameraActivity
 import com.example.administrator.kotlintest.videorecorde.MainCameraActivity
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.administrator.kotlintest.widget.SystemDialog
 import com.example.baselibrary.widgets.ToastUtilKt
+import com.hexun.base.http.HeXunHttpClient
+import com.hexun.caidao.hangqing.StockManager
+import com.hexun.caidao.hangqing.TrainingApi
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import com.xfs.qrcode_module.recycleview.RecycleviewActivity
+import de.greenrobot.event.EventBus
 //import jsc.kit.keyboard.KeyBoardView
 //import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -45,6 +50,15 @@ class MainActivity : RxAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         getSQLHelper()
+        SpManager.init(application)
+        HeXunHttpClient.init(this)
+        TrainingApi.getInstance().init(this)
+
+        StockManager.getInstance().init(this)
+
+        if (!EventBus.getDefault().isRegistered(this)) {
+            EventBus.getDefault().register(this)
+        }
         //log 初始化
         LogConfig.initLog(application)
         multipleStatusView?.showLoading()

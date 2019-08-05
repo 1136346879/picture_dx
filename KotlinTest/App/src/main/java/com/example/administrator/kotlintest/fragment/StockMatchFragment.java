@@ -23,8 +23,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.administrator.kotlintest.R;
-import com.example.administrator.kotlintest.loadingview.LoadingView;
 import com.example.administrator.kotlintest.widget.ExpandWebView;
+import com.hexun.training.widget.LoadingView;
+
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

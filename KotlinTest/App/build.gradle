@@ -97,6 +97,7 @@ dependencies {
 
     // 二维码扫描
     implementation 'com.google.zxing:core:3.2.1'
+    implementation 'de.greenrobot:eventbus:2.4.0'
 
     // Retrofit series
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"

@@ -1,23 +1,23 @@
 
-Fsquid:S00108|")Either remove or fill this block of code.(Ï¸Œ“üÿÿÿÿ
-|squid:S1488ô"dImmediately return this expression instead of assigning it to the temporary variable "tv_tab_title".(ŸÖí·
-|squid:S1488ğ"_Immediately return this expression instead of assigning it to the temporary variable "tipView".(Ï«Í’ıÿÿÿÿ
-Œsquid:S1319ş"tThe type of the "fragments" object should be an interface such as "List" rather than the implementation "ArrayList".(ŞËı·
-osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞŠùÿÿÿÿ
-Bsquid:S00108å")Either remove or fill this block of code.(å¥‡
-‘squid:S1319Ğ"tThe type of the "fragments" object should be an interface such as "List" rather than the implementation "ArrayList".(¢üÉâûÿÿÿÿ
-jsquid:S00117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óš‘Ö
-hsquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(ªÿ¿Éøÿÿÿÿ
-jsquid:S00117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êõÊ¥
 osquid:S00117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î—íÕúÿÿÿÿ
-hsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(÷‰âüûÿÿÿÿ
-jsquid:S00117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
-hsquid:CommentedOutCodeLineå"<This block of commented-out lines of code should be removed.(”ùíâùÿÿÿÿ
-Lsquid:S1481â"/Remove this unused "textHeight" local variable.(úÁ ¢úÿÿÿÿ
-@squid:S00108}")Either remove or fill this block of code.(Ïÿ´~
-jsquid:S00117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
-jsquid:S00117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
 hsquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(÷¿û±ûÿÿÿÿ
-jsquid:S00117ß"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
-squid:S1186Ï"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ
+‘squid:S1319Ğ"tThe type of the "fragments" object should be an interface such as "List" rather than the implementation "ArrayList".(¢üÉâûÿÿÿÿ
+|squid:S1488ğ"_Immediately return this expression instead of assigning it to the temporary variable "tipView".(Ï«Í’ıÿÿÿÿ
 jsquid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÔ×
+squid:S1186Ï"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ
+Lsquid:S1481â"/Remove this unused "textHeight" local variable.(úÁ ¢úÿÿÿÿ
+jsquid:S00117ß"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
+Fsquid:S00108|")Either remove or fill this block of code.(Ï¸Œ“üÿÿÿÿ
+Œsquid:S1319ş"tThe type of the "fragments" object should be an interface such as "List" rather than the implementation "ArrayList".(ŞËı·
+jsquid:S00117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
+jsquid:S00117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
+|squid:S1488ô"dImmediately return this expression instead of assigning it to the temporary variable "tv_tab_title".(ŸÖí·
+hsquid:CommentedOutCodeLineå"<This block of commented-out lines of code should be removed.(”ùíâùÿÿÿÿ
+hsquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(ªÿ¿Éøÿÿÿÿ
+jsquid:S00117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óš‘Ö
+jsquid:S00117Í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÖí·
+jsquid:S00117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êõÊ¥
+@squid:S00108}")Either remove or fill this block of code.(Ïÿ´~
+Bsquid:S00108å")Either remove or fill this block of code.(å¥‡
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞŠùÿÿÿÿ
+hsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(÷‰âüûÿÿÿÿ

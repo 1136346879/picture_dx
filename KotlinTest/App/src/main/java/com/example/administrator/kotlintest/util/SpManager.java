@@ -47,7 +47,7 @@ public class SpManager {
         rxPreferences = RxSharedPreferences.create(defaultSp);
     }
 
-    static synchronized void init(Application context) {
+    public static synchronized void init(Application context) {
         if (spManager == null){
             spManager = new SpManager(context);
             spManager.prefetch();
