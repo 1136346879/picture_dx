@@ -1,0 +1,13 @@
+
+bsquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(Ü¶÷ÿ
+osquid:ModifiersOrderCheck&"EReorder the modifiers to comply with the Java Language Specification.(ˆ¯žùÿÿÿÿ
+gsquid:CommentedOutCodeLinez"<This block of commented-out lines of code should be removed.(ôÂ€ìþÿÿÿÿ
+=squid:S1170""!Make this final field static too.(ÊÕëˆûÿÿÿÿ
+|squid:S00116""_Rename this field "ROTATE_ANIM_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÕëˆûÿÿÿÿ
+xsquid:S1450"\Remove the "mRotateUpAnim" field and declare it as a local variable in the relevant methods.(ÞÜÇŒøÿÿÿÿ
+tsquid:S1450 "^Remove the "mRotateDownAnim" field and declare it as a local variable in the relevant methods.(á–Î!
+Osquid:S1068"3Remove this unused "mArrowImageView" private field.( ÛÑŒÿÿÿÿÿ
+osquid:ModifiersOrderCheck$"EReorder the modifiers to comply with the Java Language Specification.(™¶ÿñúÿÿÿÿ
+jsquid:ModifiersOrderCheck%"EReorder the modifiers to comply with the Java Language Specification.(ãæîõ
+bsquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(Ë›èÍ
+zsquid:S1450"^Remove the "mArrowImageView" field and declare it as a local variable in the relevant methods.( ÛÑŒÿÿÿÿÿ

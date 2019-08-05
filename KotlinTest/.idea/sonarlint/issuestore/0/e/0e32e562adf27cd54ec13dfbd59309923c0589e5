@@ -1,6 +1,5 @@
 
-wsquid:S1450"[Remove the "progressView" field and declare it as a local variable in the relevant methods.(¢Œ×š8ª°’×ù,
-Lsquid:S1068"0Remove this unused "progressView" private field.(¢Œ×š8ª°’×ù,
-xsquid:S1450"\Remove the "mProgressText" field and declare it as a local variable in the relevant methods.(ù”»8ª°’×ù,
-Msquid:S1068"1Remove this unused "mProgressText" private field.(ù”»8ª°’×ù,
-Psquid:S1066"/Merge this if statement with the enclosing one.(ş»Ïùÿÿÿÿ8ª°’×ù,
+Osquid:S1068"1Remove this unused "mProgressText" private field.(ù”»8ª°’×ù,
+Nsquid:S1068"0Remove this unused "progressView" private field.(¢Œ×š8ª°’×ù,
+ysquid:S1450"[Remove the "progressView" field and declare it as a local variable in the relevant methods.(¢Œ×š8ª°’×ù,
+zsquid:S1450"\Remove the "mProgressText" field and declare it as a local variable in the relevant methods.(ù”»8ª°’×ù,

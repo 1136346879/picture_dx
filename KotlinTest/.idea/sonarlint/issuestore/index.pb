@@ -749,3 +749,15 @@ SApp/src/main/java/com/example/administrator/kotlintest/videorecorde/CameraHelpe
 YApp/src/main/java/com/example/administrator/kotlintest/videorecorde/MainCameraActivity.kt,0\0\00e5341ca5a96aaa7802399ec4d22af3f11de490
 …
 UApp/src/main/java/com/example/administrator/kotlintest/videorecorde/CameraActivity.kt,7\c\7c50ca0022a2718efd09168b270316e707b7bbb4
+j
+:App/src/main/java/com/hexun/training/widget/XListView.java,d\7\d714632a63741530376a96fba469a7497879d4a0
+s
+CApp/src/main/java/com/hexun/training/widget/CustomProgressView.java,a\0\a063193b472369836f0b8336791d130f82a2cd50
+p
+@App/src/main/java/com/hexun/training/widget/XListViewHeader.java,9\8\98c077f82be057701e790eacded6d97ab678356b
+p
+@App/src/main/java/com/hexun/training/widget/XListViewFooter.java,5\c\5c4555aa23ccce62584620baae3868a0cd1a927d
+l
+<App/src/main/java/com/hexun/training/widget/LoadingView.java,3\9\39903b664e87abbc177da5b7300f29a425e6ad28
+p
+@App/src/main/java/com/hexun/training/common/CaiDaoBaseEvent.java,8\4\8405fce4a8f36371558961cc20eb551f423955e1

@@ -1,0 +1,21 @@
+
+nsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(êàùÕùÿÿÿÿ8”“ÃÿÅ-
+™squid:S1186Ê"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž×Îð
+Ysquid:S2094;"BRemove this empty class, write its code or make it an "interface".(ãââ‚
+^squid:S2094I"BRemove this empty class, write its code or make it an "interface".(ïéÛºúÿÿÿÿ
+žsquid:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡­‰Âûÿÿÿÿ
+nsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(ËúâÑøÿÿÿÿ8”“ÃÿÅ-
+™squid:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ë¸Á
+™squid:S1186Â"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ï´ØŒ
+žsquid:S1186‘"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²³›ÿÿÿÿÿ
+ƒ"squid:ClassVariableVisibilityCheck}"UMake isSuccess a static final constant or non-public and provide accessors if needed.(‹ÒÅ¥
+hsquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(Œ¹™D8”“ÃÿÅ-
+Qsquid:S1118	":Add a private constructor to hide the implicit public one.(…½õ²
+^squid:S2094C"BRemove this empty class, write its code or make it an "interface".(£¿ªþþÿÿÿÿ
+nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(´¯Å„ÿÿÿÿÿ8ÍÇÃÿÅ-
+isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(× þ´8ÍÇÃÿÅ-
+nsquid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(ƒÂŽ±ûÿÿÿÿ8ÍÇÃÿÅ-
+isquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(¦É†À8ÍÇÃÿÅ-
+isquid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(ÔêÖš8ÍÇÃÿÅ-
+isquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(è¹Í¿8ÍÇÃÿÅ-
+nsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(«Ö¹ûÿÿÿÿ8ÍÇÃÿÅ-

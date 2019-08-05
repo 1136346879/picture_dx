@@ -1,0 +1,14 @@
+
+osquid:ModifiersOrderCheck@"EReorder the modifiers to comply with the Java Language Specification.(¬ñ¦Ûÿÿÿÿÿ
+osquid:ModifiersOrderCheckC"EReorder the modifiers to comply with the Java Language Specification.(¯Âöºşÿÿÿÿ
+hsquid:CommentedOutCodeLineí"<This block of commented-out lines of code should be removed.(ôØ¹şÿÿÿÿ
+Asquid:S1125‚")Remove the literal "false" boolean value.(“…ê¿
+csquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(çó¸Ş
+osquid:ModifiersOrderCheckB"EReorder the modifiers to comply with the Java Language Specification.(¥Ù Ëüÿÿÿÿ
+@squid:S1125Å"(Remove the literal "true" boolean value.(ï»Œõ
+Esquid:S1125Ï"(Remove the literal "true" boolean value.(©•ßºúÿÿÿÿ
+[squid:S1155÷">Use isEmpty() to check whether the collection is empty or not.(øçéÙúÿÿÿÿ
+osquid:ModifiersOrderCheckF"EReorder the modifiers to comply with the Java Language Specification.(Ìò»­şÿÿÿÿ
+jsquid:ModifiersOrderCheck?"EReorder the modifiers to comply with the Java Language Specification.(ÉËÄ‡
+Osquid:S2589"7Remove this expression which always evaluates to "true"(­à—¿
+jsquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(™ì¶¯8…™ÌıÅ-

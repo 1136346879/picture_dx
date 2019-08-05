@@ -126,7 +126,8 @@ class FirstActivity : AppCompatActivity() ,View.OnClickListener{
 //                }
                 baseFragment = cjNewsFragment
             }
-            1 -> baseFragment = MarkHomeFragment()//行情页面
+//            1 -> baseFragment = MarkHomeFragment()//行情页面
+            1 -> baseFragment = StockMatchFragment()//行情页面
             2 -> baseFragment = MeFragment()//我的页面
             3 -> baseFragment = StockSelectedMainFragment()//自选页面
             4 -> baseFragment = StockMatchFragment()//股神页面

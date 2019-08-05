@@ -52,20 +52,20 @@ class MainActivity : RxAppCompatActivity() {
         getSQLHelper()
         SpManager.init(application)
         HeXunHttpClient.init(this)
-        TrainingApi.getInstance().init(this)
+//        TrainingApi.getInstance().init(this)
 
-        StockManager.getInstance().init(this)
 
-        if (!EventBus.getDefault().isRegistered(this)) {
-            EventBus.getDefault().register(this)
-        }
+//        StockManager.getInstance().init(this)
+
+//        if (!EventBus.getDefault().isRegistered(this)) {
+//            EventBus.getDefault().register(this)
+//        }
         //log 初始化
         LogConfig.initLog(application)
         multipleStatusView?.showLoading()
         listData.add(PersonControlDao(0,"跳转至下一activity", null))
         listData.add(PersonControlDao(1,"日历", null))
-        listData.add(PersonControlDao(2,
-                "进入recycleview", null))
+        listData.add(PersonControlDao(2, "进入recycleview", null))
         listData.add(PersonControlDao(3,"个人中心", null))
         listData.add(PersonControlDao(4,"进入数据库页面", null))
         listData.add(PersonControlDao(5,"点击粉碎当前view", null))
