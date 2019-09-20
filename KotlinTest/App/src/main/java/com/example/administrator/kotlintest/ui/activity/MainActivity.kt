@@ -118,10 +118,10 @@ class MainActivity : RxAppCompatActivity() {
         initNetWatchdog()
     }
     private var mWatchdog: NetWatchdogUtils? = null
-    private val TAG = MainActivity::class.java!!.getSimpleName()
+    private val TAG = MainActivity::class.java!!.simpleName
     private fun initNetWatchdog() {
         mWatchdog =  NetWatchdogUtils(this);
-       mWatchdog!!.startWatch()
+        mWatchdog!!.startWatch()
         mWatchdog!!.setNetChangeListener(object :NetWatchdogUtils.NetChangeListener{
 
            override fun onWifiTo4G() {
