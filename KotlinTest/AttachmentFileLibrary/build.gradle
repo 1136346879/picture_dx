@@ -45,4 +45,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 //    kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
     implementation 'com.leon:lfilepickerlibrary:1.8.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

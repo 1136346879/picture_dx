@@ -1,7 +1,7 @@
 
 Rsquid:S1444"/Make this "public static resources" field final(ÃÖç°ùÿÿÿÿ8ùô£â÷,
-Tsquid:S2696"6Make the enclosing method "static" or remove this set.(¿æÂ¨8ùô£â÷,
 ‰"squid:ClassVariableVisibilityCheck"OMake cxt a static final constant or non-public and provide accessors if needed.(¤¦Ûàùÿÿÿÿ8ùô£â÷,
-Tsquid:S2696"6Make the enclosing method "static" or remove this set.(îáù8ùô£â÷,
 "squid:ClassVariableVisibilityCheck"UMake resources a static final constant or non-public and provide accessors if needed.(ÃÖç°ùÿÿÿÿ8ùô£â÷,
+Tsquid:S2696"6Make the enclosing method "static" or remove this set.(îáù8ùô£â÷,
 Lsquid:S1444")Make this "public static cxt" field final(¤¦Ûàùÿÿÿÿ8ùô£â÷,
+Tsquid:S2696"6Make the enclosing method "static" or remove this set.(¿æÂ¨8ùô£â÷,

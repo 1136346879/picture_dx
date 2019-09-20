@@ -37,7 +37,7 @@
         android:textColor="@color/color_999999"
         android:textSize="12dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/tv_news_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

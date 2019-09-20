@@ -27,7 +27,7 @@
         android:layout_centerVertical="true"
         android:orientation="horizontal">
 
-        <TextView
+        <EditText
             android:id="@+id/tvHint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

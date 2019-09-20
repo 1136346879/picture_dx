@@ -75,6 +75,8 @@
 
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
+
+        <activity android:name=".ui.activity.EdittextActivity"/>
         <!--扫一扫-->
         <activity android:name=".ui.qrcode.CaptureActivity"/>
         <!--自定义轮播图-->

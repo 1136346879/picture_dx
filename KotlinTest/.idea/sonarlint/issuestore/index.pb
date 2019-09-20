@@ -297,8 +297,6 @@ fqrcode-module/src/main/java/com/xfs/qrcode_module/StickyItemRecycleview/view/St
 jqrcode-module/src/main/java/com/xfs/qrcode_module/StickyItemRecycleview/StickyItemREcycleviewActivity.java,0\0\0038941ce6ae45608180d91e56bed4aedf0489ac
 
 OApp/src/main/java/com/example/administrator/kotlintest/picture/BitmapUtils.java,a\0\a04ce78b074f169b9b9d49588024a39b1ec2c91d
-m
-=App/build/generated/source/r/debug/com/lzy/imagepicker/R.java,f\4\f4f8cb3131b90da82021d1084d8a53a4bc591970
 R
 "App/src/main/res/values/styles.xml,5\2\524d334b712e36c45a15298e723b3b8fd55d0187
 ‚
@@ -403,8 +401,6 @@ YApp/src/main/java/com/example/administrator/kotlintest/smashzhadan/ExplosionAni
 MApp/src/main/java/com/example/administrator/kotlintest/smashzhadan/Utils.java,6\0\605a571cd842995d0882ca069d190fa43c39114d
 P
  App/src/main/res/layout/tab4.xml,d\5\d5a63217171024eb8a807a26a9da008f9a91164b
-~
-NApp/build/generated/source/r/debug/com/example/administrator/kotlintest/R.java,b\1\b13c3b3ae953e9b562dccfc9fe5e98196aac73fc
 Z
 *App/src/main/res/layout/activity_smash.xml,4\e\4e5993d000f5eab0124c65583884f8e4f4053a27
 ƒ
@@ -761,3 +757,11 @@ l
 <App/src/main/java/com/hexun/training/widget/LoadingView.java,3\9\39903b664e87abbc177da5b7300f29a425e6ad28
 p
 @App/src/main/java/com/hexun/training/common/CaiDaoBaseEvent.java,8\4\8405fce4a8f36371558961cc20eb551f423955e1
+†
+VApp/src/main/java/com/example/administrator/kotlintest/ui/activity/EdittextActivity.kt,3\4\349dcdf01668ad661d8f6de2a8e9c326dfc8b56f
+_
+/App/src/main/res/layout/item_person_control.xml,2\4\24df33437f2b84c8cff336781c87cfc90dbef85f
+{
+KApp/src/main/java/com/example/administrator/kotlintest/net/NetWatchdog.java,3\3\33f8a83f5fb7ddcb243a1e0908381dd02fcea0ce
+€
+PApp/src/main/java/com/example/administrator/kotlintest/net/NetWatchdogUtils.java,6\2\62a4877db5e2e418f036eb566b3b69f4b7c6234d

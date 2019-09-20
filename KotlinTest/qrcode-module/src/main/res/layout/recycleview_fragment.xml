@@ -3,7 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="topbar"
+        android:id="@+id/topbar"
+        />
     <com.xfs.qrcode_module.recycleview.XRecyclerView
+        android:layout_below="@+id/topbar"
         android:id="@+id/xRecycleview"
         android:scrollbars="none"
         android:layout_width="match_parent"

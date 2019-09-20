@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.text.TextUtils
+import android.util.Log
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
@@ -19,6 +20,7 @@ import com.example.administrator.kotlintest.common.IntentDataDef
 import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
 import com.example.administrator.kotlintest.location.CitySelectActivity
+import com.example.administrator.kotlintest.net.NetWatchdogUtils
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
@@ -75,6 +77,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(9,"进入首页1--可切换", null))
         listData.add(PersonControlDao(10,"进入首页2--可切换", null))
         listData.add(PersonControlDao(11,"相机视频-拍照", null))
+        listData.add(PersonControlDao(12,"Edittext", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -99,6 +102,7 @@ class MainActivity : RxAppCompatActivity() {
                 9 -> startActivity(this.intentFor<HomeActiivty>())
                 10 -> startActivity(this.intentFor<FirstActivity>())
                 11 -> startActivity(this.intentFor<MainCameraActivity>())
+                12 -> startActivity(this.intentFor<EdittextActivity>())
             }
         }
         //view拖拽功能
@@ -110,8 +114,53 @@ class MainActivity : RxAppCompatActivity() {
         channel_mannger.setOnClickListener { startActivity(this!!.intentFor<ChannelActivity>()) }
         location.setOnClickListener { startActivity(this!!.intentFor<CitySelectActivity>()) }
         locationData()
+        //检测有网络时在回调中开启上传
+        initNetWatchdog()
+    }
+    private var mWatchdog: NetWatchdogUtils? = null
+    private val TAG = MainActivity::class.java!!.getSimpleName()
+    private fun initNetWatchdog() {
+        mWatchdog =  NetWatchdogUtils(this);
+       mWatchdog!!.startWatch()
+        mWatchdog!!.setNetChangeListener(object :NetWatchdogUtils.NetChangeListener{
+
+           override fun onWifiTo4G() {
+                Log.e(TAG, "onWifiTo4G")
+            }
+
+            override fun on4GToWifi() {
+                Log.e(TAG, "on4GToWifi")
+
+            }
+
+            override fun onReNetConnected(isReconnect:Boolean) {
+                Log.e(TAG, "isReconnect+ $isReconnect")
+            }
+
+            override fun onNetUnConnected() {
+                Log.e(TAG, "onNetUnConnected")
+            }
+        })
     }
 
+    override fun onStart() {
+        super.onStart()
+        mWatchdog!!.startWatch()
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mWatchdog!!.stopWatch()
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (mWatchdog != null) {
+            mWatchdog!!.stopWatch()
+        }
+    }
     private fun startKeyBOardFragmentToActivity() {
         startActivity(this.intentFor<EmptyFragmentActivity>())
     }
