@@ -1,24 +1,0 @@
-
-wsquid:S00116"URename this field "win_view_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç‡ úÿÿÿÿ8“Ãº-
-rsquid:S00116"URename this field "win_view_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ïß†8“Ãº-
-„"squid:ClassVariableVisibilityCheck"QMake downY a static final constant or non-public and provide accessors if needed.(‚Àá›8“Ãº-
-"squid:ClassVariableVisibilityCheck"XMake dragPosition a static final constant or non-public and provide accessors if needed.(ç’§—úÿÿÿÿ8“Ãº-
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½½¿İÿÿÿÿÿ8“Ãº-
-Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8“Ãº-
-qsquid:S00116"TRename this field "Remainder" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÎ8“Ãº-
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞèšÌ8“Ãº-
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„÷ñÇ8“Ãº-
-Qsquid:S1068"0Remove this unused "dragItemView" private field.(ÎÆøøÿÿÿÿ8“Ãº-
-|squid:S1450"[Remove the "holdPosition" field and declare it as a local variable in the relevant methods.(¶—ÉÄøÿÿÿÿ8“Ãº-
-Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8“Ãº-
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…õÎÅ8“Ãº-
-Ssquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8“Ãº-
-Jsquid:S1481")Remove this unused "bool" local variable.(ıªËîşÿÿÿÿ8“Ãº-
-wsquid:S00116"ZRename this field "LastAnimationID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”›à’8“Ãº-
-„"squid:ClassVariableVisibilityCheck"QMake downX a static final constant or non-public and provide accessors if needed.(âŸ’«8“Ãº-
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(¡îŠÜÿÿÿÿÿ8“Ãº-
-‹"squid:ClassVariableVisibilityCheck"SMake windowX a static final constant or non-public and provide accessors if needed.(Á›á¾ùÿÿÿÿ8“Ãº-
-Esquid:S1068")Remove this unused "nRows" private field.(òıÕ8“Ãº-
-‹"squid:ClassVariableVisibilityCheck"SMake windowY a static final constant or non-public and provide accessors if needed.(¨Ï¯Ùÿÿÿÿÿ8“Ãº-
-Bsquid:S1172"&Remove these unused method parameters.(øŠ¬8“Ãº-
-msquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛñûT8“Ãº-

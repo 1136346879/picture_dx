@@ -1,6 +1,6 @@
 package com.example.administrator.kotlintest
 
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 
 /**
  * Created by HaoBoy on 2018/8/27.

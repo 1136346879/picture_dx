@@ -20,6 +20,18 @@ import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
 import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager
+import com.example.administrator.kotlintest.bridge.retrofit.http.RequestOption
+import com.example.administrator.kotlintest.entity.AppUpdateEntity
+import com.example.administrator.kotlintest.listener.BaseCommonInterface
+import com.example.administrator.kotlintest.options.UpdateAppOptions
+import com.example.administrator.kotlintest.update.AppUpdateUtil
+import com.example.administrator.kotlintest.update.UpdateDialog
+import com.example.administrator.kotlintest.util.SPUtils
+import com.google.gson.Gson
+import com.plumcookingwine.network.callback.INetworkCallback
+import com.plumcookingwine.network.cookie.CookieResultListener
+import com.trello.rxlifecycle2.kotlin.bindToLifecycle
+import com.xfs.fsyuncai.bridge.retrofit.service.CommonService
 import com.xfs.fsyuncai.bridge.retrofit.service.OrderService
 import com.yalantis.ucrop.UCrop
 import com.yalantis.ucrop.util.AttrsUtils
@@ -333,6 +345,89 @@ class PictureActionActivity() : RxAppCompatActivity(){
 
         override fun newArray(size: Int): Array<PictureActionActivity?> {
             return arrayOfNulls(size)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        checkAppVersion()
+    }
+
+    /**
+     * 版本检测
+     */
+    private fun checkAppVersion() {
+        com.plumcookingwine.network.manager.HttpManager.instance.doHttpDeal(
+                UpdateAppOptions(),
+                object : INetworkCallback<String>(BaseCommonInterface(this)) {
+
+                    override fun onSuccess(obj: String, cookieListener: CookieResultListener) {
+                        val entity = Gson().fromJson(obj, AppUpdateEntity::class.java)
+                        onCheckAppVersioResult(entity)
+
+                    }
+
+                    override fun onError(err: com.plumcookingwine.network.exception.ApiErrorModel?) {
+                        onCheckAppVersioResult(null)
+                    }
+                }
+        )
+    }
+
+    /**
+     * 版本检测
+     */
+//    private fun checkAppVersion() {
+//        HttpManager.instance().apply {
+//            setOption(RequestOption().apply {
+//                isShowProgress = false
+//            })
+//            doHttpDeal(this@PictureActionActivity,
+//                    createService(CommonService::class.java).getAppUpdateVersionData().bindToLifecycle(this@PictureActionActivity),
+//                    object : HttpOnNextListener() {
+//                        override fun onNext(json: String) {
+//                            val entity = Gson().fromJson(json, AppUpdateEntity::class.java)
+//                            onCheckAppVersioResult(entity)
+//                        }
+//
+//                        override fun onError(statusCode: Int, apiErrorModel: ApiErrorModel?) {
+//                            super.onError(statusCode, apiErrorModel)
+//                            onCheckAppVersioResult(null)
+//                        }
+//                    })
+//        }
+//    }
+    /* 更新对话框 */
+    private var mUpdateDia: UpdateDialog? = null
+    /**
+     * 版本检测的回调，为空的时候表示没有更新
+     */
+    fun onCheckAppVersioResult(result: AppUpdateEntity?) {
+        //异常状态
+        if (result == null || result.code.isNullOrBlank() || result.code!!.toInt() != 0) {
+            AppUpdateUtil.removeOldApk(this@PictureActionActivity)
+            return
+        }
+        //不升级
+        if (result.updateType == 0) {
+            AppUpdateUtil.removeOldApk(this@PictureActionActivity)
+            return
+        }
+        //用户点击取消升级后的判断逻辑。本地和线上不一致的时候提示升级
+        val localSaveVersion = SPUtils.getObjectForKey(SPUtils.CURRENT_VERSION_CODE, "") as String
+        if (localSaveVersion.isNotEmpty() && localSaveVersion == result.latest_version_code) {
+            AppUpdateUtil.removeOldApk(this@PictureActionActivity)
+            return
+        }
+
+        if (mUpdateDia == null) {
+            mUpdateDia = UpdateDialog(this@PictureActionActivity, result)
+            if (!mUpdateDia!!.isShowing) {
+                mUpdateDia!!.show()
+            }
+            mUpdateDia!!.setOnDismissListener {
+                mUpdateDia = null
+            }
         }
     }
 }

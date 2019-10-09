@@ -59,5 +59,6 @@ dependencies {
     // Anko lib
     implementation "org.jetbrains.anko:anko-commons:$ankoLibVersion"
     implementation project(':newbaselibrary')
+    implementation project(':NetworkModule')
     kapt "com.alibaba:arouter-compiler:${aRouterCompilerVersion}"
 }

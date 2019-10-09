@@ -1,8 +1,0 @@
-
-Ksquid:S1185!"(Remove this method to simply inherit it.(İßéàúÿÿÿÿ8¾ñÔ½Ã-
-squid:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™Î«şÿÿÿÿ
-„squid:S1488H"aImmediately return this expression instead of assigning it to the temporary variable "titleList".(µêÃ¦üÿÿÿÿ8î˜Ö½Ã-
-Fsquid:S1185"(Remove this method to simply inherit it.(ßìê¯8¾ñÔ½Ã-
-Hsquid:S00108B")Either remove or fill this block of code.(ºş8ŞÑ½Ã-
-Hsquid:S001082")Either remove or fill this block of code.(÷¦¦Ò8é¼Ò½Ã-
-squid:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ø´´øÿÿÿÿ

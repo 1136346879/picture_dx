@@ -1,8 +1,0 @@
-
-Gsquid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ôÞº² -
-Osquid:S1611„"1Remove the parentheses around the "pos" parameter(óÛ‹f8ôÞº² -
-tsquid:S00116,"URename this field "tab_layout" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â‘ëš8ôÞº² -
- squid:S1186¹"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ž¦›Í8ôÞº² -
-¥squid:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½Ä³ïþÿÿÿÿ8ôÞº² -
-csquid:S3398Ž"?Move this method into the anonymous class declared at line 217.(±ÓÊÇûÿÿÿÿ8ôÞº² -
-]squid:S1155æ">Use isEmpty() to check whether the collection is empty or not.(Œ¯‚“8á›²ìÂ-

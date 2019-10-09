@@ -1,6 +1,6 @@
 package com.xfs.fsyuncai.bridge.retrofit.service
 
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import io.reactivex.Observable
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -67,5 +67,9 @@ interface CommonService {
     @GET
     fun loadPdfFile(@Url fileUrl: String)
             : Call<ResponseBody>
-
+    /**
+     * 获取App版本更新的信息
+     */
+    @POST(ApiConstants.APP_UPDATE_URL)
+    fun getAppUpdateVersionData(): Observable<String>
 }

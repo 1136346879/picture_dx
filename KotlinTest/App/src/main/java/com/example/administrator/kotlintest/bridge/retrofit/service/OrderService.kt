@@ -1,11 +1,10 @@
 package com.xfs.fsyuncai.bridge.retrofit.service
 
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import com.xfs.fsyuncai.bridge.retrofit.service.body.*
 import com.xfs.fsyuncai.entity.accont.AccessManager
 import io.reactivex.Observable
 import okhttp3.MultipartBody
-import okhttp3.RequestBody
 import retrofit2.http.*
 
 /**

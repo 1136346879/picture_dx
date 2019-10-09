@@ -1,17 +1,0 @@
-
-Gsquid:S1068",Remove this unused "tabStrip" private field.(·Òà=8¦½Ñà-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÓÉôö8¦½Ñà-
-zsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸êÔ€ùÿÿÿÿ8¦½Ñà-
-osquid:S1450"TRemove the "pager" field and declare it as a local variable in the relevant methods.(§áÖ8¦½Ñà-
-rsquid:S1450"WRemove the "tabStrip" field and declare it as a local variable in the relevant methods.(·Òà=8¦½Ñà-
-ssquid:S1450"WRemove the "mLv_show" field and declare it as a local variable in the relevant methods.(ü–Èî8¦½Ñà-
-^squid:S2094"BRemove this empty class, write its code or make it an "interface".(ãåÍü8¦½Ñà-
-‡"squid:ClassVariableVisibilityCheck"OMake TAG a static final constant or non-public and provide accessors if needed.(öÜ‹âÿÿÿÿÿ8¦½Ñà-
-lsquid:CallToDeprecatedMethod"?Remove this use of "setOnPageChangeListener"; it is deprecated.(¸Ÿøş8¦½Ñà-
-osquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Êù÷Åÿÿÿÿÿ8¦½Ñà-
-osquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(òı·èûÿÿÿÿ8¦½Ñà-
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ãåÍü8¦½Ñà-
-osquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÎŸùóıÿÿÿÿ8¦½Ñà-
-Isquid:S1185"(Remove this method to simply inherit it.(ëŒ³©øÿÿÿÿ8¦½Ñà-
-psquid:S00116"SRename this field "mLv_show" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü–Èî8¦½Ñà-
-psquid:S00116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÜ‹âÿÿÿÿÿ8¦½Ñà-

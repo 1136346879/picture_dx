@@ -1,49 +1,0 @@
-
-Zsquid:S1068+"7Remove this unused "CASH_BALANCE_FORMAT" private field.(Í¬Ûˆşÿÿÿÿ8ç§š½Ã-
-Osquid:S1068H"1Remove this unused "tvBenefitTips" private field.(ÔõÖ8ÆıÍ¼Ã-
-Usquid:S1068E"7Remove this unused "itemCarrYCashLayout" private field.(üÍÂ•8ÆıÍ¼Ã-
-~squid:S1450:"[Remove the "linerUnlogin" field and declare it as a local variable in the relevant methods.(¦™Ãşÿÿÿÿ8ç§š½Ã-
-]squid:UnusedPrivateMethodm"1Remove this unused private "initListener" method.(ïÙ‘ 8ç§š½Ã-
-osquid:UselessImportCheck"?Remove this unused import 'android.graphics.drawable.Drawable'.(Á‰º„ùÿÿÿÿ8ç§š½Ã-
-rsquid:S1450<"URemove the "header" field and declare it as a local variable in the relevant methods.(±„ãC8ç§š½Ã-
-‚squid:S1450°"^Remove the "updatePhotoTime" field and declare it as a local variable in the relevant methods.(ìëÑÜúÿÿÿÿ8ç§š½Ã-
-ysquid:S14509"[Remove the "userNameText" field and declare it as a local variable in the relevant methods.(à¶ û8ŞÙ™½Ã-
-~squid:S1450@"aRemove the "stockMatchRedPoint" field and declare it as a local variable in the relevant methods.(ˆ›Ã8ç§š½Ã-
-Ssquid:S1068@"6Remove this unused "stockMatchRedPoint" private field.(ˆ›Ã8ç§š½Ã-
-€squid:S1450E"bRemove the "itemCarrYCashLayout" field and declare it as a local variable in the relevant methods.(üÍÂ•8ÆıÍ¼Ã-
-Ysquid:S1068*"6Remove this unused "TEST_GOLD_COIN_URL" private field.(¿ö€Çøÿÿÿÿ8ùşÏ¼Ã-
-Nsquid:S10689"0Remove this unused "userNameText" private field.(à¶ û8ŞÙ™½Ã-
-Usquid:S1068J"2Remove this unused "progressDialog" private field.(·á…Çùÿÿÿÿ8ç§š½Ã-
-isquid:CommentedOutCodeLineZ"<This block of commented-out lines of code should be removed.(Şœò€8‰İš½Ã-
-Qsquid:S1068O".Remove this unused "signInAnim" private field.(ôÛíıÿÿÿÿ8ŞÙ™½Ã-
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ç§š½Ã-
-Usquid:S1068'"2Remove this unused "CARRY_CASH_URL" private field.(›ò¿Ôúÿÿÿÿ8ç§š½Ã-
-Xsquid:S1068¶"9Remove this unused "UPDATE_PHOTO_TIME_NUM" private field.(Éö•8ç§š½Ã-
-Vsquid:S1068#"8Remove this unused "TEST_STOCK_MATCH_URL" private field.(Ñ—šë8ùşÏ¼Ã-
-}squid:S1450>"ZRemove the "partingLine" field and declare it as a local variable in the relevant methods.(¯Šì—ıÿÿÿÿ8ç§š½Ã-
-]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8ç§š½Ã-
-™squid:UselessImportCheck"iRemove this unused import 'com.example.administrator.kotlintest.banner.mybanner.imageLoader.ImageLoader'.(™†Çèûÿÿÿÿ8ç§š½Ã-
-Qsquid:S1068G"3Remove this unused "tvGoldCoinCount" private field.(õ‰ì©8ÆıÍ¼Ã-
-Msquid:S1068P"/Remove this unused "showGSZBDay" private field.(¢ï„8ùşÏ¼Ã-
-Ksquid:S1068I"-Remove this unused "cashCount" private field.(‘°¾ú8ùşÏ¼Ã-
-Qsquid:S1068Q"3Remove this unused "signInGoldCount" private field.(Ïğéæ8ç§š½Ã-
-xsquid:S1450M"URemove the "signIn" field and declare it as a local variable in the relevant methods.(ı«ÆÈûÿÿÿÿ8ÆıÍ¼Ã-
-Vsquid:S1068$"3Remove this unused "STOCK_MATCH_URL" private field.(Òàñèÿÿÿÿÿ8ç§š½Ã-
-|squid:S1450G"^Remove the "tvGoldCoinCount" field and declare it as a local variable in the relevant methods.(õ‰ì©8ÆıÍ¼Ã-
-Tsquid:S1068)"1Remove this unused "GOLD_COIN_URL" private field.(…•òÎşÿÿÿÿ8ùşÏ¼Ã-
-Zsquid:S1068&"7Remove this unused "TEST_CARRY_CASH_URL" private field.(ª›î©ıÿÿÿÿ8ùşÏ¼Ã-
-Msquid:S1068M"*Remove this unused "signIn" private field.(ı«ÆÈûÿÿÿÿ8ùşÏ¼Ã-
-Wsquid:S1068°"3Remove this unused "updatePhotoTime" private field.(ìëÑÜúÿÿÿÿ8ç§š½Ã-
-Lsquid:S1185©"(Remove this method to simply inherit it.(İßéàúÿÿÿÿ8ç§š½Ã-
-\squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(‡ÊÍÆ8Š¬Ï¼Ã-
-Rsquid:S1068>"/Remove this unused "partingLine" private field.(¯Šì—ıÿÿÿÿ8ç§š½Ã-
-Msquid:S1068F"/Remove this unused "tvCashCount" private field.(ó‘™æ8ŞÙ™½Ã-
-Gsquid:S1068<"*Remove this unused "header" private field.(±„ãC8ç§š½Ã-
-Ssquid:S1068:"0Remove this unused "linerUnlogin" private field.(¦™Ãşÿÿÿÿ8ç§š½Ã-
-csquid:UselessImportCheck"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8ç§š½Ã-
- squid:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††8ç§š½Ã-
-xsquid:S1450F"ZRemove the "tvCashCount" field and declare it as a local variable in the relevant methods.(ó‘™æ8ŞÙ™½Ã-
-\squid:UnusedPrivateMethod²"/Remove this unused private "updateTime" method.(ƒƒóê8ç§š½Ã-
-zsquid:S1450H"\Remove the "tvBenefitTips" field and declare it as a local variable in the relevant methods.(ÔõÖ8ç§š½Ã-
-usquid:S1450N"WRemove the "signInIV" field and declare it as a local variable in the relevant methods.(²Ûä8ç§š½Ã-
-Jsquid:S1068N",Remove this unused "signInIV" private field.(²Ûä8ÆıÍ¼Ã-

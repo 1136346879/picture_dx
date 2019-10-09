@@ -1,33 +1,0 @@
-
-Esquid:S1172Ë"(Remove this unused method parameter "s".(®Õ¶øýÿÿÿÿ
-csquid:HiddenFieldCheckÜ";Rename "isLeap" which hides the field declared at line 297.(Á²›áüÿÿÿÿ
-jsquid:ModifiersOrderCheckH"EReorder the modifiers to comply with the Java Language Specification.(¨ÿÚî
-esquid:HiddenFieldCheck‰"BRename "cyclicalMonth" which hides the field declared at line 303.(®¢ýÊ
-<squid:S1659‹"Declare "d" on a separate line.(½³½»úÿÿÿÿ
-4squid:S23868"Make this member "protected".(ë²«
-3squid:S1643•"Use a StringBuilder instead.(³‚ç
-hsquid:HiddenFieldCheckŠ"@Rename "cyclicalDay" which hides the field declared at line 304.(¯ØË”ÿÿÿÿÿ
-osquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥í†›ûÿÿÿÿ
-osquid:ModifiersOrderCheck/"EReorder the modifiers to comply with the Java Language Specification.(·³Ö–øÿÿÿÿ
-jsquid:ModifiersOrderCheck8"EReorder the modifiers to comply with the Java Language Specification.(ë²«
-;squid:S2885ÿ"#Make "utcCal" an instance variable.(“îÈ£
-Fsquid:S1125ì")Remove the literal "false" boolean value.(ò–¿¾ýÿÿÿÿ
-osquid:ModifiersOrderCheck5"EReorder the modifiers to comply with the Java Language Specification.(£¦‘¡øÿÿÿÿ
-jsquid:ModifiersOrderCheckT"EReorder the modifiers to comply with the Java Language Specification.(€ÛËµ
-osquid:ModifiersOrderCheck2"EReorder the modifiers to comply with the Java Language Specification.(´ç‡³ÿÿÿÿÿ
-jsquid:S00117Æ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûŽêá
-dsquid:HiddenFieldCheckˆ"ARename "cyclicalYear" which hides the field declared at line 302.(ÚÓ‚Ð
-osquid:ModifiersOrderCheckA"EReorder the modifiers to comply with the Java Language Specification.(ÑšµÁþÿÿÿÿ
-gsquid:HiddenFieldCheckÕ"?Rename "lunarMonth" which hides the field declared at line 295.(¢®´§ÿÿÿÿÿ
-osquid:ModifiersOrderChecki"EReorder the modifiers to comply with the Java Language Specification.(‰É°þøÿÿÿÿ
-gsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å‘ ù
-9squid:S23862"Make this member "protected".(´ç‡³ÿÿÿÿÿ
-€squid:S1488í"hImmediately return this expression instead of assigning it to the temporary variable "daysInLunarMonth".( ðü¼
-9squid:S2386>"Make this member "protected".(£¸²»üÿÿÿÿ
-jsquid:ModifiersOrderCheck*"EReorder the modifiers to comply with the Java Language Specification.(’ƒÖÙ
-osquid:ModifiersOrderCheck>"EReorder the modifiers to comply with the Java Language Specification.(£¸²»üÿÿÿÿ
-9squid:S2386A"Make this member "protected".(ÑšµÁþÿÿÿÿ
-osquid:ModifiersOrderCheckh"EReorder the modifiers to comply with the Java Language Specification.(¼Þ´Þøÿÿÿÿ
-9squid:S2386/"Make this member "protected".(·³Ö–øÿÿÿÿ
-jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÂšýÎ
-9squid:S23865"Make this member "protected".(£¦‘¡øÿÿÿÿ

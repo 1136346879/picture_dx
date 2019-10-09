@@ -1,5 +1,0 @@
-
-Gsquid:S1068"0Remove this unused "progressView" private field.(¢Œ×š
-rsquid:S1450"[Remove the "progressView" field and declare it as a local variable in the relevant methods.(¢Œ×š
-Hsquid:S1068"1Remove this unused "mProgressText" private field.(ù”»
-ssquid:S1450"\Remove the "mProgressText" field and declare it as a local variable in the relevant methods.(ù”»

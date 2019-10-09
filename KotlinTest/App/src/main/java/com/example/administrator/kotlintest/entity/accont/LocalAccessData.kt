@@ -3,7 +3,7 @@ package com.xfs.fsyuncai.entity.accont
 import com.example.administrator.kotlintest.bridge.retrofit.callback.CookieResulte
 import com.google.gson.Gson
 import com.xfs.fsyuncai.bridge.database.CookieDbUtil
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import com.xfs.fsyuncai.entity.AccountEntity
 
 /**

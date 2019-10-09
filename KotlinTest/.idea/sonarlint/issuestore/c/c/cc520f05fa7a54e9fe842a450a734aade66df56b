@@ -1,14 +1,0 @@
-
-;squid:S1148"#Use a logger to log this exception.(Ç’Çê
-fsquid:S00116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„•Ã
-?squid:S1148q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148‹"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-hsquid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(şÌ¶êøÿÿÿÿ
-gsquid:HiddenFieldCheckü"?Rename "packageName" which hides the field declared at line 28.(å´¦¶üÿÿÿÿ
-csquid:CommentedOutCodeLineÛ"<This block of commented-out lines of code should be removed.(ÙÆÓú
-csquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(¢‚×Ë
-?squid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Fsquid:S2093z"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-?squid:S1148`"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

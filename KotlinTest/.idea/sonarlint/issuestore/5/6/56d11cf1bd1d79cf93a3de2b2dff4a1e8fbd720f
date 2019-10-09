@@ -1,7 +1,0 @@
-
-fsquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÂê»
-csquid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(¦Õøÿÿÿÿ
-fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì»­•
-fsquid:S001001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄìøÌ
-_squid:S2583,"CChange this condition so that it does not always evaluate to "true"(ÿÃÇÿıÿÿÿÿ
-{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¨âàøÿÿÿÿ

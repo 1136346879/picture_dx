@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NetworkModule</string>
+
+    <string name="INTERNAL_SERVER_ERROR">服务器错误</string>
+    <string name="BAD_GATEWAY">服务器未响应</string>
+    <string name="NOT_FOUND">页面不存在</string>
+    <string name="CONNECTION_TIMEOUT">请求超时</string>
+    <string name="NETWORK_NOT_CONNECT">网络连接超时，请稍后重试！</string>
+    <string name="UNEXPECTED_ERROR">未知错误</string>
+    <string name="PARSING_FAILURE">解析失败</string>
+    <string name="NET_CONNECT_OUT_TIME">网络连接超时，请检查网络</string>
+</resources>

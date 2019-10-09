@@ -1,17 +1,0 @@
-
-Osquid:S1444"3Make this "public static channelManage" field final(Ã“€8×š º-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(İ¡Èà8×š º-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤ßæÍ8×š º-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¹—øÀ8×š º-
-Zsquid:S1444"9Make this "public static defaultUserChannels" field final(‹·Ï‘øÿÿÿÿ8×š º-
-—"squid:ClassVariableVisibilityCheck"_Make defaultUserChannels a static final constant or non-public and provide accessors if needed.(‹·Ï‘øÿÿÿÿ8×š º-
-Jsquid:S1905".Remove this unnecessary cast to "ChannelItem".(ó”ÒÈ8×š º-
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(İ¡Èà8×š º-
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(À›±t8×š º-
-˜"squid:ClassVariableVisibilityCheck"`Make defaultOtherChannels a static final constant or non-public and provide accessors if needed.(éö»·øÿÿÿÿ8×š º-
-Jsquid:S2386".Make member "defaultUserChannels" "protected".(¹—øÀ8×š º-
-[squid:S1444":Make this "public static defaultOtherChannels" field final(éö»·øÿÿÿÿ8×š º-
-Ksquid:S2386"/Make member "defaultOtherChannels" "protected".(¤ßæÍ8×š º-
-Œ"squid:ClassVariableVisibilityCheck"YMake channelManage a static final constant or non-public and provide accessors if needed.(Ã“€8×š º-
-Jsquid:S1905".Remove this unnecessary cast to "ChannelItem".(è»™ë8×š º-
-7squid:S3626"Remove this redundant jump.(ûÁİ…8×š º-

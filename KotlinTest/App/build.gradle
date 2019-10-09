@@ -85,6 +85,7 @@ dependencies {
     implementation project(':keboardLibrary')
     implementation project(':newbaselibrary')
     implementation project(':imagepicker')
+    implementation project(':NetworkModule')
 //    implementation('HangQing-debug.aar')
 //    implementation('quotationapi-debug.aar')
 //    implementation( 'hexunproject-debug.aar')

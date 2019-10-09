@@ -14,6 +14,7 @@ import com.example.administrator.kotlintest.LogConfig
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
 import com.example.administrator.kotlintest.area.AreaSelectorDialog
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import com.example.administrator.kotlintest.channel.ChannelActivity
 import com.example.administrator.kotlintest.common.ActiveResultDef
 import com.example.administrator.kotlintest.common.IntentDataDef
@@ -33,7 +34,10 @@ import com.example.baselibrary.widgets.ToastUtilKt
 import com.hexun.base.http.HeXunHttpClient
 import com.hexun.caidao.hangqing.StockManager
 import com.hexun.caidao.hangqing.TrainingApi
+import com.plumcookingwine.network.helper.NetworkHelper
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
+import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicHeaderInterceptor
+import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicParamsInterceptor
 import com.xfs.qrcode_module.recycleview.RecycleviewActivity
 import de.greenrobot.event.EventBus
 //import jsc.kit.keyboard.KeyBoardView
@@ -54,6 +58,14 @@ class MainActivity : RxAppCompatActivity() {
         getSQLHelper()
         SpManager.init(application)
         HeXunHttpClient.init(this)
+        NetworkHelper.init(
+                this,
+                ApiConstants.BASE_URL,
+//                isDebug,
+                false,
+                mutableListOf(PublicParamsInterceptor(), PublicHeaderInterceptor()),
+                null
+        )
 //        TrainingApi.getInstance().init(this)
 
 

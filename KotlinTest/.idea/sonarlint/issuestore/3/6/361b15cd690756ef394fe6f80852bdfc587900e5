@@ -1,16 +1,0 @@
-
-=kotlin:S125Z"Remove this commented out code.(ì„ä8¡ƒİ–Â-
-Skotlin:S1144"3Remove this unused private "startPhotoZoom" method.(Òøª8¡ƒİ–Â-
-=kotlin:S125_"Remove this commented out code.(ª¬†ß8¡ƒİ–Â-
->kotlin:S125¯"Remove this commented out code.(“ƒ8¡ƒİ–Â-
-Bkotlin:S125d"Remove this commented out code.(ŠÎáùÿÿÿÿ8¡ƒİ–Â-
-=kotlin:S125i"Remove this commented out code.(°šéä8¡ƒİ–Â-
-Ckotlin:S125÷"Remove this commented out code.(ôÁ°ÿùÿÿÿÿ8¡ƒİ–Â-
-=kotlin:S125{"Remove this commented out code.(°šéä8¡ƒİ–Â-
-ƒkotlin:S100Á"_Rename function "getRealPathFromUri_Byfile" to match the regular expression ^[a-z][a-zA-Z0-9]*$(ŞÔ¡—ıÿÿÿÿ8¡ƒİ–Â-
-vkotlin:S3776R"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ËÖéäøÿÿÿÿ8¡ƒİ–Â-
->kotlin:S125ˆ"Remove this commented out code.(°šéä8¡ƒİ–Â-
-†kotlin:S100â"bRename function "getRealPathFromUri_Api11To18" to match the regular expression ^[a-z][a-zA-Z0-9]*$(Âæíøúÿÿÿÿ8¡ƒİ–Â-
-lkotlin:S1192G"HDefine a constant instead of duplicating this literal "image/*" 3 times.(æİ”øıÿÿÿÿ8¡ƒİ–Â-
->kotlin:S125‚"Remove this commented out code.(°šéä8¡ƒİ–Â-
-‚kotlin:S100Ê"cRename function "getRealPathFromUri_AboveApi19" to match the regular expression ^[a-z][a-zA-Z0-9]*$(›ŞŠ8¡ƒİ–Â-

@@ -1,17 +1,0 @@
-
-Bsquid:S00108ø")Either remove or fill this block of code.(Úîø›
-hsquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(¢ç‚Ûüÿÿÿÿ
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Â™†úÿÿÿÿ
-Gsquid:S2093Ê"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-›%squid:RedundantThrowsDeclarationCheckŸ"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(™ùòÂ
-nsquid:S2095ë"QUse try-with-resources or close this "BufferedInputStream" in a "finally" clause.(¾öÀ˜ıÿÿÿÿ
-hsquid:CommentedOutCodeLineş"<This block of commented-out lines of code should be removed.(ü¿¦Ÿÿÿÿÿÿ
-hsquid:CommentedOutCodeLine‘"<This block of commented-out lines of code should be removed.(ÎáÄÈøÿÿÿÿ
-@squid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-›%squid:RedundantThrowsDeclarationCheckà"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(ÜÿÊé
-›%squid:RedundantThrowsDeclarationCheckÁ"iRemove the declaration of thrown exception 'java.lang.NullPointerException' which is a runtime exception.(¿¢®¤
-Gsquid:S2093æ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Psquid:S1197Ñ"8Move the array designator from the variable to the type.(î¨İ«
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾ÖÉªúÿÿÿÿ
-hsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(§¡¾“ûÿÿÿÿ
-hsquid:CommentedOutCodeLine¢"<This block of commented-out lines of code should be removed.(ıõ‰Øüÿÿÿÿ

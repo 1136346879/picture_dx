@@ -1,6 +1,6 @@
 package com.xfs.fsyuncai.bridge.retrofit.service
 
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import io.reactivex.Observable
 import retrofit2.http.Field
 import retrofit2.http.FieldMap

@@ -1,7 +1,7 @@
 package com.example.administrator.kotlintest.bridge.retrofit.http
 
 import android.text.TextUtils
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 
 /**
  * Created by kangf on 2018/6/16.

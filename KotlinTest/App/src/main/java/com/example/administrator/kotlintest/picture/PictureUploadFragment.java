@@ -17,7 +17,7 @@ import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImageGridActivity;
 import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
 import com.lzy.imagepicker.view.CropImageView;
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants;
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants;
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener;
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel;
 import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager;

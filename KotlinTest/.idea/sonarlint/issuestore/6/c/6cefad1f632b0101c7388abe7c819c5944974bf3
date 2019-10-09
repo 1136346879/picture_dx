@@ -1,14 +1,0 @@
-
-=squid:S1659;"!Declare "top" on a separate line.(ûî«îúÿÿÿÿ
-@squid:S1659;"$Declare "bottom" on a separate line.(ûî«îúÿÿÿÿ
-?squid:S1659;"#Declare "right" on a separate line.(ûî«îúÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(×Õôì
-bsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(‰õİç
-gsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(Ô²üıÿÿÿÿ
-gsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(û¥¦¿øÿÿÿÿ
-gsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(µ×ñÚÿÿÿÿÿ
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(³ÂÑ£şÿÿÿÿ
-@squid:S1940=")Use the opposite operator ("<=") instead.(ŒÂâì
-@squid:S1940=")Use the opposite operator (">=") instead.(ŒÂâì
-?squid:S1940>")Use the opposite operator ("<=") instead.(³ÔÉ9
-?squid:S1940>")Use the opposite operator (">=") instead.(³ÔÉ9

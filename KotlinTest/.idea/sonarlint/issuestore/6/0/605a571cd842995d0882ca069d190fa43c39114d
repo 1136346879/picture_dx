@@ -1,5 +1,0 @@
-
-isquid:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í›¸ýÿÿÿÿ
-^squid:S4201"IRemove this unnecessary null check; "instanceof" returns false for nulls.(ášÂ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

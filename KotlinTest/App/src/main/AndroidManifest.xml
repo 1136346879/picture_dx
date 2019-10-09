@@ -66,10 +66,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".update.DownloadService" />
 
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.baselibrary.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path"
+                tools:replace="android:resource" />
+        </provider>
         <!--tab可切换的布局  fragment-->
-        <activity android:name=".HomeActiivty"/>
-        <activity android:name=".FirstActivity"/>
+        <activity android:name=".HomeActiivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".FirstActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".videorecorde.CameraActivity"/>
         <activity android:name=".videorecorde.MainCameraActivity"/>
 

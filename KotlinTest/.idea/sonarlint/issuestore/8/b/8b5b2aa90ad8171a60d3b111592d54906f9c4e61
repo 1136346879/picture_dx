@@ -1,28 +1,0 @@
-
-X"squid:SwitchLastCaseIsDefaultCheckú""Add a default case to this switch.(ìß¤è8­üáºù,
-Ÿsquid:S1186º"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦æ—&8­üáºù,
-Msquid:S1172‘".Remove this unused method parameter "barcode".(ž§µƒ8­üáºù,
-hsquid:UnusedPrivateMethod‘";Remove this unused private "handleDecodeInternally" method.(ž§µƒ8­üáºù,
-Isquid:S00108µ")Either remove or fill this block of code.(§¾å×8­üáºù,
-bsquid:UnusedPrivateMethodì"5Remove this unused private "drawResultPoints" method.(¡¸—æ8­üáºù,
-jsquid:CommentedOutCodeLineÝ"<This block of commented-out lines of code should be removed.(þáÚ8­üáºù,
-osquid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(ñ£ž°ùÿÿÿÿ8­üáºù,
-hsquid:UnusedPrivateMethodì";Remove this unused private "handleDecodeExternally" method.(Ù¹“ç8­üáºù,
-jsquid:CommentedOutCodeLineÆ"<This block of commented-out lines of code should be removed.(Àˆ›ó8­üáºù,
-osquid:CommentedOutCodeLineÔ"<This block of commented-out lines of code should be removed.(´‹¬¢üÿÿÿÿ8­üáºù,
-^squid:S1068[";Remove this unused "BULK_MODE_SCAN_DELAY_MS" private field.(Ïé¼‹ýÿÿÿÿ8­üáºù,
-jsquid:CommentedOutCodeLine×"<This block of commented-out lines of code should be removed.(½øÿ8­üáºù,
-jsquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(ÝµœÄ8­üáºù,
-isquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(Áµ ;8­üáºù,
-ysquid:S1450i"[Remove the "qrCodeTopBar" field and declare it as a local variable in the relevant methods.(ªÍöÎ8­üáºù,
-osquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(½­¤ûüÿÿÿÿ8­üáºù,
-asquid:S2583ß"CChange this condition so that it does not always evaluate to "true"(Ï—ó#8­üáºù,
-osquid:CommentedOutCodeLineá"<This block of commented-out lines of code should be removed.(¾Ù”žøÿÿÿÿ8­üáºù,
-isquid:CommentedOutCodeLine•"<This block of commented-out lines of code should be removed.(‰þ½8­üáºù,
-Vsquid:S1481É"2Remove this unused "resultHandler" local variable.(ß¹ùýÿÿÿÿÿ8­üáºù,
-jsquid:CommentedOutCodeLineØ"<This block of commented-out lines of code should be removed.(’ÐÕ¬8­üáºù,
-osquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(½­¤ûüÿÿÿÿ8­üáºù,
-Qsquid:S1172•"-Remove this unused method parameter "bitmap".(Õõóþÿÿÿÿ8­üáºù,
-osquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(¤åØÿÿÿÿÿ8­üáºù,
-osquid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(½ééùÿÿÿÿ8­üáºù,
-osquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(Ü×â•üÿÿÿÿ8­üáºù,

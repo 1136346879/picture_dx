@@ -1,28 +1,0 @@
-
-isquid:CommentedOutCodeLineÝ"<This block of commented-out lines of code should be removed.(·´û}8´óé½Ã-
-Jsquid:S1172Ä"&Remove these unused method parameters.(µÛÎ°üÿÿÿÿ8¤úó½Ã-
-tsquid:S1450]"WRemove the "shareUrl" field and declare it as a local variable in the relevant methods.(ÚÜÍ~8ÜåÜ½Ã-
-Psquid:S1068´",Remove this unused "activity" private field.(Ù—åŽÿÿÿÿÿ8ÜåÜ½Ã-
-:squid:S3626î"Remove this redundant jump.(ûÁÝ…8¿¨ñ½Ã-
-Ssquid:S1068Â"4Remove this unused "onlyChannelLogin" private field.(ó¦ê´8ÿ×ð½Ã-
-xsquid:S1450]"[Remove the "shareContent" field and declare it as a local variable in the relevant methods.(ÚÜÍ~8ÜåÜ½Ã-
-Ksquid:S1068]".Remove this unused "shareTitle" private field.(ÚÜÍ~8ÜåÜ½Ã-
-Psquid:S1068L"-Remove this unused "showClose" private field.(”ŒÂ²ûÿÿÿÿ8ÜåÜ½Ã-
-vsquid:S1450]"YRemove the "shareTitle" field and declare it as a local variable in the relevant methods.(ÚÜÍ~8ÜåÜ½Ã-
-Osquid:S1068À"+Remove this unused "webView" private field.(„Â ¿þÿÿÿÿ8ÿ×ð½Ã-
-Usquid:S2696•"6Make the enclosing method "static" or remove this set.(Õ†þÿ8ÜåÜ½Ã-
-}squid:S1450Y"ZRemove the "loadingView" field and declare it as a local variable in the relevant methods.(î£Úþÿÿÿÿ8ÜåÜ½Ã-
-Msquid:S3398É")Move this method into "JavaScriptObject".(é¿ÃËûÿÿÿÿ8¿¨ñ½Ã-
-zsquid:S1450À"VRemove the "webView" field and declare it as a local variable in the relevant methods.(„Â ¿þÿÿÿÿ8ÿ×ð½Ã-
-osquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ßúýÿÿÿÿ8“ç½Ã-
-osquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.( ûÑ›ÿÿÿÿÿ8œ×í½Ã-
-jsquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(á«œñ8´óé½Ã-
-:squid:S3626Õ"Remove this redundant jump.(ûÁÝ…8ÁÃñ½Ã-
-wsquid:S3008,"TRename this field "JS_Object" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»‡¡ãüÿÿÿÿ8ÜåÜ½Ã-
-jsquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(”•Ì8´óé½Ã-
-Gsquid:S1659]"*Declare "shareContent" on a separate line.(ÚÜÍ~8ÜåÜ½Ã-
-bsquid:S2583"CChange this condition so that it does not always evaluate to "true"(Õ®‚Œ8ü‡í½Ã-
-osquid:CommentedOutCodeLineè"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8´óé½Ã-
-Isquid:S1068]",Remove this unused "shareUrl" private field.(ÚÜÍ~8ÜåÜ½Ã-
-Csquid:S1659]"&Declare "shareUrl" on a separate line.(ÚÜÍ~8ÜåÜ½Ã-
-Msquid:S1068]"0Remove this unused "shareContent" private field.(ÚÜÍ~8ÜåÜ½Ã-

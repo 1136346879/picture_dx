@@ -1,64 +1,0 @@
-
-@squid:S1148Ë"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
->squid:S1168â"&Return an empty array instead of null.(¥¹ï
-9squid:S1643¾"Use a StringBuilder instead.(µÄà–şÿÿÿÿ
-Gsquid:S2093İ"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-Bsquid:S00108Í")Either remove or fill this block of code.(ï­£Ä
-4squid:S1643Ø"Use a StringBuilder instead.(Åõ©Ò
-`squid:S4042è"IUse "java.nio.Files#delete" here for better messages on error conditions.(ò¢æt
->squid:S1168ˆ"&Return an empty array instead of null.(¥¹ï
-Usquid:S2130‘"8Use "Long.parseLong" for this string-to-long conversion.(ºç„™ÿÿÿÿÿ
-@squid:S1148š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-fsquid:S2095Á"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(æ€ÜÆ
-xsquid:S1488ü"[Immediately return this expression instead of assigning it to the temporary variable "obj".(Åë®şÿÿÿÿ
-osquid:S00117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıåĞßÿÿÿÿÿ
-osquid:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸÿÂF
-[
-squid:S899±"DDo something with the "boolean" value returned by "setLastModified".(»æÆò
-@squid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Šñ
-Gsquid:S2093À"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-isquid:S00117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Šñ
-dsquid:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(‡ŠÍĞ
-Gsquid:S2093¹"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-^squid:S00112b"FDefine and throw a dedicated exception instead of using a generic one.(‚‚µõ
-isquid:S00117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó”¬
-@squid:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-W
-squid:S899Æ";Do something with the "boolean" value returned by "delete".(é‘‚©úÿÿÿÿ
->squid:S1168¾"&Return an empty array instead of null.(¥¹ï
-fsquid:S4042Æ"IUse "java.nio.Files#delete" here for better messages on error conditions.(é‘‚©úÿÿÿÿ
-jsquid:S2259ç"M"NullPointerException" will be thrown when invoking method "calculateSize()".(úÁ«›øÿÿÿÿ
-@squid:S1148ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Usquid:S2130’"8Use "Long.parseLong" for this string-to-long conversion.(€Ê˜›øÿÿÿÿ
-lsquid:S00100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¾¬ôÿÿÿÿÿ
-@squid:S1148­"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-osquid:S00117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ÁŞ…üÿÿÿÿ
->squid:S1168"&Return an empty array instead of null.(¥¹ï
-@squid:S1604„"(Make this anonymous inner class a lambda(ÉãÃ®
-isquid:S00117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó”¬
-nsquid:S00117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¨ò¨øÿÿÿÿ
-fsquid:S4042½"IUse "java.nio.Files#delete" here for better messages on error conditions.(òÆ½øÿÿÿÿ
-@squid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1148ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-esquid:S00101q"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñ”‹
-osquid:S00117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıåĞßÿÿÿÿÿ
-lsquid:S00100à"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¬ûÿÿÿÿ
-@squid:S1148ğ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
->squid:S1168”"&Return an empty array instead of null.(¥¹ï
-Gsquid:S2093…"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-@squid:S1148Ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-Vsquid:S1161y":Add the "@Override" annotation above this method signature(æÔ«÷şÿÿÿÿ
-Xsquid:S2259Ì"AA "NullPointerException" could be thrown; "oos" is nullable here.(İÛĞK
-@squid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-xsquid:S1488ª"[Immediately return this expression instead of assigning it to the temporary variable "obj".(÷¾¦öûÿÿÿÿ
-Gsquid:S2093¾"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-@squid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-}squid:S1488à"`Immediately return this expression instead of assigning it to the temporary variable "reObject".(²Ñ”˜ıÿÿÿÿ
-nsquid:S00117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥¨ò¨øÿÿÿÿ
-ssquid:S00115Ó"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£õç
-Gsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-[
-squid:S899ª"DDo something with the "boolean" value returned by "setLastModified".(»æÆò
-@squid:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

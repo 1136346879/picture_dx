@@ -5,7 +5,7 @@ import android.text.TextUtils
 import com.example.administrator.kotlintest.bridge.retrofit.callback.ApiResponse
 import com.example.baselibrary.widgets.TLog
 import com.example.administrator.kotlintest.bridge.retrofit.ext.bind
-import com.xfs.fsyuncai.bridge.retrofit.ApiConstants
+import com.example.administrator.kotlintest.bridge.retrofit.ApiConstants
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.CookieInterceptor
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicParamsInterceptor

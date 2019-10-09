@@ -1,4 +1,4 @@
-package com.xfs.fsyuncai.bridge.retrofit
+package com.example.administrator.kotlintest.bridge.retrofit
 
 
 /**
@@ -180,6 +180,8 @@ class ApiConstants private constructor() {
         const val SELECT_HOST_POWER = "api/pc/nobodyhouse/selectHousePower"
             //获取地址对应的仓
             const val GET_WAREHORSE_BY_CITY = "baseservice/area/getAddressCorrespondWarehouse"
+            //版本更新接口
+            const val APP_UPDATE_URL = "check_version"
     }
 
 }
