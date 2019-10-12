@@ -5,7 +5,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.classic.common.MultipleStatusView
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter

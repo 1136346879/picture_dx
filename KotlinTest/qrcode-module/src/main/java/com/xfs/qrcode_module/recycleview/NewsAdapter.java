@@ -1,7 +1,6 @@
 package com.xfs.qrcode_module.recycleview;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 
 class NewsAdapter extends BaseDelegationAdapter{
 

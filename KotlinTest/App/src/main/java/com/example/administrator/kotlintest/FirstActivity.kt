@@ -2,9 +2,9 @@ package com.example.administrator.kotlintest
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
@@ -20,7 +20,7 @@ class FirstActivity : AppCompatActivity() ,View.OnClickListener{
     protected var savedInstanceState: Bundle? = null
     private var cjNewsFragment: NewsFragment? = null
     private var currentFragmentIndex: Int = 0
-    private var fm: FragmentManager? = null
+    private var fm: androidx.fragment.app.FragmentManager? = null
     private val tabs = ArrayList<View>()
     private var lastTab = 2
     val TAB_INDEX = "tab_index"
@@ -52,7 +52,7 @@ class FirstActivity : AppCompatActivity() ,View.OnClickListener{
         }
         currentFragmentIndex = index
         val transaction = fm!!.beginTransaction()
-        var fragment: Fragment?
+        var fragment: androidx.fragment.app.Fragment?
         var isForce = false
         for (i in 0..4) {
             fragment = fm!!.findFragmentByTag("fragment$i")
@@ -113,8 +113,8 @@ class FirstActivity : AppCompatActivity() ,View.OnClickListener{
      * @param index
      * @return
      */
-    private fun createFragment(index: Int): Fragment? {
-        var baseFragment: Fragment? = null
+    private fun createFragment(index: Int): androidx.fragment.app.Fragment? {
+        var baseFragment: androidx.fragment.app.Fragment? = null
         when (index) {
             0 -> {
                 cjNewsFragment = NewsFragment()//新闻页面

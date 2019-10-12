@@ -2,9 +2,9 @@ package com.example.administrator.kotlintest
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.TabLayout
-import android.support.v4.app.Fragment
-import android.support.v4.view.ViewPager
+import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
@@ -34,7 +34,7 @@ class HomeActiivty : BaseActivity(){
     private val purchasingFrag: ShoppingCarFragment = ShoppingCarFragment.newInstance()
     private val personalFragment: PersonalFragment = PersonalFragment.newInstance()
 
-    private val fragments: ArrayList<Fragment> = ArrayList()
+    private val fragments: ArrayList<androidx.fragment.app.Fragment> = ArrayList()
     private lateinit var tabAdapter: TabAdapter
     private var home: TabLayout.Tab? = null
     private var category: TabLayout.Tab? = null
@@ -144,7 +144,7 @@ class HomeActiivty : BaseActivity(){
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
 
-        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        viewPager.addOnPageChangeListener(object : androidx.viewpager.widget.ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
 
             }

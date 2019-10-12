@@ -10,7 +10,7 @@ import android.content.Context
 import android.content.ServiceConnection
 import android.net.Uri
 import android.os.IBinder
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.FragmentActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
@@ -105,7 +105,7 @@ class UpdateDialog(val mContext: Context?, val result: AppUpdateEntity) : Dialog
 
     @SuppressLint("CheckResult")
     private fun updateNow(isShowClose: Boolean) {
-        RxPermissions(mContext as FragmentActivity)
+        RxPermissions(mContext as androidx.fragment.app.FragmentActivity)
                 .requestEach(Manifest.permission.READ_EXTERNAL_STORAGE,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .subscribe { // will emit 2 Permission objects

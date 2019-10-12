@@ -1,10 +1,10 @@
 package com.example.administrator.kotlintest.navigation
 
 import android.os.Parcelable
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v4.app.FragmentStatePagerAdapter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import android.view.View
 import android.view.ViewGroup
 import java.util.ArrayList
@@ -12,9 +12,9 @@ import java.util.ArrayList
 /**
  * Created by kangf on 2018/6/18.
  */
-class TabAdapter(fm: FragmentManager, private val fragments: ArrayList<Fragment>) : FragmentPagerAdapter(fm) {
+class TabAdapter(fm: androidx.fragment.app.FragmentManager, private val fragments: ArrayList<androidx.fragment.app.Fragment>) : androidx.fragment.app.FragmentPagerAdapter(fm) {
 
-    override fun getItem(position: Int): Fragment {
+    override fun getItem(position: Int): androidx.fragment.app.Fragment {
         return fragments[position]
     }
 

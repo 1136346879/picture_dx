@@ -1,9 +1,9 @@
 package com.xfs.qrcode_module.StickyItemRecycleview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.xfs.qrcode_module.R;
 import com.xfs.qrcode_module.StickyItemRecycleview.adapter.RecyclerAdapter;

@@ -2,7 +2,7 @@ package com.example.administrator.kotlintest.videorecorde
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.administrator.kotlintest.R
 import com.example.administrator.kotlintest.adapter.BaseRvAdapter
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao

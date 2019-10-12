@@ -1,7 +1,7 @@
 package com.example.administrator.kotlintest.location
 
 import android.content.Context
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.view.View
 import android.widget.TextView
 import com.example.administrator.kotlintest.R

@@ -2,7 +2,7 @@ package com.xfs.qrcode_module.util;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * <pre>

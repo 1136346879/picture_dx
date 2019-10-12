@@ -1,8 +1,7 @@
 package com.xfs.qrcode_module.util;
 
-import android.os.Environment;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
 import android.util.Log;
 
 import org.json.JSONArray;

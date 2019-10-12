@@ -1,8 +1,8 @@
 package com.example.administrator.kotlintest.navigation
 
-import android.support.design.widget.TabLayout
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentPagerAdapter
+import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentPagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +21,7 @@ class NavigationBar (info: NavigationEntity) {
 
     private var container: ViewGroup? = null
 
-    private var mAdapter: FragmentPagerAdapter? = null
+    private var mAdapter: androidx.fragment.app.FragmentPagerAdapter? = null
 
     private var tabView: View? = null
 
@@ -40,7 +40,7 @@ class NavigationBar (info: NavigationEntity) {
 
     private var mCurrentIndex = 0
 
-    fun setNavigation(tabLayout: TabLayout, container: ViewGroup,mIndex : Int) {
+    fun setNavigation(tabLayout: TabLayout, container: ViewGroup, mIndex : Int) {
         this.tablayout = tablayout
         this.container = container
         this.mIndex = mIndex
@@ -91,7 +91,7 @@ class NavigationBar (info: NavigationEntity) {
             if (position == 3 || position == 4) {
                 mInfo?.getContext()?.let {
                     isLogin ({
-                        val fragment = mAdapter?.instantiateItem(container!!, position) as Fragment
+                        val fragment = mAdapter?.instantiateItem(container!!, position) as androidx.fragment.app.Fragment
                         mIndex = position
                         mAdapter?.setPrimaryItem(container!!, position, fragment)
                         mAdapter?.finishUpdate(container!!)
@@ -102,7 +102,7 @@ class NavigationBar (info: NavigationEntity) {
                 mCurrentIndex = 0
                 return
             }
-            val fragment = mAdapter?.instantiateItem(container!!, position) as Fragment
+            val fragment = mAdapter?.instantiateItem(container!!, position) as androidx.fragment.app.Fragment
             mAdapter?.setPrimaryItem(container!!, position, fragment)
             mIndex = position
             mAdapter?.finishUpdate(container!!)

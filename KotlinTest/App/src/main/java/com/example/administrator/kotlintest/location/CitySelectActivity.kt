@@ -1,8 +1,8 @@
 package com.example.administrator.kotlintest.location
 
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -355,7 +355,7 @@ class CitySelectActivity : BaseActivity() {
                 sourceDataList.mapIndexed { index, listBean ->
                     if (listBean.sectionTag != null && listBean.sectionTag == INDEX_STRING[p1]) {
                         rv_location_area.scrollToPosition(index)
-                        val mLayoutManager = rv_location_area.layoutManager as LinearLayoutManager
+                        val mLayoutManager = rv_location_area.layoutManager as androidx.recyclerview.widget.LinearLayoutManager
                         mLayoutManager.scrollToPositionWithOffset(index, 1)
                         return
                     }

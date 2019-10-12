@@ -2,7 +2,7 @@ package com.example.administrator.kotlintest.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.text.Spanned
 import android.util.SparseArray
 import android.view.LayoutInflater
@@ -18,7 +18,7 @@ import com.example.administrator.kotlintest.bridge.loadimg.LoadImage
  * Created by kangf on 2018/6/18.
  */
 abstract class BaseRvAdapter<T>(val mDatas: ArrayList<T>, private val resLayoutId: Int, val context: Context) :
-        RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+        androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>() {
 
     private var onClickItem: OnClickItem? = null
 
@@ -34,11 +34,11 @@ abstract class BaseRvAdapter<T>(val mDatas: ArrayList<T>, private val resLayoutI
     fun setVisibility(pos: Int, holder: BaseRvHolder, isVis: Boolean) {
         isShows.put(pos, isVis)
         val itemView = holder.itemView
-        val param = itemView.layoutParams as RecyclerView.LayoutParams
+        val param = itemView.layoutParams as androidx.recyclerview.widget.RecyclerView.LayoutParams
         if (isVis) {
             itemView.visibility = View.VISIBLE
-            param.height = RecyclerView.LayoutParams.WRAP_CONTENT
-            param.width = RecyclerView.LayoutParams.MATCH_PARENT
+            param.height = androidx.recyclerview.widget.RecyclerView.LayoutParams.WRAP_CONTENT
+            param.width = androidx.recyclerview.widget.RecyclerView.LayoutParams.MATCH_PARENT
         } else {
             itemView.visibility = View.GONE
             param.height = 1
@@ -59,14 +59,14 @@ abstract class BaseRvAdapter<T>(val mDatas: ArrayList<T>, private val resLayoutI
 
     abstract fun onBindView(holder: BaseRvHolder, data: T)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): androidx.recyclerview.widget.RecyclerView.ViewHolder {
         val view = LayoutInflater.from(context).inflate(resLayoutId, parent, false)
         return BaseRvHolder(view)
     }
 
     override fun getItemCount(): Int = if (mDatas == null) 0 else mDatas.size;
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: androidx.recyclerview.widget.RecyclerView.ViewHolder, position: Int) {
         isShows.put(holder.adapterPosition, false)
         holder.itemView.setOnClickListener { onClickItem?.onClickItem(position) }
 
@@ -103,7 +103,7 @@ abstract class BaseRvAdapter<T>(val mDatas: ArrayList<T>, private val resLayoutI
 
     companion object {
 
-        class BaseRvHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class BaseRvHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
 
             private var mViews = SparseArray<View>()
 

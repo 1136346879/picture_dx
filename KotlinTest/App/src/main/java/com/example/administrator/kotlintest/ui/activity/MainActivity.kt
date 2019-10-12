@@ -2,7 +2,7 @@ package com.example.administrator.kotlintest.ui.activity
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast

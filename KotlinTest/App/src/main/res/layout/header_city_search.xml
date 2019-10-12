@@ -17,12 +17,12 @@
         android:background="@color/common_background"
         android:layout_below="@+id/ll_city_location"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_history_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_city_history"
         android:layout_margin="@dimen/space_14"
         android:visibility="gone">
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

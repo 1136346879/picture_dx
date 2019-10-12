@@ -2,34 +2,24 @@ package com.example.administrator.kotlintest.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.util.TypedValue;
+
+import androidx.viewpager.widget.ViewPager;
+
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.example.administrator.kotlintest.R;
-import com.example.administrator.kotlintest.util.SPUtil;
-import com.example.administrator.kotlintest.util.SpManager;
 import com.example.administrator.kotlintest.widget.SlidingTabLayout;
 import com.example.baselibrary.common.ToastUtil;
 import com.jakewharton.rxbinding2.view.RxView;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-import io.reactivex.Observable;
+
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
 
 /**
  * @author wdx

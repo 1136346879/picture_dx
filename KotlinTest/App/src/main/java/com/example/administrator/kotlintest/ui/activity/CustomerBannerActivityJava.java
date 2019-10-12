@@ -3,7 +3,7 @@ package com.example.administrator.kotlintest.ui.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 

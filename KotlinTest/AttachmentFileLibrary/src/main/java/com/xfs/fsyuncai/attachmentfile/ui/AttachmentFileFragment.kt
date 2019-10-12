@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.util.Log
 import android.widget.ImageView
 import com.tbruyelle.rxpermissions2.RxPermissions
@@ -78,26 +78,26 @@ class AttachmentFileFragment : BaseFragment(), AttachmentFileContract.View {
         }
         unOperatAdapter = NoCLickListApapter(unOpreatList, this.context!!)
         has_upload_file_list_not_click.let {
-            val manager = LinearLayoutManager(this.context)
+            val manager = androidx.recyclerview.widget.LinearLayoutManager(this.context)
             it.addItemDecoration(SpaceItemDecoration(UIUtils.dip2px(1)))
             it.layoutManager = manager
             it.adapter = unOperatAdapter
         }
         operatAdapter = ListApapter(operatList, this.context!!)
         has_upload_file_list.let {
-            val manager = LinearLayoutManager(this.context)
+            val manager = androidx.recyclerview.widget.LinearLayoutManager(this.context)
             it.addItemDecoration(SpaceItemDecoration(UIUtils.dip2px(1)))
             it.layoutManager = manager
             it.adapter = operatAdapter
         }
-        val layoutManager = LinearLayoutManager(this.context)
+        val layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this.context)
         layoutManager.isSmoothScrollbarEnabled = true
         layoutManager.isAutoMeasureEnabled = true
         has_upload_file_list_not_click.layoutManager = layoutManager
         has_upload_file_list_not_click.setHasFixedSize(true)
         has_upload_file_list_not_click.isNestedScrollingEnabled = false
 
-        val layoutManager2 = LinearLayoutManager(this.context)
+        val layoutManager2 = androidx.recyclerview.widget.LinearLayoutManager(this.context)
         layoutManager2.isSmoothScrollbarEnabled = true
         layoutManager2.isAutoMeasureEnabled = true
         has_upload_file_list.layoutManager = layoutManager2

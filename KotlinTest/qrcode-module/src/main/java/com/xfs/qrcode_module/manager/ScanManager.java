@@ -6,12 +6,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.widget.Toast;
 
 import com.xfs.qrcode_module.R;
 import com.xfs.qrcode_module.activity.CaptureActivity;
-import com.xfs.qrcode_module.camera.PreviewCallback;
 import com.xfs.qrcode_module.event.ScanResultEvent;
 import com.xfs.qrcode_module.ui.GrantedActivity;
 import com.xfs.qrcode_module.util.ImageUtil;

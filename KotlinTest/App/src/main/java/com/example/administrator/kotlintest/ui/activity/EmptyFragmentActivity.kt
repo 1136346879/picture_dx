@@ -1,13 +1,13 @@
 package com.example.administrator.kotlintest.ui.activity
 
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.launcher.ARouter
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
 import com.example.administrator.kotlintest.R
 import com.example.baselibrary.ui.activity.BaseUIActivity
 
 class EmptyFragmentActivity : BaseUIActivity(){
-    lateinit var keyBoardFragment : Fragment
+    lateinit var keyBoardFragment : androidx.fragment.app.Fragment
     override fun initLayout(): Int {
 
         return R.layout.activity_empty_fragment_activity
@@ -15,7 +15,7 @@ class EmptyFragmentActivity : BaseUIActivity(){
 
     override fun initView() {
 
-      keyBoardFragment = ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_FRAGMENT_URL).navigation() as Fragment
+      keyBoardFragment = ARouter.getInstance().build(RouterApi.KeboardLibrary.ROUTER_KEYBOARD_FRAGMENT_URL).navigation() as androidx.fragment.app.Fragment
     }
 
     override fun initData() {

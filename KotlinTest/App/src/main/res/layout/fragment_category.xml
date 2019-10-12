@@ -12,7 +12,7 @@
         android:layout_below="@id/rl_toolbar"
         android:orientation="horizontal">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvTopCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -24,7 +24,7 @@
             android:layout_marginRight="@dimen/space_10"
             android:layout_weight="1">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvAllCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

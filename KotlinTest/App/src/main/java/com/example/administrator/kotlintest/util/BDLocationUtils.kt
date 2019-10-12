@@ -2,8 +2,8 @@ package com.example.administrator.kotlintest.util
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import com.baidu.location.BDAbstractLocationListener
 import com.baidu.location.BDLocation
 import com.baidu.location.LocationClient
@@ -49,13 +49,13 @@ class BDLocationUtils : BDAbstractLocationListener() {
             return mOption!!
         }
 
-    fun startLocation(context: FragmentActivity, callback: ResultCallback) {
+    fun startLocation(context: androidx.fragment.app.FragmentActivity, callback: ResultCallback) {
         this.callback = callback
         rxPermissions = RxPermissions(context)
         location(rxPermissions!!)
     }
 
-    fun startLocation(context: Fragment, callback: ResultCallback) {
+    fun startLocation(context: androidx.fragment.app.Fragment, callback: ResultCallback) {
         this.callback = callback
         rxPermissions = RxPermissions(context)
         location(rxPermissions!!)

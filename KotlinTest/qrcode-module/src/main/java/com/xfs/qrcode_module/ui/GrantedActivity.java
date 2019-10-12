@@ -3,22 +3,17 @@ package com.xfs.qrcode_module.ui;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.view.LayoutInflater;
+import androidx.core.content.ContextCompat;
+
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.xfs.qrcode_module.R;
 import com.xfs.qrcode_module.event.ScanResultEvent;
-import com.xfs.qrcode_module.manager.RecorderManager;
 import com.xfs.qrcode_module.manager.ScanManager;
 import com.xfs.qrcode_module.util.NetworkUtil;
-
-import java.util.concurrent.TimeUnit;
 
 
 /**

@@ -1,29 +1,29 @@
 package com.example.administrator.kotlintest.ui.adapter
 
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.StaggeredGridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import android.view.View
 import android.view.ViewGroup
 
 import java.util.ArrayList
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 
 
 /**
  * Created by Kangfan on 2017/11/9.
  */
 
-class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolder> {
+class BaseRvHeaderAndFooterWrapper : androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder> {
 
     /**
      * RecyclerView使用的，真正的Adapter
      */
-    private var mInnerAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>? = null
+    private var mInnerAdapter: androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>? = null
 
     private val mHeaderViews = ArrayList<View>()
     private val mFooterViews = ArrayList<View>()
 
-    private val mDataObserver = object : RecyclerView.AdapterDataObserver() {
+    private val mDataObserver = object : androidx.recyclerview.widget.RecyclerView.AdapterDataObserver() {
 
         override fun onChanged() {
             super.onChanged()
@@ -52,7 +52,7 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 
-    val innerAdapter: RecyclerView.Adapter<*>?
+    val innerAdapter: androidx.recyclerview.widget.RecyclerView.Adapter<*>?
         get() = mInnerAdapter
 
     /**
@@ -77,7 +77,7 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
 
     constructor() {}
 
-    constructor(innerAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>) {
+    constructor(innerAdapter: androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>) {
         setAdapter(innerAdapter)
     }
 
@@ -85,10 +85,10 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
      * 设置adapter
      * @param adapter
      */
-    fun setAdapter(adapter: RecyclerView.Adapter<RecyclerView.ViewHolder>?) {
+    fun setAdapter(adapter: androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>?) {
 
         if (adapter != null) {
-            if (adapter !is RecyclerView.Adapter<*>)
+            if (adapter !is androidx.recyclerview.widget.RecyclerView.Adapter<*>)
                 throw RuntimeException("your adapter must be a RecyclerView.Adapter")
         }
 
@@ -141,7 +141,7 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
         return footerViewsCount > 0 && position == lastPosition
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): androidx.recyclerview.widget.RecyclerView.ViewHolder {
         val headerViewsCountCount = headerViewsCount
         return if (viewType < TYPE_HEADER_VIEW + headerViewsCountCount) {
             ViewHolder(mHeaderViews[viewType - TYPE_HEADER_VIEW])
@@ -152,13 +152,13 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: androidx.recyclerview.widget.RecyclerView.ViewHolder, position: Int) {
         val headerViewsCountCount = headerViewsCount
         if (position >= headerViewsCountCount && position < headerViewsCountCount + mInnerAdapter!!.itemCount) {
             mInnerAdapter!!.onBindViewHolder(holder, position - headerViewsCountCount)
         } else {
             val layoutParams = holder.itemView.layoutParams
-            if (layoutParams is StaggeredGridLayoutManager.LayoutParams) {
+            if (layoutParams is androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams) {
                 layoutParams.isFullSpan = true
             }
         }
@@ -185,13 +185,13 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 
-    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+    override fun onAttachedToRecyclerView(recyclerView: androidx.recyclerview.widget.RecyclerView) {
         innerAdapter?.onAttachedToRecyclerView(recyclerView)
 
         val layoutManager = recyclerView.layoutManager
-        if (layoutManager is GridLayoutManager) {
+        if (layoutManager is androidx.recyclerview.widget.GridLayoutManager) {
 
-            layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+            layoutManager.spanSizeLookup = object : androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup() {
                 override fun getSpanSize(position: Int): Int {
                     val viewType = getItemViewType(position)
                     if (mHeaderViews.get(viewType) != null) {
@@ -206,7 +206,7 @@ class BaseRvHeaderAndFooterWrapper : RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    class ViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView)
 
     companion object {
         private val TYPE_HEADER_VIEW = Integer.MIN_VALUE

@@ -1,6 +1,6 @@
 package com.xfs.qrcode_module.recycleview;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * This class can be used as base class for a fallback delegate {@link

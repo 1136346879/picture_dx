@@ -5,8 +5,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.*
-import android.support.annotation.RequiresApi
-import android.support.v7.widget.LinearLayoutManager
+import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import com.tbruyelle.rxpermissions2.RxPermissions
 import com.xfs.fsyuncai.art.base.common.ActiveResultDef
@@ -56,7 +56,7 @@ class WordPdfExcelFileImageListFragment : BaseFragment() {
         getFileListData()
         adapter = FileListAdapter(list, this.context!!)
         fileList.let {
-            val manager = LinearLayoutManager(this.context)
+            val manager = androidx.recyclerview.widget.LinearLayoutManager(this.context)
             it.addItemDecoration(SpaceItemDecoration(UIUtils.dip2px(1)))
             it.layoutManager = manager
             it.adapter = adapter

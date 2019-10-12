@@ -1,7 +1,7 @@
 package com.xfs.fsyuncai.main.navigation
 
 import android.content.Context
-import android.support.v4.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentPagerAdapter
 import com.example.administrator.kotlintest.navigation.NavigationView
 
 /**
@@ -13,7 +13,7 @@ class NavigationEntity(navigationView: NavigationView) {
 
     private var imgs: IntArray? = null
 
-    private var adapter: FragmentPagerAdapter? = null
+    private var adapter: androidx.fragment.app.FragmentPagerAdapter? = null
 
     private var context: Context? = null
 
@@ -33,11 +33,11 @@ class NavigationEntity(navigationView: NavigationView) {
         this.imgs = imgs
     }
 
-    fun getAdapter(): FragmentPagerAdapter? {
+    fun getAdapter(): androidx.fragment.app.FragmentPagerAdapter? {
         return adapter
     }
 
-    fun setAdapter(adapter: FragmentPagerAdapter) {
+    fun setAdapter(adapter: androidx.fragment.app.FragmentPagerAdapter) {
         this.adapter = adapter
     }
 

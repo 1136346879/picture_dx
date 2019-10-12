@@ -6,13 +6,13 @@ package com.example.administrator.kotlintest.ui.divider
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Rect
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.StaggeredGridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import android.view.View
 import com.example.baselibrary.widgets.UIUtils
 
-class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : RecyclerView.ItemDecoration() {
+class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : androidx.recyclerview.widget.RecyclerView.ItemDecoration() {
     private val mPaint: Paint?
 
     init {
@@ -22,9 +22,9 @@ class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : R
     }
 
 
-    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
+    override fun getItemOffsets(outRect: Rect, view: View, parent: androidx.recyclerview.widget.RecyclerView, state: androidx.recyclerview.widget.RecyclerView.State) {
         super.getItemOffsets(outRect, view, parent, state)
-        val itemPosition = (view.layoutParams as RecyclerView.LayoutParams).viewLayoutPosition
+        val itemPosition = (view.layoutParams as androidx.recyclerview.widget.RecyclerView.LayoutParams).viewLayoutPosition
         val spanCount = getSpanCount(parent)
         val childCount = parent.adapter?.itemCount?:0
 
@@ -48,17 +48,17 @@ class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : R
 
     }
 
-    override fun onDraw(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {
+    override fun onDraw(c: Canvas, parent: androidx.recyclerview.widget.RecyclerView, state: androidx.recyclerview.widget.RecyclerView.State) {
         super.onDraw(c, parent, state)
         draw(c, parent)
     }
 
     //绘制item分割线
-    private fun draw(canvas: Canvas, parent: RecyclerView) {
+    private fun draw(canvas: Canvas, parent: androidx.recyclerview.widget.RecyclerView) {
         val childCount = parent.childCount
         for (i in 0 until childCount) {
             val child = parent.getChildAt(i)
-            val layoutParams = child.layoutParams as RecyclerView.LayoutParams
+            val layoutParams = child.layoutParams as androidx.recyclerview.widget.RecyclerView.LayoutParams
 
             //画水平分隔线
             var left = child.left
@@ -106,18 +106,18 @@ class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : R
 //        return false
 //    }
 
-    private fun isLastRow(parent: RecyclerView, pos: Int, spanCount: Int,
+    private fun isLastRow(parent: androidx.recyclerview.widget.RecyclerView, pos: Int, spanCount: Int,
                           childCount: Int): Boolean {
         @Suppress("NAME_SHADOWING") var childCount = childCount
         val layoutManager = parent.layoutManager
-        if (layoutManager is GridLayoutManager) {
+        if (layoutManager is androidx.recyclerview.widget.GridLayoutManager) {
             val lines = if (childCount % spanCount == 0) childCount / spanCount else childCount / spanCount + 1
             return lines == pos / spanCount + 1
-        } else if (layoutManager is StaggeredGridLayoutManager) {
+        } else if (layoutManager is androidx.recyclerview.widget.StaggeredGridLayoutManager) {
             val orientation = layoutManager
                     .orientation
             // StaggeredGridLayoutManager 且纵向滚动
-            if (orientation == StaggeredGridLayoutManager.VERTICAL) {
+            if (orientation == androidx.recyclerview.widget.StaggeredGridLayoutManager.VERTICAL) {
                 childCount -= childCount % spanCount
                 // 如果是最后一行，则不需要绘制底部
                 if (pos >= childCount)
@@ -158,13 +158,13 @@ class GridDividerItemDecoration(private val mDividerWidth: Int,  color: Int) : R
 //    }
 
     //获取列数
-    private fun getSpanCount(parent: RecyclerView): Int {
+    private fun getSpanCount(parent: androidx.recyclerview.widget.RecyclerView): Int {
         var spanCount = -1
         val layoutManager = parent.layoutManager
-        if (layoutManager is GridLayoutManager) {
+        if (layoutManager is androidx.recyclerview.widget.GridLayoutManager) {
 
             spanCount = layoutManager.spanCount
-        } else if (layoutManager is StaggeredGridLayoutManager) {
+        } else if (layoutManager is androidx.recyclerview.widget.StaggeredGridLayoutManager) {
             spanCount = layoutManager
                     .spanCount
         }

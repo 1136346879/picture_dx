@@ -1,7 +1,7 @@
 package com.example.administrator.kotlintest.ui.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 
@@ -20,7 +20,7 @@ abstract class BaseMultiRvAdapter<T>(list: ArrayList<T>,
         return support.getItemViewType(position, mDatas[position])
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): androidx.recyclerview.widget.RecyclerView.ViewHolder {
         val layoutId = support.getLayoutId(viewType)
         val view = LayoutInflater.from(context).inflate(layoutId, parent, false)
         return Companion.BaseRvHolder(view)
