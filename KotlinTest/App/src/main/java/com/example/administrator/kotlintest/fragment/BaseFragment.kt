@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.baselibrary.widgets.Density
-
 import com.trello.rxlifecycle2.components.support.RxFragment
+
 
 /**
  * Created by Kangf on 2017/11/9.
@@ -26,7 +26,7 @@ abstract class BaseFragment : RxFragment() {
 
     }
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         mContext = context
         mActivity = mContext as androidx.fragment.app.FragmentActivity?

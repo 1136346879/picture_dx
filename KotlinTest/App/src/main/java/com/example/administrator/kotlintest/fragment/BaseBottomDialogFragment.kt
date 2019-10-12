@@ -14,15 +14,15 @@ abstract class BaseBottomDialogFragment : androidx.fragment.app.DialogFragment()
 
     override fun onStart() {
         super.onStart()
-        val window = dialog.window
+        val window = dialog?.window
         val params = window?.attributes
         params?.gravity = Gravity.BOTTOM
         params?.width = WindowManager.LayoutParams.MATCH_PARENT
         window?.attributes = params
         window?.setBackgroundDrawableResource(R.color.transparent)
-        dialog.setTitle(null)
-        dialog.setCancelable(true)
-        dialog.setCanceledOnTouchOutside(true)
+        dialog!!.setTitle(null)
+        dialog!!.setCancelable(true)
+        dialog!!.setCanceledOnTouchOutside(true)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +63,7 @@ abstract class BaseBottomDialogFragment : androidx.fragment.app.DialogFragment()
 
 
     fun isShowing(): Boolean {
-        return dialog != null && dialog.isShowing
+        return dialog != null && dialog!!.isShowing
     }
 
     @SuppressLint("CommitTransaction")

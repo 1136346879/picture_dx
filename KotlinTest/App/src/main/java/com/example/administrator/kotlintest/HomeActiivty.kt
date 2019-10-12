@@ -3,8 +3,6 @@ package com.example.administrator.kotlintest
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
-import androidx.fragment.app.Fragment
-import androidx.viewpager.widget.ViewPager
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
@@ -207,14 +205,15 @@ class HomeActiivty : BaseActivity(){
         super.onCreate(savedInstanceState)
     }
 
-    override fun onSaveInstanceState(outState: Bundle?) {
+    override fun onSaveInstanceState(outState: Bundle) {
         //记录fragment的位置,防止崩溃 activity被系统回收时，fragment错乱
         if (tab_layout != null) {
             outState?.putInt("currTabIndex", viewPager.currentItem)
         }
 
-        super.onSaveInstanceState(outState)
+        super.onSaveInstanceState(outState!!)
     }
+
     fun allCategory() {
         tab_layout.getTabAt(1)?.select()
     }

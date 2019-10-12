@@ -20,6 +20,7 @@ import com.example.administrator.kotlintest.common.ActiveResultDef
 import com.example.administrator.kotlintest.common.IntentDataDef
 import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
+import com.example.administrator.kotlintest.expand.ExpandActivity
 import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.net.NetWatchdogUtils
 import com.example.administrator.kotlintest.removebg.RemovebgActivity
@@ -96,6 +97,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(11,"相机视频-拍照", null))
         listData.add(PersonControlDao(12,"Edittext", null))
         listData.add(PersonControlDao(13,"removeBG", null))
+        listData.add(PersonControlDao(14,"expand", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -122,6 +124,7 @@ class MainActivity : RxAppCompatActivity() {
                 11 -> startActivity(this.intentFor<MainCameraActivity>())
                 12 -> startActivity(this.intentFor<EdittextActivity>())
                 13 -> startActivity(this.intentFor<RemovebgActivity>())
+                14 -> startActivity(this.intentFor<ExpandActivity>())
             }
         }
         //view拖拽功能

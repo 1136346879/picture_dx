@@ -91,6 +91,8 @@
         <activity android:name=".videorecorde.CameraActivity"/>
         <activity android:name=".videorecorde.MainCameraActivity"/>
         <activity android:name=".removebg.RemovebgActivity"/>
+        <activity android:name=".expand.CustomActivity"/>
+        <activity android:name=".expand.ExpandActivity"/>
 
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>

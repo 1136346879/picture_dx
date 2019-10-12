@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
+
     ext.kotlin_version = '1.3.41'
     ext.user_org = 'justinquote'
     ext.min_sdk_veriosn = 17
@@ -49,6 +49,8 @@ buildscript {
         glideVersion = "4.9.0"
 
     }
+    apply from: './dependencies.gradle'
+
     repositories {
         mavenCentral()
         google()
@@ -68,6 +70,10 @@ buildscript {
         //removeBg
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        //expandablelayout
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:$versions.spotlessGradle"
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokkaGradle"
+        classpath "com.novoda:bintray-release:$versions.bintrayRelease"
     }
 }
 

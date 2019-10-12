@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
 
 kapt {
     arguments {
@@ -63,7 +64,7 @@ allOpen { annotation("com.example.administrator.kotlintest.annotations.PoKo") }
 
 dependencies {
     implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //recycleview
@@ -152,8 +153,14 @@ dependencies {
     kapt 'com.jakewharton:butterknife-compiler:10.1.0'
     // ImagePicker
     implementation 'com.github.esafirm.android-image-picker:imagepicker:2.0.0'
-    // Dexter
+    // Dexter  权限
     implementation 'com.karumi:dexter:5.0.0'
     // Logger
     implementation 'com.theapache64.twinkill:logger:1.0.0-alpha02'
+
+    implementation "androidx.cardview:cardview:$versions.cardView"
+    implementation "com.github.skydoves:baserecyclerviewadapter:$versions.baseAdapter"
+    implementation "androidx.recyclerview:recyclerview:$versions.recyclerView"
+    implementation project(":expandablelayout")
 }
+apply from: '../spotless.gradle'
