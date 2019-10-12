@@ -256,5 +256,6 @@
         <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
     </style>
-
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

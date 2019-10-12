@@ -90,6 +90,7 @@
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".videorecorde.CameraActivity"/>
         <activity android:name=".videorecorde.MainCameraActivity"/>
+        <activity android:name=".removebg.RemovebgActivity"/>
 
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>

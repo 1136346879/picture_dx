@@ -22,6 +22,7 @@ import com.example.administrator.kotlintest.dateyearmonthday.AttendviewActivity
 import com.example.administrator.kotlintest.entity.address.AddressAreaEntity
 import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.net.NetWatchdogUtils
+import com.example.administrator.kotlintest.removebg.RemovebgActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
@@ -35,6 +36,7 @@ import com.hexun.base.http.HeXunHttpClient
 import com.hexun.caidao.hangqing.StockManager
 import com.hexun.caidao.hangqing.TrainingApi
 import com.plumcookingwine.network.helper.NetworkHelper
+import com.theapache64.removebg.RemoveBg
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicHeaderInterceptor
 import com.xfs.fsyuncai.bridge.retrofit.http.interceptor.PublicParamsInterceptor
@@ -57,6 +59,9 @@ class MainActivity : RxAppCompatActivity() {
         setContentView(R.layout.activity_main)
         getSQLHelper()
         SpManager.init(application)
+//        RemoveBg.init("H55t75AyMQF2FkGgsX6Mzb1g")
+//        RemoveBg.init("efFu9zZn5DjWXZAvUgSB1ft5")//1136346879@qq.com
+        RemoveBg.init("aecGJ4NemsijtvbDkGDPEd4m")//3385675579@qq.com
         HeXunHttpClient.init(this)
         NetworkHelper.init(
                 this,
@@ -90,6 +95,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(10,"进入首页2--可切换", null))
         listData.add(PersonControlDao(11,"相机视频-拍照", null))
         listData.add(PersonControlDao(12,"Edittext", null))
+        listData.add(PersonControlDao(13,"removeBG", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -115,6 +121,7 @@ class MainActivity : RxAppCompatActivity() {
                 10 -> startActivity(this.intentFor<FirstActivity>())
                 11 -> startActivity(this.intentFor<MainCameraActivity>())
                 12 -> startActivity(this.intentFor<EdittextActivity>())
+                13 -> startActivity(this.intentFor<RemovebgActivity>())
             }
         }
         //view拖拽功能
