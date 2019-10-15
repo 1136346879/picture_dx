@@ -88,6 +88,7 @@ dependencies {
     implementation project(':imagepicker')
     implementation project(':NetworkModule')
     implementation project(':removebg')
+    implementation project(':markdownview')
 //    implementation('HangQing-debug.aar')
 //    implementation('quotationapi-debug.aar')
 //    implementation( 'hexunproject-debug.aar')
@@ -163,6 +164,6 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$versions.recyclerView"
     implementation project(":expandablelayout")
 //slidableLayout
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-23'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
 }
 apply from: '../spotless.gradle'
