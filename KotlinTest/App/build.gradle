@@ -162,5 +162,7 @@ dependencies {
     implementation "com.github.skydoves:baserecyclerviewadapter:$versions.baseAdapter"
     implementation "androidx.recyclerview:recyclerview:$versions.recyclerView"
     implementation project(":expandablelayout")
+//slidableLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-23'
 }
 apply from: '../spotless.gradle'

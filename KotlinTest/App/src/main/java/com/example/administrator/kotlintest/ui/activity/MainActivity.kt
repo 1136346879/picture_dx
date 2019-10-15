@@ -24,6 +24,7 @@ import com.example.administrator.kotlintest.expand.ExpandActivity
 import com.example.administrator.kotlintest.location.CitySelectActivity
 import com.example.administrator.kotlintest.net.NetWatchdogUtils
 import com.example.administrator.kotlintest.removebg.RemovebgActivity
+import com.example.administrator.kotlintest.slidablelayout.SlidableActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
@@ -98,6 +99,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(12,"Edittext", null))
         listData.add(PersonControlDao(13,"removeBG", null))
         listData.add(PersonControlDao(14,"expand", null))
+        listData.add(PersonControlDao(15,"slidablelayout", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -125,6 +127,7 @@ class MainActivity : RxAppCompatActivity() {
                 12 -> startActivity(this.intentFor<EdittextActivity>())
                 13 -> startActivity(this.intentFor<RemovebgActivity>())
                 14 -> startActivity(this.intentFor<ExpandActivity>())
+                15 -> startActivity(this.intentFor<SlidableActivity>())
             }
         }
         //view拖拽功能

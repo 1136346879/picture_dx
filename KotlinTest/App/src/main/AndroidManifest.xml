@@ -93,7 +93,11 @@
         <activity android:name=".removebg.RemovebgActivity"/>
         <activity android:name=".expand.CustomActivity"/>
         <activity android:name=".expand.ExpandActivity"/>
-
+        <activity android:name=".slidablelayout.SlidableActivity"/>
+        <activity android:name=".slidablelayout.DemoForFragment" />
+        <activity android:name=".slidablelayout.DemoForView" />
+        <activity android:name=".slidablelayout.DemoForLoop" />
+        <activity android:name=".slidablelayout.DemoForAutoSlide" />
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
 
