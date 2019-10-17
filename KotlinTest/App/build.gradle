@@ -95,7 +95,7 @@ dependencies {
     //    api project(':qrcode-module')
     implementation project(':qrcode-module')
     implementation project(':multiple-status-view')
-
+    implementation project(path: ':ktx')
     //    implementation(name: 'app-release', ext: 'aar')
     implementation 'androidx.multidex:multidex:2.0.0'
 

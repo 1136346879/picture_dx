@@ -15,7 +15,7 @@ import com.example.administrator.kotlintest.fragment.ShoppingCarFragment
 import com.example.administrator.kotlintest.navigation.TabAdapter
 import com.example.administrator.kotlintest.util.SPUtils
 import com.trello.rxlifecycle2.kotlin.bindToLifecycle
-import com.xfs.fsyuncai.art.base.view.activity.BaseActivity
+import com.example.administrator.kotlintest.activity.BaseActivity
 import com.xfs.fsyuncai.extend.isLogin
 import com.xfs.fsyuncai.main.ui.online.OnlineFragment
 import com.example.administrator.kotlintest.fragment.PersonalFragment

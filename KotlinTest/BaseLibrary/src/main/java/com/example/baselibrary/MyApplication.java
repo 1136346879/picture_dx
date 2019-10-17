@@ -2,6 +2,7 @@ package com.example.baselibrary;
 
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
 import androidx.multidex.MultiDexApplication;
 
@@ -13,7 +14,7 @@ import com.squareup.leakcanary.RefWatcher;
 public  class MyApplication extends MultiDexApplication {
  public  static   Context cxt;
  public  static Resources resources;
-  private static  boolean isDebug = true;
+  public static  boolean isDebug = Boolean.parseBoolean(null);
     private RefWatcher refWatcher;
     @Override
     public void onCreate() {
@@ -26,7 +27,7 @@ public  class MyApplication extends MultiDexApplication {
         refWatcher = LeakCanary.install(this);
         Density.INSTANCE.setDensity(this);
 
-        if (isDebug) {
+        if (getIsDebug()) {
             // 崩溃日志的收集,便于测试发现崩溃后处理
             CrashHandler.Companion.getInstance().init(this);
             ARouter.openLog();     // 打印日志
@@ -37,6 +38,10 @@ public  class MyApplication extends MultiDexApplication {
 
     }
 
+    private boolean getIsDebug(){
+        return  isDebug =  0 != (cxt.getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE);
+
+    }
     public static RefWatcher getRefWatcher (Context context){
         MyApplication application =(MyApplication) context . getApplicationContext ();
         return application.refWatcher;

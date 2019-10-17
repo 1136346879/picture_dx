@@ -99,6 +99,7 @@
         <activity android:name=".slidablelayout.DemoForLoop" />
         <activity android:name=".slidablelayout.DemoForAutoSlide" />
         <activity android:name=".ui.MarkDownViewActivity" />
+        <activity android:name=".ui.activity.LifeCycleActivity" />
         <!--第三方轮播图-->
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
 

@@ -34,6 +34,8 @@ import com.example.administrator.kotlintest.videorecorde.CameraActivity
 import com.example.administrator.kotlintest.videorecorde.MainCameraActivity
 import com.example.administrator.kotlintest.widget.DevicesUtils.getSQLHelper
 import com.example.administrator.kotlintest.widget.SystemDialog
+import com.example.baselibrary.MyApplication
+import com.example.baselibrary.common.ToastUtil
 import com.example.baselibrary.widgets.ToastUtilKt
 import com.hexun.base.http.HeXunHttpClient
 import com.hexun.caidao.hangqing.StockManager
@@ -60,9 +62,9 @@ class MainActivity : RxAppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ToastUtil.showCustomToast("debug==${MyApplication.isDebug}")
         getSQLHelper()
         SpManager.init(application)
-//        RemoveBg.init("H55t75AyMQF2FkGgsX6Mzb1g")
 //        RemoveBg.init("efFu9zZn5DjWXZAvUgSB1ft5")//1136346879@qq.com
         RemoveBg.init("aecGJ4NemsijtvbDkGDPEd4m")//3385675579@qq.com
         HeXunHttpClient.init(this)
@@ -102,6 +104,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(14,"expand", null))
         listData.add(PersonControlDao(15,"slidablelayout", null))
         listData.add(PersonControlDao(16,"MarkdownView", null))
+        listData.add(PersonControlDao(17,"LifeCycleActivity", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -131,6 +134,7 @@ class MainActivity : RxAppCompatActivity() {
                 14 -> startActivity(this.intentFor<ExpandActivity>())
                 15 -> startActivity(this.intentFor<SlidableActivity>())
                 16 -> startActivity(this.intentFor<MarkDownViewActivity>())
+                17 -> startActivity(this.intentFor<LifeCycleActivity>())
             }
         }
         //view拖拽功能

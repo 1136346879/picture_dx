@@ -3,7 +3,6 @@ package com.example.administrator.kotlintest.activity
 import android.util.DisplayMetrics
 import android.view.Gravity
 import com.example.administrator.kotlintest.R
-import com.xfs.fsyuncai.art.base.view.activity.BaseActivity
 
 /**
  * pop式Activity

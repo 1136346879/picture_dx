@@ -1,4 +1,4 @@
-package com.xfs.fsyuncai.art.base.view.activity
+package com.example.administrator.kotlintest.activity
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,11 +12,14 @@ import android.view.inputmethod.InputMethodManager
 import com.example.administrator.kotlintest.util.SoftInputUtil
 import com.example.baselibrary.AppManager
 import com.example.baselibrary.widgets.Density
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.cancel
 
 /**
  * Created by kangf on 2018/6/14.
  */
-abstract class BaseActivity : RxAppCompatActivity() {
+abstract class BaseActivity : RxAppCompatActivity() , CoroutineScope by MainScope() {
 
     private var startTime: Long = 0
 
@@ -88,6 +91,7 @@ abstract class BaseActivity : RxAppCompatActivity() {
     override fun onDestroy() {
         AppManager.instance().removeActivity(this)
         super.onDestroy()
+        cancel()
     }
 
     private val isTranslucentOrFloating: Boolean

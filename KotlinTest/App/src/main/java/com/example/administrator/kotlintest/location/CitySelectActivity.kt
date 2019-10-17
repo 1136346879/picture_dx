@@ -4,7 +4,6 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.Editable
-import android.text.TextUtils
 import android.text.TextWatcher
 import android.view.*
 import android.widget.LinearLayout
@@ -29,7 +28,7 @@ import com.example.baselibrary.widgets.UIUtils
 import com.google.gson.Gson
 import com.trello.rxlifecycle2.android.ActivityEvent
 import com.trello.rxlifecycle2.kotlin.bindToLifecycle
-import com.xfs.fsyuncai.art.base.view.activity.BaseActivity
+import com.example.administrator.kotlintest.activity.BaseActivity
 import com.xfs.fsyuncai.bridge.database.AreaHistoryDbUtil
 import com.xfs.fsyuncai.bridge.retrofit.callback.HttpOnNextListener
 import com.xfs.fsyuncai.bridge.retrofit.exception.ApiErrorModel
@@ -37,8 +36,6 @@ import com.example.administrator.kotlintest.bridge.retrofit.http.HttpManager
 import com.example.administrator.kotlintest.bridge.retrofit.http.RequestOption
 import com.xfs.fsyuncai.bridge.retrofit.service.CommonService
 import com.xfs.fsyuncai.entity.CityInfoByName
-import com.xfs.fsyuncai.entity.CitySelectEntityRxBus
-import com.xfs.fsyuncai.entity.accont.AccessManager
 import kotlinx.android.synthetic.main.activity_location.*
 import kotlinx.android.synthetic.main.header_city_search.view.*
 import kotlinx.android.synthetic.main.toolbar_location.*
