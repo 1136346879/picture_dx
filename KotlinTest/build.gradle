@@ -74,6 +74,8 @@ buildscript {
         classpath "com.diffplug.spotless:spotless-plugin-gradle:$versions.spotlessGradle"
         classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$versions.dokkaGradle"
         classpath "com.novoda:bintray-release:$versions.bintrayRelease"
+
+        classpath 'com.google.gms:google-services:4.3.1'
     }
 }
 

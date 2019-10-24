@@ -1,0 +1,64 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram",
+      "sdkFolder": "/Users/liuyang/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/build/intermediates",
+      "gradleModulePathName": ":TMessagesProj",
+      "moduleRootFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj",
+      "makeFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/jni/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/.cxx",
+      "cxxFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx",
+      "ndkFolder": "/Users/liuyang/Library/Android/sdk/ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "NDK_APPLICATION_MK:\u003djni/Application.mk",
+      "APP_PLATFORM:\u003dandroid-16",
+      "-j8"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "afatDebug",
+    "soFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/build/intermediates/ndkBuild/afatDebug/lib",
+    "objFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/build/intermediates/ndkBuild/afatDebug/obj/local",
+    "jsonFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug",
+    "gradleBuildOutputFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/cxx/afatDebug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a",
+  "jsonFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/cxx/afatDebug/armeabi-v7a",
+  "objFolder": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/build/intermediates/ndkBuild/afatDebug/obj/local/armeabi-v7a",
+  "buildCommandFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/build_model.json",
+  "jsonGenerationLoggingRecordFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/liuyang/Company/Fintecher/SourceCode/Telegram/telegram/Telegram/TMessagesProj/.cxx/ndkBuild/afatDebug/armeabi-v7a/compile_commands.json"
+}

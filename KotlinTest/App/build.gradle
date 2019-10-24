@@ -165,5 +165,9 @@ dependencies {
     implementation project(":expandablelayout")
 //slidableLayout
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.45-androidx'
+    implementation 'com.afollestad.material-dialogs:core:3.1.0'
+    implementation 'com.afollestad.material-dialogs:files:3.0.0-rc4'
 }
 apply from: '../spotless.gradle'

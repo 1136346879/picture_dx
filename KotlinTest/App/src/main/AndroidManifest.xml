@@ -69,6 +69,7 @@
         <service android:name=".update.DownloadService" />
 
         <provider
+            tools:replace="android:authorities"
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.baselibrary.provider"
             android:exported="false"
@@ -121,6 +122,15 @@
         <activity android:name=".ui.activity.RuanActivity"/>
         <activity android:name=".ui.activity.PictureActionActivity"/>
         <activity android:name=".ui.activity.YingActivity"/>
+        <activity android:name=".ui.activity.extactivity.AnotherActivity"/>
+        <activity android:name=".ui.activity.extactivity.ActivityExtActivity"/>
+        <activity android:name=".ui.activity.extactivity.ExtActivity"/>
+        <activity android:name=".ui.activity.extactivity.IntentExtActivity"/>
+        <activity android:name=".ui.activity.extactivity.KtxSpanActivity"/>
+        <activity android:name=".ui.activity.extactivity.PermissionExtActivity"/>
+        <activity android:name=".ui.activity.extactivity.SharedPreferencesActivity"/>
+        <activity android:name=".ui.activity.extactivity.ListenerExtActivity"/>
+        <activity android:name=".ui.activity.extactivity.CommonExtActivity"/>
         <!--图片上传-->
         <activity android:name=".picture.UploadActivity"/>
         <!--图片裁剪-->

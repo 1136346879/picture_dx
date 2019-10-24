@@ -1,7 +1,7 @@
 include ':App', ':BaseLibrary', ':Provider', ':ktx',
         ':usercenter', ':qrcode-module', ':recycleviewlibrary', ':multiple-status-view',
         ':newbaselibrary', ':AttachmentFileLibrary', ':imagepicker', ':NetworkModule',
-        ':removebg', ':expandablelayout', ':markdownview'
+        ':removebg', ':expandablelayout', ':markdownview', ':TMessagesProj'
 
 include ':myInstalledPkg','ucrop',':keboardLibrary'
 //

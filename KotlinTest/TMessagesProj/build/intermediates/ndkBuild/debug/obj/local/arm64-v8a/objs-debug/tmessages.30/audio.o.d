@@ -1,0 +1,45 @@
+/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./audio.o: \
+  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./audio.c \
+  jni/opus/ogg/ogg.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h \
+  jni/opus/ogg/os_types.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdio.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h \
+  jni/opus/include/opus.h jni/opus/include/opus_types.h \
+  jni/opus/include/opus_defines.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdlib.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h \
+  jni/opus/opusfile/opusfile.h jni/opus/include/opus_multistream.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/math.h \
+  /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/math.h \
+  jni/c_utils.h
+
+jni/opus/ogg/ogg.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h:
+
+jni/opus/ogg/os_types.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdio.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h:
+
+jni/opus/include/opus.h:
+
+jni/opus/include/opus_types.h:
+
+jni/opus/include/opus_defines.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdlib.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h:
+
+jni/opus/opusfile/opusfile.h:
+
+jni/opus/include/opus_multistream.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/math.h:
+
+/Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/math.h:
+
+jni/c_utils.h:

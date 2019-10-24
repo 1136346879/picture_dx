@@ -1,6 +1,7 @@
 package com.example.administrator.kotlintest.ui.activity
 
 import android.annotation.SuppressLint
+import android.app.Application
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.TextUtils
@@ -27,6 +28,7 @@ import com.example.administrator.kotlintest.removebg.RemovebgActivity
 import com.example.administrator.kotlintest.slidablelayout.SlidableActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.MarkDownViewActivity
+import com.example.administrator.kotlintest.ui.activity.extactivity.ExtActivity
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
 import com.example.administrator.kotlintest.util.SpManager
@@ -51,6 +53,7 @@ import de.greenrobot.event.EventBus
 //import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.intentFor
+import org.telegram.ui.LaunchActivity
 import java.util.*
 
 class MainActivity : RxAppCompatActivity() {
@@ -105,6 +108,8 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(15,"slidablelayout", null))
         listData.add(PersonControlDao(16,"MarkdownView", null))
         listData.add(PersonControlDao(17,"LifeCycleActivity", null))
+        listData.add(PersonControlDao(18,"ExtActivity", null))
+        listData.add(PersonControlDao(19,"Teg", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -135,6 +140,8 @@ class MainActivity : RxAppCompatActivity() {
                 15 -> startActivity(this.intentFor<SlidableActivity>())
                 16 -> startActivity(this.intentFor<MarkDownViewActivity>())
                 17 -> startActivity(this.intentFor<LifeCycleActivity>())
+                18 -> startActivity(this.intentFor<ExtActivity>())
+                19 -> startActivity(this.intentFor<LaunchActivity>())
             }
         }
         //view拖拽功能
