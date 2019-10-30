@@ -9,15 +9,20 @@
 >* 7， 个人中心：usercenter
 >* 6， 图片裁剪： uCrop   任意裁剪 
 >* 8， loadingview页面，banner轮播图
->* 9， recycleview列表数据，刷新及加载更多
->* 10，自定义view拖拽功能，
+>* 9， recycleview列表数据，刷新及加载更多，自定义view拖拽功能，
+>* 10，
 >* 11，数据库操作（SQlite和Greendao）
->* 12， 日历，页面半透明
->* 13， 内存泄漏集成
+>* 12， 日历，页面半透明，内存泄漏集成
+>* 13， 
 >* 14， 频道管理页面（高仿头条等新闻app）
 >* 15，点击view出现粉碎炸掉的动画及viewpage左右滑动含titilebar一块滑动
 >* 16，百度地图SDK定位集成，城市列表展示，历史记录保存至数据库，26字母快速查询，城市搜索等等功能
 >* 17，通过广播检测网络切换4G和wifi，网络是否连接 
+>* 18，移除图片背景（removeBG），MarkDown文件打开，app生命周期检测
+>* 19，Telegram社交软件集成至app中，kotlin类扩展方法添加
+>* 20，高仿抖音等短视频效果上下滑动，切换自动播放（Slidablelayout）
+>* 21，recycleview可扩展，展开（ExpandableLayout）
+>* 22，项目简单框架搭建（Activity里面嵌套fragment来回切换）
 
 客服  机器人  美洽第三方完美接入      魔窗（待接入） 
 
