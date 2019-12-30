@@ -32,7 +32,7 @@ public  class MyApplication extends MultiDexApplication {
         refWatcher = LeakCanary.install(this);
         Density.INSTANCE.setDensity(this);
         applicationLoader = new  ApplicationLoader();
-     applicationLoader.onCreate(getApplicationContext());
+        applicationLoader.onCreate(getApplicationContext());
         if (getIsDebug()) {
             // 崩溃日志的收集,便于测试发现崩溃后处理
             CrashHandler.Companion.getInstance().init(this);
@@ -42,6 +42,27 @@ public  class MyApplication extends MultiDexApplication {
 
         ARouter.init(this); // 尽可能早，推荐在Application中初始化
 
+//        try {
+            //初始化X5内核
+//            QbSdk.initX5Environment(applicationContext, object : QbSdk.PreInitCallback {
+//                override fun onCoreInitFinished() {
+//                    //x5内核初始化完成回调接口，此接口回调并表示已经加载起来了x5，有可能特殊情况下x5内核加载失败，切换到系统内核。
+//                    Log.e("x5--", "加载内核回调--onCoreInitFinished")
+//                    val map = mutableMapOf<String, Any>()
+//                    map[TbsCoreSettings.TBS_SETTINGS_USE_SPEEDY_CLASSLOADER] = true
+//                    QbSdk.initTbsSettings(map)
+//                }
+//
+//                override fun onViewInitFinished(b: Boolean) {
+//                    //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核。
+//                    Log.e("x5--", "加载内核是否成功:$b")
+//                }
+//            })
+
+
+//        } catch (e: Exception) {
+//            e.printStackTrace()
+//        }
     }
 
     @Override

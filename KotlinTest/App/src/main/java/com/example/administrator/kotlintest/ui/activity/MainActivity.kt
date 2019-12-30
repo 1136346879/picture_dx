@@ -65,7 +65,7 @@ class MainActivity : RxAppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ToastUtil.showCustomToast("debug==${MyApplication.isDebug}")
+//        ToastUtil.showCustomToast("debug==${MyApplication.isDebug}")
         getSQLHelper()
         SpManager.init(application)
 //        RemoveBg.init("efFu9zZn5DjWXZAvUgSB1ft5")//1136346879@qq.com
@@ -153,7 +153,7 @@ class MainActivity : RxAppCompatActivity() {
         channel_mannger.setOnClickListener { startActivity(this!!.intentFor<ChannelActivity>()) }
         location.setOnClickListener { startActivity(this!!.intentFor<CitySelectActivity>()) }
         locationData()
-        //检测有网络时在回调中开启上传
+        //检测有网络时在a回调中开启上传
         initNetWatchdog()
     }
     private var mWatchdog: NetWatchdogUtils? = null
