@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/vector/vdrawhelper.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./rlottie/src/vector/vdrawhelper.cpp \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/vector/vdrawhelper.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./rlottie/src/vector/vdrawhelper.cpp \
   jni/rlottie/src/vector/vdrawhelper.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/cstring \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \

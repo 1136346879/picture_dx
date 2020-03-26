@@ -1,6 +1,6 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/lottie/lottiemodel.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.cpp \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.h \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/lottie/lottiemodel.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.cpp \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/iosfwd \
@@ -78,7 +78,7 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/deque \
   jni/rlottie/src/vector/vimageloader.h jni/rlottie/src/vector/vline.h
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./rlottie/src/lottie/lottiemodel.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector:
 

@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/celt/arm/pitch_neon_intr.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/celt/arm/pitch_neon_intr.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/celt/arm/pitch_neon_intr.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/celt/arm/pitch_neon_intr.c \
   jni/opus/celt/pitch.h jni/opus/celt/modes.h \
   jni/opus/include/opus_types.h jni/opus/celt/celt.h \
   jni/opus/include/opus_defines.h jni/opus/include/opus_custom.h \

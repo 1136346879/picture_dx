@@ -1,6 +1,6 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./video/VideoRenderer.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.cpp \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.h \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./video/VideoRenderer.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.cpp \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/iosfwd \
@@ -31,19 +31,19 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/atomic \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/climits \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__split_buffer \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../Buffers.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../Buffers.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/array \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/threading.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/threading.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/utils.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/VideoRendererAndroid.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/../../MessageThread.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/../../BlockingQueue.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/utils.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/VideoRendererAndroid.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/../../MessageThread.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/../../BlockingQueue.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/list
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/VideoRenderer.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector:
 
@@ -105,7 +105,7 @@
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__split_buffer:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../Buffers.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../Buffers.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h:
 
@@ -113,16 +113,16 @@
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/threading.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/threading.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/utils.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/utils.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/VideoRendererAndroid.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/VideoRendererAndroid.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/../../MessageThread.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/../../MessageThread.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./video/../os/android/../../BlockingQueue.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./video/../os/android/../../BlockingQueue.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/list:

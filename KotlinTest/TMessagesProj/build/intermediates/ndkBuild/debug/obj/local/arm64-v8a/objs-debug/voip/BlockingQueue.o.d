@@ -1,6 +1,6 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./BlockingQueue.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./BlockingQueue.cpp \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/BlockingQueue.h \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./BlockingQueue.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./BlockingQueue.cpp \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/BlockingQueue.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/list \
@@ -28,11 +28,11 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/cassert \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/atomic \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/algorithm \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/threading.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/threading.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/utils.h
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/utils.h
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/BlockingQueue.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/BlockingQueue.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
@@ -88,8 +88,8 @@
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/algorithm:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/threading.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/threading.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/utils.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/utils.h:

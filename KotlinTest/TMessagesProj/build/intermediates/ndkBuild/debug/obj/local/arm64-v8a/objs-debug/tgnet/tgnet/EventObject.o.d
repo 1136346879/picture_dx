@@ -1,7 +1,7 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tgnet/./tgnet/EventObject.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/EventObject.cpp \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/EventObject.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Defines.h \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tgnet/./tgnet/EventObject.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/EventObject.cpp \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/EventObject.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Defines.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/type_traits \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/cstddef \
@@ -62,8 +62,8 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__bit_reference \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/istream \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/inttypes.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ByteArray.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Connection.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ByteArray.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Connection.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__split_buffer \
   jni/boringssl/include/openssl/aes.h \
@@ -71,13 +71,13 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h \
   jni/boringssl/include/openssl/is_boringssl.h \
   jni/boringssl/include/openssl/opensslconf.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ConnectionSession.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ConnectionSocket.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Timer.h
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ConnectionSession.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ConnectionSocket.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Timer.h
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/EventObject.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/EventObject.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Defines.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Defines.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/functional:
 
@@ -199,9 +199,9 @@
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/inttypes.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ByteArray.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ByteArray.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Connection.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Connection.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/vector:
 
@@ -217,8 +217,8 @@ jni/boringssl/include/openssl/is_boringssl.h:
 
 jni/boringssl/include/openssl/opensslconf.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ConnectionSession.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ConnectionSession.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/ConnectionSocket.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/ConnectionSocket.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./tgnet/Timer.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./tgnet/Timer.h:

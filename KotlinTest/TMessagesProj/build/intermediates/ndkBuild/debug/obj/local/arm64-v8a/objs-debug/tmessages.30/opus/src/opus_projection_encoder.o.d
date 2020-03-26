@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/opus_projection_encoder.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_projection_encoder.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/opus_projection_encoder.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_projection_encoder.c \
   jni/opus/celt/mathops.h jni/opus/celt/arch.h \
   jni/opus/include/opus_types.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdint.h \
@@ -17,12 +17,12 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdlib.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h \
   jni/opus/include/opus.h jni/opus/celt/celt.h \
   jni/opus/include/opus_custom.h jni/opus/celt/entenc.h \
   jni/opus/celt/entdec.h jni/opus/include/opus_projection.h \
   jni/opus/include/opus_multistream.h jni/opus/celt/stack_alloc.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/mapping_matrix.h
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/mapping_matrix.h
 
 jni/opus/celt/mathops.h:
 
@@ -62,7 +62,7 @@ jni/opus/celt/os_support.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdlib.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h:
 
 jni/opus/include/opus.h:
 
@@ -80,4 +80,4 @@ jni/opus/include/opus_multistream.h:
 
 jni/opus/celt/stack_alloc.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/mapping_matrix.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/mapping_matrix.h:

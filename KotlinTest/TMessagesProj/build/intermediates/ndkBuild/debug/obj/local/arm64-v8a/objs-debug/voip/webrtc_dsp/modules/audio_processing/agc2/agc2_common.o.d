@@ -1,6 +1,6 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./webrtc_dsp/modules/audio_processing/agc2/agc2_common.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/./webrtc_dsp/modules/audio_processing/agc2/agc2_common.cc \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/webrtc_dsp/modules/audio_processing/agc2/agc2_common.h \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/voip/./webrtc_dsp/modules/audio_processing/agc2/agc2_common.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/./webrtc_dsp/modules/audio_processing/agc2/agc2_common.cc \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/webrtc_dsp/modules/audio_processing/agc2/agc2_common.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h \
@@ -38,9 +38,9 @@
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/cctype \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/ctype.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/wctype.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/webrtc_dsp/system_wrappers/include/field_trial.h
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/webrtc_dsp/system_wrappers/include/field_trial.h
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/webrtc_dsp/modules/audio_processing/agc2/agc2_common.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/webrtc_dsp/modules/audio_processing/agc2/agc2_common.h:
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stddef.h:
 
@@ -116,4 +116,4 @@
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/wctype.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/libtgvoip/webrtc_dsp/system_wrappers/include/field_trial.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/libtgvoip/webrtc_dsp/system_wrappers/include/field_trial.h:

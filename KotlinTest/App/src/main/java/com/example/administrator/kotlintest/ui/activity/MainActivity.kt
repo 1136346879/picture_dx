@@ -52,6 +52,7 @@ import de.greenrobot.event.EventBus
 //import jsc.kit.keyboard.KeyBoardView
 //import jsc.kit.keyboard.KeyUtils
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.*
 import org.jetbrains.anko.intentFor
 import org.telegram.ui.LaunchActivity
 import java.util.*
@@ -110,6 +111,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(17,"LifeCycleActivity", null))
         listData.add(PersonControlDao(18,"ExtActivity", null))
         listData.add(PersonControlDao(19,"Teg", null))
+        listData.add(PersonControlDao(20,"协程在app中的应用", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -142,6 +144,7 @@ class MainActivity : RxAppCompatActivity() {
                 17 -> startActivity(this.intentFor<LifeCycleActivity>())
                 18 -> startActivity(this.intentFor<ExtActivity>())
                 19 -> startActivity(this.intentFor<LaunchActivity>())
+                20 -> startActivity(this.intentFor<XieCheng>())
             }
         }
         //view拖拽功能

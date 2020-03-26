@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/flac/./exoplayer/libFLAC/fixed.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./exoplayer/libFLAC/fixed.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/flac/./exoplayer/libFLAC/fixed.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./exoplayer/libFLAC/fixed.c \
   jni/exoplayer/libFLAC/include/share/compat.h \
   jni/exoplayer/libFLAC/include/private/bitmath.h \
   jni/exoplayer/libFLAC/include/FLAC/ordinals.h \

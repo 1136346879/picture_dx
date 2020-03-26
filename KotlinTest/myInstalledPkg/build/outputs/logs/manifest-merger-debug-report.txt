@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-79:12
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
+INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:2:1-77:12
 	package
 		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml
@@ -21,143 +21,143 @@ INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main
 		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:4:5-28
 		INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml
 		INJECTED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:6:1-63
-	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:6:18-60
 uses-permission#android.permission.CAMERA
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:8:5-65
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:8:22-62
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:6:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:9:5-71
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:9:22-68
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:7:22-68
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:10:5-80
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:10:22-77
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:8:22-77
 uses-permission#android.permission.PROCESS_OUTGOING_CALLS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:11:5-81
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:12:5-75
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:12:22-72
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:10:22-72
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:13:5-76
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:11:5-76
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:13:22-73
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:11:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:14:5-79
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:14:22-76
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.VIBRATE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:15:5-66
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:15:22-63
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:13:22-63
 uses-permission#android.permission.READ_LOGS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:16:5-68
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:14:5-68
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:16:22-65
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:14:22-65
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:17:5-81
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:17:22-78
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:18:5-72
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:16:5-72
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:18:22-69
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:16:22-69
 uses-permission#android.permission.WRITE_CONTACTS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:19:5-73
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:17:5-73
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:19:22-70
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:17:22-70
 uses-permission#android.permission.CALL_PHONE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:21:5-69
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:19:5-69
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:21:22-66
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:19:22-66
 uses-permission#android.permission.GET_TASKS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:22:5-68
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:22:22-65
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:20:22-65
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:23:5-68
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:21:5-68
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:23:22-65
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:21:22-65
 uses-permission#android.permission.DISABLE_KEYGUARD
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:24:5-75
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:22:5-75
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:24:22-72
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:22:22-72
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:25:5-79
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:25:22-76
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:23:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:26:5-81
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:24:5-81
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:26:22-78
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:24:22-78
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:27:5-76
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:25:5-76
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:27:22-73
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:25:22-73
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:28:5-84
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:26:5-84
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:28:22-81
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:26:22-81
+uses-permission#android.permission.INTERNET
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:28:5-67
+	android:name
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:28:22-64
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:43:5-81
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:41:5-81
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:43:22-78
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:41:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:44:5-71
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:42:5-71
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:44:22-68
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:42:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:45:5-74
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:43:5-74
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:45:22-71
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:43:22-71
 uses-permission#android.permission.MANAGE_ACCOUNTS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:46:5-74
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:44:5-74
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:46:22-71
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:44:22-71
 uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:47:5-80
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:45:5-80
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:47:22-77
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:45:22-77
 uses-permission#com.android.launcher.permission.READ_SETTINGS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:48:5-85
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:46:5-85
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:48:22-82
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:46:22-82
 uses-permission#android.permission.BROADCAST_STICKY
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:49:5-75
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:47:5-75
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:49:22-72
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:47:22-72
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:50:5-73
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:48:5-73
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:50:22-70
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:48:22-70
 uses-feature#android.hardware.camera
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:52:5-60
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:50:5-60
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:52:19-57
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:50:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:53:5-70
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:51:5-70
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:53:19-67
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:51:19-67
 uses-feature#0x00020000
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:54:5-78
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:52:5-78
 	android:glEsVersion
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:54:19-51
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:52:19-51
 	android:required
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:54:52-75
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:52:52-75
 application
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:55:5-73:19
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:53:5-71:19
 activity#com.homer.installed.WebbrowserActivity4
-ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:68:9-72:20
+ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:66:9-70:20
 	android:screenOrientation
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:71:13-49
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:69:13-49
 	android:label
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:70:13-45
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:68:13-45
 	android:name
-		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:69:13-67
+		ADDED from /Volumes/wdx/gitdemo/kotlintest/KotlinTest/myInstalledPkg/src/main/AndroidManifest.xml:67:13-67

@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/vector/freetype/v_ft_stroker.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./rlottie/src/vector/freetype/v_ft_stroker.cpp \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/rlottie/./rlottie/src/vector/freetype/v_ft_stroker.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./rlottie/src/vector/freetype/v_ft_stroker.cpp \
   jni/rlottie/src/vector/freetype/v_ft_stroker.h \
   jni/rlottie/src/vector/freetype/v_ft_raster.h \
   jni/rlottie/src/vector/freetype/v_ft_types.h \

@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/analysis.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/analysis.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/analysis.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/analysis.c \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdio.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdio.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
@@ -20,10 +20,10 @@
   jni/opus/include/opus_custom.h jni/opus/celt/entenc.h \
   jni/opus/celt/entdec.h jni/opus/celt/modes.h jni/opus/celt/mdct.h \
   jni/opus/celt/quant_bands.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/analysis.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/analysis.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h \
   jni/opus/include/opus.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/mlp.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/mlp.h \
   jni/opus/celt/stack_alloc.h jni/opus/celt/float_cast.h
 
 /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdio.h:
@@ -82,13 +82,13 @@ jni/opus/celt/mdct.h:
 
 jni/opus/celt/quant_bands.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/analysis.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/analysis.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h:
 
 jni/opus/include/opus.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/mlp.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/mlp.h:
 
 jni/opus/celt/stack_alloc.h:
 

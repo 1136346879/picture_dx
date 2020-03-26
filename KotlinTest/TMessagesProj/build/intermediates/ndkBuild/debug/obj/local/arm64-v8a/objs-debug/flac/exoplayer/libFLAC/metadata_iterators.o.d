@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/flac/./exoplayer/libFLAC/metadata_iterators.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./exoplayer/libFLAC/metadata_iterators.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/flac/./exoplayer/libFLAC/metadata_iterators.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./exoplayer/libFLAC/metadata_iterators.c \
   jni/exoplayer/libFLAC/include/private/metadata.h \
   jni/exoplayer/libFLAC/include/FLAC/metadata.h \
   jni/exoplayer/libFLAC/include/FLAC/export.h \

@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.c \
   jni/opus/celt/stack_alloc.h jni/opus/include/opus_types.h \
   jni/opus/include/opus_defines.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/android/support/include/stdlib.h \

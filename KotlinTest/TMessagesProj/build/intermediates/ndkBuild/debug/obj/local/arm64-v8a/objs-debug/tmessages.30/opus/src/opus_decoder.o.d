@@ -1,5 +1,5 @@
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/opus_decoder.o: \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_decoder.c \
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/objs-debug/tmessages.30/./opus/src/opus_decoder.o: \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_decoder.c \
   jni/opus/celt/celt.h jni/opus/include/opus_types.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/stdint.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/__config \
@@ -20,7 +20,7 @@
   jni/opus/silk/API.h jni/opus/silk/control.h jni/opus/silk/typedef.h \
   jni/opus/silk/errors.h jni/opus/celt/stack_alloc.h \
   jni/opus/celt/float_cast.h \
-  /Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h \
+  /Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h \
   jni/opus/celt/os_support.h \
   /Users/zhangyan/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include/string.h \
   jni/opus/silk/structs.h jni/opus/silk/SigProc_FIX.h \
@@ -90,7 +90,7 @@ jni/opus/celt/stack_alloc.h:
 
 jni/opus/celt/float_cast.h:
 
-/Volumes/wdx/demoonline/AndroidUtilCodeKTX-master/TMessagesProj/jni/./opus/src/opus_private.h:
+/Volumes/wdx/gitdemo/kotlintest/KotlinTest/TMessagesProj/jni/./opus/src/opus_private.h:
 
 jni/opus/celt/os_support.h:
 

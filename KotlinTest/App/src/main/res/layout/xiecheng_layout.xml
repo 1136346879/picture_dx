@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:textColor="@color/red_light"
+android:textSize="@dimen/space_50"
+    android:gravity="center"
+    android:id="@+id/tv1"
+    android:text="协程---"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>
