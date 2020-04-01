@@ -55,6 +55,7 @@
         android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_app"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >

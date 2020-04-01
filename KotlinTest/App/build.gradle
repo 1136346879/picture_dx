@@ -20,7 +20,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
-
+        ndk {
+//            abiFilters  "armeabi-v8a"
+            // "x86"
+        }
         //添加如下配置就OK了
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
