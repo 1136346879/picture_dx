@@ -6,6 +6,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.TextUtils
 import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.alibaba.android.arouter.launcher.ARouter
 import com.dx.banner.newbaselibrary.routerapi.RouterApi
@@ -39,9 +42,13 @@ import com.example.administrator.kotlintest.widget.SystemDialog
 import com.example.baselibrary.MyApplication
 import com.example.baselibrary.common.ToastUtil
 import com.example.baselibrary.widgets.ToastUtilKt
+import com.example.baselibrary.widgets.UIUtils.context
 import com.hexun.base.http.HeXunHttpClient
 import com.hexun.caidao.hangqing.StockManager
 import com.hexun.caidao.hangqing.TrainingApi
+import com.liaoinstan.springview.widget.CustomerHeader
+import com.liaoinstan.springview.widget.SpringView
+import com.liaoinstan.springview.widget.XfsFooter
 import com.plumcookingwine.network.helper.NetworkHelper
 import com.theapache64.removebg.RemoveBg
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
@@ -72,6 +79,21 @@ class MainActivity : RxAppCompatActivity() {
 //        RemoveBg.init("efFu9zZn5DjWXZAvUgSB1ft5")//1136346879@qq.com
         RemoveBg.init("aecGJ4NemsijtvbDkGDPEd4m")//3385675579@qq.com
         HeXunHttpClient.init(this)
+        mSpringView.let {
+            it.footer = XfsFooter(this)
+            it.header = CustomerHeader(this)
+            it.isEnableFooter = true
+            it.setListener(object : SpringView.OnFreshListener {
+                override fun onLoadmore() {
+                    getListEnd()
+                }
+
+                override fun onRefresh() {
+                   ToastUtil.showCustomToast("下拉刷新")
+                    mSpringView.onFinishFreshAndLoad()
+                }
+            })
+        }
         NetworkHelper.init(
                 this,
                 ApiConstants.BASE_URL,
@@ -184,7 +206,20 @@ class MainActivity : RxAppCompatActivity() {
             }
         })
     }
-
+    private lateinit var footerView: View
+    private var tvBottomTip: TextView? = null
+     fun getListEnd() {
+        mSpringView.onFinishFreshAndLoad()
+        mSpringView?.isEnableFooter = true
+        footerView = LayoutInflater.from(context()).inflate(R.layout.footer_integral_no_more, null, false)
+        tvBottomTip = footerView.findViewById(R.id.tvBottomTip)
+//        saledTHistoryListAdapter.removeAllFooterView()
+//        saledTHistoryListAdapter.addFooterView(footerView)
+        if (tvBottomTip != null) {
+            tvBottomTip!!.visibility = View.VISIBLE
+        }
+//        saledTHistoryListAdapter.loadMoreEnd()
+    }
     override fun onStart() {
         super.onStart()
         mWatchdog!!.startWatch()

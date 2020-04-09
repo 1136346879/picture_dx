@@ -52,6 +52,10 @@
     app:errorView="@layout/layout_error_view"
     app:loadingView="@layout/layout_loading_view"
     app:noNetworkView="@layout/layout_network_view">
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/mSpringView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview_list_all"
         android:layout_width="match_parent"
@@ -60,6 +64,7 @@
         android:background="@drawable/shadow"
         android:paddingLeft="@dimen/space_10"
         android:paddingRight="@dimen/space_10" />
+    </com.liaoinstan.springview.widget.SpringView>
 </com.classic.common.MultipleStatusView>
 
 <LinearLayout
