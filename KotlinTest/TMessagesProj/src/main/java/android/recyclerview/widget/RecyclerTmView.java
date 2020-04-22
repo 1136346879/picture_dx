@@ -228,8 +228,7 @@ public class RecyclerTmView extends ViewGroup implements ScrollingView,
      * recursively traverses itemView and invalidates display list for each ViewGroup that matches
      * this criteria.
      */
-    static final boolean FORCE_INVALIDATE_DISPLAY_LIST = Build.VERSION.SDK_INT == 18
-            || Build.VERSION.SDK_INT == 19 || Build.VERSION.SDK_INT == 20;
+    static final boolean FORCE_INVALIDATE_DISPLAY_LIST = Build.VERSION.SDK_INT == 18 || Build.VERSION.SDK_INT == 19 || Build.VERSION.SDK_INT == 20;
     /**
      * On M+, an unspecified measure spec may include a hint which we can use. On older platforms,
      * this value might be garbage. To save LayoutManagers from it, RecyclerView sets the size to

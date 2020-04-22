@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import androidx.multidex.MultiDexApplication;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.didichuxing.doraemonkit.DoraemonKit;
 import com.example.baselibrary.widgets.Density;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
@@ -26,6 +27,7 @@ public  class MyApplication extends MultiDexApplication {
         super.onCreate();
         cxt = getApplicationContext();
         resources = cxt.getResources();
+        DoraemonKit.install(this);
         if (LeakCanary.isInAnalyzerProcess(this)) {
                         return;
                      }
