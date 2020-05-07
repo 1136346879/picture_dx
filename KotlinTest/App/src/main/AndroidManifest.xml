@@ -106,6 +106,7 @@
         <activity android:name=".ui.activity.ThirdPartBannerZxingAcitivity"/>
 
         <activity android:name=".ui.activity.EdittextActivity"/>
+        <activity android:name=".ui.activity.MoveActivity"/>
         <!--扫一扫-->
         <activity android:name=".ui.qrcode.CaptureActivity"/>
         <!--自定义轮播图-->

@@ -98,6 +98,7 @@ dependencies {
     implementation project(':multiple-status-view')
     implementation project(path: ':ktx')
     implementation project(path: ':SpringViewLib')
+    implementation project(path: ':slideview')
     //    implementation(name: 'app-release', ext: 'aar')
     implementation 'androidx.multidex:multidex:2.0.1'
 
