@@ -9,7 +9,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/App" />
-            <option value="$PROJECT_DIR$/AttachmentFileLibrary" />
             <option value="$PROJECT_DIR$/BaseLibrary" />
             <option value="$PROJECT_DIR$/NetworkModule" />
             <option value="$PROJECT_DIR$/Provider" />

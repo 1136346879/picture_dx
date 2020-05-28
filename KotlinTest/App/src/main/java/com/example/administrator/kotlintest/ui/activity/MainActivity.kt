@@ -31,6 +31,7 @@ import com.example.administrator.kotlintest.removebg.RemovebgActivity
 import com.example.administrator.kotlintest.slidablelayout.SlidableActivity
 import com.example.administrator.kotlintest.smashzhadan.smashzhadan
 import com.example.administrator.kotlintest.ui.MarkDownViewActivity
+import com.example.administrator.kotlintest.ui.ViewpPage2.ViewPageActivity
 import com.example.administrator.kotlintest.ui.activity.extactivity.ExtActivity
 import com.example.administrator.kotlintest.ui.entity.PersonControlDao
 import com.example.administrator.kotlintest.util.BDLocationUtils
@@ -135,6 +136,7 @@ class MainActivity : RxAppCompatActivity() {
         listData.add(PersonControlDao(19,"Teg", null))
         listData.add(PersonControlDao(20,"协程在app中的应用", null))
         listData.add(PersonControlDao(21,"滑动验证", null))
+        listData.add(PersonControlDao(22,"viewpage2", null))
 
         multipleStatusView.showContent()
         multipleStatusView.setOnClickListener { ToastUtilKt.showCustomToast("点击重新加载") }
@@ -169,6 +171,7 @@ class MainActivity : RxAppCompatActivity() {
                 19 -> startActivity(this.intentFor<LaunchActivity>())
                 20 -> startActivity(this.intentFor<XieCheng>())
                 21 -> startActivity(this.intentFor<MoveActivity>())
+                22 -> startActivity(this.intentFor<ViewPageActivity>())
             }
         }
         //view拖拽功能

@@ -26,6 +26,8 @@
     <string name="subscribe_manager_category_info">单击增删频道</string>
     <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
     <string name="tip_hasShopCustomer_address">商店分销客户无法切换城市</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
     <!--我的方盛-->
     <string name="my_order">我的订单</string>
     <string name="all_order">全部订单</string>

@@ -147,7 +147,10 @@
         <!--列表-->
         <activity android:name="com.xfs.qrcode_module.recycleview.RecycleviewActivity" />
         <activity android:name="com.xfs.qrcode_module.StickyItemRecycleview.StickyItemREcycleviewActivity" />
-
+        <activity android:name="com.example.administrator.kotlintest.ui.ViewpPage2.HorizontalScrollingActivity"/>
+        <activity android:name="com.example.administrator.kotlintest.ui.ViewpPage2.VerticalScrollingActivity"/>
+        <activity android:name="com.example.administrator.kotlintest.ui.ViewpPage2.FragmentStateAdapterActivity"/>
+        <activity android:name="com.example.administrator.kotlintest.ui.ViewpPage2.ViewPageActivity"/>
 
         <activity android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"/>
         <activity android:name="com.lzy.imagepicker.ui.ImageCropActivity"/>
