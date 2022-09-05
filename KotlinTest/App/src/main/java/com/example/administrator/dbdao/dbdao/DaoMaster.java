@@ -21,20 +21,20 @@ public class DaoMaster extends AbstractDaoMaster {
 
     /** Creates underlying database table using DAOs. */
     public static void createAllTables(Database db, boolean ifNotExists) {
-        SearchHistoryDao.createTable(db, ifNotExists);
+        CookieResulteDao.createTable(db, ifNotExists);
+        MeiziDao.createTable(db, ifNotExists);
         AccountDataDao.createTable(db, ifNotExists);
         AreaSelectedHistoryDataDao.createTable(db, ifNotExists);
-        MeiziDao.createTable(db, ifNotExists);
-        CookieResulteDao.createTable(db, ifNotExists);
+        SearchHistoryDao.createTable(db, ifNotExists);
     }
 
     /** Drops underlying database table using DAOs. */
     public static void dropAllTables(Database db, boolean ifExists) {
-        SearchHistoryDao.dropTable(db, ifExists);
+        CookieResulteDao.dropTable(db, ifExists);
+        MeiziDao.dropTable(db, ifExists);
         AccountDataDao.dropTable(db, ifExists);
         AreaSelectedHistoryDataDao.dropTable(db, ifExists);
-        MeiziDao.dropTable(db, ifExists);
-        CookieResulteDao.dropTable(db, ifExists);
+        SearchHistoryDao.dropTable(db, ifExists);
     }
 
     /**
@@ -53,11 +53,11 @@ public class DaoMaster extends AbstractDaoMaster {
 
     public DaoMaster(Database db) {
         super(db, SCHEMA_VERSION);
-        registerDaoClass(SearchHistoryDao.class);
+        registerDaoClass(CookieResulteDao.class);
+        registerDaoClass(MeiziDao.class);
         registerDaoClass(AccountDataDao.class);
         registerDaoClass(AreaSelectedHistoryDataDao.class);
-        registerDaoClass(MeiziDao.class);
-        registerDaoClass(CookieResulteDao.class);
+        registerDaoClass(SearchHistoryDao.class);
     }
 
     public DaoSession newSession() {

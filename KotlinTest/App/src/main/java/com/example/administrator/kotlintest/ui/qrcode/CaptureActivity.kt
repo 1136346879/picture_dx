@@ -192,7 +192,11 @@ class CaptureActivity : Activity(), SurfaceHolder.Callback {
         super.onDestroy()
     }
 
-    override fun surfaceCreated(holder: SurfaceHolder?) {
+    override fun surfaceDestroyed(holder: SurfaceHolder) {
+        isHasSurface = false
+    }
+
+    override fun surfaceCreated(holder: SurfaceHolder) {
         if (holder == null) {
             Log.e(TAG, "*** WARNING *** surfaceCreated() gave us a null surface!")
         }
@@ -200,10 +204,6 @@ class CaptureActivity : Activity(), SurfaceHolder.Callback {
             isHasSurface = true
             initCamera(holder)
         }
-    }
-
-    override fun surfaceDestroyed(holder: SurfaceHolder) {
-        isHasSurface = false
     }
 
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {

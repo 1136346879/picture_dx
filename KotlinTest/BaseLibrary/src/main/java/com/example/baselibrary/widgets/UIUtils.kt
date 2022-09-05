@@ -40,7 +40,7 @@ object UIUtils {
     }
 
     @JvmStatic
-    fun getResDrawable(id: Int): Drawable {
+    fun getResDrawable(id: Int): Drawable? {
         return if (Build.VERSION.SDK_INT < 21) {
             @Suppress("DEPRECATION")
             resources().getDrawable(id)

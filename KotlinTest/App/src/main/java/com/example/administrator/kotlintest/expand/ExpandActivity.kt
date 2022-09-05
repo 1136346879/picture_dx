@@ -33,56 +33,56 @@ class ExpandActivity : AppCompatActivity() {
       val intent = Intent(this@ExpandActivity,CustomActivity::class.java);
       startActivity(intent)
     }
-    expandable.setOnExpandListener {
-      if (it) {
-        toast("expanded")
-      } else {
-        toast("collapse")
-      }
-    }
-    expandable.expand()//第一个position展开
-    expandable.parentLayout.setOnClickListener {
-      if (expandable.isExpanded) {
-        expandable.collapse()
-      } else {
-        expandable.expand()
-      }
-    }
-    expandable.secondLayout.button0.setOnClickListener { toast("item0 clicked") }
-    expandable.secondLayout.button1.setOnClickListener { toast("item1 clicked") }
-    expandable.secondLayout.button2.setOnClickListener { toast("item2 clicked") }
-    expandable.secondLayout.button3.setOnClickListener { toast("item3 clicked") }
-
-    expandable1.setOnExpandListener {
-      if (it) {
-        toast("expanded1")
-      } else {
-        toast("collapse1")
-      }
-    }
-    expandable1.parentLayout.setOnClickListener {
-      if (expandable1.isExpanded) {
-        expandable1.collapse()
-      } else {
-        expandable1.expand()
-      }
-    }
-    expandable1.secondLayout.setOnClickListener { toast("clicked the second layout") }
-
-    expandable2.setOnExpandListener {
-      if (it) {
-        toast("expanded2")
-      } else {
-        toast("collapse2")
-      }
-    }
-    expandable2.parentLayout.setOnClickListener {
-      if (expandable2.isExpanded) {
-        expandable2.collapse()
-      } else {
-        expandable2.expand()
-      }
-    }
+//    expandable.setOnExpandListener {
+//      if (it) {
+//        toast("expanded")
+//      } else {
+//        toast("collapse")
+//      }
+//    }
+//    expandable.expand()//第一个position展开
+//    expandable.parentLayout.setOnClickListener {
+//      if (expandable.isExpanded) {
+//        expandable.collapse()
+//      } else {
+//        expandable.expand()
+//      }
+//    }
+//    expandable.secondLayout.button0.setOnClickListener { toast("item0 clicked") }
+//    expandable.secondLayout.button1.setOnClickListener { toast("item1 clicked") }
+//    expandable.secondLayout.button2.setOnClickListener { toast("item2 clicked") }
+//    expandable.secondLayout.button3.setOnClickListener { toast("item3 clicked") }
+//
+//    expandable1.setOnExpandListener {
+//      if (it) {
+//        toast("expanded1")
+//      } else {
+//        toast("collapse1")
+//      }
+//    }
+//    expandable1.parentLayout.setOnClickListener {
+//      if (expandable1.isExpanded) {
+//        expandable1.collapse()
+//      } else {
+//        expandable1.expand()
+//      }
+//    }
+//    expandable1.secondLayout.setOnClickListener { toast("clicked the second layout") }
+//
+//    expandable2.setOnExpandListener {
+//      if (it) {
+//        toast("expanded2")
+//      } else {
+//        toast("collapse2")
+//      }
+//    }
+//    expandable2.parentLayout.setOnClickListener {
+//      if (expandable2.isExpanded) {
+//        expandable2.collapse()
+//      } else {
+//        expandable2.expand()
+//      }
+//    }
   }
 
   private fun toast(text: String) {
