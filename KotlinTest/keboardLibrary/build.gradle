@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'kotlin-kapt'
 
 kapt {
@@ -32,15 +31,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-}
-publish {
-    userOrg = "$user_org"
-    repoName = 'maven'
-    groupId = 'jsc.kit.keyboard'
-    artifactId = 'keyboard-component'
-    publishVersion = "$version_name"
-    desc = 'Customized movable simple keyboard'
-    website = 'https://github.com/JustinRoom/KeyboardDemo'
 }
 
 dependencies {

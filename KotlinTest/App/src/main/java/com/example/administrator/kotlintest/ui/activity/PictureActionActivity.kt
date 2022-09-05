@@ -98,7 +98,7 @@ class PictureActionActivity() : RxAppCompatActivity(){
                 if (resultCode == Activity.RESULT_OK) {
                     val imageUri = data.data
                     val selectPhoto = getRealPathFromUri(this, imageUri)
-                    Log.e("selectPhoto:", selectPhoto)
+                    Log.e("selectPhoto:", selectPhoto.toString())
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
                     //打开裁剪页面
@@ -120,7 +120,9 @@ class PictureActionActivity() : RxAppCompatActivity(){
                 if (resultCode == Activity.RESULT_OK) {
                     val imageUri = data.data
                     val selectPhoto = getRealPathFromUri(this@PictureActionActivity, imageUri)
-                    Log.e("selectPhoto:", selectPhoto)
+                    if (selectPhoto != null) {
+                        Log.e("selectPhoto:", selectPhoto)
+                    }
                     //图片识别上传至服务器
 //                    startActivity(activity!!.intentFor<ImageDiscernActivity>()
 //                            .putExtra("image_path",selectPhoto))
@@ -223,7 +225,7 @@ class PictureActionActivity() : RxAppCompatActivity(){
         val cursor = context.contentResolver.query(
                 MediaStore.Images.Media.EXTERNAL_CONTENT_URI, projection,
                 selection, selectionArgs, null)
-        val columnIndex = cursor.getColumnIndex(projection[0])
+        val columnIndex = cursor!!.getColumnIndex(projection[0])
         if (cursor.moveToFirst()) {
             filePath = cursor.getString(columnIndex)
         }
@@ -235,6 +237,7 @@ class PictureActionActivity() : RxAppCompatActivity(){
      * //适配api11-api18,根据uri获取图片的绝对路径。
      * 针对图片URI格式为Uri:: content://media/external/images/media/1028
      */
+    @SuppressLint("Range")
     private fun getRealPathFromUri_Api11To18(context: Context, uri: Uri): String? {
         var filePath: String? = null
         val projection = arrayOf(MediaStore.Images.Media.DATA)

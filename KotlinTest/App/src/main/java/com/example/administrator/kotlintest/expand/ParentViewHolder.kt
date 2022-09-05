@@ -39,29 +39,29 @@ class ParentViewHolder(view: View) : BaseViewHolder(view), ChildViewHolder.Deleg
 
   private fun drawItemUI() {
     if (!sectionItem.initailized) {
-      itemView.run {
-        with(expandableLayout) {
-          parentLayoutResource = R.layout.item_section_parent
-          secondLayoutResource = R.layout.item_section_child
-          duration = 200L
-          parentLayout.title.text = sectionItem.title
-          parentLayout.setBackgroundColor(ContextCompat.getColor(context, sectionItem.color))
-          secondLayout.recyclerViewChild.adapter = childAdapter
-          childAdapter.addItemList(sectionItem.itemList)
-          sectionItem.initailized = true
-        }
-      }
+//      itemView.run {
+//        with(expandableLayout) {
+//          parentLayoutResource = R.layout.item_section_parent
+//          secondLayoutResource = R.layout.item_section_child
+//          duration = 200L
+//          parentLayout.title.text = sectionItem.title
+//          parentLayout.setBackgroundColor(ContextCompat.getColor(context, sectionItem.color))
+//          secondLayout.recyclerViewChild.adapter = childAdapter
+//          childAdapter.addItemList(sectionItem.itemList)
+//          sectionItem.initailized = true
+//        }
+//      }
     }
   }
 
   override fun onClick(p0: View?) {
-    with(itemView.expandableLayout) {
-      if (isExpanded) {
-        collapse()
-      } else {
-        expand()
-      }
-    }
+//    with(itemView.expandableLayout) {
+//      if (isExpanded) {
+//        collapse()
+//      } else {
+//        expand()
+//      }
+//    }
   }
 
   override fun onLongClick(p0: View?) = false

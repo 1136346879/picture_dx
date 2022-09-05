@@ -47,18 +47,23 @@ class CameraHelper(activity: Activity, surfaceView: SurfaceView) : Camera.Previe
 
     private fun init() {
         mSurfaceHolder.addCallback(object : SurfaceHolder.Callback {
-            override fun surfaceChanged(holder: SurfaceHolder?, format: Int, width: Int, height: Int) {
-            }
-
-            override fun surfaceDestroyed(holder: SurfaceHolder?) {
-                releaseCamera()
-            }
-
-            override fun surfaceCreated(holder: SurfaceHolder?) {
+            override fun surfaceCreated(holder: SurfaceHolder) {
                 if (mCamera == null) {
                     openCamera(mCameraFacing)
                 }
                 startPreview()
+            }
+
+            override fun surfaceChanged(
+                holder: SurfaceHolder,
+                format: Int,
+                width: Int,
+                height: Int
+            ) {
+            }
+
+            override fun surfaceDestroyed(holder: SurfaceHolder) {
+                releaseCamera()
             }
         })
     }

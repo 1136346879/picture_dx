@@ -34,7 +34,7 @@ import java.io.File
  *@description :版本更新提示框
  **/
 
-class UpdateDialog(val mContext: Context?, val result: AppUpdateEntity) : Dialog(mContext, R.style.ActionSheetDialogStyle) {
+class UpdateDialog(val mContext: Context?, val result: AppUpdateEntity) : Dialog(mContext!!, R.style.ActionSheetDialogStyle) {
 
     private var progressBar: ProgressBar? = null
 

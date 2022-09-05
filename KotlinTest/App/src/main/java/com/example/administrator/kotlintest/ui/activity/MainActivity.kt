@@ -62,7 +62,7 @@ import de.greenrobot.event.EventBus
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 import org.jetbrains.anko.intentFor
-import org.telegram.ui.LaunchActivity
+//import org.telegram.ui.LaunchActivity
 import java.util.*
 
 class MainActivity : RxAppCompatActivity() {
@@ -168,7 +168,7 @@ class MainActivity : RxAppCompatActivity() {
                 16 -> startActivity(this.intentFor<MarkDownViewActivity>())
                 17 -> startActivity(this.intentFor<LifeCycleActivity>())
                 18 -> startActivity(this.intentFor<ExtActivity>())
-                19 -> startActivity(this.intentFor<LaunchActivity>())
+//                19 -> startActivity(this.intentFor<LaunchActivity>())
                 20 -> startActivity(this.intentFor<XieCheng>())
                 21 -> startActivity(this.intentFor<MoveActivity>())
                 22 -> startActivity(this.intentFor<ViewPageActivity>())
